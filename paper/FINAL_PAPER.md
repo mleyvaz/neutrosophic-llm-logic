@@ -1,8 +1,10 @@
 # Breaking the Chains of Probability: Neutrosophic Logic as a New Framework for Epistemic Uncertainty in Large Language Models
 
-**Authors:** Manus AI  
-**Date:** December 16, 2025
-
+Maikel Yelandi Leyva-Vázquez 1*,  https://orcid.org/0000-0001-7911-5879  
+Florentin Smarandache 2,  https://orcid.org/0000-0002-5560-5926  
+1Universidad Bolivariana del Ecuador, Durán, Ecuador. 
+2University of New Mexico, Gallup, NM, Estados Unidos. 
+*Autor para la correspondencia. (maikel.leyvav@ug.edu.ec)  
 ## Abstract
 
 Large Language Models (LLMs) are predominantly governed by probabilistic frameworks, where the sum of outcome probabilities is constrained to unity. This architectural limitation, often imposed by Softmax layers, leads to a "collapse of uncertainty," making it difficult to differentiate between epistemic uncertainty (ignorance), paradox, and vagueness. This study presents an empirical investigation into the application of Neutrosophic Logic, a framework that treats Truth (T), Indeterminacy (I), and Falsity (F) as independent dimensions, to model epistemic states in LLMs. We conducted experiments on a family of OpenAI's GPT models, evaluating their responses to five distinct linguistic phenomena: logical paradoxes, epistemic ignorance, vagueness, ethical contradictions, and future contingencies. Our findings reveal that a neutrosophic approach, by allowing the sum of T, I, and F to exceed 1 (a state we term "hyper-truth"), provides a richer and more nuanced representation of a model's internal state. Specifically, in scenarios involving ethical dilemmas and logical paradoxes, the neutrosophic framework captures the inherent conflict and contradiction that probabilistic models obscure. We demonstrate that this approach not only preserves truth values in fuzzy contexts but also offers a robust method for identifying and quantifying internal model conflict. We conclude that the integration of neutrosophic evaluation layers is a critical step towards developing more transparent, reliable, and ethically-aware AI systems, particularly in high-stakes domains.
