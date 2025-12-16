@@ -225,7 +225,7 @@ If you use this work in your research, please cite:
 @unpublished{manus2025neutrosophic,
   title={Neutrosophic Logic for Epistemic Uncertainty in Large Language Models: 
          A Comparative Empirical Study},
-  author={Manus AI Research Team},
+  author={Maikel Leyva, Florentin Smarandache},
   year={2025},
   note={Unpublished manuscript}
 }
@@ -246,4 +246,4 @@ This research was conducted using the OpenAI API and builds upon foundational wo
 
 **Last Updated:** December 2025  
 **Status:** Active Research  
-**Maintainers:** Manus AI Research Team
+**Maintainers:** MAikel Leyva
