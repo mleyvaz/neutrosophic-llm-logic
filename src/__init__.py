@@ -9,6 +9,4 @@ __version__ = "0.1.0"
 __author__ = "Manus AI Research Team"
 __description__ = "Neutrosophic Logic framework for evaluating epistemic uncertainty in LLMs"
 
-from . import analysis
-
-__all__ = ['analysis']
+__all__ = ['analysis', 'prompts', 'experiment']

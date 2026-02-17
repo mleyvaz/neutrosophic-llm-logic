@@ -1,0 +1,963 @@
+Timestamp,Phenomenon_Type,Phrase_English,Provider,Model,Model_ID,Strategy,Rep,T,I,F,Sum_TIF,Temperature,Prompt_Tokens,Completion_Tokens,Total_Tokens,Status,Raw_Response
+2026-02-17T22:23:12.428940+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,1,0.5,1.0,0.5,2.0,0.7,257,27,284,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}"
+2026-02-17T22:23:14.235471+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,2,0.5,1.0,0.5,2.0,0.7,257,27,284,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}"
+2026-02-17T22:23:15.961104+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,3,0.5,1.0,0.5,2.0,0.7,257,27,284,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}"
+2026-02-17T22:23:17.669006+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,4,0.5,1.0,0.5,2.0,0.7,257,27,284,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}"
+2026-02-17T22:23:19.169648+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,5,0.5,1.0,0.5,2.0,0.7,257,27,284,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}"
+2026-02-17T22:23:20.598727+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,1,0.02,0.96,0.02,1.0,0.7,160,27,187,Success,"{""T"": 0.02, ""I"": 0.96, ""F"": 0.02}"
+2026-02-17T22:23:22.104289+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,2,0.02,0.96,0.02,1.0,0.7,160,27,187,Success,"{""T"": 0.02, ""I"": 0.96, ""F"": 0.02}"
+2026-02-17T22:23:23.508489+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,3,0.02,0.96,0.02,1.0,0.7,160,27,187,Success,"{""T"": 0.02, ""I"": 0.96, ""F"": 0.02}"
+2026-02-17T22:23:25.075441+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,4,0.02,0.96,0.02,1.0,0.7,160,27,187,Success,"{""T"": 0.02, ""I"": 0.96, ""F"": 0.02}"
+2026-02-17T22:23:26.468143+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,5,0.02,0.96,0.02,1.0,0.7,160,27,187,Success,"{""T"": 0.02, ""I"": 0.96, ""F"": 0.02}"
+2026-02-17T22:23:27.942247+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,1,0.5,1.0,0.5,2.0,0.7,166,23,189,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:23:29.402281+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,2,0.5,1.0,0.5,2.0,0.7,166,23,189,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:23:30.731244+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,3,0.5,1.0,0.5,2.0,0.7,166,23,189,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:23:32.262193+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,4,0.5,1.0,0.5,2.0,0.7,166,23,189,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:23:33.671083+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,5,0.5,1.0,0.5,2.0,0.7,166,23,189,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:23:36.635229+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,1,0.0,1.0,0.0,1.0,0.7,240,25,265,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:23:41.230173+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,2,0.0,1.0,0.0,1.0,0.7,241,25,266,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:23:42.419264+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,3,0.0,1.0,0.0,1.0,0.7,241,25,266,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:23:43.348925+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,4,0.0,1.0,0.0,1.0,0.7,241,25,266,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:23:44.263497+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,5,0.0,1.0,0.0,1.0,0.7,241,25,266,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:23:45.370384+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,1,0.0,1.0,0.0,1.0,0.7,150,25,175,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:23:46.712644+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,2,0.0,1.0,0.0,1.0,0.7,150,25,175,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:23:48.303689+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,3,0.0,1.0,0.0,1.0,0.7,151,25,176,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:23:50.600463+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,4,0.0,1.0,0.0,1.0,0.7,151,25,176,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:23:51.636427+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,5,0.0,1.0,0.0,1.0,0.7,151,25,176,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:23:52.603315+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,1,0.5,1.0,0.5,2.0,0.7,156,19,175,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:23:55.040257+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,2,0.0,0.0,1.0,1.0,0.7,155,20,175,Success,"{""P_yes"": 0.0, ""P_no"": 1.0}"
+2026-02-17T22:23:55.957715+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,3,0.0,0.0,1.0,1.0,0.7,155,20,175,Success,"{""P_yes"": 0.0, ""P_no"": 1.0}"
+2026-02-17T22:24:01.294172+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,4,0.5,1.0,0.5,2.0,0.7,154,20,174,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:24:02.654238+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,5,0.5,1.0,0.5,2.0,0.7,154,20,174,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:24:03.434190+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,1,0.5,0.5,0.5,1.5,0.7,234,29,263,Success,"```json
+{""T"": 0.5, ""I"": 0.5, ""F"": 0.5}
+```"
+2026-02-17T22:24:05.333274+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,2,0.5,0.5,0.5,1.5,0.7,233,28,261,Success,"```json
+{""T"": 0.5, ""I"": 0.5, ""F"": 0.5}
+```"
+2026-02-17T22:24:15.089999+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,3,0.5,0.5,0.5,1.5,0.7,233,29,262,Success,"```json
+{""T"": 0.5, ""I"": 0.5, ""F"": 0.5}
+```"
+2026-02-17T22:24:17.965343+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,4,0.5,0.5,0.5,1.5,0.7,233,28,261,Success,"```json
+{""T"": 0.5, ""I"": 0.5, ""F"": 0.5}
+```"
+2026-02-17T22:24:21.526598+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,5,0.5,0.5,0.5,1.5,0.7,233,29,262,Success,"```json
+{""T"": 0.5, ""I"": 0.5, ""F"": 0.5}
+```"
+2026-02-17T22:24:23.358955+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,1,0.0,1.0,0.0,1.0,0.7,142,29,171,Success,"```json
+{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}
+```"
+2026-02-17T22:24:25.276175+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,2,0.0,1.0,0.0,1.0,0.7,141,29,170,Success,"```json
+{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}
+```"
+2026-02-17T22:24:27.283234+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,3,0.0,1.0,0.0,1.0,0.7,142,29,171,Success,"```json
+{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}
+```"
+2026-02-17T22:24:29.044856+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,4,0.0,1.0,0.0,1.0,0.7,141,29,170,Success,"```json
+{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}
+```"
+2026-02-17T22:24:30.660546+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,5,0.0,1.0,0.0,1.0,0.7,141,29,170,Success,"```json
+{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}
+```"
+2026-02-17T22:24:33.136963+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,1,0.5,1.0,0.5,2.0,0.7,145,24,169,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:24:37.095599+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,2,0.5,1.0,0.5,2.0,0.7,145,24,169,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:24:39.716822+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,3,0.5,1.0,0.5,2.0,0.7,145,24,169,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:24:41.921823+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,4,0.5,1.0,0.5,2.0,0.7,145,24,169,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:24:43.827312+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,5,0.5,1.0,0.5,2.0,0.7,145,23,168,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:24:48.781107+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,1,0.0,1.0,0.0,1.0,0.7,241,1087,1328,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:25:02.285792+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,2,0.5,1.0,0.5,2.0,0.7,241,2631,2872,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}"
+2026-02-17T22:25:37.014190+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,3,0.5,1.0,0.5,2.0,0.7,241,2061,2302,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}"
+2026-02-17T22:26:05.160517+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,4,0.5,0.5,0.5,1.5,0.7,241,3459,3700,Success,"{""T"": 0.5, ""I"": 0.5, ""F"": 0.5}"
+2026-02-17T22:26:50.809834+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,5,0.5,1.0,0.5,2.0,0.7,241,6601,6842,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}"
+2026-02-17T22:28:22.918803+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,1,0.0,1.0,0.0,1.0,0.7,150,862,1012,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:28:33.248938+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,2,0.0,1.0,0.0,1.0,0.7,150,671,821,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:28:44.647119+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,3,0.0,1.0,0.0,1.0,0.7,150,1131,1281,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:28:58.106617+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,4,0.0,1.0,0.0,1.0,0.7,150,481,631,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:29:04.607321+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,5,0.0,1.0,0.0,1.0,0.7,150,658,808,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:29:15.781909+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,1,0.5,1.0,0.5,2.0,0.7,150,297,447,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:29:20.232127+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,2,0.5,1.0,0.5,2.0,0.7,150,1019,1169,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:29:32.745347+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,3,0.5,1.0,0.5,2.0,0.7,150,583,733,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:29:39.922731+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,4,0.5,1.0,0.5,2.0,0.7,150,472,622,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:29:49.122712+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,5,0.5,1.0,0.5,2.0,0.7,150,482,632,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:29:55.107886+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,1,0.0,1.0,0.0,1.0,0.7,239,34,273,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:29:56.074800+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,2,0.0,1.0,0.0,1.0,0.7,239,34,273,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:29:57.861329+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,3,0.0,1.0,0.0,1.0,0.7,239,34,273,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:29:58.947497+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,4,0.0,1.0,1.0,2.0,0.7,239,34,273,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 1.0
+}
+```"
+2026-02-17T22:29:59.934738+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,5,0.0,1.0,0.0,1.0,0.7,239,34,273,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:30:00.903340+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,1,0.0,1.0,0.0,1.0,0.7,148,34,182,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:30:01.898666+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,2,0.0,1.0,0.0,1.0,0.7,148,34,182,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:30:02.825089+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,3,0.0,1.0,0.0,1.0,0.7,148,34,182,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:30:03.756034+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,4,0.0,1.0,0.0,1.0,0.7,148,34,182,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:30:04.847231+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,5,0.0,1.0,0.0,1.0,0.7,148,34,182,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:30:05.783351+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,1,0.0,0.0,1.0,1.0,0.7,151,28,179,Success,"```json
+{
+  ""P_yes"": 0.0,
+  ""P_no"": 1.0
+}
+```"
+2026-02-17T22:30:06.713906+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,2,0.0,0.0,1.0,1.0,0.7,151,28,179,Success,"```json
+{
+  ""P_yes"": 0.0,
+  ""P_no"": 1.0
+}
+```"
+2026-02-17T22:30:07.636059+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,3,0.0,0.0,1.0,1.0,0.7,151,28,179,Success,"```json
+{
+  ""P_yes"": 0.0,
+  ""P_no"": 1.0
+}
+```"
+2026-02-17T22:30:11.067866+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,4,0.0,0.0,1.0,1.0,0.7,151,28,179,Success,"```json
+{
+  ""P_yes"": 0.0,
+  ""P_no"": 1.0
+}
+```"
+2026-02-17T22:30:12.572506+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,5,0.0,0.0,1.0,1.0,0.7,151,28,179,Success,"```json
+{
+  ""P_yes"": 0.0,
+  ""P_no"": 1.0
+}
+```"
+2026-02-17T22:30:13.740480+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,1,0.5,0.95,0.5,1.95,0.7,262,27,289,Success,"{""T"": 0.5, ""I"": 0.95, ""F"": 0.5}"
+2026-02-17T22:30:15.171874+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,2,0.5,0.95,0.5,1.95,0.7,262,27,289,Success,"{""T"": 0.5, ""I"": 0.95, ""F"": 0.5}"
+2026-02-17T22:30:16.646909+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,3,0.5,0.95,0.5,1.95,0.7,262,27,289,Success,"{""T"": 0.5, ""I"": 0.95, ""F"": 0.5}"
+2026-02-17T22:30:21.436380+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,4,0.5,0.95,0.5,1.95,0.7,262,27,289,Success,"{""T"": 0.5, ""I"": 0.95, ""F"": 0.5}"
+2026-02-17T22:30:22.862139+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,5,0.5,0.95,0.5,1.95,0.7,262,27,289,Success,"{""T"": 0.5, ""I"": 0.95, ""F"": 0.5}"
+2026-02-17T22:30:24.311341+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,1,0.05,0.9,0.05,1.0,0.7,165,27,192,Success,"{""T"": 0.05, ""I"": 0.9, ""F"": 0.05}"
+2026-02-17T22:30:25.894370+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,2,0.05,0.9,0.05,1.0,0.7,165,27,192,Success,"{""T"": 0.05, ""I"": 0.9, ""F"": 0.05}"
+2026-02-17T22:30:27.336886+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,3,0.05,0.9,0.05,1.0,0.7,165,27,192,Success,"{""T"": 0.05, ""I"": 0.9, ""F"": 0.05}"
+2026-02-17T22:30:28.813235+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,4,0.05,0.9,0.05,1.0,0.7,165,27,192,Success,"{""T"": 0.05, ""I"": 0.9, ""F"": 0.05}"
+2026-02-17T22:30:30.282735+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,5,0.02,0.96,0.02,1.0,0.7,165,27,192,Success,"{""T"": 0.02, ""I"": 0.96, ""F"": 0.02}"
+2026-02-17T22:30:31.718666+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,1,0.5,1.0,0.5,2.0,0.7,171,23,194,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:30:33.117334+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,2,0.5,1.0,0.5,2.0,0.7,171,23,194,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:30:34.287446+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,3,0.5,1.0,0.5,2.0,0.7,171,23,194,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:30:36.619299+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,4,0.5,1.0,0.5,2.0,0.7,171,23,194,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:30:37.761418+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,5,0.5,1.0,0.5,2.0,0.7,171,23,194,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:30:39.241633+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,1,0.0,1.0,0.0,1.0,0.7,245,25,270,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:30:39.900385+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,2,0.5,0.9,0.5,1.9,0.7,246,25,271,Success,"{""T"": 0.5, ""I"": 0.9, ""F"": 0.5}"
+2026-02-17T22:30:41.332144+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,3,0.5,0.9,0.5,1.9,0.7,246,25,271,Success,"{""T"": 0.5, ""I"": 0.9, ""F"": 0.5}"
+2026-02-17T22:30:42.350036+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,4,0.5,0.9,0.5,1.9,0.7,247,24,271,Success,"{""T"": 0.5, ""I"": 0.9, ""F"": 0.5}"
+2026-02-17T22:30:44.710747+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,5,0.5,0.9,0.5,1.9,0.7,246,25,271,Success,"{""T"": 0.5, ""I"": 0.9, ""F"": 0.5}"
+2026-02-17T22:30:45.594406+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,1,0.0,1.0,0.0,1.0,0.7,156,25,181,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:30:46.720392+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,2,0.0,1.0,0.0,1.0,0.7,156,25,181,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:30:47.731132+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,3,0.0,0.0,1.0,1.0,0.7,155,25,180,Success,"{""T"": 0.0, ""I"": 0.0, ""F"": 1.0}"
+2026-02-17T22:30:48.320684+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,4,0.0,0.0,1.0,1.0,0.7,155,25,180,Success,"{""T"": 0.0, ""I"": 0.0, ""F"": 1.0}"
+2026-02-17T22:30:48.910377+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,5,0.0,0.99,0.01,1.0,0.7,156,25,181,Success,"{""T"": 0.0, ""I"": 0.99, ""F"": 0.01}"
+2026-02-17T22:30:49.884015+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,1,0.5,1.0,0.5,2.0,0.7,160,20,180,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:30:50.773665+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,2,0.5,1.0,0.5,2.0,0.7,160,20,180,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:30:55.005220+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,3,0.5,1.0,0.5,2.0,0.7,160,20,180,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:30:56.166212+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,4,0.5,1.0,0.5,2.0,0.7,160,20,180,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:30:57.219854+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,5,0.5,1.0,0.5,2.0,0.7,161,20,181,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:30:58.092851+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,1,0.5,0.9,0.5,1.9,0.7,238,29,267,Success,"```json
+{""T"": 0.5, ""I"": 0.9, ""F"": 0.5}
+```"
+2026-02-17T22:31:00.393585+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,2,0.5,0.9,0.5,1.9,0.7,239,29,268,Success,"```json
+{""T"": 0.5, ""I"": 0.9, ""F"": 0.5}
+```"
+2026-02-17T22:31:02.316042+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,3,0.5,0.8,0.5,1.8,0.7,239,29,268,Success,"```json
+{""T"": 0.5, ""I"": 0.8, ""F"": 0.5}
+```"
+2026-02-17T22:31:04.714958+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,4,0.5,0.9,0.5,1.9,0.7,241,29,270,Success,"```json
+{""T"": 0.5, ""I"": 0.9, ""F"": 0.5}
+```"
+2026-02-17T22:31:05.574318+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,5,0.5,0.8,0.5,1.8,0.7,238,29,267,Success,"```json
+{""T"": 0.5, ""I"": 0.8, ""F"": 0.5}
+```"
+2026-02-17T22:31:07.809078+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,1,0.5,0.0,0.5,1.0,0.7,146,29,175,Success,"```json
+{""T"": 0.5, ""I"": 0.0, ""F"": 0.5}
+```"
+2026-02-17T22:31:10.157096+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,2,0.5,0.0,0.5,1.0,0.7,146,29,175,Success,"```json
+{""T"": 0.5, ""I"": 0.0, ""F"": 0.5}
+```"
+2026-02-17T22:31:12.602858+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,3,0.5,0.0,0.5,1.0,0.7,146,29,175,Success,"```json
+{""T"": 0.5, ""I"": 0.0, ""F"": 0.5}
+```"
+2026-02-17T22:31:15.976087+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,4,0.5,0.0,0.5,1.0,0.7,146,29,175,Success,"```json
+{""T"": 0.5, ""I"": 0.0, ""F"": 0.5}
+```"
+2026-02-17T22:31:17.781028+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,5,0.5,0.0,0.5,1.0,0.7,146,29,175,Success,"```json
+{""T"": 0.5, ""I"": 0.0, ""F"": 0.5}
+```"
+2026-02-17T22:31:21.603564+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,1,0.5,1.0,0.5,2.0,0.7,150,23,173,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:31:23.741423+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,2,0.5,1.0,0.5,2.0,0.7,153,24,177,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:31:28.127817+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,3,0.5,1.0,0.5,2.0,0.7,150,24,174,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:31:30.311953+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,4,0.5,1.0,0.5,2.0,0.7,150,24,174,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:31:33.944332+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,5,0.5,1.0,0.5,2.0,0.7,150,24,174,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:31:37.297946+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,1,0.1,0.9,0.1,1.1,0.7,246,540,786,Success,"{""T"": 0.1, ""I"": 0.9, ""F"": 0.1}"
+2026-02-17T22:31:43.891448+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,2,0.0,1.0,0.0,1.0,0.7,246,4053,4299,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:32:41.491182+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,3,0.1,0.8,0.1,1.0,0.7,246,481,727,Success,"{""T"": 0.1, ""I"": 0.8, ""F"": 0.1}"
+2026-02-17T22:32:47.942022+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,4,0.3,0.8,0.3,1.4,0.7,246,1318,1564,Success,"{""T"": 0.3, ""I"": 0.8, ""F"": 0.3}"
+2026-02-17T22:33:09.010726+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,5,0.1,0.8,0.1,1.0,0.7,246,1854,2100,Success,"{""T"": 0.1, ""I"": 0.8, ""F"": 0.1}"
+2026-02-17T22:33:29.804656+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,1,0.05,0.9,0.05,1.0,0.7,155,2266,2421,Success,"{""T"": 0.05, ""I"": 0.9, ""F"": 0.05}"
+2026-02-17T22:34:29.868142+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,2,0.5,0.0,0.5,1.0,0.7,155,4692,4847,Success,"{""T"": 0.5, ""I"": 0.0, ""F"": 0.5}"
+2026-02-17T22:35:42.555512+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,3,0.5,0.0,0.5,1.0,0.7,155,4792,4947,Success,"{""T"": 0.5, ""I"": 0.0, ""F"": 0.5}"
+2026-02-17T22:36:45.491320+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,4,0.0,1.0,0.0,1.0,0.7,155,5630,5785,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:38:02.011082+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,5,0.5,0.0,0.5,1.0,0.7,155,4896,5051,Success,"{""T"": 0.5, ""I"": 0.0, ""F"": 0.5}"
+2026-02-17T22:39:08.641835+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,1,0.5,1.0,0.5,2.0,0.7,155,944,1099,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:39:23.458985+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,2,0.5,1.0,0.5,2.0,0.7,155,1302,1457,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:39:37.724556+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,3,0.5,1.0,0.5,2.0,0.7,155,907,1062,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:39:52.396157+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,4,0.5,1.0,0.5,2.0,0.7,155,1123,1278,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:40:05.252900+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,5,0.5,1.0,0.5,2.0,0.7,155,599,754,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:40:12.772763+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,1,0.0,0.9999,0.0,0.9999,0.7,244,37,281,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.9999,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:40:16.846787+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,2,0.0,0.9999,0.0,0.9999,0.7,244,37,281,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.9999,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:40:17.773273+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,3,0.0,1.0,0.0,1.0,0.7,244,34,278,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:40:22.077226+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,4,0.0,1.0,0.0,1.0,0.7,244,34,278,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:40:22.997237+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,5,0.0,1.0,0.0,1.0,0.7,244,34,278,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:40:24.080285+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,1,0.0,1.0,0.0,1.0,0.7,153,34,187,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:40:25.021102+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,2,0.0,1.0,0.0,1.0,0.7,153,34,187,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:40:25.946251+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,3,0.0,1.0,0.0,1.0,0.7,153,34,187,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:40:26.855709+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,4,0.0,1.0,0.0,1.0,0.7,153,34,187,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:40:27.930729+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,5,0.0,1.0,0.0,1.0,0.7,153,34,187,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0
+}
+```"
+2026-02-17T22:40:28.872399+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,1,0.5,1.0,0.5,2.0,0.7,156,28,184,Success,"```json
+{
+  ""P_yes"": 0.5,
+  ""P_no"": 0.5
+}
+```"
+2026-02-17T22:40:29.790703+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,2,0.5,1.0,0.5,2.0,0.7,156,28,184,Success,"```json
+{
+  ""P_yes"": 0.5,
+  ""P_no"": 0.5
+}
+```"
+2026-02-17T22:40:30.704258+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,3,0.5,1.0,0.5,2.0,0.7,156,28,184,Success,"```json
+{
+  ""P_yes"": 0.5,
+  ""P_no"": 0.5
+}
+```"
+2026-02-17T22:40:31.629972+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,4,0.5,1.0,0.5,2.0,0.7,156,28,184,Success,"```json
+{
+  ""P_yes"": 0.5,
+  ""P_no"": 0.5
+}
+```"
+2026-02-17T22:40:32.558694+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,5,0.5,1.0,0.5,2.0,0.7,156,28,184,Success,"```json
+{
+  ""P_yes"": 0.5,
+  ""P_no"": 0.5
+}
+```"
+2026-02-17T22:40:33.821032+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,1,0.55,0.75,0.3,1.6,0.7,267,27,294,Success,"{""T"": 0.55, ""I"": 0.75, ""F"": 0.3}"
+2026-02-17T22:40:35.333907+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,2,0.55,0.75,0.25,1.55,0.7,267,27,294,Success,"{""T"": 0.55, ""I"": 0.75, ""F"": 0.25}"
+2026-02-17T22:40:36.867679+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,3,0.6,0.75,0.3,1.65,0.7,267,27,294,Success,"{""T"": 0.6, ""I"": 0.75, ""F"": 0.3}"
+2026-02-17T22:40:38.870841+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,4,0.6,0.75,0.3,1.65,0.7,267,27,294,Success,"{""T"": 0.6, ""I"": 0.75, ""F"": 0.3}"
+2026-02-17T22:40:40.223105+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,5,0.55,0.75,0.3,1.6,0.7,267,27,294,Success,"{""T"": 0.55, ""I"": 0.75, ""F"": 0.3}"
+2026-02-17T22:40:41.545488+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,1,0.35,0.55,0.1,1.0,0.7,170,27,197,Success,"{""T"": 0.35, ""I"": 0.55, ""F"": 0.10}"
+2026-02-17T22:40:42.808140+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,2,0.35,0.5,0.15,1.0,0.7,170,27,197,Success,"{""T"": 0.35, ""I"": 0.5, ""F"": 0.15}"
+2026-02-17T22:40:44.157948+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,3,0.35,0.5,0.15,1.0,0.7,170,27,197,Success,"{""T"": 0.35, ""I"": 0.5, ""F"": 0.15}"
+2026-02-17T22:40:46.502268+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,4,0.35,0.55,0.1,1.0,0.7,170,27,197,Success,"{""T"": 0.35, ""I"": 0.55, ""F"": 0.10}"
+2026-02-17T22:40:47.943095+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,5,0.35,0.5,0.15,1.0,0.7,170,27,197,Success,"{""T"": 0.35, ""I"": 0.5, ""F"": 0.15}"
+2026-02-17T22:40:49.460237+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,1,0.35,0.9341,0.65,1.9341,0.7,176,23,199,Success,"{""P_yes"": 0.35, ""P_no"": 0.65}"
+2026-02-17T22:40:50.934591+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,2,0.35,0.9341,0.65,1.9341,0.7,176,23,199,Success,"{""P_yes"": 0.35, ""P_no"": 0.65}"
+2026-02-17T22:40:55.752275+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,3,0.35,0.9341,0.65,1.9341,0.7,176,23,199,Success,"{""P_yes"": 0.35, ""P_no"": 0.65}"
+2026-02-17T22:40:57.066111+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,4,0.35,0.9341,0.65,1.9341,0.7,176,23,199,Success,"{""P_yes"": 0.35, ""P_no"": 0.65}"
+2026-02-17T22:40:58.481958+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,5,0.35,0.9341,0.65,1.9341,0.7,176,23,199,Success,"{""P_yes"": 0.35, ""P_no"": 0.65}"
+2026-02-17T22:40:59.719140+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,1,0.7,0.3,0.2,1.2,0.7,251,25,276,Success,"{""T"": 0.7, ""I"": 0.3, ""F"": 0.2}"
+2026-02-17T22:41:00.725505+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,2,0.7,0.3,0.2,1.2,0.7,250,25,275,Success,"{""T"": 0.7, ""I"": 0.3, ""F"": 0.2}"
+2026-02-17T22:41:02.685079+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,3,0.8,0.4,0.2,1.4,0.7,251,25,276,Success,"{""T"": 0.8, ""I"": 0.4, ""F"": 0.2}"
+2026-02-17T22:41:03.801132+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,4,0.7,0.4,0.2,1.3,0.7,251,25,276,Success,"{""T"": 0.7, ""I"": 0.4, ""F"": 0.2}"
+2026-02-17T22:41:04.794461+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,5,0.7,0.3,0.2,1.2,0.7,250,25,275,Success,"{""T"": 0.7, ""I"": 0.3, ""F"": 0.2}"
+2026-02-17T22:41:06.058635+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,1,0.0,1.0,0.0,1.0,0.7,160,25,185,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:41:07.081100+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,2,0.4,0.6,0.0,1.0,0.7,159,25,184,Success,"{""T"": 0.4, ""I"": 0.6, ""F"": 0.0}"
+2026-02-17T22:41:08.396888+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,3,0.4,0.6,0.0,1.0,0.7,160,25,185,Success,"{""T"": 0.4, ""I"": 0.6, ""F"": 0.0}"
+2026-02-17T22:41:09.350257+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,4,0.0,1.0,0.0,1.0,0.7,160,25,185,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:41:14.069615+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,5,0.0,0.8,0.2,1.0,0.7,160,25,185,Success,"{""T"": 0.0, ""I"": 0.8, ""F"": 0.2}"
+2026-02-17T22:41:15.580890+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,1,0.7,0.8813,0.3,1.8813,0.7,164,20,184,Success,"{""P_yes"": 0.7, ""P_no"": 0.3}"
+2026-02-17T22:41:16.508375+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,2,0.7,0.8813,0.3,1.8813,0.7,165,20,185,Success,"{""P_yes"": 0.7, ""P_no"": 0.3}"
+2026-02-17T22:41:17.430408+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,3,0.7,0.8813,0.3,1.8813,0.7,163,20,183,Success,"{""P_yes"": 0.7, ""P_no"": 0.3}"
+2026-02-17T22:41:18.567467+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,4,0.7,0.8813,0.3,1.8813,0.7,164,20,184,Success,"{""P_yes"": 0.7, ""P_no"": 0.3}"
+2026-02-17T22:41:19.564495+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,5,0.7,0.8813,0.3,1.8813,0.7,165,20,185,Success,"{""P_yes"": 0.7, ""P_no"": 0.3}"
+2026-02-17T22:41:20.408748+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,1,0.5,0.3,0.4,1.2,0.7,242,29,271,Success,"```json
+{""T"": 0.5, ""I"": 0.3, ""F"": 0.4}
+```"
+2026-02-17T22:41:21.716829+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,2,0.5,0.3,0.4,1.2,0.7,242,28,270,Success,"```json
+{""T"": 0.5, ""I"": 0.3, ""F"": 0.4}
+```"
+2026-02-17T22:41:28.793255+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,3,0.5,0.3,0.4,1.2,0.7,242,29,271,Success,"```json
+{""T"": 0.5, ""I"": 0.3, ""F"": 0.4}
+```"
+2026-02-17T22:41:30.195958+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,4,0.6,0.3,0.4,1.3,0.7,242,31,273,Success,"{
+  ""T"": 0.6,
+  ""I"": 0.3,
+  ""F"": 0.4
+}"
+2026-02-17T22:41:31.648052+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,5,0.6,0.3,0.4,1.3,0.7,242,29,271,Success,"```json
+{""T"": 0.6, ""I"": 0.3, ""F"": 0.4}
+```"
+2026-02-17T22:41:33.004755+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,1,0.2,0.3,0.5,1.0,0.7,150,29,179,Success,"```json
+{""T"": 0.2, ""I"": 0.3, ""F"": 0.5}
+```"
+2026-02-17T22:41:34.435200+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,2,0.3,0.2,0.5,1.0,0.7,150,29,179,Success,"```json
+{""T"": 0.3, ""I"": 0.2, ""F"": 0.5}
+```"
+2026-02-17T22:41:36.905513+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,3,0.3,0.4,0.3,1.0,0.7,150,29,179,Success,"```json
+{""T"": 0.3, ""I"": 0.4, ""F"": 0.3}
+```"
+2026-02-17T22:41:38.874237+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,4,0.3,0.4,0.3,1.0,0.7,151,29,180,Success,"```json
+{""T"": 0.3, ""I"": 0.4, ""F"": 0.3}
+```"
+2026-02-17T22:41:40.727663+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,5,0.3,0.4,0.3,1.0,0.7,150,29,179,Success,"```json
+{""T"": 0.3, ""I"": 0.4, ""F"": 0.3}
+```"
+2026-02-17T22:41:42.769701+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,1,0.4,0.971,0.6,1.971,0.7,155,24,179,Success,"```json
+{""P_yes"": 0.4, ""P_no"": 0.6}
+```"
+2026-02-17T22:41:44.151276+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,2,0.5,1.0,0.5,2.0,0.7,154,23,177,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:41:46.378999+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,3,0.5,1.0,0.5,2.0,0.7,154,23,177,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:41:48.276704+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,4,0.5,1.0,0.5,2.0,0.7,155,24,179,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:41:50.196377+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,5,0.5,1.0,0.5,2.0,0.7,154,23,177,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:41:54.506190+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,1,0.6,0.5,0.4,1.5,0.7,251,2673,2924,Success,"{""T"": 0.6, ""I"": 0.5, ""F"": 0.4}"
+2026-02-17T22:42:29.055291+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,2,0.5,0.6,0.3,1.4,0.7,251,1379,1630,Success,"{""T"": 0.5, ""I"": 0.6, ""F"": 0.3}"
+2026-02-17T22:42:49.582698+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,3,0.4,0.7,0.4,1.5,0.7,251,2164,2415,Success,"{""T"": 0.4, ""I"": 0.7, ""F"": 0.4}"
+2026-02-17T22:43:19.130983+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,4,0.7,0.5,0.3,1.5,0.7,251,4045,4296,Success,"{""T"": 0.7, ""I"": 0.5, ""F"": 0.3}"
+2026-02-17T22:44:09.458248+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,5,0.5,0.5,0.3,1.3,0.7,251,2487,2738,Success,"{""T"": 0.5, ""I"": 0.5, ""F"": 0.3}"
+2026-02-17T22:44:41.073896+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,1,0.3,0.5,0.2,1.0,0.7,160,2858,3018,Success,"{""T"": 0.3, ""I"": 0.5, ""F"": 0.2}"
+2026-02-17T22:45:17.200259+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,2,0.3,0.5,0.2,1.0,0.7,160,1458,1618,Success,"{""T"": 0.3, ""I"": 0.5, ""F"": 0.2}"
+2026-02-17T22:45:37.511099+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,3,0.4,0.5,0.1,1.0,0.7,160,2183,2343,Success,"{""T"": 0.4, ""I"": 0.5, ""F"": 0.1}"
+2026-02-17T22:46:10.152683+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,4,0.3,0.6,0.1,1.0,0.7,160,1677,1837,Success,"{""T"": 0.3, ""I"": 0.6, ""F"": 0.1}"
+2026-02-17T22:46:32.494258+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,5,0.4,0.5,0.1,1.0,0.7,160,406,566,Success,"{""T"": 0.4, ""I"": 0.5, ""F"": 0.1}"
+2026-02-17T22:46:37.718063+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,1,0.3,0.8813,0.7,1.8813,0.7,160,3255,3415,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
+2026-02-17T22:47:21.688424+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,2,0.4,0.971,0.6,1.971,0.7,160,1130,1290,Success,"{""P_yes"": 0.4, ""P_no"": 0.6}"
+2026-02-17T22:47:38.275549+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,3,0.3,0.8813,0.7,1.8813,0.7,160,2279,2439,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
+2026-02-17T22:48:09.935763+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,4,0.4,0.971,0.6,1.971,0.7,160,933,1093,Success,"{""P_yes"": 0.4, ""P_no"": 0.6}"
+2026-02-17T22:48:21.083030+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,5,0.5,1.0,0.5,2.0,0.7,160,1254,1414,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:48:36.617181+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,1,0.4,0.7,0.3,1.4,0.7,249,34,283,Success,"```json
+{
+  ""T"": 0.4,
+  ""I"": 0.7,
+  ""F"": 0.3
+}
+```"
+2026-02-17T22:48:37.540243+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,2,0.3,0.7,0.4,1.4,0.7,249,34,283,Success,"```json
+{
+  ""T"": 0.3,
+  ""I"": 0.7,
+  ""F"": 0.4
+}
+```"
+2026-02-17T22:48:41.980937+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,3,0.3,0.6,0.4,1.3,0.7,249,34,283,Success,"```json
+{
+  ""T"": 0.3,
+  ""I"": 0.6,
+  ""F"": 0.4
+}
+```"
+2026-02-17T22:48:43.825558+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,4,0.3,0.6,0.4,1.3,0.7,249,34,283,Success,"```json
+{
+  ""T"": 0.3,
+  ""I"": 0.6,
+  ""F"": 0.4
+}
+```"
+2026-02-17T22:48:44.764589+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,5,0.3,0.7,0.4,1.4,0.7,249,34,283,Success,"```json
+{
+  ""T"": 0.3,
+  ""I"": 0.7,
+  ""F"": 0.4
+}
+```"
+2026-02-17T22:48:45.735521+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,1,0.05,0.75,0.2,1.0,0.7,158,37,195,Success,"```json
+{
+  ""T"": 0.05,
+  ""I"": 0.75,
+  ""F"": 0.20
+}
+```"
+2026-02-17T22:48:46.721624+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,2,0.05,0.85,0.1,1.0,0.7,158,37,195,Success,"```json
+{
+  ""T"": 0.05,
+  ""I"": 0.85,
+  ""F"": 0.10
+}
+```"
+2026-02-17T22:48:47.789726+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,3,0.05,0.85,0.1,1.0,0.7,158,37,195,Success,"```json
+{
+  ""T"": 0.05,
+  ""I"": 0.85,
+  ""F"": 0.10
+}
+```"
+2026-02-17T22:48:48.733521+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,4,0.05,0.85,0.1,1.0,0.7,158,37,195,Success,"```json
+{
+  ""T"": 0.05,
+  ""I"": 0.85,
+  ""F"": 0.10
+}
+```"
+2026-02-17T22:48:49.848694+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,5,0.05,0.85,0.1,1.0,0.7,158,37,195,Success,"```json
+{
+  ""T"": 0.05,
+  ""I"": 0.85,
+  ""F"": 0.10
+}
+```"
+2026-02-17T22:48:50.810746+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,1,0.35,0.9341,0.65,1.9341,0.7,161,30,191,Success,"```json
+{
+  ""P_yes"": 0.35,
+  ""P_no"": 0.65
+}
+```"
+2026-02-17T22:48:51.985350+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,2,0.25,0.8113,0.75,1.8113,0.7,161,30,191,Success,"```json
+{
+  ""P_yes"": 0.25,
+  ""P_no"": 0.75
+}
+```"
+2026-02-17T22:48:52.921836+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,3,0.35,0.9341,0.65,1.9341,0.7,161,30,191,Success,"```json
+{
+  ""P_yes"": 0.35,
+  ""P_no"": 0.65
+}
+```"
+2026-02-17T22:48:58.679290+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,4,0.35,0.9341,0.65,1.9341,0.7,161,30,191,Success,"```json
+{
+  ""P_yes"": 0.35,
+  ""P_no"": 0.65
+}
+```"
+2026-02-17T22:48:59.631854+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,5,0.35,0.9341,0.65,1.9341,0.7,161,30,191,Success,"```json
+{
+  ""P_yes"": 0.35,
+  ""P_no"": 0.65
+}
+```"
+2026-02-17T22:49:00.554120+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,1,0.75,0.85,0.35,1.95,0.7,270,27,297,Success,"{""T"": 0.75, ""I"": 0.85, ""F"": 0.35}"
+2026-02-17T22:49:01.997236+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,2,0.75,0.85,0.35,1.95,0.7,270,27,297,Success,"{""T"": 0.75, ""I"": 0.85, ""F"": 0.35}"
+2026-02-17T22:49:03.327087+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,3,0.75,0.85,0.35,1.95,0.7,270,27,297,Success,"{""T"": 0.75, ""I"": 0.85, ""F"": 0.35}"
+2026-02-17T22:49:04.512116+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,4,0.75,0.85,0.35,1.95,0.7,270,27,297,Success,"{""T"": 0.75, ""I"": 0.85, ""F"": 0.35}"
+2026-02-17T22:49:05.674444+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,5,0.75,0.85,0.35,1.95,0.7,270,27,297,Success,"{""T"": 0.75, ""I"": 0.85, ""F"": 0.35}"
+2026-02-17T22:49:07.158907+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,1,0.15,0.65,0.2,1.0,0.7,173,27,200,Success,"{""T"": 0.15, ""I"": 0.65, ""F"": 0.20}"
+2026-02-17T22:49:08.787101+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,2,0.2,0.6,0.2,1.0,0.7,173,27,200,Success,"{""T"": 0.2, ""I"": 0.6, ""F"": 0.2}"
+2026-02-17T22:49:10.288695+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,3,0.15,0.65,0.2,1.0,0.7,173,27,200,Success,"{""T"": 0.15, ""I"": 0.65, ""F"": 0.20}"
+2026-02-17T22:49:14.986073+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,4,0.2,0.6,0.2,1.0,0.7,173,27,200,Success,"{""T"": 0.2, ""I"": 0.6, ""F"": 0.2}"
+2026-02-17T22:49:16.508137+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,5,0.2,0.6,0.2,1.0,0.7,173,27,200,Success,"{""T"": 0.2, ""I"": 0.6, ""F"": 0.2}"
+2026-02-17T22:49:17.937354+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,1,0.45,0.9928,0.55,1.9928,0.7,179,23,202,Success,"{""P_yes"": 0.45, ""P_no"": 0.55}"
+2026-02-17T22:49:19.412852+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,2,0.45,0.9928,0.55,1.9928,0.7,179,23,202,Success,"{""P_yes"": 0.45, ""P_no"": 0.55}"
+2026-02-17T22:49:20.912545+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,3,0.45,0.9928,0.55,1.9928,0.7,179,23,202,Success,"{""P_yes"": 0.45, ""P_no"": 0.55}"
+2026-02-17T22:49:22.033228+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,4,0.55,0.9928,0.45,1.9928,0.7,179,23,202,Success,"{""P_yes"": 0.55, ""P_no"": 0.45}"
+2026-02-17T22:49:23.551945+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,5,0.45,0.9928,0.55,1.9928,0.7,179,23,202,Success,"{""P_yes"": 0.45, ""P_no"": 0.55}"
+2026-02-17T22:49:24.678237+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,1,0.7,0.4,0.6,1.7,0.7,253,25,278,Success,"{""T"": 0.7, ""I"": 0.4, ""F"": 0.6}"
+2026-02-17T22:49:25.786513+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,2,0.6,0.4,0.3,1.3,0.7,253,25,278,Success,"{""T"": 0.6, ""I"": 0.4, ""F"": 0.3}"
+2026-02-17T22:49:27.258784+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,3,0.6,0.4,0.3,1.3,0.7,253,25,278,Success,"{""T"": 0.6, ""I"": 0.4, ""F"": 0.3}"
+2026-02-17T22:49:28.299172+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,4,0.7,0.4,0.6,1.7,0.7,254,25,279,Success,"{""T"": 0.7, ""I"": 0.4, ""F"": 0.6}"
+2026-02-17T22:49:29.586654+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,5,0.6,0.4,0.3,1.3,0.7,253,25,278,Success,"{""T"": 0.6, ""I"": 0.4, ""F"": 0.3}"
+2026-02-17T22:49:30.622986+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,1,0.2,0.6,0.2,1.0,0.7,163,25,188,Success,"{""T"": 0.2, ""I"": 0.6, ""F"": 0.2}"
+2026-02-17T22:49:32.502072+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,2,0.2,0.6,0.2,1.0,0.7,163,25,188,Success,"{""T"": 0.2, ""I"": 0.6, ""F"": 0.2}"
+2026-02-17T22:49:33.485560+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,3,0.0,0.7,0.3,1.0,0.7,164,25,189,Success,"{""T"": 0.0, ""I"": 0.7, ""F"": 0.3}"
+2026-02-17T22:49:34.373892+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,4,0.2,0.6,0.2,1.0,0.7,163,25,188,Success,"{""T"": 0.2, ""I"": 0.6, ""F"": 0.2}"
+2026-02-17T22:49:35.450006+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,5,0.2,0.6,0.2,1.0,0.7,163,25,188,Success,"{""T"": 0.2, ""I"": 0.6, ""F"": 0.2}"
+2026-02-17T22:49:36.456258+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,1,0.6,0.971,0.4,1.971,0.7,167,20,187,Success,"{""P_yes"": 0.6, ""P_no"": 0.4}"
+2026-02-17T22:49:37.672774+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,2,0.6,0.971,0.4,1.971,0.7,167,20,187,Success,"{""P_yes"": 0.6, ""P_no"": 0.4}"
+2026-02-17T22:49:38.798142+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,3,0.6,0.971,0.4,1.971,0.7,168,20,188,Success,"{""P_yes"": 0.6, ""P_no"": 0.4}"
+2026-02-17T22:49:39.637080+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,4,0.6,0.971,0.4,1.971,0.7,168,19,187,Success,"{""P_yes"": 0.6, ""P_no"": 0.4}"
+2026-02-17T22:49:41.159980+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,5,0.6,0.971,0.4,1.971,0.7,167,20,187,Success,"{""P_yes"": 0.6, ""P_no"": 0.4}"
+2026-02-17T22:49:42.325101+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,1,0.7,0.5,0.3,1.5,0.7,245,29,274,Success,"```json
+{""T"": 0.7, ""I"": 0.5, ""F"": 0.3}
+```"
+2026-02-17T22:49:44.443804+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,2,0.7,0.5,0.3,1.5,0.7,248,29,277,Success,"```json
+{""T"": 0.7, ""I"": 0.5, ""F"": 0.3}
+```"
+2026-02-17T22:49:48.703408+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,3,0.7,0.5,0.3,1.5,0.7,245,28,273,Success,"```json
+{""T"": 0.7, ""I"": 0.5, ""F"": 0.3}
+```"
+2026-02-17T22:49:51.610506+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,4,0.7,0.5,0.3,1.5,0.7,245,29,274,Success,"```json
+{""T"": 0.7, ""I"": 0.5, ""F"": 0.3}
+```"
+2026-02-17T22:49:53.424473+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,5,0.7,0.5,0.3,1.5,0.7,245,29,274,Success,"```json
+{""T"": 0.7, ""I"": 0.5, ""F"": 0.3}
+```"
+2026-02-17T22:49:55.369518+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,1,0.6,0.3,0.1,1.0,0.7,153,28,181,Success,"```json
+{""T"": 0.6, ""I"": 0.3, ""F"": 0.1}
+```"
+2026-02-17T22:49:57.977434+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,2,0.5,0.3,0.2,1.0,0.7,153,28,181,Success,"```json
+{""T"": 0.5, ""I"": 0.3, ""F"": 0.2}
+```"
+2026-02-17T22:50:01.007464+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,3,0.4,0.3,0.3,1.0,0.7,153,29,182,Success,"```json
+{""T"": 0.4, ""I"": 0.3, ""F"": 0.3}
+```"
+2026-02-17T22:50:03.803392+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,4,0.5,0.3,0.2,1.0,0.7,154,29,183,Success,"```json
+{""T"": 0.5, ""I"": 0.3, ""F"": 0.2}
+```"
+2026-02-17T22:50:10.494086+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,5,0.5,0.3,0.2,1.0,0.7,154,29,183,Success,"```json
+{""T"": 0.5, ""I"": 0.3, ""F"": 0.2}
+```"
+2026-02-17T22:50:12.766676+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,1,0.6,0.971,0.4,1.971,0.7,157,24,181,Success,"```json
+{""P_yes"": 0.6, ""P_no"": 0.4}
+```"
+2026-02-17T22:50:14.872019+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,2,0.6,0.971,0.4,1.971,0.7,157,23,180,Success,"```json
+{""P_yes"": 0.6, ""P_no"": 0.4}
+```"
+2026-02-17T22:50:16.668764+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,3,0.6,0.971,0.4,1.971,0.7,157,23,180,Success,"```json
+{""P_yes"": 0.6, ""P_no"": 0.4}
+```"
+2026-02-17T22:50:21.565348+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,4,0.6,0.971,0.4,1.971,0.7,157,24,181,Success,"```json
+{""P_yes"": 0.6, ""P_no"": 0.4}
+```"
+2026-02-17T22:50:24.030875+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,5,0.6,0.971,0.4,1.971,0.7,157,23,180,Success,"```json
+{""P_yes"": 0.6, ""P_no"": 0.4}
+```"
+2026-02-17T22:50:26.717740+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,1,0.6,0.5,0.5,1.6,0.7,253,1894,2147,Success,"{""T"": 0.6, ""I"": 0.5, ""F"": 0.5}"
+2026-02-17T22:50:49.117712+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,2,0.6,0.5,0.3,1.4,0.7,253,713,966,Success,"{""T"": 0.6, ""I"": 0.5, ""F"": 0.3}"
+2026-02-17T22:51:00.914786+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,3,0.7,0.6,0.5,1.8,0.7,253,801,1054,Success,"{""T"": 0.7, ""I"": 0.6, ""F"": 0.5}"
+2026-02-17T22:51:11.368283+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,4,0.7,0.8,0.5,2.0,0.7,253,417,670,Success,"{""T"": 0.7, ""I"": 0.8, ""F"": 0.5}"
+2026-02-17T22:51:17.036840+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,5,0.8,0.5,0.3,1.6,0.7,253,536,789,Success,"{""T"": 0.8, ""I"": 0.5, ""F"": 0.3}"
+2026-02-17T22:51:23.387586+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,1,0.3,0.5,0.2,1.0,0.7,162,1072,1234,Success,"{""T"": 0.3, ""I"": 0.5, ""F"": 0.2}"
+2026-02-17T22:51:47.695664+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,2,0.2,0.6,0.2,1.0,0.7,162,1051,1213,Success,"{""T"": 0.2, ""I"": 0.6, ""F"": 0.2}"
+2026-02-17T22:52:11.576356+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,3,0.25,0.5,0.25,1.0,0.7,162,1217,1379,Success,"{""T"": 0.25, ""I"": 0.5, ""F"": 0.25}"
+2026-02-17T22:52:27.309307+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,4,0.3,0.5,0.2,1.0,0.7,162,913,1075,Success,"{""T"": 0.3, ""I"": 0.5, ""F"": 0.2}"
+2026-02-17T22:52:41.895698+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,5,0.3,0.5,0.2,1.0,0.7,162,1475,1637,Success,"{""T"": 0.3, ""I"": 0.5, ""F"": 0.2}"
+2026-02-17T22:52:59.866561+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,1,0.4,0.971,0.6,1.971,0.7,162,1007,1169,Success,"{""P_yes"": 0.4, ""P_no"": 0.6}"
+2026-02-17T22:53:16.198308+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,2,0.4,0.971,0.6,1.971,0.7,162,693,855,Success,"{""P_yes"": 0.4, ""P_no"": 0.6}"
+2026-02-17T22:53:25.395957+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,3,0.6,0.971,0.4,1.971,0.7,162,604,766,Success,"{""P_yes"": 0.6, ""P_no"": 0.4}"
+2026-02-17T22:53:33.842660+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,4,0.2,0.7219,0.8,1.7219,0.7,162,851,1013,Success,"{""P_yes"": 0.2, ""P_no"": 0.8}"
+2026-02-17T22:53:47.982086+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,5,0.55,0.9928,0.45,1.9928,0.7,162,743,905,Success,"{""P_yes"": 0.55, ""P_no"": 0.45}"
+2026-02-17T22:53:57.262988+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,1,0.7,0.6,0.5,1.8,0.7,251,34,285,Success,"```json
+{
+  ""T"": 0.7,
+  ""I"": 0.6,
+  ""F"": 0.5
+}
+```"
+2026-02-17T22:53:58.208449+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,2,0.7,0.65,0.4,1.75,0.7,251,35,286,Success,"```json
+{
+  ""T"": 0.7,
+  ""I"": 0.65,
+  ""F"": 0.4
+}
+```"
+2026-02-17T22:53:59.242314+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,3,0.75,0.85,0.65,2.25,0.7,251,37,288,Success,"```json
+{
+  ""T"": 0.75,
+  ""I"": 0.85,
+  ""F"": 0.65
+}
+```"
+2026-02-17T22:54:00.255412+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,4,0.75,0.65,0.4,1.8,0.7,251,37,288,Success,"```json
+{
+  ""T"": 0.75,
+  ""I"": 0.65,
+  ""F"": 0.40
+}
+```"
+2026-02-17T22:54:01.203462+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,5,0.75,0.65,0.3,1.7,0.7,251,37,288,Success,"```json
+{
+  ""T"": 0.75,
+  ""I"": 0.65,
+  ""F"": 0.30
+}
+```"
+2026-02-17T22:54:02.142924+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,1,0.05,0.9,0.05,1.0,0.7,160,36,196,Success,"```json
+{
+  ""T"": 0.05,
+  ""I"": 0.9,
+  ""F"": 0.05
+}
+```"
+2026-02-17T22:54:03.302032+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,2,0.45,0.5,0.05,1.0,0.7,160,36,196,Success,"```json
+{
+  ""T"": 0.45,
+  ""I"": 0.5,
+  ""F"": 0.05
+}
+```"
+2026-02-17T22:54:04.709148+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,3,0.35,0.6,0.05,1.0,0.7,160,37,197,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.60,
+  ""F"": 0.05
+}
+```"
+2026-02-17T22:54:05.779795+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,4,0.35,0.6,0.05,1.0,0.7,160,37,197,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.60,
+  ""F"": 0.05
+}
+```"
+2026-02-17T22:54:06.819178+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,5,0.35,0.6,0.05,1.0,0.7,160,37,197,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.60,
+  ""F"": 0.05
+}
+```"
+2026-02-17T22:54:07.757457+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,1,0.75,0.8113,0.25,1.8113,0.7,163,30,193,Success,"```json
+{
+  ""P_yes"": 0.75,
+  ""P_no"": 0.25
+}
+```"
+2026-02-17T22:54:08.859057+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,2,0.75,0.8113,0.25,1.8113,0.7,163,30,193,Success,"```json
+{
+  ""P_yes"": 0.75,
+  ""P_no"": 0.25
+}
+```"
+2026-02-17T22:54:10.276598+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,3,0.75,0.8113,0.25,1.8113,0.7,163,30,193,Success,"```json
+{
+  ""P_yes"": 0.75,
+  ""P_no"": 0.25
+}
+```"
+2026-02-17T22:54:11.259410+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,4,0.65,0.9341,0.35,1.9341,0.7,163,30,193,Success,"```json
+{
+  ""P_yes"": 0.65,
+  ""P_no"": 0.35
+}
+```"
+2026-02-17T22:54:15.544217+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,5,0.75,0.8113,0.25,1.8113,0.7,163,30,193,Success,"```json
+{
+  ""P_yes"": 0.75,
+  ""P_no"": 0.25
+}
+```"
+2026-02-17T22:54:16.819936+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,1,0.35,0.85,0.3,1.5,0.7,260,27,287,Success,"{""T"": 0.35, ""I"": 0.85, ""F"": 0.3}"
+2026-02-17T22:54:18.187655+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,2,0.35,0.85,0.35,1.55,0.7,260,27,287,Success,"{""T"": 0.35, ""I"": 0.85, ""F"": 0.35}"
+2026-02-17T22:54:19.675290+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,3,0.35,0.85,0.35,1.55,0.7,260,27,287,Success,"{""T"": 0.35, ""I"": 0.85, ""F"": 0.35}"
+2026-02-17T22:54:21.290483+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,4,0.35,0.85,0.35,1.55,0.7,260,27,287,Success,"{""T"": 0.35, ""I"": 0.85, ""F"": 0.35}"
+2026-02-17T22:54:22.730368+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S1,5,0.35,0.85,0.35,1.55,0.7,260,27,287,Success,"{""T"": 0.35, ""I"": 0.85, ""F"": 0.35}"
+2026-02-17T22:54:24.130300+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,1,0.35,0.55,0.1,1.0,0.7,163,27,190,Success,"{""T"": 0.35, ""I"": 0.55, ""F"": 0.10}"
+2026-02-17T22:54:25.429460+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,2,0.35,0.55,0.1,1.0,0.7,163,27,190,Success,"{""T"": 0.35, ""I"": 0.55, ""F"": 0.10}"
+2026-02-17T22:54:26.863326+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,3,0.3,0.55,0.15,1.0,0.7,163,27,190,Success,"{""T"": 0.3, ""I"": 0.55, ""F"": 0.15}"
+2026-02-17T22:54:28.578944+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,4,0.3,0.5,0.2,1.0,0.7,163,27,190,Success,"{""T"": 0.3, ""I"": 0.5, ""F"": 0.2}"
+2026-02-17T22:54:29.971095+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S2,5,0.35,0.55,0.1,1.0,0.7,163,27,190,Success,"{""T"": 0.35, ""I"": 0.55, ""F"": 0.10}"
+2026-02-17T22:54:31.523645+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,1,0.3,0.8813,0.7,1.8813,0.7,169,23,192,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
+2026-02-17T22:54:32.809291+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,2,0.3,0.8813,0.7,1.8813,0.7,169,23,192,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
+2026-02-17T22:54:34.454601+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,3,0.3,0.8813,0.7,1.8813,0.7,169,23,192,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
+2026-02-17T22:54:35.901869+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,4,0.3,0.8813,0.7,1.8813,0.7,169,23,192,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
+2026-02-17T22:54:37.596426+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S3,5,0.3,0.8813,0.7,1.8813,0.7,169,23,192,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
+2026-02-17T22:54:38.931516+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,1,0.4,0.6,0.3,1.3,0.7,244,25,269,Success,"{""T"": 0.4, ""I"": 0.6, ""F"": 0.3}"
+2026-02-17T22:54:39.929239+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,2,0.4,0.6,0.2,1.2,0.7,243,25,268,Success,"{""T"": 0.4, ""I"": 0.6, ""F"": 0.2}"
+2026-02-17T22:54:41.323185+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,3,0.4,0.7,0.3,1.4,0.7,244,25,269,Success,"{""T"": 0.4, ""I"": 0.7, ""F"": 0.3}"
+2026-02-17T22:54:42.459147+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,4,0.4,0.6,0.3,1.3,0.7,244,25,269,Success,"{""T"": 0.4, ""I"": 0.6, ""F"": 0.3}"
+2026-02-17T22:54:43.650789+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S1,5,0.4,0.6,0.3,1.3,0.7,244,25,269,Success,"{""T"": 0.4, ""I"": 0.6, ""F"": 0.3}"
+2026-02-17T22:54:49.021902+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,1,0.3,0.6,0.1,1.0,0.7,155,25,180,Success,"{""T"": 0.3, ""I"": 0.6, ""F"": 0.1}"
+2026-02-17T22:54:49.971738+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,2,0.4,0.5,0.1,1.0,0.7,153,25,178,Success,"{""T"": 0.4, ""I"": 0.5, ""F"": 0.1}"
+2026-02-17T22:54:51.217134+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,3,0.4,0.5,0.1,1.0,0.7,153,25,178,Success,"{""T"": 0.4, ""I"": 0.5, ""F"": 0.1}"
+2026-02-17T22:54:52.382368+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,4,0.4,0.5,0.1,1.0,0.7,153,25,178,Success,"{""T"": 0.4, ""I"": 0.5, ""F"": 0.1}"
+2026-02-17T22:54:53.574377+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S2,5,0.3,0.6,0.1,1.0,0.7,157,8,165,Success,"{""T"": 0.3, ""I"": 0.6, ""F"": 0.1}"
+2026-02-17T22:54:54.586525+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,1,0.5,1.0,0.5,2.0,0.7,158,20,178,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:54:55.466094+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,2,0.4,0.971,0.6,1.971,0.7,157,20,177,Success,"{""P_yes"": 0.4, ""P_no"": 0.6}"
+2026-02-17T22:54:56.842668+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,3,,,,,0.7,140,7,147,Success,"{""P_yes"": 0.4, ""P_no"": 0."
+2026-02-17T22:54:57.889345+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,4,0.4,0.971,0.6,1.971,0.7,158,20,178,Success,"{""P_yes"": 0.4, ""P_no"": 0.6}"
+2026-02-17T22:54:58.736530+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S3,5,0.4,0.971,0.6,1.971,0.7,158,20,178,Success,"{""P_yes"": 0.4, ""P_no"": 0.6}"
+2026-02-17T22:54:59.573973+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,1,0.5,0.3,0.4,1.2,0.7,236,29,265,Success,"```json
+{""T"": 0.5, ""I"": 0.3, ""F"": 0.4}
+```"
+2026-02-17T22:55:06.270260+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,2,0.5,0.3,0.4,1.2,0.7,236,29,265,Success,"```json
+{""T"": 0.5, ""I"": 0.3, ""F"": 0.4}
+```"
+2026-02-17T22:55:07.860416+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,3,0.4,0.5,0.3,1.2,0.7,237,29,266,Success,"```json
+{""T"": 0.4, ""I"": 0.5, ""F"": 0.3}
+```"
+2026-02-17T22:55:10.233075+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,4,0.6,0.3,0.4,1.3,0.7,236,29,265,Success,"```json
+{""T"": 0.6, ""I"": 0.3, ""F"": 0.4}
+```"
+2026-02-17T22:55:11.789513+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S1,5,,,,,0.7,236,150,386,Success,"At this paragraph(C, ""I"", ""F: The ""I"", ""You>""But,It seems.
+
+This is a test:
+
+But I am not sure(test:
+
+The ""But"":
+
+""But"".""But,""But,""But,""This is a statement().b.0.
+
+But.
+
+ButTheBut,""But,""But,""世界杯But,""But,""But,""The ""But,""But.""But,""But,""But.""But,""But,""But,""But,""But,""But.""But,""T is a.
+
+But,""But,""But,""T:;But,""But,""But,""But,""But,""But,""But,""T: ""Falsity(""But,""T""Fals,""But,""But,""FIN(""T"
+2026-02-17T22:55:25.609041+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,1,0.4,0.3,0.3,1.0,0.7,144,25,169,Success,"{""T"": 0.4, ""I"": 0.3, ""F"": 0.3}"
+2026-02-17T22:55:31.767275+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,2,0.4,0.3,0.3,1.0,0.7,144,28,172,Success,"```json
+{""T"": 0.4, ""I"": 0.3, ""F"": 0.3}
+```"
+2026-02-17T22:55:36.262419+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,3,0.4,0.3,0.3,1.0,0.7,144,29,173,Success,"```json
+{""T"": 0.4, ""I"": 0.3, ""F"": 0.3}
+```"
+2026-02-17T22:55:37.881352+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,4,0.6,0.3,0.1,1.0,0.7,147,29,176,Success,"```json
+{""T"": 0.6, ""I"": 0.3, ""F"": 0.1}
+```"
+2026-02-17T22:55:39.074807+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S2,5,0.6,0.3,0.1,1.0,0.7,144,29,173,Success,"```json
+{""T"": 0.6, ""I"": 0.3, ""F"": 0.1}
+```"
+2026-02-17T22:55:41.336309+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,1,0.4,0.971,0.6,1.971,0.7,148,24,172,Success,"```json
+{""P_yes"": 0.4, ""P_no"": 0.6}
+```"
+2026-02-17T22:55:43.342108+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,2,0.5,1.0,0.5,2.0,0.7,151,24,175,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:55:44.617000+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,3,0.4,0.971,0.6,1.971,0.7,148,23,171,Success,"```json
+{""P_yes"": 0.4, ""P_no"": 0.6}
+```"
+2026-02-17T22:55:46.513324+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,4,0.4,0.971,0.6,1.971,0.7,148,23,171,Success,"```json
+{""P_yes"": 0.4, ""P_no"": 0.6}
+```"
+2026-02-17T22:55:48.860276+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S3,5,0.5,1.0,0.5,2.0,0.7,151,24,175,Success,"```json
+{""P_yes"": 0.5, ""P_no"": 0.5}
+```"
+2026-02-17T22:55:49.885440+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,1,0.6,0.3,0.4,1.3,0.7,244,1605,1849,Success,"{""T"": 0.6, ""I"": 0.3, ""F"": 0.4}"
+2026-02-17T22:56:11.944297+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,2,0.7,0.2,0.2,1.1,0.7,244,2294,2538,Success,"{""T"": 0.7, ""I"": 0.2, ""F"": 0.2}"
+2026-02-17T22:56:41.320452+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,3,0.4,0.8,0.4,1.6,0.7,244,3756,4000,Success,"{""T"": 0.4, ""I"": 0.8, ""F"": 0.4}"
+2026-02-17T22:57:30.960844+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,4,0.5,1.0,0.5,2.0,0.7,244,3895,4139,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}"
+2026-02-17T22:58:25.710453+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S1,5,0.0,1.0,0.0,1.0,0.7,244,5119,5363,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:59:34.228566+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,1,0.3,0.5,0.2,1.0,0.7,153,5772,5925,Success,"{""T"": 0.3, ""I"": 0.5, ""F"": 0.2}"
+2026-02-17T23:00:57.019583+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,2,0.6,0.1,0.3,1.0,0.7,153,3184,3337,Success,"{""T"": 0.6, ""I"": 0.1, ""F"": 0.3}"
+2026-02-17T23:01:44.213382+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,3,0.3,0.5,0.2,1.0,0.7,153,1360,1513,Success,"{""T"": 0.3, ""I"": 0.5, ""F"": 0.2}"
+2026-02-17T23:02:03.701667+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,4,0.3,0.4,0.3,1.0,0.7,153,5497,5650,Success,"{""T"": 0.3, ""I"": 0.4, ""F"": 0.3}"
+2026-02-17T23:03:16.730823+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S2,5,0.4,0.5,0.1,1.0,0.7,153,4105,4258,Success,"{""T"": 0.4, ""I"": 0.5, ""F"": 0.1}"
+2026-02-17T23:04:08.326121+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,1,0.3,0.8813,0.7,1.8813,0.7,153,305,458,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
+2026-02-17T23:04:15.753222+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,2,0.3,0.8813,0.7,1.8813,0.7,153,723,876,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
+2026-02-17T23:04:24.456432+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,3,0.3,0.8813,0.7,1.8813,0.7,153,890,1043,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
+2026-02-17T23:04:34.911368+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,4,0.33,0.9149,0.67,1.9149,0.7,153,769,922,Success,"{""P_yes"": 0.33, ""P_no"": 0.67}"
+2026-02-17T23:04:44.147337+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S3,5,0.33,0.9149,0.67,1.9149,0.7,153,655,808,Success,"{""P_yes"": 0.33, ""P_no"": 0.67}"
+2026-02-17T23:04:54.871426+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,1,0.35,0.85,0.1,1.3,0.7,242,37,279,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.85,
+  ""F"": 0.10
+}
+```"
+2026-02-17T23:04:55.905808+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,2,0.35,0.65,0.1,1.1,0.7,242,37,279,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.65,
+  ""F"": 0.10
+}
+```"
+2026-02-17T23:04:56.857401+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,3,0.35,0.7,0.1,1.15,0.7,242,37,279,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.70,
+  ""F"": 0.10
+}
+```"
+2026-02-17T23:04:57.818548+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,4,0.35,0.6,0.1,1.05,0.7,242,37,279,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.60,
+  ""F"": 0.10
+}
+```"
+2026-02-17T23:04:58.785689+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S1,5,0.2,0.75,0.15,1.1,0.7,242,36,278,Success,"```json
+{
+  ""T"": 0.2,
+  ""I"": 0.75,
+  ""F"": 0.15
+}
+```"
+2026-02-17T23:04:59.850321+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,1,0.35,0.649,0.001,1.0,0.7,151,39,190,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.649,
+  ""F"": 0.001
+}
+```"
+2026-02-17T23:05:00.850509+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,2,0.35,0.64,0.01,1.0,0.7,151,37,188,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.64,
+  ""F"": 0.01
+}
+```"
+2026-02-17T23:05:01.792593+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,3,0.35,0.64,0.01,1.0,0.7,151,37,188,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.64,
+  ""F"": 0.01
+}
+```"
+2026-02-17T23:05:02.738466+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,4,0.35,0.64,0.01,1.0,0.7,151,37,188,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.64,
+  ""F"": 0.01
+}
+```"
+2026-02-17T23:05:03.681722+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S2,5,0.35,0.649,0.001,1.0,0.7,151,39,190,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.649,
+  ""F"": 0.001
+}
+```"
+2026-02-17T23:05:04.678009+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,1,0.35,0.9341,0.65,1.9341,0.7,154,30,184,Success,"```json
+{
+  ""P_yes"": 0.35,
+  ""P_no"": 0.65
+}
+```"
+2026-02-17T23:05:05.615521+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,2,0.35,0.9341,0.65,1.9341,0.7,154,30,184,Success,"```json
+{
+  ""P_yes"": 0.35,
+  ""P_no"": 0.65
+}
+```"
+2026-02-17T23:05:06.540353+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,3,0.35,0.9341,0.65,1.9341,0.7,154,30,184,Success,"```json
+{
+  ""P_yes"": 0.35,
+  ""P_no"": 0.65
+}
+```"
+2026-02-17T23:05:07.498690+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,4,0.35,0.9341,0.65,1.9341,0.7,154,30,184,Success,"```json
+{
+  ""P_yes"": 0.35,
+  ""P_no"": 0.65
+}
+```"
+2026-02-17T23:05:08.429683+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S3,5,0.35,0.9341,0.65,1.9341,0.7,154,30,184,Success,"```json
+{
+  ""P_yes"": 0.35,
+  ""P_no"": 0.65
+}
+```"

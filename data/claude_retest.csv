@@ -1,0 +1,22 @@
+Timestamp,Phenomenon_Type,Phrase_English,Provider,Model,Model_ID,Strategy,Rep,T,I,F,Sum_TIF,Temperature,Prompt_Tokens,Completion_Tokens,Total_Tokens,Status,Raw_Response
+2026-02-17T22:06:06.967113+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S1,1,0.5,1.0,0.5,2.0,0.7,256,32,288,Success,"```json
+{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}
+```"
+2026-02-17T22:06:10.444637+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S2,1,0.0,1.0,0.0,1.0,0.7,159,27,186,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0}"
+2026-02-17T22:06:12.338686+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S3,1,0.5,1.0,0.5,2.0,0.7,165,23,188,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:06:13.959469+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S1,1,0.5,1.0,0.5,2.0,0.7,261,27,288,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5}"
+2026-02-17T22:06:15.932666+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S2,1,0.5,0.0,0.5,1.0,0.7,164,27,191,Success,"{""T"": 0.5, ""I"": 0.0, ""F"": 0.5}"
+2026-02-17T22:06:17.995442+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S3,1,0.5,1.0,0.5,2.0,0.7,170,23,193,Success,"{""P_yes"": 0.5, ""P_no"": 0.5}"
+2026-02-17T22:06:19.470516+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S1,1,0.6,0.7,0.3,1.6,0.7,266,32,298,Success,"```json
+{""T"": 0.6, ""I"": 0.7, ""F"": 0.3}
+```"
+2026-02-17T22:06:21.373071+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S2,1,0.4,0.5,0.1,1.0,0.7,169,27,196,Success,"{""T"": 0.4, ""I"": 0.5, ""F"": 0.1}"
+2026-02-17T22:06:23.959787+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S3,1,0.65,0.9341,0.35,1.9341,0.7,175,23,198,Success,"{""P_yes"": 0.65, ""P_no"": 0.35}"
+2026-02-17T22:06:28.732898+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S1,1,0.7,0.6,0.7,2.0,0.7,269,27,296,Success,"{""T"": 0.7, ""I"": 0.6, ""F"": 0.7}"
+2026-02-17T22:06:30.642898+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S2,1,0.0,0.15,0.85,1.0,0.7,172,27,199,Success,"{""T"": 0.0, ""I"": 0.15, ""F"": 0.85}"
+2026-02-17T22:06:32.737342+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S3,1,0.15,0.6098,0.85,1.6098,0.7,178,28,206,Success,"```json
+{""P_yes"": 0.15, ""P_no"": 0.85}
+```"
+2026-02-17T22:06:34.374406+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S1,1,0.3,0.9,0.3,1.5,0.7,259,27,286,Success,"{""T"": 0.3, ""I"": 0.9, ""F"": 0.3}"
+2026-02-17T22:06:36.362227+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S2,1,0.3,0.5,0.2,1.0,0.7,162,27,189,Success,"{""T"": 0.3, ""I"": 0.5, ""F"": 0.2}"
+2026-02-17T22:06:38.119082+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.5,anthropic/claude-sonnet-4.5,S3,1,0.3,0.8813,0.7,1.8813,0.7,168,23,191,Success,"{""P_yes"": 0.3, ""P_no"": 0.7}"
