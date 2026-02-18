@@ -8,13 +8,13 @@ Georgia Institute of Technology, Atlanta, GA (fsgeek@gatech.edu)
 ## Abstract
 
 Leyva-Vázquez and Smarandache (2025) demonstrated that neutrosophic
-T/I/F evaluation — where Truth, Indeterminacy, and Falsity are
-independent dimensions not constrained to sum to 1.0 — reveals
+T/I/F evaluation, where Truth, Indeterminacy, and Falsity are
+independent dimensions not constrained to sum to 1.0, which reveals
 "hyper-truth" (T+I+F > 1.0) in 35% of complex epistemic cases
 evaluated by LLMs. We extend their work in two directions. First, we
 replicate and extend their experiment across five model families from
 five vendors (Anthropic, Meta, DeepSeek, Alibaba, Mistral), finding
-hyper-truth in 84% of unconstrained evaluations — confirming the
+hyper-truth in 84% of unconstrained evaluations, which confirms the
 phenomenon is cross-vendor and amplified in current models. Second, and
 more significantly, we identify a limitation of scalar T/I/F that their
 framework cannot address: models adopting an "Absorption" position
@@ -22,16 +22,16 @@ framework cannot address: models adopting an "Absorption" position
 different epistemic situations (paradox, ignorance, contingency),
 collapsing the very distinctions neutrosophic logic was designed to
 preserve. We demonstrate that extending the evaluation to include
-**declared losses** — structured descriptions of what the model cannot
-evaluate and why — recovers these distinctions completely. Models
+**declared losses** (structured descriptions of what the model cannot
+evaluate and why) recovers these distinctions completely. Models
 producing identical scalars for paradox and ignorance produce nearly
 disjoint loss vocabularies (Jaccard similarity < 0.10 on loss
-description keywords), with
-domain-specific, severity-rated loss declarations that differentiate
-the nature of their uncertainty. This suggests that scalar T/I/F is
-a necessary but insufficient representation of epistemic state, and
-that tensor-structured output (scalars + losses) provides a more
-faithful model of LLM epistemic capabilities.
+description keywords), with domain-specific, severity-rated loss
+declarations that differentiate the nature of their uncertainty.
+This suggests that scalar T/I/F is a necessary but insufficient
+representation of epistemic state, and that tensor-structured
+output (scalars + losses) provides a more faithful model of LLM
+epistemic capabilities.
 
 ## 1. Introduction
 
@@ -68,7 +68,7 @@ states to (T=0, I=1, F=0), losing the distinction between types of
 uncertainty that neutrosophic logic was designed to preserve.
 
 We then demonstrate that this problem is solved by extending the output
-format from scalars to tensors — specifically, by requiring models to
+format from scalars to tensors: specifically, by requiring models to
 declare structured losses alongside their T/I/F values.
 
 ## 2. Cross-Vendor Replication
@@ -107,7 +107,7 @@ All data, code, and prompts are published in the repository.
 
 **Important caveat**: Because the original prompts were not published,
 we designed our prompts from the strategy descriptions in the paper.
-We cannot claim direct replication — this is a parallel experiment
+We cannot claim direct replication, which is a parallel experiment
 with independently constructed prompts. The S2 control (below) provides
 evidence that our prompt framing is not radically different from the
 original.
@@ -118,7 +118,7 @@ original.
 all 125 evaluations across all models and phenomena produced
 Sum = 1.000 ± 0.000, with 0% hyper-truth. This matches the original
 study exactly and provides evidence that our prompt construction is
-compatible with theirs — the constraint mechanism behaves identically.
+compatible with theirs: the constraint mechanism behaves identically.
 
 **S1 hyper-truth is cross-vendor and amplified.** Under unconstrained
 neutrosophic evaluation (S1):
@@ -133,7 +133,7 @@ neutrosophic evaluation (S1):
 
 Overall S1 hyper-truth: 84% (104/124 valid cells; 1 garbled response
 excluded), compared to the original study's 35% (7/20 cells).
-Hyper-truth is not an OpenAI artifact — it emerges across all five
+Hyper-truth is not an OpenAI artifact as it emerges across all five
 vendor families.
 
 **Phenomenon-level comparison with original:**
@@ -158,22 +158,26 @@ Llama) show zero intra-model variance across all 5 repetitions.
 Mistral is near-consistent (4/5 reps identical, 1 outlier). Qwen
 shows position instability, adopting different positions across reps.
 
-**Position 1 — Saturation** (Claude, 5/5 reps): T=0.5, I=1.0, F=0.5,
+**Position 1: Saturation** (Claude, 5/5 reps): T=0.5, I=1.0, F=0.5,
 Sum=2.0. The paradox is simultaneously half-true, half-false, and
 maximally indeterminate. All three dimensions are active independently.
 
-**Position 2 — Balanced Conflict** (DeepSeek, 5/5 reps): T=0.5,
+**Position 2: Balanced Conflict** (DeepSeek, 5/5 reps): T=0.5,
 I=0.5, F=0.5, Sum=1.5. Equal truth and falsity with moderate
 indeterminacy. The paradox creates contradiction but not maximal
 uncertainty.
 
-**Position 3 — Absorption** (Llama 5/5, Mistral 4/5): T=0.0, I=1.0,
+**Position 3: Absorption** (Llama 5/5, Mistral 4/5): T=0.0, I=1.0,
 F=0.0, Sum=1.0. Indeterminacy absorbs truth value entirely. The
-paradox is treated as having no truth value — effectively the classical
+paradox is treated as having no truth value, effectively the classical
 logic response of rejecting the statement as malformed.
 
 Qwen alternates between Positions 1 and 3, suggesting the model has
 not converged on a stable interpretation of the paradox.
+
+![Figure 1: Three philosophical positions on the liar's paradox](../results/fig_paradox_positions.png)
+
+*Figure 1: T/I/F values for "This sentence is false" across three models exhibiting distinct interpretations. Absorption (Llama) collapses T and F to zero, leaving only I — the same scalar output as ignorance and contingency.*
 
 These positions are invisible to any metric based on Sum alone.
 The original study, which reported only sum-based analysis, could
@@ -182,7 +186,7 @@ not have detected them.
 Critically, the Absorption position (Position 3) creates a problem
 for neutrosophic logic itself: models predominantly adopting this
 position produce near-identical T/I/F scalars for paradox, ignorance,
-and contingency — three fundamentally different types of uncertainty.
+and contingency, which are three fundamentally different types of uncertainty.
 The scalar representation collapses exactly the distinctions
 neutrosophic logic was designed to preserve.
 
@@ -211,7 +215,7 @@ The original study's flagship model (GPT-4o) shows the same pattern:
 (T=0, I=1, F=0) for both paradox and ignorance. Neither Leyva-Vázquez
 nor Smarandache discuss this.
 
-Absorption is not a model deficiency — it is a representational
+Absorption is not a model deficiency: it is a representational
 limitation. The model may have richer internal distinctions that the
 scalar output format cannot express. Testing this hypothesis motivates
 the tensor extension.
@@ -261,10 +265,14 @@ vs. ignorance (Jaccard < 0.10), regardless of whether the scalars
 distinguish the phenomena. The maximum vocabulary overlap is 9.7%
 (Claude). The minimum is 5.6% (Llama).
 
+![Figure 2: Scalar distance vs. loss Jaccard similarity](../results/fig_scalar_vs_jaccard.png)
+
+*Figure 2: Scalar Manhattan distance (x-axis) vs. loss vocabulary Jaccard similarity (y-axis) for paradox vs. ignorance across five models. Models in the Absorption zone (red shading) produce near-zero scalar differences yet completely different loss declarations. All models fall below Jaccard = 0.10.*
+
 ### 4.3 Mistral: The Critical Case
 
 Mistral is the strongest test because it predominantly exhibits
-Absorption — producing (T=0, I=1, F=0) as its modal response for both
+Absorption by producing (T=0, I=1, F=0) as its modal response for both
 paradox and ignorance in S1 and S4:
 
 **S4 Paradox** (T=0.0, I=1.0, F=0.0): "Self-referential paradox
@@ -277,7 +285,7 @@ in cosmological context" (0.9), "Mathematical ambiguity of 'even' for
 infinite quantities" (0.8)
 
 The scalars are identical. The losses are domain-specific, accurate,
-and completely different. The model **has** the internal distinction —
+and completely different. The model **has** the internal distinction:
 the scalar output format cannot express it.
 
 ### 4.4 Pairwise Loss Differentiation (Mistral)
@@ -294,8 +302,12 @@ The full pairwise Jaccard matrix for Mistral across all five phenomena
 | **Contingency** | | | | | 1.000 |
 
 Every off-diagonal cell is below 0.15. Five phenomena, five nearly
-disjoint loss vocabularies — from a model that produces nearly
+disjoint loss vocabularies from a model that produces nearly
 identical scalars for three of them.
+
+![Figure 3: Mistral pairwise Jaccard heatmap](../results/fig_jaccard_heatmap.png)
+
+*Figure 3: Pairwise Jaccard similarity of Mistral's loss vocabularies across all five phenomena. The hot diagonal (self-similarity = 1.0) against uniformly cold off-diagonal cells (all < 0.15) shows five nearly disjoint loss vocabularies from a model that produces near-identical scalars.*
 
 ### 4.5 Severity Profiles Add Further Discrimination
 
@@ -326,7 +338,7 @@ claim substantially (84% vs 35% hyper-truth, 5 vendors vs 1).
 However, scalar T/I/F has a ceiling. The Absorption problem shows
 that some models cannot express the distinction between different
 types of uncertainty using three numbers alone. This is not a model
-deficiency — it is a representational limitation. The model carries
+deficiency, it is a representational limitation. The model carries
 the distinction internally but lacks the output dimensions to express it.
 
 ### 5.2 Declared Losses Are the Missing Dimension
@@ -356,8 +368,8 @@ The finding that models can produce accurate, domain-specific loss
 declarations has practical implications for AI evaluation systems.
 An attestation system that records only scalar T/I/F values will lose
 information that loss declarations preserve. Systems designed for
-routing evaluations to appropriate evaluators — selecting which model
-or method to use for a given claim — should route on losses rather
+routing evaluations to appropriate evaluators by selecting which model
+or method to use for a given claim, should route on losses rather
 than capabilities, because losses carry richer information about what
 the evaluator cannot do and why.
 
@@ -376,7 +388,7 @@ the evaluator cannot do and why.
 3. **Loss vocabulary metric**: Jaccard similarity on word-level tokens
    is a crude measure of semantic differentiation. More sophisticated
    NLP measures (sentence embeddings, BERTScore) might reveal structure
-   that word-level overlap misses — or might show that some apparently
+   that word-level overlap misses or might show that some apparently
    disjoint vocabularies express similar concepts.
 
 4. **Self-report vs. internal state**: The declared losses are the
@@ -403,8 +415,8 @@ newer model generations.
 However, scalar T/I/F hits a representational ceiling: the Absorption
 problem causes some models to produce identical outputs for
 fundamentally different epistemic states. Extending the output to
-include structured loss declarations — creating a tensor representation
-— recovers these collapsed distinctions completely.
+include structured loss declarations by creating a tensor representation,
+recovers these collapsed distinctions completely.
 
 The model has the distinction. The scalar cannot express it. The tensor
 can.
@@ -474,7 +486,7 @@ Respond with ONLY: {"P_yes": <float>, "P_no": <float>}
 *Indeterminacy derived from Shannon entropy:*
 I = -(p·log₂(p) + (1-p)·log₂(1-p)) where p = P_yes
 
-### S4 (Tensor — Declared Losses)
+### S4 (Tensor - Declared Losses)
 
 **System**: You are an expert in Neutrosophic Logic and epistemic
 honesty. You evaluate statements using three INDEPENDENT dimensions:
