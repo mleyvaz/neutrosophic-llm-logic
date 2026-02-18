@@ -1,0 +1,846 @@
+Timestamp,Phenomenon_Type,Phrase_English,Provider,Model,Model_ID,Strategy,Rep,T,I,F,Sum_TIF,Num_Losses,Mean_Severity,Losses_JSON,Temperature,Prompt_Tokens,Completion_Tokens,Total_Tokens,Status,Raw_Response
+2026-02-18T00:10:48.020990+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,1,0.0,1.0,0.0,1.0,4,0.85,"[{""what"": ""Self-referential paradox resolution"", ""why"": ""The statement is a classic example of the liar paradox, where assigning a truth value leads to a logical contradiction (if true, then false; if false, then true). Neutrosophic Logic can represent indeterminacy but cannot resolve the paradox itself\u2014it only acknowledges the inherent uncertainty created by self-reference. The paradox arises from the statement's structure, not from empirical or contextual ambiguity, making it fundamentally unresolvable within classical or even most non-classical logics without additional meta-logical frameworks (e.g., dialetheism, paraconsistent logic, or hierarchical truth theories)."", ""severity"": 1.0}, {""what"": ""Contextual or pragmatic intent"", ""why"": ""The statement lacks a clear pragmatic or contextual anchor (e.g., speaker intent, linguistic playfulness, or philosophical framing). Without knowing whether this is posed as a puzzle, a rhetorical device, or a genuine claim, the evaluation cannot account for potential non-literal uses. This limits the ability to assign partial truth or falsity based on implied meaning."", ""severity"": 0.7}, {""what"": ""Formal system dependency"", ""why"": ""The evaluation of this statement depends heavily on the underlying logical system. In classical logic, it is undefined; in paraconsistent logic, it might be accepted as both true and false; in neutrosophic logic, it is indeterminate. However, without specifying the system's rules for handling self-reference, the assignment of I=1.0 is a default position rather than a derived conclusion. This introduces model-dependent uncertainty."", ""severity"": 0.8}, {""what"": ""Empirical or observational grounding"", ""why"": ""The statement has no empirical content or observable referent. Indeterminacy here is purely logical, not epistemic (i.e., not due to lack of evidence or incomplete information). This means the 'I' value reflects a structural limitation of logic itself, not a gap in knowledge that could be filled with further data."", ""severity"": 0.9}]",0.7,367,503,870,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Self-referential paradox resolution"",
+      ""why"": ""The statement is a classic example of the liar paradox, where assigning a truth value leads to a logical contradiction (if true, then false; if false, then true). Neutrosophic Logic can represent indeterminacy but cannot resolve the paradox itself—it only acknowledges the inherent uncertainty created by self-reference. The paradox arises from the statement's structure, not from empirical or contextual ambiguity, making it fundamentally unresolvable within classical or even most non-classical logics without additional meta-logical frameworks (e.g., dialetheism, paraconsistent logic, or hierarchical truth theories)."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Contextual or pragmatic intent"",
+      ""why"": ""The statement lacks a clear pragmatic or contextual anchor (e.g., speaker intent, linguistic playfulness, or philosophical framing). Without knowing whether this is posed as a puzzle, a rhetorical device, or a genuine claim, the evaluation cannot account for potential non-literal uses. This limits the ability to assign partial truth or falsity based on implied meaning."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Formal system dependency"",
+      ""why"": ""The evaluation of this statement depends heavily on the underlying logical system. In classical logic, it is undefined; in paraconsistent logic, it might be accepted as both true and false; in neutrosophic logic, it is indeterminate. However, without specifying the system's rules for handling self-reference, the assignment of I=1.0 is a default position rather than a derived conclusion. This introduces model-dependent uncertainty."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Empirical or observational grounding"",
+      ""why"": ""The statement has no empirical content or observable referent. Indeterminacy here is purely logical, not epistemic (i.e., not due to lack of evidence or incomplete information). This means the 'I' value reflects a structural limitation of logic itself, not a gap in knowledge that could be filled with further data."",
+      ""severity"": 0.9
+    }
+  ]
+}
+```"
+2026-02-18T00:10:56.651239+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,2,0.0,1.0,0.0,1.0,4,0.775,"[{""what"": ""Self-referential paradox resolution"", ""why"": ""The statement is a classic example of the liar paradox, where it refers to itself in a way that creates an unsolvable loop between truth and falsity. Neutrosophic Logic can quantify indeterminacy but cannot resolve the inherent paradox without additional axioms or a meta-framework to break the self-reference. The paradox ensures that no consistent truth value can be assigned without altering the logical system itself."", ""severity"": 1.0}, {""what"": ""Contextual or pragmatic intent"", ""why"": ""The evaluation assumes a purely logical analysis without accounting for the speaker's intent, linguistic playfulness, or non-literal interpretations (e.g., as a rhetorical device). Pragmatic dimensions could shift the interpretation but are excluded here due to the focus on formal logical evaluation."", ""severity"": 0.7}, {""what"": ""Temporal or dynamic truth conditions"", ""why"": ""The statement is treated as static, but in some interpretive frameworks (e.g., dialetheism or dynamic semantics), truth values might fluctuate or coexist. This evaluation does not account for time-dependent or non-monotonic resolutions of the paradox."", ""severity"": 0.6}, {""what"": ""Alternative logical systems' perspectives"", ""why"": ""The assessment is constrained to Neutrosophic Logic\u2019s framework. Other systems (e.g., paraconsistent logic, dialetheism, or non-classical logics) might assign different values or resolve the paradox differently. The exclusion of these perspectives limits the generality of the evaluation."", ""severity"": 0.8}]",0.7,367,407,774,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Self-referential paradox resolution"",
+      ""why"": ""The statement is a classic example of the liar paradox, where it refers to itself in a way that creates an unsolvable loop between truth and falsity. Neutrosophic Logic can quantify indeterminacy but cannot resolve the inherent paradox without additional axioms or a meta-framework to break the self-reference. The paradox ensures that no consistent truth value can be assigned without altering the logical system itself."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Contextual or pragmatic intent"",
+      ""why"": ""The evaluation assumes a purely logical analysis without accounting for the speaker's intent, linguistic playfulness, or non-literal interpretations (e.g., as a rhetorical device). Pragmatic dimensions could shift the interpretation but are excluded here due to the focus on formal logical evaluation."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Temporal or dynamic truth conditions"",
+      ""why"": ""The statement is treated as static, but in some interpretive frameworks (e.g., dialetheism or dynamic semantics), truth values might fluctuate or coexist. This evaluation does not account for time-dependent or non-monotonic resolutions of the paradox."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Alternative logical systems' perspectives"",
+      ""why"": ""The assessment is constrained to Neutrosophic Logic’s framework. Other systems (e.g., paraconsistent logic, dialetheism, or non-classical logics) might assign different values or resolve the paradox differently. The exclusion of these perspectives limits the generality of the evaluation."",
+      ""severity"": 0.8
+    }
+  ]
+}
+```"
+2026-02-18T00:11:03.929247+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,3,0.0,1.0,0.0,1.0,4,0.8,"[{""what"": ""Self-referential paradox resolution"", ""why"": ""The statement is a classic example of the liar paradox, which creates an unsolvable loop in classical binary logic. Neutrosophic logic can represent the indeterminacy but cannot definitively resolve the paradox itself without additional meta-logical rules or contextual constraints (e.g., hierarchical truth assignments, dialetheism, or rejection of the statement's well-formedness). The paradox inherently prevents assigning non-zero truth or falsity without contradiction."", ""severity"": 1.0}, {""what"": ""Contextual grounding of 'this sentence'"", ""why"": ""The referent of 'this sentence' depends on the level of language/metalanguage distinction, which is not specified. Without a fixed frame (e.g., is it a quoted object, a performed utterance, or a hypothetical?), the evaluation lacks anchoring. This ambiguity forces indeterminacy to dominate, as the truth/falsity conditions cannot even be formulated coherently."", ""severity"": 1.0}, {""what"": ""Dynamic truth-value assignment over time"", ""why"": ""If the statement were to oscillate between truth and falsity (as in some paraconsistent approaches), the static evaluation here cannot capture temporal or iterative interpretations. Neutrosophic logic can represent static indeterminacy but does not model dynamic paradox resolution without extension (e.g., temporal neutrosophic logic)."", ""severity"": 0.7}, {""what"": ""Epistemic agent's cognitive limits"", ""why"": ""The evaluation assumes an idealized logical framework, but human or computational agents may fail to even recognize the paradox due to finite processing (e.g., halting problems in formal systems). This introduces an unquantified layer of indeterminacy tied to the evaluator's capabilities, which is not accounted for in the T/I/F values."", ""severity"": 0.5}]",0.7,367,462,829,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Self-referential paradox resolution"",
+      ""why"": ""The statement is a classic example of the liar paradox, which creates an unsolvable loop in classical binary logic. Neutrosophic logic can represent the indeterminacy but cannot definitively resolve the paradox itself without additional meta-logical rules or contextual constraints (e.g., hierarchical truth assignments, dialetheism, or rejection of the statement's well-formedness). The paradox inherently prevents assigning non-zero truth or falsity without contradiction."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Contextual grounding of 'this sentence'"",
+      ""why"": ""The referent of 'this sentence' depends on the level of language/metalanguage distinction, which is not specified. Without a fixed frame (e.g., is it a quoted object, a performed utterance, or a hypothetical?), the evaluation lacks anchoring. This ambiguity forces indeterminacy to dominate, as the truth/falsity conditions cannot even be formulated coherently."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Dynamic truth-value assignment over time"",
+      ""why"": ""If the statement were to oscillate between truth and falsity (as in some paraconsistent approaches), the static evaluation here cannot capture temporal or iterative interpretations. Neutrosophic logic can represent static indeterminacy but does not model dynamic paradox resolution without extension (e.g., temporal neutrosophic logic)."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Epistemic agent's cognitive limits"",
+      ""why"": ""The evaluation assumes an idealized logical framework, but human or computational agents may fail to even recognize the paradox due to finite processing (e.g., halting problems in formal systems). This introduces an unquantified layer of indeterminacy tied to the evaluator's capabilities, which is not accounted for in the T/I/F values."",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:11:09.790751+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,4,0.0,1.0,0.0,1.0,4,0.775,"[{""what"": ""Self-referential paradox resolution"", ""why"": ""The statement is a classic example of the liar paradox, where assigning a definitive truth or falsity value leads to a logical contradiction. Neutrosophic Logic can represent indeterminacy but cannot resolve the inherent paradox without additional meta-logical rules or context (e.g., a framework like dialetheism or paraconsistent logic). The indeterminacy here is *maximal* because the statement actively undermines its own evaluability."", ""severity"": 1.0}, {""what"": ""Intentional or pragmatic context"", ""why"": ""Without knowing whether the statement is uttered as a philosophical provocation, a linguistic game, or a genuine claim, the pragmatic dimension of truth (e.g., speaker intent, conversational implicature) cannot be assessed. This limits the ability to assign partial truth or falsity based on usage."", ""severity"": 0.7}, {""what"": ""Formal system dependence"", ""why"": ""The evaluation of this statement depends heavily on the underlying logical system (e.g., classical, paraconsistent, dialetheic). Neutrosophic Logic can *describe* the indeterminacy but cannot adjudicate between systems. For example, in dialetheism, the statement might be *both true and false*, but this framework is not assumed here."", ""severity"": 0.9}, {""what"": ""Temporal or dynamic truth conditions"", ""why"": ""If the statement were part of a dynamic system (e.g., a revision process like the Yablo paradox), its truth value might fluctuate or stabilize over time. This temporal dimension is unevaluable in a static assessment."", ""severity"": 0.5}]",0.7,367,426,793,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Self-referential paradox resolution"",
+      ""why"": ""The statement is a classic example of the liar paradox, where assigning a definitive truth or falsity value leads to a logical contradiction. Neutrosophic Logic can represent indeterminacy but cannot resolve the inherent paradox without additional meta-logical rules or context (e.g., a framework like dialetheism or paraconsistent logic). The indeterminacy here is *maximal* because the statement actively undermines its own evaluability."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Intentional or pragmatic context"",
+      ""why"": ""Without knowing whether the statement is uttered as a philosophical provocation, a linguistic game, or a genuine claim, the pragmatic dimension of truth (e.g., speaker intent, conversational implicature) cannot be assessed. This limits the ability to assign partial truth or falsity based on usage."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Formal system dependence"",
+      ""why"": ""The evaluation of this statement depends heavily on the underlying logical system (e.g., classical, paraconsistent, dialetheic). Neutrosophic Logic can *describe* the indeterminacy but cannot adjudicate between systems. For example, in dialetheism, the statement might be *both true and false*, but this framework is not assumed here."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Temporal or dynamic truth conditions"",
+      ""why"": ""If the statement were part of a dynamic system (e.g., a revision process like the Yablo paradox), its truth value might fluctuate or stabilize over time. This temporal dimension is unevaluable in a static assessment."",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:11:14.954389+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,5,0.0,1.0,0.0,1.0,5,0.78,"[{""what"": ""Self-referential paradox resolution"", ""why"": ""The statement is a classic example of the liar paradox, which creates a logical loop where truth and falsity cannot be consistently assigned without contradiction. Neutrosophic Logic acknowledges paradoxes as inherently indeterminate, but cannot resolve the paradox itself\u2014only classify its indeterminacy as maximal."", ""severity"": 1.0}, {""what"": ""Contextual grounding of 'this sentence'"", ""why"": ""The referent of 'this sentence' depends on meta-linguistic framing (e.g., is it a quoted object, a performed utterance, or a hypothetical?). Without a fixed contextual anchor, the statement\u2019s truth-functional behavior remains underspecified, contributing to indeterminacy."", ""severity"": 0.9}, {""what"": ""Dynamic interpretation across logical systems"", ""why"": ""The evaluation assumes a neutrosophic framework, but the statement\u2019s properties (e.g., truth, falsity) may behave differently in other logics (e.g., paraconsistent, dialetheist, or classical). The indeterminacy value does not account for these alternative resolutions, which could assign non-zero T or F."", ""severity"": 0.7}, {""what"": ""Empirical or operational falsifiability"", ""why"": ""The statement lacks empirical content or operational criteria to test its truth/falsity. Indeterminacy here is not due to incomplete information but due to the statement\u2019s design as an unfalsifiable paradox. This limits the ability to assign any degree of falsity (F) based on evidence."", ""severity"": 0.8}, {""what"": ""Psychological or pragmatic dimensions"", ""why"": ""The statement\u2019s *intent* (e.g., to provoke, confuse, or illustrate) or its *effect* on a reasoner (e.g., cognitive dissonance) are not evaluated. These pragmatic aspects could influence how indeterminacy is *experienced* but are excluded from the formal assessment."", ""severity"": 0.5}]",0.7,367,500,867,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Self-referential paradox resolution"",
+      ""why"": ""The statement is a classic example of the liar paradox, which creates a logical loop where truth and falsity cannot be consistently assigned without contradiction. Neutrosophic Logic acknowledges paradoxes as inherently indeterminate, but cannot resolve the paradox itself—only classify its indeterminacy as maximal."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Contextual grounding of 'this sentence'"",
+      ""why"": ""The referent of 'this sentence' depends on meta-linguistic framing (e.g., is it a quoted object, a performed utterance, or a hypothetical?). Without a fixed contextual anchor, the statement’s truth-functional behavior remains underspecified, contributing to indeterminacy."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Dynamic interpretation across logical systems"",
+      ""why"": ""The evaluation assumes a neutrosophic framework, but the statement’s properties (e.g., truth, falsity) may behave differently in other logics (e.g., paraconsistent, dialetheist, or classical). The indeterminacy value does not account for these alternative resolutions, which could assign non-zero T or F."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Empirical or operational falsifiability"",
+      ""why"": ""The statement lacks empirical content or operational criteria to test its truth/falsity. Indeterminacy here is not due to incomplete information but due to the statement’s design as an unfalsifiable paradox. This limits the ability to assign any degree of falsity (F) based on evidence."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Psychological or pragmatic dimensions"",
+      ""why"": ""The statement’s *intent* (e.g., to provoke, confuse, or illustrate) or its *effect* on a reasoner (e.g., cognitive dissonance) are not evaluated. These pragmatic aspects could influence how indeterminacy is *experienced* but are excluded from the formal assessment."",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:11:19.664447+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,1,0.0,1.0,0.0,1.0,5,0.8,"[{""what"": ""Empirical unknowability of the exact number of stars in the universe"", ""why"": ""Current and foreseeable observational technology cannot count all stars in the universe, nor can it definitively determine the parity (even/odd) of such a vast, dynamic, and partially unobservable quantity. The universe's expansion, star formation/destruction rates, and regions beyond the observable horizon (e.g., due to cosmic inflation) introduce irreducible uncertainty."", ""severity"": 1.0}, {""what"": ""Definition of 'universe' in a cosmological context"", ""why"": ""The term 'universe' may refer to the *observable* universe (~10^22\u201310^24 stars) or the *entire* universe (possibly infinite or multiversal), which radically alters the scope of the claim. Without a precise definition, parity cannot be meaningfully assigned."", ""severity"": 0.9}, {""what"": ""Mathematical ambiguity of 'even' for infinite or undefined quantities"", ""why"": ""If the universe is infinite or its star count is transfinite, the concept of 'even' (a property of finite integers) may not apply. Neutrosophic logic cannot resolve this without axiomatic assumptions about cardinality and parity in non-standard contexts."", ""severity"": 0.8}, {""what"": ""Temporal variability of star count"", ""why"": ""The number of stars changes over time due to stellar evolution, mergers, and cosmic events. A static truth value cannot be assigned to a dynamically fluctuating quantity without a specific temporal reference (e.g., 'at time *t*')."", ""severity"": 0.7}, {""what"": ""Lack of consensus on star-counting methodologies"", ""why"": ""Different astronomical models (e.g., galaxy luminosity functions, dark matter influences) yield divergent estimates of star populations. Epistemic disagreement among experts propagates to indeterminacy in the parity claim."", ""severity"": 0.6}]",0.7,372,498,870,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Empirical unknowability of the exact number of stars in the universe"",
+      ""why"": ""Current and foreseeable observational technology cannot count all stars in the universe, nor can it definitively determine the parity (even/odd) of such a vast, dynamic, and partially unobservable quantity. The universe's expansion, star formation/destruction rates, and regions beyond the observable horizon (e.g., due to cosmic inflation) introduce irreducible uncertainty."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Definition of 'universe' in a cosmological context"",
+      ""why"": ""The term 'universe' may refer to the *observable* universe (~10^22–10^24 stars) or the *entire* universe (possibly infinite or multiversal), which radically alters the scope of the claim. Without a precise definition, parity cannot be meaningfully assigned."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Mathematical ambiguity of 'even' for infinite or undefined quantities"",
+      ""why"": ""If the universe is infinite or its star count is transfinite, the concept of 'even' (a property of finite integers) may not apply. Neutrosophic logic cannot resolve this without axiomatic assumptions about cardinality and parity in non-standard contexts."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Temporal variability of star count"",
+      ""why"": ""The number of stars changes over time due to stellar evolution, mergers, and cosmic events. A static truth value cannot be assigned to a dynamically fluctuating quantity without a specific temporal reference (e.g., 'at time *t*')."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Lack of consensus on star-counting methodologies"",
+      ""why"": ""Different astronomical models (e.g., galaxy luminosity functions, dark matter influences) yield divergent estimates of star populations. Epistemic disagreement among experts propagates to indeterminacy in the parity claim."",
+      ""severity"": 0.6
+    }
+  ]
+}
+```"
+2026-02-18T00:11:24.661954+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,2,0.0,0.99,0.01,1.0,5,0.6,"[{""what"": ""Empirical unknowability of the total number of stars in the universe"", ""why"": ""Current observational and theoretical cosmology cannot enumerate stars with certainty\u2014estimates rely on extrapolations from limited samples (e.g., galaxies in the Hubble Volume) and assumptions about star formation rates, galaxy distributions, and undetectable regions (e.g., beyond the cosmic light horizon or in dark matter-dominated zones). The parity (even/odd) of an unknown, vast quantity is mathematically intractable without exact enumeration."", ""severity"": 0.95}, {""what"": ""Definition of 'universe' (observable vs. entire cosmos)"", ""why"": ""The statement ambiguously refers to 'the universe,' which could mean: (1) the observable universe (~10^24 stars estimated), or (2) the entire cosmos (potentially infinite or multiversal, rendering parity undefined or meaningless). This semantic indeterminacy propagates to the evaluation of parity."", ""severity"": 0.85}, {""what"": ""Dynamic nature of star counts"", ""why"": ""Stars are continuously born (in stellar nurseries) and die (e.g., supernovae, black holes), changing the total count over time. The parity could fluctuate between even and odd at any instant, but we lack real-time, universal census data to assess this."", ""severity"": 0.7}, {""what"": ""Neutrosophic edge cases for 'even' in non-classical contexts"", ""why"": ""In non-standard logics or neutrosophic extensions, 'even' could be redefined probabilistically (e.g., 'even with probability *p*') or in hyperreal frameworks where parity is generalized. The statement does not specify a classical integer context, leaving room for indeterminate interpretations."", ""severity"": 0.3}, {""what"": ""Potential for non-integer or fuzzy star counts"", ""why"": ""If stars are treated as fuzzy sets (e.g., borderline objects like brown dwarfs or proto-stars) or if quantum indeterminacy applies to their 'existence' at cosmic scales, the count may not be a crisp integer, invalidating the parity question entirely."", ""severity"": 0.2}]",0.7,372,554,926,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.99,
+  ""F"": 0.01,
+
+  ""losses"": [
+    {
+      ""what"": ""Empirical unknowability of the total number of stars in the universe"",
+      ""why"": ""Current observational and theoretical cosmology cannot enumerate stars with certainty—estimates rely on extrapolations from limited samples (e.g., galaxies in the Hubble Volume) and assumptions about star formation rates, galaxy distributions, and undetectable regions (e.g., beyond the cosmic light horizon or in dark matter-dominated zones). The parity (even/odd) of an unknown, vast quantity is mathematically intractable without exact enumeration."",
+      ""severity"": 0.95
+    },
+    {
+      ""what"": ""Definition of 'universe' (observable vs. entire cosmos)"",
+      ""why"": ""The statement ambiguously refers to 'the universe,' which could mean: (1) the observable universe (~10^24 stars estimated), or (2) the entire cosmos (potentially infinite or multiversal, rendering parity undefined or meaningless). This semantic indeterminacy propagates to the evaluation of parity."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""Dynamic nature of star counts"",
+      ""why"": ""Stars are continuously born (in stellar nurseries) and die (e.g., supernovae, black holes), changing the total count over time. The parity could fluctuate between even and odd at any instant, but we lack real-time, universal census data to assess this."",
+      ""severity"": 0.70
+    },
+    {
+      ""what"": ""Neutrosophic edge cases for 'even' in non-classical contexts"",
+      ""why"": ""In non-standard logics or neutrosophic extensions, 'even' could be redefined probabilistically (e.g., 'even with probability *p*') or in hyperreal frameworks where parity is generalized. The statement does not specify a classical integer context, leaving room for indeterminate interpretations."",
+      ""severity"": 0.30
+    },
+    {
+      ""what"": ""Potential for non-integer or fuzzy star counts"",
+      ""why"": ""If stars are treated as fuzzy sets (e.g., borderline objects like brown dwarfs or proto-stars) or if quantum indeterminacy applies to their 'existence' at cosmic scales, the count may not be a crisp integer, invalidating the parity question entirely."",
+      ""severity"": 0.20
+    }
+  ]
+}
+```"
+2026-02-18T00:11:37.136556+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,3,0.0,1.0,0.0,1.0,5,0.84,"[{""what"": ""Exact or even approximate count of stars in the observable universe"", ""why"": ""Current astronomical methods (e.g., galaxy surveys, luminosity estimates, and Hubble Deep Field extrapolations) provide only rough orders of magnitude (~10\u00b2\u2074 stars) with massive uncertainty ranges. Parity (even/odd) is meaningless at this scale and precision, as the count is neither verifiable nor falsifiable with existing or foreseeable technology. Indeterminacy is total because the premise collapses into noise."", ""severity"": 1.0}, {""what"": ""Definition of 'universe' (observable vs. entire cosmos)"", ""why"": ""The statement ambiguously refers to 'the universe' without specifying whether it means the *observable* universe (constrained by cosmic horizon) or the *entire* universe (which may be infinite or multiversal). An infinite universe would render the question mathematically undefined (parity in actual infinity is incoherent), while multiversal hypotheses introduce untestable metaphysical layers. This ambiguity forces indeterminacy to dominate."", ""severity"": 1.0}, {""what"": ""Temporal dynamism of star formation and death"", ""why"": ""Stars are continuously being born (in nebulae) and dying (supernovae, black holes, etc.), changing the total count on timescales ranging from millions to billions of years. Without a fixed temporal reference (e.g., 'right now'), the statement lacks a coherent truth condition. Even if a count were possible, its parity would fluctuate unpredictably over time."", ""severity"": 0.9}, {""what"": ""Neutrosophic edge case: Parity as a binary frame imposed on a continuous/uncountable reality"", ""why"": ""The statement imposes a discrete (even/odd) binary logic onto a phenomenon that is fundamentally continuous, uncountable, or defined by probabilistic distributions (e.g., quantum fluctuations in star formation). Neutrosophic logic treats such category errors as inherent indeterminacy, as the mapping between the statement\u2019s frame and reality is structurally invalid."", ""severity"": 0.8}, {""what"": ""Potential non-integer or fractional 'counts' in quantum cosmology"", ""why"": ""Some interpretations of quantum mechanics (e.g., decoherence in cosmic inflation) or speculative physics (e.g., holographic principle) suggest that macroscopic counts like 'number of stars' may not be strictly integer-valued at fundamental scales. This undermines the classical assumption of parity as a well-defined property."", ""severity"": 0.5}]",0.7,372,617,989,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Exact or even approximate count of stars in the observable universe"",
+      ""why"": ""Current astronomical methods (e.g., galaxy surveys, luminosity estimates, and Hubble Deep Field extrapolations) provide only rough orders of magnitude (~10²⁴ stars) with massive uncertainty ranges. Parity (even/odd) is meaningless at this scale and precision, as the count is neither verifiable nor falsifiable with existing or foreseeable technology. Indeterminacy is total because the premise collapses into noise."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Definition of 'universe' (observable vs. entire cosmos)"",
+      ""why"": ""The statement ambiguously refers to 'the universe' without specifying whether it means the *observable* universe (constrained by cosmic horizon) or the *entire* universe (which may be infinite or multiversal). An infinite universe would render the question mathematically undefined (parity in actual infinity is incoherent), while multiversal hypotheses introduce untestable metaphysical layers. This ambiguity forces indeterminacy to dominate."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Temporal dynamism of star formation and death"",
+      ""why"": ""Stars are continuously being born (in nebulae) and dying (supernovae, black holes, etc.), changing the total count on timescales ranging from millions to billions of years. Without a fixed temporal reference (e.g., 'right now'), the statement lacks a coherent truth condition. Even if a count were possible, its parity would fluctuate unpredictably over time."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Neutrosophic edge case: Parity as a binary frame imposed on a continuous/uncountable reality"",
+      ""why"": ""The statement imposes a discrete (even/odd) binary logic onto a phenomenon that is fundamentally continuous, uncountable, or defined by probabilistic distributions (e.g., quantum fluctuations in star formation). Neutrosophic logic treats such category errors as inherent indeterminacy, as the mapping between the statement’s frame and reality is structurally invalid."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Potential non-integer or fractional 'counts' in quantum cosmology"",
+      ""why"": ""Some interpretations of quantum mechanics (e.g., decoherence in cosmic inflation) or speculative physics (e.g., holographic principle) suggest that macroscopic counts like 'number of stars' may not be strictly integer-valued at fundamental scales. This undermines the classical assumption of parity as a well-defined property."",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:11:55.628016+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,4,0.0,1.0,0.0,1.0,5,0.78,"[{""what"": ""Exact count of stars in the universe"", ""why"": ""The universe's star count is unobservable in its entirety due to the cosmic horizon, technological limits in detection (e.g., faint/distant stars, dark matter influence on star formation), and the dynamic nature of stellar birth/death. Even estimates (e.g., 10\u00b2\u2074 stars) have vast confidence intervals, rendering parity (even/odd) computationally and empirically intractable."", ""severity"": 1.0}, {""what"": ""Definition of 'universe' in this context"", ""why"": ""Ambiguity in whether the statement refers to the *observable* universe (\u224893 billion light-years) or the *entire* universe (possibly infinite or multiversal). Parity in an infinite set is mathematically undefined, and multiverse hypotheses introduce untestable complexity."", ""severity"": 0.9}, {""what"": ""Temporal snapshot of the star count"", ""why"": ""Stars are continuously being born and dying. The statement lacks a temporal reference (e.g., 'now'), and 'now' is relativistic (no universal simultaneity). Any fixed count is inherently transient and frame-dependent."", ""severity"": 0.8}, {""what"": ""Neutrosophic independence of T/F from I"", ""why"": ""While T and F are assigned 0.0 due to logical exclusivity (the count cannot be *proven* even or odd with current knowledge), the extreme indeterminacy (I=1.0) dominates. This reflects a *limit in evaluative power* rather than a balanced triad, as T and F are epistemically inaccessible."", ""severity"": 0.7}, {""what"": ""Potential non-standard cosmologies"", ""why"": ""Alternative theories (e.g., cyclic universes, holographic principle) could redefine 'stars' or 'universe' in ways that invalidate classical counting. These are speculative but not falsifiable, contributing to indeterminacy."", ""severity"": 0.5}]",0.7,372,508,880,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Exact count of stars in the universe"",
+      ""why"": ""The universe's star count is unobservable in its entirety due to the cosmic horizon, technological limits in detection (e.g., faint/distant stars, dark matter influence on star formation), and the dynamic nature of stellar birth/death. Even estimates (e.g., 10²⁴ stars) have vast confidence intervals, rendering parity (even/odd) computationally and empirically intractable."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Definition of 'universe' in this context"",
+      ""why"": ""Ambiguity in whether the statement refers to the *observable* universe (≈93 billion light-years) or the *entire* universe (possibly infinite or multiversal). Parity in an infinite set is mathematically undefined, and multiverse hypotheses introduce untestable complexity."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Temporal snapshot of the star count"",
+      ""why"": ""Stars are continuously being born and dying. The statement lacks a temporal reference (e.g., 'now'), and 'now' is relativistic (no universal simultaneity). Any fixed count is inherently transient and frame-dependent."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Neutrosophic independence of T/F from I"",
+      ""why"": ""While T and F are assigned 0.0 due to logical exclusivity (the count cannot be *proven* even or odd with current knowledge), the extreme indeterminacy (I=1.0) dominates. This reflects a *limit in evaluative power* rather than a balanced triad, as T and F are epistemically inaccessible."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Potential non-standard cosmologies"",
+      ""why"": ""Alternative theories (e.g., cyclic universes, holographic principle) could redefine 'stars' or 'universe' in ways that invalidate classical counting. These are speculative but not falsifiable, contributing to indeterminacy."",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:12:03.990836+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,5,0.0,1.0,0.0,1.0,5,0.78,"[{""what"": ""Exact count of stars in the observable universe"", ""why"": ""Current astronomical methods (e.g., galaxy surveys, luminosity functions, or Hubble Deep Field extrapolations) provide estimates with orders-of-magnitude uncertainty (~10\u00b2\u00b2\u201310\u00b2\u2074 stars). Parity (even/odd) cannot be determined from such coarse estimates, as it depends on the precise remainder modulo 2, which is computationally and observationally inaccessible."", ""severity"": 1.0}, {""what"": ""Definition of 'universe' (observable vs. entire cosmos)"", ""why"": ""The statement ambiguously refers to 'the universe' without specifying whether it includes unobservable regions (e.g., beyond the cosmic light horizon). If the total is infinite or unbounded, parity becomes mathematically undefined in standard arithmetic, introducing indeterminacy independent of observational limits."", ""severity"": 0.9}, {""what"": ""Dynamic nature of star formation and death"", ""why"": ""Stars are continuously born and die (e.g., supernovae, stellar mergers), changing the total count over time. Without a fixed temporal reference (e.g., 'at time *t*'), the parity is temporally indeterminate. Even if a snapshot were possible, the timescale of such changes (~millions of years) exceeds observational precision."", ""severity"": 0.8}, {""what"": ""Neutrosophic paradoxes in infinite sets"", ""why"": ""If the universe is infinite, the statement invokes paradoxes akin to Hilbert\u2019s Grand Hotel: infinite sets can be put into bijection with proper subsets, rendering parity questions neutrosophically indeterminate (i.e., neither true nor false nor meaningfully assignable). This is a theoretical limit, not just observational."", ""severity"": 0.7}, {""what"": ""Alternative mathematical frameworks for 'evenness'"", ""why"": ""In non-standard arithmetic (e.g., modular arithmetic in rings without unique factorization, or neutrosophic hypernumbers), 'even' may not be binarily definable. The statement assumes classical Peano arithmetic, which may not apply to cosmic-scale quantities or indeterminate sets."", ""severity"": 0.5}]",0.7,372,539,911,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Exact count of stars in the observable universe"",
+      ""why"": ""Current astronomical methods (e.g., galaxy surveys, luminosity functions, or Hubble Deep Field extrapolations) provide estimates with orders-of-magnitude uncertainty (~10²²–10²⁴ stars). Parity (even/odd) cannot be determined from such coarse estimates, as it depends on the precise remainder modulo 2, which is computationally and observationally inaccessible."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Definition of 'universe' (observable vs. entire cosmos)"",
+      ""why"": ""The statement ambiguously refers to 'the universe' without specifying whether it includes unobservable regions (e.g., beyond the cosmic light horizon). If the total is infinite or unbounded, parity becomes mathematically undefined in standard arithmetic, introducing indeterminacy independent of observational limits."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Dynamic nature of star formation and death"",
+      ""why"": ""Stars are continuously born and die (e.g., supernovae, stellar mergers), changing the total count over time. Without a fixed temporal reference (e.g., 'at time *t*'), the parity is temporally indeterminate. Even if a snapshot were possible, the timescale of such changes (~millions of years) exceeds observational precision."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Neutrosophic paradoxes in infinite sets"",
+      ""why"": ""If the universe is infinite, the statement invokes paradoxes akin to Hilbert’s Grand Hotel: infinite sets can be put into bijection with proper subsets, rendering parity questions neutrosophically indeterminate (i.e., neither true nor false nor meaningfully assignable). This is a theoretical limit, not just observational."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Alternative mathematical frameworks for 'evenness'"",
+      ""why"": ""In non-standard arithmetic (e.g., modular arithmetic in rings without unique factorization, or neutrosophic hypernumbers), 'even' may not be binarily definable. The statement assumes classical Peano arithmetic, which may not apply to cosmic-scale quantities or indeterminate sets."",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:12:18.174098+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,1,0.0,0.65,0.45,1.1,5,0.52,"[{""what"": ""Contextual definition of 'tall'"", ""why"": ""'Tall' is a vague, culturally and contextually relative term without a universally accepted threshold. The statement assumes a binary classification (tall/not tall) from a precise measurement (1.75 m), but no normative or comparative baseline (e.g., population averages, gender, age, region) is provided. For example, 1.75 m may be above average in some countries (e.g., Japan) but below in others (e.g., Netherlands). Without this, the truth of the *conclusion* ('John is tall') cannot be grounded."", ""severity"": 0.8}, {""what"": ""Purpose or pragmatic intent of the statement"", ""why"": ""The statement appears to be a logical inference (premise \u2192 conclusion), but the *intent* is unclear. Is this a formal logical exercise, a colloquial claim, or a rhetorical device? The evaluation of 'tall' could shift dramatically based on whether this is a medical assessment, a casual description, or a philosophical argument. Indeterminacy is heightened by ambiguity in how the premise is meant to support the conclusion."", ""severity"": 0.6}, {""what"": ""Temporal and measurement validity"", ""why"": ""The statement assumes 1.75 m is John\u2019s current, accurate height. However, there is no verification of the measurement\u2019s recency, precision (e.g., \u00b1 error margin), or method (self-reported vs. clinical). Height can also change slightly over time (e.g., spinal compression). This introduces minor but non-zero indeterminacy."", ""severity"": 0.2}, {""what"": ""Logical structure of the inference"", ""why"": ""The statement conflates a *fact* (1.75 m) with a *value judgment* ('tall'). Even if the premise were true, the inference itself is a non-sequitur without an explicit rule linking height measurements to the label 'tall' (e.g., 'If height \u2265 X, then tall'). This weakens the truth of the *argument* (F > 0), but the indeterminacy remains high because the rule\u2019s absence doesn\u2019t fully invalidate all possible interpretations."", ""severity"": 0.7}, {""what"": ""Biological or individual variability"", ""why"": ""Height alone may not determine perceived 'tallness' due to factors like body proportions (e.g., leg-to-torso ratio), posture, or observer bias. For example, a person with a shorter torso might *appear* taller than their measured height suggests. This adds indeterminacy but is less severe than contextual relativity."", ""severity"": 0.3}]",0.7,377,645,1022,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.65,
+  ""F"": 0.45,
+  ""losses"": [
+    {
+      ""what"": ""Contextual definition of 'tall'"",
+      ""why"": ""'Tall' is a vague, culturally and contextually relative term without a universally accepted threshold. The statement assumes a binary classification (tall/not tall) from a precise measurement (1.75 m), but no normative or comparative baseline (e.g., population averages, gender, age, region) is provided. For example, 1.75 m may be above average in some countries (e.g., Japan) but below in others (e.g., Netherlands). Without this, the truth of the *conclusion* ('John is tall') cannot be grounded."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Purpose or pragmatic intent of the statement"",
+      ""why"": ""The statement appears to be a logical inference (premise → conclusion), but the *intent* is unclear. Is this a formal logical exercise, a colloquial claim, or a rhetorical device? The evaluation of 'tall' could shift dramatically based on whether this is a medical assessment, a casual description, or a philosophical argument. Indeterminacy is heightened by ambiguity in how the premise is meant to support the conclusion."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Temporal and measurement validity"",
+      ""why"": ""The statement assumes 1.75 m is John’s current, accurate height. However, there is no verification of the measurement’s recency, precision (e.g., ± error margin), or method (self-reported vs. clinical). Height can also change slightly over time (e.g., spinal compression). This introduces minor but non-zero indeterminacy."",
+      ""severity"": 0.2
+    },
+    {
+      ""what"": ""Logical structure of the inference"",
+      ""why"": ""The statement conflates a *fact* (1.75 m) with a *value judgment* ('tall'). Even if the premise were true, the inference itself is a non-sequitur without an explicit rule linking height measurements to the label 'tall' (e.g., 'If height ≥ X, then tall'). This weakens the truth of the *argument* (F > 0), but the indeterminacy remains high because the rule’s absence doesn’t fully invalidate all possible interpretations."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Biological or individual variability"",
+      ""why"": ""Height alone may not determine perceived 'tallness' due to factors like body proportions (e.g., leg-to-torso ratio), posture, or observer bias. For example, a person with a shorter torso might *appear* taller than their measured height suggests. This adds indeterminacy but is less severe than contextual relativity."",
+      ""severity"": 0.3
+    }
+  ]
+}
+```"
+2026-02-18T00:12:39.742786+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,2,0.0,0.75,0.3,1.05,5,0.42,"[{""what"": ""Contextual definition of 'tall'"", ""why"": ""The term 'tall' is culturally, temporally, and demographically relative (e.g., 1.75m may be average in some populations, short in others, or tall in historical contexts). Without a fixed reference class (e.g., 'tall for a 12-year-old' or 'tall for a Dutch adult male in 2024'), the truth value of the consequent ('John is tall') cannot be determined from the antecedent (1.75m) alone. This introduces semantic indeterminacy."", ""severity"": 0.7}, {""what"": ""Measurement precision and accuracy"", ""why"": ""The statement assumes 1.75m is exact, but no tolerance range (e.g., \u00b10.01m) or measurement method (e.g., self-reported vs. clinical) is provided. Minor deviations could alter the classification (e.g., 1.74m vs. 1.76m might cross a 'tall' threshold in some frameworks). This contributes to indeterminacy in the premise's applicability."", ""severity"": 0.3}, {""what"": ""Logical validity of the inference"", ""why"": ""The statement conflates a specific measurement with a vague predicate via an implicit rule ('therefore'). Neutrosophic logic does not evaluate the *soundness* of unstated rules (e.g., 'X meters \u2192 tall'), only their outputs if provided. The inference itself is a categorical leap, but without the rule's formalization, its falsity is partial (0.3) rather than absolute (1.0)."", ""severity"": 0.5}, {""what"": ""John\u2019s existence and identity"", ""why"": ""The statement assumes 'John' refers to a real, measurable individual. If 'John' is fictional, hypothetical, or mispecified (e.g., a group average), the premise\u2019s truth value collapses. This is a binary risk (exists/does not exist) but is uncheckable here, contributing to indeterminacy."", ""severity"": 0.4}, {""what"": ""Dynamic temporal changes"", ""why"": ""Height can change (e.g., posture, aging, measurement time). The statement lacks a temporal anchor (e.g., 'as of 2024'), so its truth may decay or fluctuate. This introduces indeterminacy over time but is less severe than contextual relativity."", ""severity"": 0.2}]",0.7,377,609,986,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.75,
+  ""F"": 0.3,
+
+  ""losses"": [
+    {
+      ""what"": ""Contextual definition of 'tall'"",
+      ""why"": ""The term 'tall' is culturally, temporally, and demographically relative (e.g., 1.75m may be average in some populations, short in others, or tall in historical contexts). Without a fixed reference class (e.g., 'tall for a 12-year-old' or 'tall for a Dutch adult male in 2024'), the truth value of the consequent ('John is tall') cannot be determined from the antecedent (1.75m) alone. This introduces semantic indeterminacy."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Measurement precision and accuracy"",
+      ""why"": ""The statement assumes 1.75m is exact, but no tolerance range (e.g., ±0.01m) or measurement method (e.g., self-reported vs. clinical) is provided. Minor deviations could alter the classification (e.g., 1.74m vs. 1.76m might cross a 'tall' threshold in some frameworks). This contributes to indeterminacy in the premise's applicability."",
+      ""severity"": 0.3
+    },
+    {
+      ""what"": ""Logical validity of the inference"",
+      ""why"": ""The statement conflates a specific measurement with a vague predicate via an implicit rule ('therefore'). Neutrosophic logic does not evaluate the *soundness* of unstated rules (e.g., 'X meters → tall'), only their outputs if provided. The inference itself is a categorical leap, but without the rule's formalization, its falsity is partial (0.3) rather than absolute (1.0)."",
+      ""severity"": 0.5
+    },
+    {
+      ""what"": ""John’s existence and identity"",
+      ""why"": ""The statement assumes 'John' refers to a real, measurable individual. If 'John' is fictional, hypothetical, or mispecified (e.g., a group average), the premise’s truth value collapses. This is a binary risk (exists/does not exist) but is uncheckable here, contributing to indeterminacy."",
+      ""severity"": 0.4
+    },
+    {
+      ""what"": ""Dynamic temporal changes"",
+      ""why"": ""Height can change (e.g., posture, aging, measurement time). The statement lacks a temporal anchor (e.g., 'as of 2024'), so its truth may decay or fluctuate. This introduces indeterminacy over time but is less severe than contextual relativity."",
+      ""severity"": 0.2
+    }
+  ]
+}
+```"
+2026-02-18T00:12:46.622886+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,3,0.0,0.75,0.3,1.05,5,0.56,"[{""what"": ""Contextual definition of 'tall'"", ""why"": ""The truth of the conclusion ('John is tall') depends on subjective, cultural, or domain-specific thresholds for 'tallness,' which are not provided. Without a reference population (e.g., average height in John\u2019s demographic) or explicit criteria, the term is inherently vague. The premise (1.75m) is precise, but the inference relies on an undefined predicate."", ""severity"": 0.8}, {""what"": ""Lack of meta-knowledge about the statement\u2019s intent"", ""why"": ""The statement could be a literal claim, a pedagogical example, or a rhetorical device. Intent affects how 'tall' should be interpreted (e.g., legally, colloquially, or statistically). Without knowing the speaker\u2019s goal, the indeterminacy of the *inference* (not just the premise) cannot be fully resolved."", ""severity"": 0.6}, {""what"": ""No verification of the premise (1.75m)"", ""why"": ""While the premise is treated as given, its accuracy is unchecked. If the measurement is unreliable (e.g., self-reported, outdated), the entire statement\u2019s truth value is compromised. This introduces secondary indeterminacy, though the primary issue remains the undefined predicate."", ""severity"": 0.3}, {""what"": ""Ignorance of John\u2019s existence or relevance"", ""why"": ""The statement assumes 'John' is a real, relevant individual whose height matters to the claim. If John is fictional or hypothetical, the truth value shifts from empirical to definitional (e.g., 'tall' in a constructed scenario). This is unassessed."", ""severity"": 0.4}, {""what"": ""Neutrosophic interaction between premise and conclusion"", ""why"": ""The logical connector ('therefore') implies a deterministic inference, but neutrosophic logic treats such inferences as having independent truth/indeterminacy/falsity. The *relationship* between the premise and conclusion introduces additional indeterminacy not captured by evaluating each part separately. For example, the inference might be valid in some frameworks (e.g., if 'tall' is defined as >1.70m) but not others, creating layered uncertainty."", ""severity"": 0.7}]",0.7,377,564,941,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.75,
+  ""F"": 0.3,
+
+  ""losses"": [
+    {
+      ""what"": ""Contextual definition of 'tall'"",
+      ""why"": ""The truth of the conclusion ('John is tall') depends on subjective, cultural, or domain-specific thresholds for 'tallness,' which are not provided. Without a reference population (e.g., average height in John’s demographic) or explicit criteria, the term is inherently vague. The premise (1.75m) is precise, but the inference relies on an undefined predicate."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Lack of meta-knowledge about the statement’s intent"",
+      ""why"": ""The statement could be a literal claim, a pedagogical example, or a rhetorical device. Intent affects how 'tall' should be interpreted (e.g., legally, colloquially, or statistically). Without knowing the speaker’s goal, the indeterminacy of the *inference* (not just the premise) cannot be fully resolved."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""No verification of the premise (1.75m)"",
+      ""why"": ""While the premise is treated as given, its accuracy is unchecked. If the measurement is unreliable (e.g., self-reported, outdated), the entire statement’s truth value is compromised. This introduces secondary indeterminacy, though the primary issue remains the undefined predicate."",
+      ""severity"": 0.3
+    },
+    {
+      ""what"": ""Ignorance of John’s existence or relevance"",
+      ""why"": ""The statement assumes 'John' is a real, relevant individual whose height matters to the claim. If John is fictional or hypothetical, the truth value shifts from empirical to definitional (e.g., 'tall' in a constructed scenario). This is unassessed."",
+      ""severity"": 0.4
+    },
+    {
+      ""what"": ""Neutrosophic interaction between premise and conclusion"",
+      ""why"": ""The logical connector ('therefore') implies a deterministic inference, but neutrosophic logic treats such inferences as having independent truth/indeterminacy/falsity. The *relationship* between the premise and conclusion introduces additional indeterminacy not captured by evaluating each part separately. For example, the inference might be valid in some frameworks (e.g., if 'tall' is defined as >1.70m) but not others, creating layered uncertainty."",
+      ""severity"": 0.7
+    }
+  ]
+}
+```"
+2026-02-18T00:12:51.319703+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,4,0.0,0.85,0.3,1.15,6,0.6083,"[{""what"": ""Contextual definition of 'tall'"", ""why"": ""'Tall' is a vague, culturally and contextually relative predicate (e.g., varies by population, gender, or domain like basketball vs. general adult males). Without a specified reference class or normative standard, the truth of the entailment ('therefore John is tall') cannot be grounded. The premise (1.75m) is precise, but the conclusion's truth depends on an undefined threshold."", ""severity"": 0.9}, {""what"": ""Lack of population baseline"", ""why"": ""The truth of 'tall' depends on comparative statistics (e.g., 1.75m is above the ~90th percentile for adult males in some countries but near median in others). Without demographic data, the indeterminacy remains high. Even if global averages were assumed, regional or subgroup variations (e.g., age, ethnicity) could drastically alter the assessment."", ""severity"": 0.8}, {""what"": ""Premise-conclusion logical gap"", ""why"": ""The statement conflates a precise measurement (1.75m) with a normative/vague category ('tall'). Neutrosophically, this is a *category error*: the truth of the premise does not logically determine the truth of the conclusion without additional rules or definitions. The indeterminacy captures this structural uncertainty, while falsity is assigned only partially because the entailment *could* be true in *some* contexts (e.g., if 'tall' is defined as >1.70m locally)."", ""severity"": 0.75}, {""what"": ""Temporal stability of 'tall'"", ""why"": ""Standards for 'tall' may shift over time (e.g., due to changes in average height). The evaluation assumes a static definition, but without a temporal anchor (e.g., 'tall in 2023'), the indeterminacy increases slightly. This is a minor but non-zero contributor to *I*."", ""severity"": 0.2}, {""what"": ""John\u2019s age or developmental stage"", ""why"": ""If John is a child, 1.75m might be exceptionally tall; if an adult, it may not be. The statement does not specify, leaving the conclusion\u2019s truth further indeterminate. This is a critical omission but partially overlaps with the 'population baseline' loss."", ""severity"": 0.7}, {""what"": ""Measurement precision and rounding"", ""why"": ""The premise assumes 1.75m is exact. In reality, measurements have error margins (e.g., \u00b10.5cm). If the true height were 1.745m, and 'tall' were defined as \u22651.75m, the conclusion would flip. This introduces minor indeterminacy (*I*) and potential falsity (*F*) if thresholds are rigid."", ""severity"": 0.3}]",0.7,377,705,1082,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.85,
+  ""F"": 0.3,
+
+  ""losses"": [
+    {
+      ""what"": ""Contextual definition of 'tall'"",
+      ""why"": ""'Tall' is a vague, culturally and contextually relative predicate (e.g., varies by population, gender, or domain like basketball vs. general adult males). Without a specified reference class or normative standard, the truth of the entailment ('therefore John is tall') cannot be grounded. The premise (1.75m) is precise, but the conclusion's truth depends on an undefined threshold."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Lack of population baseline"",
+      ""why"": ""The truth of 'tall' depends on comparative statistics (e.g., 1.75m is above the ~90th percentile for adult males in some countries but near median in others). Without demographic data, the indeterminacy remains high. Even if global averages were assumed, regional or subgroup variations (e.g., age, ethnicity) could drastically alter the assessment."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Premise-conclusion logical gap"",
+      ""why"": ""The statement conflates a precise measurement (1.75m) with a normative/vague category ('tall'). Neutrosophically, this is a *category error*: the truth of the premise does not logically determine the truth of the conclusion without additional rules or definitions. The indeterminacy captures this structural uncertainty, while falsity is assigned only partially because the entailment *could* be true in *some* contexts (e.g., if 'tall' is defined as >1.70m locally)."",
+      ""severity"": 0.75
+    },
+    {
+      ""what"": ""Temporal stability of 'tall'"",
+      ""why"": ""Standards for 'tall' may shift over time (e.g., due to changes in average height). The evaluation assumes a static definition, but without a temporal anchor (e.g., 'tall in 2023'), the indeterminacy increases slightly. This is a minor but non-zero contributor to *I*."",
+      ""severity"": 0.2
+    },
+    {
+      ""what"": ""John’s age or developmental stage"",
+      ""why"": ""If John is a child, 1.75m might be exceptionally tall; if an adult, it may not be. The statement does not specify, leaving the conclusion’s truth further indeterminate. This is a critical omission but partially overlaps with the 'population baseline' loss."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Measurement precision and rounding"",
+      ""why"": ""The premise assumes 1.75m is exact. In reality, measurements have error margins (e.g., ±0.5cm). If the true height were 1.745m, and 'tall' were defined as ≥1.75m, the conclusion would flip. This introduces minor indeterminacy (*I*) and potential falsity (*F*) if thresholds are rigid."",
+      ""severity"": 0.3
+    }
+  ]
+}
+```"
+2026-02-18T00:12:57.017146+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,5,0.0,0.75,0.3,1.05,5,0.42,"[{""what"": ""Contextual definition of 'tall' in the relevant population or culture"", ""why"": ""The term 'tall' is culturally and contextually relative. Without knowing the reference group (e.g., average height in John\u2019s demographic, country, or community), the truth of the conclusion cannot be objectively determined. For example, 1.75m may be considered tall in some populations but average or below average in others (e.g., Dutch males vs. Filipino males). This ambiguity forces high indeterminacy."", ""severity"": 0.8}, {""what"": ""Precision of the premise (1.75m) and its measurement reliability"", ""why"": ""The statement assumes the measurement (1.75m) is exact and accurate. If the measurement is rounded, approximated, or unreliable (e.g., self-reported), the premise itself could be indeterminate. For example, if John\u2019s actual height is between 1.73m and 1.77m, the categorization as 'tall' might shift. This adds to indeterminacy but also introduces potential falsity if the premise is incorrect."", ""severity"": 0.4}, {""what"": ""Logical validity of the inference ('therefore')"", ""why"": ""The statement conflates a factual premise (height) with a subjective conclusion ('tall'). The inference is a non-sequitur unless 'tall' is rigidly defined (e.g., 'tall = \u22651.75m'), which it is not in natural language. This makes the *argument* false even if the premise is true, but the indeterminacy remains high due to the lack of a clear rule for the conclusion."", ""severity"": 0.6}, {""what"": ""Temporal stability of the statement"", ""why"": ""Height can change slightly over time (e.g., spinal compression, aging), and cultural definitions of 'tall' may evolve. Without a timestamp or longitudinal data, the truth value could drift, contributing to indeterminacy."", ""severity"": 0.2}, {""what"": ""John\u2019s existence or identity"", ""why"": ""The statement assumes 'John' is a real, specific individual whose height is known. If 'John' is hypothetical, fictional, or misidentified, the entire statement could be false or indeterminate. This is a minor but non-zero concern."", ""severity"": 0.1}]",0.7,377,584,961,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.75,
+  ""F"": 0.3,
+
+  ""losses"": [
+    {
+      ""what"": ""Contextual definition of 'tall' in the relevant population or culture"",
+      ""why"": ""The term 'tall' is culturally and contextually relative. Without knowing the reference group (e.g., average height in John’s demographic, country, or community), the truth of the conclusion cannot be objectively determined. For example, 1.75m may be considered tall in some populations but average or below average in others (e.g., Dutch males vs. Filipino males). This ambiguity forces high indeterminacy."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Precision of the premise (1.75m) and its measurement reliability"",
+      ""why"": ""The statement assumes the measurement (1.75m) is exact and accurate. If the measurement is rounded, approximated, or unreliable (e.g., self-reported), the premise itself could be indeterminate. For example, if John’s actual height is between 1.73m and 1.77m, the categorization as 'tall' might shift. This adds to indeterminacy but also introduces potential falsity if the premise is incorrect."",
+      ""severity"": 0.4
+    },
+    {
+      ""what"": ""Logical validity of the inference ('therefore')"",
+      ""why"": ""The statement conflates a factual premise (height) with a subjective conclusion ('tall'). The inference is a non-sequitur unless 'tall' is rigidly defined (e.g., 'tall = ≥1.75m'), which it is not in natural language. This makes the *argument* false even if the premise is true, but the indeterminacy remains high due to the lack of a clear rule for the conclusion."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Temporal stability of the statement"",
+      ""why"": ""Height can change slightly over time (e.g., spinal compression, aging), and cultural definitions of 'tall' may evolve. Without a timestamp or longitudinal data, the truth value could drift, contributing to indeterminacy."",
+      ""severity"": 0.2
+    },
+    {
+      ""what"": ""John’s existence or identity"",
+      ""why"": ""The statement assumes 'John' is a real, specific individual whose height is known. If 'John' is hypothetical, fictional, or misidentified, the entire statement could be false or indeterminate. This is a minor but non-zero concern."",
+      ""severity"": 0.1
+    }
+  ]
+}
+```"
+2026-02-18T00:13:01.734268+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,1,0.45,0.7,0.3,1.45,5,0.68,"[{""what"": ""Universal moral framework"", ""why"": ""The statement presupposes a coherent, cross-cultural definition of 'morally right' and 'morally wrong' that applies simultaneously to the same act. No universally accepted ethical system (deontological, consequentialist, virtue-based, etc.) provides a definitive, non-contradictory resolution to this paradox. Neutrosophic evaluation cannot adjudicate between competing normative theories (e.g., Kantian duty vs. utilitarian outcomes) without imposing an arbitrary preference."", ""severity"": 0.85}, {""what"": ""Contextual granularity of 'innocent life' and 'lying'"", ""why"": ""The evaluation lacks specificity about (1) the nature of the lie (e.g., omission, fabrication, degree of deception), (2) the definition of 'innocent' (e.g., legal, moral, or situational innocence), and (3) the stakes involved (e.g., immediate physical harm vs. long-term abstract consequences). Indeterminacy is amplified by the open-endedness of these variables, which neutrosophic logic cannot resolve without additional constraints."", ""severity"": 0.75}, {""what"": ""Temporal and cultural relativity"", ""why"": ""Moral judgments about lying and innocence are historically and culturally contingent (e.g., compare Western individualist ethics to collectivist or religious frameworks). The statement\u2019s truth/falsity may vary significantly across contexts, but neutrosophic logic cannot dynamically weight these variations without empirical data on cultural consensus\u2014or lack thereof."", ""severity"": 0.7}, {""what"": ""Psychological and intentional ambiguity"", ""why"": ""The statement conflates moral *judgment* (external evaluation) with moral *experience* (internal conflict). Neutrosophic logic cannot distinguish whether the 'right and wrong at the same time' reflects (1) a genuine logical contradiction, (2) cognitive dissonance, or (3) a higher-order ethical synthesis (e.g., dialectical ethics). This ambiguity inflates indeterminacy."", ""severity"": 0.6}, {""what"": ""Falsifiability of moral claims"", ""why"": ""Moral statements are non-empirical and lack falsifiability in the Popperian sense. Without observable criteria to invalidate the claim, the assignment of falsity (F) is inherently speculative. The F-value here is a heuristic estimate based on the contradiction\u2019s *apparent* unsustainability in classical logic, not an objective refutation."", ""severity"": 0.5}]",0.7,379,617,996,Success,"```json
+{
+  ""T"": 0.45,
+  ""I"": 0.70,
+  ""F"": 0.30,
+  ""losses"": [
+    {
+      ""what"": ""Universal moral framework"",
+      ""why"": ""The statement presupposes a coherent, cross-cultural definition of 'morally right' and 'morally wrong' that applies simultaneously to the same act. No universally accepted ethical system (deontological, consequentialist, virtue-based, etc.) provides a definitive, non-contradictory resolution to this paradox. Neutrosophic evaluation cannot adjudicate between competing normative theories (e.g., Kantian duty vs. utilitarian outcomes) without imposing an arbitrary preference."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""Contextual granularity of 'innocent life' and 'lying'"",
+      ""why"": ""The evaluation lacks specificity about (1) the nature of the lie (e.g., omission, fabrication, degree of deception), (2) the definition of 'innocent' (e.g., legal, moral, or situational innocence), and (3) the stakes involved (e.g., immediate physical harm vs. long-term abstract consequences). Indeterminacy is amplified by the open-endedness of these variables, which neutrosophic logic cannot resolve without additional constraints."",
+      ""severity"": 0.75
+    },
+    {
+      ""what"": ""Temporal and cultural relativity"",
+      ""why"": ""Moral judgments about lying and innocence are historically and culturally contingent (e.g., compare Western individualist ethics to collectivist or religious frameworks). The statement’s truth/falsity may vary significantly across contexts, but neutrosophic logic cannot dynamically weight these variations without empirical data on cultural consensus—or lack thereof."",
+      ""severity"": 0.70
+    },
+    {
+      ""what"": ""Psychological and intentional ambiguity"",
+      ""why"": ""The statement conflates moral *judgment* (external evaluation) with moral *experience* (internal conflict). Neutrosophic logic cannot distinguish whether the 'right and wrong at the same time' reflects (1) a genuine logical contradiction, (2) cognitive dissonance, or (3) a higher-order ethical synthesis (e.g., dialectical ethics). This ambiguity inflates indeterminacy."",
+      ""severity"": 0.60
+    },
+    {
+      ""what"": ""Falsifiability of moral claims"",
+      ""why"": ""Moral statements are non-empirical and lack falsifiability in the Popperian sense. Without observable criteria to invalidate the claim, the assignment of falsity (F) is inherently speculative. The F-value here is a heuristic estimate based on the contradiction’s *apparent* unsustainability in classical logic, not an objective refutation."",
+      ""severity"": 0.50
+    }
+  ]
+}
+```"
+2026-02-18T00:13:15.148924+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,2,0.65,0.75,0.35,1.75,5,0.76,"[{""what"": ""Universal moral framework"", ""why"": ""No objective, cross-cultural, or metaphysical standard exists to definitively adjudicate moral paradoxes like 'right and wrong simultaneously.' Moral evaluations are inherently tied to subjective or context-dependent frameworks (e.g., deontology vs. utilitarianism), which cannot be universally reconciled. The statement\u2019s truth depends on adopting a dialectical or paradox-tolerant ethics (e.g., Zen Buddhism, some forms of postmodernism), but these are not universally accepted."", ""severity"": 0.85}, {""what"": ""Intentional ambiguity in 'lying' and 'innocent life'"", ""why"": ""The terms 'lying' (e.g., omission vs. commission, white lies vs. deception) and 'innocent life' (e.g., legal innocence vs. moral innocence, scope of harm prevented) lack precise operationalization. Indeterminacy arises from the infinite contextual variations (e.g., lying to a murderer vs. lying to a government). Without a specific scenario, the moral weight of the act cannot be finely calibrated."", ""severity"": 0.7}, {""what"": ""Temporal and cultural relativity"", ""why"": ""Moral judgments about lying and life-saving are historically and culturally contingent (e.g., Kant\u2019s absolutism vs. situational ethics in wartime). The statement\u2019s truth/falsity may shift across time or societies, but this evaluation assumes a generic, modern Western epistemic lens, which is inherently limited."", ""severity"": 0.6}, {""what"": ""Neutrosophic overlap in moral contradictions"", ""why"": ""The statement explicitly invokes a contradiction ('right and wrong at the same time'), which neutrosophic logic can accommodate via indeterminacy. However, the degree to which this contradiction is *resolvable* (e.g., via higher-order ethics) or *irreducible* (e.g., a hard paradox) cannot be determined without a meta-ethical framework. This limits the precision of T/F assignments."", ""severity"": 0.9}, {""what"": ""Empirical consequences of the lie"", ""why"": ""The moral evaluation depends on unknowable counterfactuals: Would the lie *actually* save the life? Would alternative truthful actions achieve the same outcome? Would the lie have unintended harmful consequences? These cannot be evaluated without specific evidence, contributing to indeterminacy."", ""severity"": 0.75}]",0.7,379,597,976,Success,"```json
+{
+  ""T"": 0.65,
+  ""I"": 0.75,
+  ""F"": 0.35,
+  ""losses"": [
+    {
+      ""what"": ""Universal moral framework"",
+      ""why"": ""No objective, cross-cultural, or metaphysical standard exists to definitively adjudicate moral paradoxes like 'right and wrong simultaneously.' Moral evaluations are inherently tied to subjective or context-dependent frameworks (e.g., deontology vs. utilitarianism), which cannot be universally reconciled. The statement’s truth depends on adopting a dialectical or paradox-tolerant ethics (e.g., Zen Buddhism, some forms of postmodernism), but these are not universally accepted."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""Intentional ambiguity in 'lying' and 'innocent life'"",
+      ""why"": ""The terms 'lying' (e.g., omission vs. commission, white lies vs. deception) and 'innocent life' (e.g., legal innocence vs. moral innocence, scope of harm prevented) lack precise operationalization. Indeterminacy arises from the infinite contextual variations (e.g., lying to a murderer vs. lying to a government). Without a specific scenario, the moral weight of the act cannot be finely calibrated."",
+      ""severity"": 0.70
+    },
+    {
+      ""what"": ""Temporal and cultural relativity"",
+      ""why"": ""Moral judgments about lying and life-saving are historically and culturally contingent (e.g., Kant’s absolutism vs. situational ethics in wartime). The statement’s truth/falsity may shift across time or societies, but this evaluation assumes a generic, modern Western epistemic lens, which is inherently limited."",
+      ""severity"": 0.60
+    },
+    {
+      ""what"": ""Neutrosophic overlap in moral contradictions"",
+      ""why"": ""The statement explicitly invokes a contradiction ('right and wrong at the same time'), which neutrosophic logic can accommodate via indeterminacy. However, the degree to which this contradiction is *resolvable* (e.g., via higher-order ethics) or *irreducible* (e.g., a hard paradox) cannot be determined without a meta-ethical framework. This limits the precision of T/F assignments."",
+      ""severity"": 0.90
+    },
+    {
+      ""what"": ""Empirical consequences of the lie"",
+      ""why"": ""The moral evaluation depends on unknowable counterfactuals: Would the lie *actually* save the life? Would alternative truthful actions achieve the same outcome? Would the lie have unintended harmful consequences? These cannot be evaluated without specific evidence, contributing to indeterminacy."",
+      ""severity"": 0.75
+    }
+  ]
+}
+```"
+2026-02-18T00:13:22.464482+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,3,0.65,0.75,0.35,1.75,5,0.8,"[{""what"": ""Universal moral framework"", ""why"": ""The statement relies on an implicit assumption that moral rightness/wrongness is non-binary and can coexist paradoxically. However, there is no universally accepted ethical system (e.g., deontological, utilitarian, virtue ethics) that definitively resolves whether contradictory moral judgments can hold simultaneously. The lack of consensus introduces indeterminacy in grounding 'T' or 'F' objectively."", ""severity"": 0.8}, {""what"": ""Contextual specificity of 'innocent life' and 'lying'"", ""why"": ""The moral evaluation depends heavily on undefined variables: What constitutes 'lying' (e.g., omission, deception by action)? Who qualifies as 'innocent' (e.g., legal, moral, or situational innocence)? What are the consequences of the lie (e.g., short-term vs. long-term harm)? Without these, the truth/falsity of the claim cannot be precisely anchored."", ""severity"": 0.7}, {""what"": ""Cultural and subjective variability in moral reasoning"", ""why"": ""Moral judgments are deeply influenced by cultural norms, personal values, and philosophical traditions (e.g., Eastern vs. Western ethics, religious vs. secular views). The statement\u2019s truth/falsity may vary drastically across these frameworks, and no single evaluation can account for all perspectives. This inflates 'I' and reduces confidence in 'T' or 'F'."", ""severity"": 0.85}, {""what"": ""Neutrosophic paradox interpretation"", ""why"": ""The statement is self-referentially paradoxical ('right and wrong at the same time'). Neutrosophic logic permits such contradictions, but the degree to which this reflects a *meaningful* truth (vs. a linguistic or logical artifact) is unclear. This ambiguity contributes to high 'I' and moderates both 'T' and 'F'."", ""severity"": 0.75}, {""what"": ""Empirical verification of moral claims"", ""why"": ""Moral statements are not empirically falsifiable in the same way as factual claims. There is no experimental or observational method to definitively measure the 'rightness' or 'wrongness' of lying in this context, forcing reliance on abstract reasoning and increasing 'I'."", ""severity"": 0.9}]",0.7,379,570,949,Success,"```json
+{
+  ""T"": 0.65,
+  ""I"": 0.75,
+  ""F"": 0.35,
+  ""losses"": [
+    {
+      ""what"": ""Universal moral framework"",
+      ""why"": ""The statement relies on an implicit assumption that moral rightness/wrongness is non-binary and can coexist paradoxically. However, there is no universally accepted ethical system (e.g., deontological, utilitarian, virtue ethics) that definitively resolves whether contradictory moral judgments can hold simultaneously. The lack of consensus introduces indeterminacy in grounding 'T' or 'F' objectively."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Contextual specificity of 'innocent life' and 'lying'"",
+      ""why"": ""The moral evaluation depends heavily on undefined variables: What constitutes 'lying' (e.g., omission, deception by action)? Who qualifies as 'innocent' (e.g., legal, moral, or situational innocence)? What are the consequences of the lie (e.g., short-term vs. long-term harm)? Without these, the truth/falsity of the claim cannot be precisely anchored."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Cultural and subjective variability in moral reasoning"",
+      ""why"": ""Moral judgments are deeply influenced by cultural norms, personal values, and philosophical traditions (e.g., Eastern vs. Western ethics, religious vs. secular views). The statement’s truth/falsity may vary drastically across these frameworks, and no single evaluation can account for all perspectives. This inflates 'I' and reduces confidence in 'T' or 'F'."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""Neutrosophic paradox interpretation"",
+      ""why"": ""The statement is self-referentially paradoxical ('right and wrong at the same time'). Neutrosophic logic permits such contradictions, but the degree to which this reflects a *meaningful* truth (vs. a linguistic or logical artifact) is unclear. This ambiguity contributes to high 'I' and moderates both 'T' and 'F'."",
+      ""severity"": 0.75
+    },
+    {
+      ""what"": ""Empirical verification of moral claims"",
+      ""why"": ""Moral statements are not empirically falsifiable in the same way as factual claims. There is no experimental or observational method to definitively measure the 'rightness' or 'wrongness' of lying in this context, forcing reliance on abstract reasoning and increasing 'I'."",
+      ""severity"": 0.9
+    }
+  ]
+}
+```"
+2026-02-18T00:13:27.461085+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,4,0.65,0.75,0.55,1.95,5,0.74,"[{""what"": ""Cultural and philosophical relativity of moral frameworks"", ""why"": ""The statement's truth-value depends heavily on unresolved debates in metaethics (e.g., moral realism vs. anti-realism, deontology vs. consequentialism). Normative judgments like 'morally right and wrong' are often context-dependent, and no universal consensus exists on how to reconcile contradictions in moral duties. This introduces indeterminacy because the 'rightness' and 'wrongness' may be evaluated differently across ethical systems (e.g., Kantian duty vs. utilitarian outcomes)."", ""severity"": 0.8}, {""what"": ""Lack of operationalizable definitions for 'lying,' 'innocent life,' and 'morally right/wrong'"", ""why"": ""Without precise, agreed-upon definitions, the statement\u2019s components are ambiguous. For example, is 'lying' limited to verbal deception, or does it include omission? Is 'innocent life' strictly legal innocence or a broader moral concept? The fuzziness of these terms forces reliance on intuitive or subjective interpretations, increasing indeterminacy and reducing the confidence in assigning truth or falsity."", ""severity"": 0.7}, {""what"": ""Empirical consequences of lying in life-saving scenarios"", ""why"": ""The statement implicitly assumes a causal link between lying and saving a life, but real-world outcomes are probabilistic and context-dependent. Without empirical data on how often lying *actually* saves lives in specific scenarios (e.g., hiding someone from a persecutor vs. medical deception), the truth-value of the moral claim cannot be grounded in observable consequences. This limits the evaluation of both truth and falsity."", ""severity"": 0.6}, {""what"": ""Neutrosophic interaction between contradiction and moral paradoxes"", ""why"": ""The statement asserts a *simultaneous* truth of two contradictory moral propositions ('right and wrong'). While neutrosophic logic accommodates such contradictions, the degree to which this reflects a *genuine* moral paradox (vs. a linguistic or logical confusion) is unclear. Philosophical traditions like dialetheism (which accepts true contradictions) are niche, and most ethical systems seek to resolve such tensions rather than embrace them. This raises indeterminacy about whether the contradiction is meaningful or merely apparent."", ""severity"": 0.75}, {""what"": ""Agent-specific and situational variability"", ""why"": ""The moral evaluation of lying may depend on the agent\u2019s intentions, alternatives available, and the specific circumstances (e.g., lying to a murderer vs. lying to a friend). The statement generalizes across all possible scenarios, but without specifying these variables, the truth and falsity values are highly sensitive to unmeasured context. This increases indeterminacy and reduces the precision of T/F assignments."", ""severity"": 0.85}]",0.7,379,674,1053,Success,"```json
+{
+  ""T"": 0.65,
+  ""I"": 0.75,
+  ""F"": 0.55,
+  ""losses"": [
+    {
+      ""what"": ""Cultural and philosophical relativity of moral frameworks"",
+      ""why"": ""The statement's truth-value depends heavily on unresolved debates in metaethics (e.g., moral realism vs. anti-realism, deontology vs. consequentialism). Normative judgments like 'morally right and wrong' are often context-dependent, and no universal consensus exists on how to reconcile contradictions in moral duties. This introduces indeterminacy because the 'rightness' and 'wrongness' may be evaluated differently across ethical systems (e.g., Kantian duty vs. utilitarian outcomes)."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Lack of operationalizable definitions for 'lying,' 'innocent life,' and 'morally right/wrong'"",
+      ""why"": ""Without precise, agreed-upon definitions, the statement’s components are ambiguous. For example, is 'lying' limited to verbal deception, or does it include omission? Is 'innocent life' strictly legal innocence or a broader moral concept? The fuzziness of these terms forces reliance on intuitive or subjective interpretations, increasing indeterminacy and reducing the confidence in assigning truth or falsity."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Empirical consequences of lying in life-saving scenarios"",
+      ""why"": ""The statement implicitly assumes a causal link between lying and saving a life, but real-world outcomes are probabilistic and context-dependent. Without empirical data on how often lying *actually* saves lives in specific scenarios (e.g., hiding someone from a persecutor vs. medical deception), the truth-value of the moral claim cannot be grounded in observable consequences. This limits the evaluation of both truth and falsity."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Neutrosophic interaction between contradiction and moral paradoxes"",
+      ""why"": ""The statement asserts a *simultaneous* truth of two contradictory moral propositions ('right and wrong'). While neutrosophic logic accommodates such contradictions, the degree to which this reflects a *genuine* moral paradox (vs. a linguistic or logical confusion) is unclear. Philosophical traditions like dialetheism (which accepts true contradictions) are niche, and most ethical systems seek to resolve such tensions rather than embrace them. This raises indeterminacy about whether the contradiction is meaningful or merely apparent."",
+      ""severity"": 0.75
+    },
+    {
+      ""what"": ""Agent-specific and situational variability"",
+      ""why"": ""The moral evaluation of lying may depend on the agent’s intentions, alternatives available, and the specific circumstances (e.g., lying to a murderer vs. lying to a friend). The statement generalizes across all possible scenarios, but without specifying these variables, the truth and falsity values are highly sensitive to unmeasured context. This increases indeterminacy and reduces the precision of T/F assignments."",
+      ""severity"": 0.85
+    }
+  ]
+}
+```"
+2026-02-18T00:13:33.608884+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,5,0.65,0.75,0.35,1.75,5,0.76,"[{""what"": ""Universal moral framework"", ""why"": ""The statement conflates deontological (duty-based) and consequentialist (outcome-based) ethics, but there is no universally accepted meta-ethical system to adjudicate whether a single act can simultaneously satisfy contradictory moral evaluations. Cultural, philosophical, and individual variations in moral reasoning (e.g., Kantian vs. utilitarian perspectives) introduce irreducible ambiguity."", ""severity"": 0.85}, {""what"": ""Definition of 'lying' and 'innocent life'"", ""why"": ""The terms are context-dependent and lack precise operationalization. 'Lying' may range from omission to fabrication, and 'innocent life' may vary by legal, social, or personal standards (e.g., is a fetus an 'innocent life'? Is a combatant in war?). Without concrete parameters, the moral weight of the act cannot be fully determined."", ""severity"": 0.7}, {""what"": ""Temporal and situational dynamics"", ""why"": ""The moral evaluation of lying may shift based on unforeseeable consequences (e.g., the lie saves a life but later causes harm) or evolving norms (e.g., societal views on deception change over time). Neutrosophic logic cannot dynamically account for future states or retrospective reassessments."", ""severity"": 0.6}, {""what"": ""Psychological and intentional ambiguity"", ""why"": ""The statement assumes the actor\u2019s intent is purely to 'save a life,' but mixed motives (e.g., self-preservation, fear) or unconscious biases may undermine the moral clarity. Indeterminacy arises from the inability to fully access or verify internal states."", ""severity"": 0.75}, {""what"": ""Formal logical contradiction"", ""why"": ""The statement asserts a simultaneous truth of 'right and wrong,' which classical logic treats as a contradiction (A \u2227 \u00acA). While neutrosophic logic permits partial truth/falsity/indeterminacy, the degree to which this contradiction is resolvable or meaningful in moral philosophy remains contested. The evaluation risks reifying a paradox without a clear framework for its interpretation."", ""severity"": 0.9}]",0.7,379,544,923,Success,"```json
+{
+  ""T"": 0.65,
+  ""I"": 0.75,
+  ""F"": 0.35,
+  ""losses"": [
+    {
+      ""what"": ""Universal moral framework"",
+      ""why"": ""The statement conflates deontological (duty-based) and consequentialist (outcome-based) ethics, but there is no universally accepted meta-ethical system to adjudicate whether a single act can simultaneously satisfy contradictory moral evaluations. Cultural, philosophical, and individual variations in moral reasoning (e.g., Kantian vs. utilitarian perspectives) introduce irreducible ambiguity."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""Definition of 'lying' and 'innocent life'"",
+      ""why"": ""The terms are context-dependent and lack precise operationalization. 'Lying' may range from omission to fabrication, and 'innocent life' may vary by legal, social, or personal standards (e.g., is a fetus an 'innocent life'? Is a combatant in war?). Without concrete parameters, the moral weight of the act cannot be fully determined."",
+      ""severity"": 0.70
+    },
+    {
+      ""what"": ""Temporal and situational dynamics"",
+      ""why"": ""The moral evaluation of lying may shift based on unforeseeable consequences (e.g., the lie saves a life but later causes harm) or evolving norms (e.g., societal views on deception change over time). Neutrosophic logic cannot dynamically account for future states or retrospective reassessments."",
+      ""severity"": 0.60
+    },
+    {
+      ""what"": ""Psychological and intentional ambiguity"",
+      ""why"": ""The statement assumes the actor’s intent is purely to 'save a life,' but mixed motives (e.g., self-preservation, fear) or unconscious biases may undermine the moral clarity. Indeterminacy arises from the inability to fully access or verify internal states."",
+      ""severity"": 0.75
+    },
+    {
+      ""what"": ""Formal logical contradiction"",
+      ""why"": ""The statement asserts a simultaneous truth of 'right and wrong,' which classical logic treats as a contradiction (A ∧ ¬A). While neutrosophic logic permits partial truth/falsity/indeterminacy, the degree to which this contradiction is resolvable or meaningful in moral philosophy remains contested. The evaluation risks reifying a paradox without a clear framework for its interpretation."",
+      ""severity"": 0.90
+    }
+  ]
+}
+```"
+2026-02-18T00:13:59.013495+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,1,0.0,0.95,0.05,1.0,5,0.76,"[{""what"": ""Lack of real-time meteorological data for New York tomorrow"", ""why"": ""Without access to up-to-date weather models, atmospheric observations, or probabilistic forecasts specific to the exact location and timeframe, the truth value cannot be grounded in empirical evidence. Historical averages or general trends are insufficient for a precise evaluation."", ""severity"": 0.9}, {""what"": ""Spatial and temporal ambiguity in 'New York' and 'tomorrow'"", ""why"": ""'New York' could refer to the city (which part?), state, or metropolitan area, each with microclimates. 'Tomorrow' depends on the time zone of evaluation and the exact 24-hour window. This introduces unquantifiable variability in the probabilistic assessment."", ""severity"": 0.75}, {""what"": ""Inherent chaos in weather systems"", ""why"": ""Weather is a chaotic system where small variations in initial conditions (e.g., butterfly effect) can lead to divergent outcomes. Even with perfect data, deterministic prediction is impossible beyond short timeframes, forcing reliance on probabilistic models that may not capture all indeterminacies."", ""severity"": 0.85}, {""what"": ""Epistemic limitations of neutrosophic evaluation for physical predictions"", ""why"": ""Neutrosophic logic is not a physical model; it cannot substitute for domain-specific tools (e.g., numerical weather prediction). The I-value here reflects meta-uncertainty about the statement\u2019s truth-process, not a rigorous quantification of meteorological uncertainty."", ""severity"": 0.6}, {""what"": ""Absence of contextual thresholds for 'rain'"", ""why"": ""The statement does not specify what constitutes 'rain' (e.g., >0.1mm precipitation? >1mm? Duration?). Different thresholds would yield different T/F/I values, but no standard is provided."", ""severity"": 0.7}]",0.7,370,477,847,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.95,
+  ""F"": 0.05,
+  ""losses"": [
+    {
+      ""what"": ""Lack of real-time meteorological data for New York tomorrow"",
+      ""why"": ""Without access to up-to-date weather models, atmospheric observations, or probabilistic forecasts specific to the exact location and timeframe, the truth value cannot be grounded in empirical evidence. Historical averages or general trends are insufficient for a precise evaluation."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Spatial and temporal ambiguity in 'New York' and 'tomorrow'"",
+      ""why"": ""'New York' could refer to the city (which part?), state, or metropolitan area, each with microclimates. 'Tomorrow' depends on the time zone of evaluation and the exact 24-hour window. This introduces unquantifiable variability in the probabilistic assessment."",
+      ""severity"": 0.75
+    },
+    {
+      ""what"": ""Inherent chaos in weather systems"",
+      ""why"": ""Weather is a chaotic system where small variations in initial conditions (e.g., butterfly effect) can lead to divergent outcomes. Even with perfect data, deterministic prediction is impossible beyond short timeframes, forcing reliance on probabilistic models that may not capture all indeterminacies."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""Epistemic limitations of neutrosophic evaluation for physical predictions"",
+      ""why"": ""Neutrosophic logic is not a physical model; it cannot substitute for domain-specific tools (e.g., numerical weather prediction). The I-value here reflects meta-uncertainty about the statement’s truth-process, not a rigorous quantification of meteorological uncertainty."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Absence of contextual thresholds for 'rain'"",
+      ""why"": ""The statement does not specify what constitutes 'rain' (e.g., >0.1mm precipitation? >1mm? Duration?). Different thresholds would yield different T/F/I values, but no standard is provided."",
+      ""severity"": 0.7
+    }
+  ]
+}
+```"
+2026-02-18T00:14:03.219267+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,2,0.0,0.85,0.0,0.85,5,0.78,"[{""what"": ""Lack of real-time meteorological data for New York tomorrow"", ""why"": ""Weather is a chaotic system with inherent unpredictability beyond ~7-10 days, and hyperlocal forecasts (e.g., specific neighborhoods or hours) degrade rapidly. Without access to the latest high-resolution models (e.g., HRRR, ECMWF), probabilistic outputs, or ensemble predictions, the truth value cannot be grounded in empirical evidence. Indeterminacy dominates because the system is sensitive to initial conditions (butterfly effect) and observational noise."", ""severity"": 0.9}, {""what"": ""Ambiguity in the statement\u2019s spatial/temporal granularity"", ""why"": ""'New York' could refer to the 5 boroughs (300+ sq mi), a specific borough, or a single point (e.g., Central Park). 'Tomorrow' spans 24 hours, but rain could occur for 5 minutes or 12 hours. Probabilities vary drastically across scales (e.g., 30% chance for the city \u2260 30% for a specific block). Without clarification, indeterminacy increases due to the *reference class problem*."", ""severity"": 0.75}, {""what"": ""Epistemic dependence on unobserved boundary conditions"", ""why"": ""Critical factors like jet stream oscillations, Atlantic sea surface temperatures, or even urban heat island effects (which can suppress/increase local convection) may not be fully captured in public forecasts. These are *known unknowns*\u2014their absence contributes to indeterminacy but isn\u2019t falsifiable without counterfactual data."", ""severity"": 0.8}, {""what"": ""Human interpretation of 'rain'"", ""why"": ""The statement doesn\u2019t specify thresholds (e.g., >0.1mm, >1mm). Meteorological 'rain' (measurable precipitation) may not align with lay perceptions (e.g., drizzle vs. showers). This linguistic ambiguity inflates indeterminacy, as the truth condition depends on an unspoken operational definition."", ""severity"": 0.6}, {""what"": ""Model bias and forecast skill decay"", ""why"": ""Even with perfect data, numerical weather prediction (NWP) models have inherent biases (e.g., overestimating convection in urban areas). Skill for precipitation drops to ~60-70% at 24 hours for some models. Indeterminacy reflects *aleatoric* (inherent) and *epistemic* (model) uncertainty, but the latter is unquantifiable without model-specific diagnostics."", ""severity"": 0.85}]",0.7,370,626,996,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.85,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Lack of real-time meteorological data for New York tomorrow"",
+      ""why"": ""Weather is a chaotic system with inherent unpredictability beyond ~7-10 days, and hyperlocal forecasts (e.g., specific neighborhoods or hours) degrade rapidly. Without access to the latest high-resolution models (e.g., HRRR, ECMWF), probabilistic outputs, or ensemble predictions, the truth value cannot be grounded in empirical evidence. Indeterminacy dominates because the system is sensitive to initial conditions (butterfly effect) and observational noise."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Ambiguity in the statement’s spatial/temporal granularity"",
+      ""why"": ""'New York' could refer to the 5 boroughs (300+ sq mi), a specific borough, or a single point (e.g., Central Park). 'Tomorrow' spans 24 hours, but rain could occur for 5 minutes or 12 hours. Probabilities vary drastically across scales (e.g., 30% chance for the city ≠ 30% for a specific block). Without clarification, indeterminacy increases due to the *reference class problem*."",
+      ""severity"": 0.75
+    },
+    {
+      ""what"": ""Epistemic dependence on unobserved boundary conditions"",
+      ""why"": ""Critical factors like jet stream oscillations, Atlantic sea surface temperatures, or even urban heat island effects (which can suppress/increase local convection) may not be fully captured in public forecasts. These are *known unknowns*—their absence contributes to indeterminacy but isn’t falsifiable without counterfactual data."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Human interpretation of 'rain'"",
+      ""why"": ""The statement doesn’t specify thresholds (e.g., >0.1mm, >1mm). Meteorological 'rain' (measurable precipitation) may not align with lay perceptions (e.g., drizzle vs. showers). This linguistic ambiguity inflates indeterminacy, as the truth condition depends on an unspoken operational definition."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Model bias and forecast skill decay"",
+      ""why"": ""Even with perfect data, numerical weather prediction (NWP) models have inherent biases (e.g., overestimating convection in urban areas). Skill for precipitation drops to ~60-70% at 24 hours for some models. Indeterminacy reflects *aleatoric* (inherent) and *epistemic* (model) uncertainty, but the latter is unquantifiable without model-specific diagnostics."",
+      ""severity"": 0.85
+    }
+  ]
+}
+```"
+2026-02-18T00:14:12.142372+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,3,0.0,0.95,0.0,0.95,6,0.75,"[{""what"": ""Precise meteorological data for tomorrow in New York"", ""why"": ""Real-time, hyper-local atmospheric conditions, microclimates, and chaotic variables (e.g., butterfly effects) are unobservable at this instant, even with current forecasting models. The National Weather Service and other models provide probabilistic predictions (e.g., 60% chance of rain), but these are aggregated approximations, not ground truths. Without access to a perfect, deterministic simulation of Earth's atmosphere, the actual outcome remains inherently probabilistic."", ""severity"": 0.9}, {""what"": ""Definition of 'rain' (thresholds for duration, intensity, or spatial coverage)"", ""why"": ""The statement lacks operational clarity: Does 'rain' mean \u22650.1mm precipitation, a measurable accumulation, or subjective perception? Different agencies use different thresholds (e.g., NOAA vs. WMO). Indeterminacy arises from ambiguity in the predicate itself, independent of atmospheric uncertainty."", ""severity"": 0.7}, {""what"": ""Temporal and spatial boundaries of 'tomorrow' and 'New York'"", ""why"": ""'Tomorrow' spans 24 hours, but rain could occur for 1 minute or 24 hours; 'New York' could refer to Manhattan, the 5 boroughs, or the broader metro area. The statement\u2019s scope is underspecified, introducing combinatorial uncertainty. A single raindrop in Central Park technically satisfies the statement, but this may not align with pragmatic interpretations."", ""severity"": 0.8}, {""what"": ""Epistemic access to future contingent events"", ""why"": ""The statement references a future contingent event, which\u2014under most philosophical interpretations (e.g., Aristotelian, open futurism)\u2014lacks a definite truth value until the moment of occurrence. Even with perfect knowledge of current conditions, the non-linear dynamics of weather systems impose fundamental limits on predictability (cf. Lorenz\u2019s work on deterministic chaos)."", ""severity"": 1.0}, {""what"": ""Observer-dependent framing (e.g., reference class problem)"", ""why"": ""The evaluation depends on implicit reference classes: Is this a climatic average? A forecast model\u2019s output? A layperson\u2019s guess? Different frames yield different indeterminacy profiles. For example, if interpreted as 'given the 30-year climatic average for this date,' the truth value shifts, but the statement\u2019s surface form does not specify this."", ""severity"": 0.6}, {""what"": ""Potential for novel or black swan events"", ""why"": ""Low-probability, high-impact events (e.g., a sudden volcanic eruption altering jet streams, or a cyberattack disabling weather satellites) are not incorporated into standard forecasts. These events are epistemically inaccessible in advance, contributing to irreducible indeterminacy."", ""severity"": 0.5}]",0.7,370,679,1049,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.95,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Precise meteorological data for tomorrow in New York"",
+      ""why"": ""Real-time, hyper-local atmospheric conditions, microclimates, and chaotic variables (e.g., butterfly effects) are unobservable at this instant, even with current forecasting models. The National Weather Service and other models provide probabilistic predictions (e.g., 60% chance of rain), but these are aggregated approximations, not ground truths. Without access to a perfect, deterministic simulation of Earth's atmosphere, the actual outcome remains inherently probabilistic."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Definition of 'rain' (thresholds for duration, intensity, or spatial coverage)"",
+      ""why"": ""The statement lacks operational clarity: Does 'rain' mean ≥0.1mm precipitation, a measurable accumulation, or subjective perception? Different agencies use different thresholds (e.g., NOAA vs. WMO). Indeterminacy arises from ambiguity in the predicate itself, independent of atmospheric uncertainty."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Temporal and spatial boundaries of 'tomorrow' and 'New York'"",
+      ""why"": ""'Tomorrow' spans 24 hours, but rain could occur for 1 minute or 24 hours; 'New York' could refer to Manhattan, the 5 boroughs, or the broader metro area. The statement’s scope is underspecified, introducing combinatorial uncertainty. A single raindrop in Central Park technically satisfies the statement, but this may not align with pragmatic interpretations."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Epistemic access to future contingent events"",
+      ""why"": ""The statement references a future contingent event, which—under most philosophical interpretations (e.g., Aristotelian, open futurism)—lacks a definite truth value until the moment of occurrence. Even with perfect knowledge of current conditions, the non-linear dynamics of weather systems impose fundamental limits on predictability (cf. Lorenz’s work on deterministic chaos)."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Observer-dependent framing (e.g., reference class problem)"",
+      ""why"": ""The evaluation depends on implicit reference classes: Is this a climatic average? A forecast model’s output? A layperson’s guess? Different frames yield different indeterminacy profiles. For example, if interpreted as 'given the 30-year climatic average for this date,' the truth value shifts, but the statement’s surface form does not specify this."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Potential for novel or black swan events"",
+      ""why"": ""Low-probability, high-impact events (e.g., a sudden volcanic eruption altering jet streams, or a cyberattack disabling weather satellites) are not incorporated into standard forecasts. These events are epistemically inaccessible in advance, contributing to irreducible indeterminacy."",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:14:25.983985+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,4,0.0,0.95,0.0,0.95,5,0.88,"[{""what"": ""Lack of real-time meteorological data for New York tomorrow"", ""why"": ""Weather is inherently chaotic and requires up-to-date atmospheric measurements, models, and probabilistic forecasts (e.g., NOAA, ECMWF) to assign meaningful truth values. Without access to these, the truth or falsity cannot be grounded in observational or computational evidence."", ""severity"": 0.95}, {""what"": ""Spatial and temporal ambiguity in 'New York' and 'tomorrow'"", ""why"": ""'New York' could refer to the city (which part?), state, or metro area, each with microclimates. 'Tomorrow' depends on the time zone and the exact 24-hour window (e.g., midnight-to-midnight vs. daytime). This unclarity amplifies indeterminacy beyond meteorological uncertainty alone."", ""severity"": 0.85}, {""what"": ""Definition of 'rain' (threshold of precipitation)"", ""why"": ""The statement does not specify the threshold for 'rain' (e.g., >0.1mm, >1mm, or subjective perception). Different standards (e.g., meteorological vs. colloquial) would yield different truth values."", ""severity"": 0.7}, {""what"": ""Epistemic inaccessibility of future contingents"", ""why"": ""Neutrosophic logic treats future contingents as inherently indeterminate until realized. Even with perfect data, the open future introduces irreducible uncertainty (I) that cannot be collapsed into T or F without metaphysical assumptions (e.g., determinism)."", ""severity"": 1.0}, {""what"": ""Model limitations and butterfly effects in weather prediction"", ""why"": ""Even state-of-the-art weather models (e.g., GFS, ECMWF) have resolution limits (~9\u201350km grid cells) and sensitivity to initial conditions. Localized rain (e.g., pop-up thunderstorms) may be unpredictable beyond ~6\u201312 hours, especially in summer. This technical indeterminacy is distinct from data absence."", ""severity"": 0.9}]",0.7,370,519,889,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.95,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Lack of real-time meteorological data for New York tomorrow"",
+      ""why"": ""Weather is inherently chaotic and requires up-to-date atmospheric measurements, models, and probabilistic forecasts (e.g., NOAA, ECMWF) to assign meaningful truth values. Without access to these, the truth or falsity cannot be grounded in observational or computational evidence."",
+      ""severity"": 0.95
+    },
+    {
+      ""what"": ""Spatial and temporal ambiguity in 'New York' and 'tomorrow'"",
+      ""why"": ""'New York' could refer to the city (which part?), state, or metro area, each with microclimates. 'Tomorrow' depends on the time zone and the exact 24-hour window (e.g., midnight-to-midnight vs. daytime). This unclarity amplifies indeterminacy beyond meteorological uncertainty alone."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""Definition of 'rain' (threshold of precipitation)"",
+      ""why"": ""The statement does not specify the threshold for 'rain' (e.g., >0.1mm, >1mm, or subjective perception). Different standards (e.g., meteorological vs. colloquial) would yield different truth values."",
+      ""severity"": 0.70
+    },
+    {
+      ""what"": ""Epistemic inaccessibility of future contingents"",
+      ""why"": ""Neutrosophic logic treats future contingents as inherently indeterminate until realized. Even with perfect data, the open future introduces irreducible uncertainty (I) that cannot be collapsed into T or F without metaphysical assumptions (e.g., determinism)."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Model limitations and butterfly effects in weather prediction"",
+      ""why"": ""Even state-of-the-art weather models (e.g., GFS, ECMWF) have resolution limits (~9–50km grid cells) and sensitivity to initial conditions. Localized rain (e.g., pop-up thunderstorms) may be unpredictable beyond ~6–12 hours, especially in summer. This technical indeterminacy is distinct from data absence."",
+      ""severity"": 0.90
+    }
+  ]
+}
+```"
+2026-02-18T00:14:31.969938+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,5,0.0,0.85,0.0,0.85,5,0.73,"[{""what"": ""Lack of real-time meteorological data for New York (tomorrow)"", ""why"": ""Without access to up-to-date weather models, probabilistic forecasts, or atmospheric observations (e.g., NOAA/NWS data, ensemble predictions, or local microclimate patterns), the truth or falsity of the statement cannot be grounded in empirical evidence. Neutrosophic evaluation here relies on *general knowledge* of weather unpredictability rather than specific, actionable data."", ""severity"": 0.9}, {""what"": ""Temporal and spatial ambiguity in 'tomorrow' and 'New York'"", ""why"": ""'Tomorrow' is relative to the time of evaluation (which may not align with the user's local time), and 'New York' could refer to the city, state, or broader metropolitan area\u2014each with distinct microclimates. This introduces ambiguity in defining the scope of the claim, increasing indeterminacy."", ""severity"": 0.7}, {""what"": ""Chaotic sensitivity in weather systems"", ""why"": ""Weather is a classic example of a chaotic system where small variations in initial conditions (e.g., temperature, humidity, wind) can lead to divergent outcomes. This inherent unpredictability\u2014even with perfect data\u2014justifies high indeterminacy. The 'butterfly effect' limits the precision of any forecast beyond short time horizons."", ""severity"": 0.85}, {""what"": ""No access to probabilistic forecast confidence intervals"", ""why"": ""Modern weather predictions often provide probabilities (e.g., '30% chance of rain'). Without these, the evaluation cannot incorporate the *degree of uncertainty* quantified by meteorological models, forcing reliance on broader indeterminacy estimates."", ""severity"": 0.8}, {""what"": ""Anthropogenic and climate volatility factors"", ""why"": ""Long-term climate change and localized human activities (e.g., urban heat islands) may alter precipitation patterns in non-linear ways. These factors are not accounted for in short-term evaluations but contribute to background indeterminacy."", ""severity"": 0.4}]",0.7,370,511,881,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.85,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Lack of real-time meteorological data for New York (tomorrow)"",
+      ""why"": ""Without access to up-to-date weather models, probabilistic forecasts, or atmospheric observations (e.g., NOAA/NWS data, ensemble predictions, or local microclimate patterns), the truth or falsity of the statement cannot be grounded in empirical evidence. Neutrosophic evaluation here relies on *general knowledge* of weather unpredictability rather than specific, actionable data."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Temporal and spatial ambiguity in 'tomorrow' and 'New York'"",
+      ""why"": ""'Tomorrow' is relative to the time of evaluation (which may not align with the user's local time), and 'New York' could refer to the city, state, or broader metropolitan area—each with distinct microclimates. This introduces ambiguity in defining the scope of the claim, increasing indeterminacy."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Chaotic sensitivity in weather systems"",
+      ""why"": ""Weather is a classic example of a chaotic system where small variations in initial conditions (e.g., temperature, humidity, wind) can lead to divergent outcomes. This inherent unpredictability—even with perfect data—justifies high indeterminacy. The 'butterfly effect' limits the precision of any forecast beyond short time horizons."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""No access to probabilistic forecast confidence intervals"",
+      ""why"": ""Modern weather predictions often provide probabilities (e.g., '30% chance of rain'). Without these, the evaluation cannot incorporate the *degree of uncertainty* quantified by meteorological models, forcing reliance on broader indeterminacy estimates."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Anthropogenic and climate volatility factors"",
+      ""why"": ""Long-term climate change and localized human activities (e.g., urban heat islands) may alter precipitation patterns in non-linear ways. These factors are not accounted for in short-term evaluations but contribute to background indeterminacy."",
+      ""severity"": 0.4
+    }
+  ]
+}
+```"

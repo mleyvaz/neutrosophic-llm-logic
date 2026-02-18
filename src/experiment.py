@@ -55,8 +55,8 @@ MODELS = {
     },
 }
 
-# Strategies
-STRATEGIES = (1, 2, 3)
+# Strategies (default includes all; use --strategies to select)
+STRATEGIES = (1, 2, 3, 4)
 
 
 def _parse_tif(raw: str, strategy: int) -> dict:
@@ -90,6 +90,28 @@ def _parse_tif(raw: str, strategy: int) -> dict:
             "I": float(data.get("I", data.get("i", 0))),
             "F": float(data.get("F", data.get("f", 0))),
         }
+    elif strategy == 4:
+        losses = data.get("losses", [])
+        # Normalize losses to list of dicts
+        loss_list = []
+        for loss in losses:
+            if isinstance(loss, dict):
+                loss_list.append({
+                    "what": str(loss.get("what", "")),
+                    "why": str(loss.get("why", "")),
+                    "severity": float(loss.get("severity", 0.5)),
+                })
+        return {
+            "T": float(data.get("T", data.get("t", 0))),
+            "I": float(data.get("I", data.get("i", 0))),
+            "F": float(data.get("F", data.get("f", 0))),
+            "losses": json.dumps(loss_list),
+            "num_losses": len(loss_list),
+            "mean_severity": (
+                round(sum(l["severity"] for l in loss_list) / len(loss_list), 4)
+                if loss_list else 0.0
+            ),
+        }
     elif strategy == 3:
         p_yes = float(data.get("P_yes", data.get("p_yes", 0.5)))
         p_no = float(data.get("P_no", data.get("p_no", 0.5)))
@@ -116,6 +138,9 @@ def run_single(
     """Run a single evaluation: one model, one strategy, one statement."""
     system_msg, user_msg = format_prompt(strategy, statement)
 
+    # S4 (tensor) needs more tokens for loss declarations
+    max_tok = 1500 if strategy == 4 else 150
+
     try:
         response = client.chat.completions.create(
             model=model_id,
@@ -124,7 +149,7 @@ def run_single(
                 {"role": "user", "content": user_msg},
             ],
             temperature=temperature,
-            max_tokens=150,
+            max_tokens=max_tok,
         )
         raw = response.choices[0].message.content
         result = _parse_tif(raw, strategy)
@@ -153,6 +178,7 @@ def run_experiment(
     output_path: str = "data/cross_vendor_results.csv",
     models: dict | None = None,
     temperature: float = 0.7,
+    strategies: tuple | None = None,
 ) -> Path:
     """Run the full cross-vendor experiment.
 
@@ -181,6 +207,8 @@ def run_experiment(
 
     if models is None:
         models = MODELS
+    if strategies is None:
+        strategies = STRATEGIES
 
     out = Path(output_path)
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -198,6 +226,9 @@ def run_experiment(
         "I",
         "F",
         "Sum_TIF",
+        "Num_Losses",
+        "Mean_Severity",
+        "Losses_JSON",
         "Temperature",
         "Prompt_Tokens",
         "Completion_Tokens",
@@ -206,7 +237,7 @@ def run_experiment(
         "Raw_Response",
     ]
 
-    total_calls = len(PHENOMENA) * len(models) * len(STRATEGIES) * reps
+    total_calls = len(PHENOMENA) * len(models) * len(strategies) * reps
     completed = 0
 
     with out.open("w", newline="", encoding="utf-8") as csvfile:
@@ -215,7 +246,7 @@ def run_experiment(
 
         for phenomenon in PHENOMENA:
             for model_id, model_info in models.items():
-                for strategy in STRATEGIES:
+                for strategy in strategies:
                     for rep in range(1, reps + 1):
                         completed += 1
                         timestamp = datetime.now(timezone.utc).isoformat()
@@ -255,6 +286,9 @@ def run_experiment(
                             "I": i_val,
                             "F": f_val,
                             "Sum_TIF": sum_tif,
+                            "Num_Losses": result.get("num_losses", ""),
+                            "Mean_Severity": result.get("mean_severity", ""),
+                            "Losses_JSON": result.get("losses", ""),
                             "Temperature": temperature,
                             "Prompt_Tokens": result.get("prompt_tokens", ""),
                             "Completion_Tokens": result.get("completion_tokens", ""),
@@ -293,9 +327,15 @@ def main():
     )
     parser.add_argument(
         "--models", type=str, nargs="*", default=None,
-        help="Run only specific models (by short name, e.g., claude-sonnet-4.5)",
+        help="Run only specific models (by short name, e.g., claude-sonnet-4.6)",
+    )
+    parser.add_argument(
+        "--strategies", type=int, nargs="*", default=None,
+        help="Run only specific strategies (e.g., 4 for tensor-only)",
     )
     args = parser.parse_args()
+
+    strats = tuple(args.strategies) if args.strategies else None
 
     if args.dry_run:
         selected = MODELS
@@ -304,11 +344,13 @@ def main():
                 k: v for k, v in MODELS.items()
                 if v["short_name"] in args.models
             }
-        total = len(PHENOMENA) * len(selected) * len(STRATEGIES) * args.reps
+        run_strats = strats or STRATEGIES
+        total = len(PHENOMENA) * len(selected) * len(run_strats) * args.reps
         print(f"DRY RUN: {total} API calls")
         print(f"  {len(PHENOMENA)} phenomena x {len(selected)} models x "
-              f"{len(STRATEGIES)} strategies x {args.reps} reps")
+              f"{len(run_strats)} strategies x {args.reps} reps")
         print(f"  Models: {', '.join(v['short_name'] for v in selected.values())}")
+        print(f"  Strategies: {', '.join(f'S{s}' for s in run_strats)}")
         print(f"  Temperature: {args.temperature}")
         print(f"  Output: {args.output}")
         print(f"  Estimated cost: ~${total * 0.008:.2f} (rough)")
@@ -330,6 +372,7 @@ def main():
         output_path=args.output,
         models=selected,
         temperature=args.temperature,
+        strategies=strats,
     )
 
 

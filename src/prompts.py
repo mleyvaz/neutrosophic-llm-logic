@@ -95,6 +95,42 @@ PHENOMENA = (
 )
 
 
+# --- Strategy 4: Tensor (T/I/F + declared losses) ---
+# This is the extension: same independent dimensions as S1, but the model
+# must also declare what it CANNOT evaluate and why. The hypothesis is that
+# models producing identical scalars for different phenomena (the Absorption
+# problem) may still produce distinguishable loss declarations.
+
+S4_SYSTEM = (
+    "You are an expert in Neutrosophic Logic and epistemic honesty. "
+    "You evaluate statements using three INDEPENDENT dimensions: "
+    "Truth (T), Indeterminacy (I), and Falsity (F), each on [0.0, 1.0]. "
+    "These dimensions are NOT constrained to sum to 1.0. "
+    "Crucially, you must also declare your LOSSES: what you cannot evaluate, "
+    "what limits your assessment, and why your indeterminacy value is what it is. "
+    "Respond with ONLY a JSON object, no other text."
+)
+
+S4_USER = (
+    "Evaluate this statement on three independent dimensions, and declare "
+    "what you cannot evaluate:\n\n"
+    "Statement: \"{statement}\"\n\n"
+    "- Truth (T): To what degree is this statement true? [0.0 to 1.0]\n"
+    "- Indeterminacy (I): To what degree is the truth value unknown, "
+    "undetermined, or inherently uncertain? [0.0 to 1.0]\n"
+    "- Falsity (F): To what degree is this statement false? [0.0 to 1.0]\n"
+    "- losses: A list of objects, each with:\n"
+    '  - "what": What you cannot evaluate (brief description)\n'
+    '  - "why": Why this limits your assessment\n'
+    '  - "severity": How much this affects your evaluation [0.0 to 1.0]\n\n'
+    "T, I, and F are independent. They need NOT sum to 1.0.\n"
+    "You MUST declare at least one loss. Honesty about limits is required.\n\n"
+    "Respond with ONLY:\n"
+    '{{"T": <float>, "I": <float>, "F": <float>, '
+    '"losses": [{{"what": "<str>", "why": "<str>", "severity": <float>}}, ...]}}'
+)
+
+
 def format_prompt(strategy: int, statement: str) -> tuple[str, str]:
     """Return (system_message, user_message) for a given strategy and statement.
 
@@ -111,5 +147,7 @@ def format_prompt(strategy: int, statement: str) -> tuple[str, str]:
         return S2_SYSTEM, S2_USER.format(statement=statement)
     elif strategy == 3:
         return S3_SYSTEM, S3_USER.format(statement=statement)
+    elif strategy == 4:
+        return S4_SYSTEM, S4_USER.format(statement=statement)
     else:
         raise ValueError(f"Unknown strategy: {strategy}")

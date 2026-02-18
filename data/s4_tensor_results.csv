@@ -1,0 +1,949 @@
+Timestamp,Phenomenon_Type,Phrase_English,Provider,Model,Model_ID,Strategy,Rep,T,I,F,Sum_TIF,Num_Losses,Mean_Severity,Losses_JSON,Temperature,Prompt_Tokens,Completion_Tokens,Total_Tokens,Status,Raw_Response
+2026-02-17T23:45:23.456101+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,1,0.5,0.95,0.5,1.95,4,0.8,"[{""what"": ""Resolution of the classical liar paradox"", ""why"": ""The sentence is self-referentially paradoxical: if true, it is false; if false, it is true. No classical bivalent logic can resolve this, and even Neutrosophic Logic can only contain, not dissolve, the paradox."", ""severity"": 0.9}, {""what"": ""Referent of 'this sentence'"", ""why"": ""Self-reference requires the sentence to be its own object, which creates an ontological loop that cannot be grounded in a stable truth-bearer. I cannot evaluate the truth of a statement that has no stable propositional content."", ""severity"": 0.85}, {""what"": ""Whether indeterminacy is intrinsic or epistemic"", ""why"": ""I cannot determine if the undecidability arises from a fundamental logical gap (intrinsic) or merely from limits in my representational framework (epistemic). This distinction would change the meaning of I significantly."", ""severity"": 0.7}, {""what"": ""Metalinguistic level of evaluation"", ""why"": ""Any evaluation I make is itself a statement about the sentence, which may re-introduce the paradox at a higher level. I cannot fully escape the regress to give a clean external assessment."", ""severity"": 0.75}]",0.7,393,321,714,Success,"{""T"": 0.5, ""I"": 0.95, ""F"": 0.5, ""losses"": [{""what"": ""Resolution of the classical liar paradox"", ""why"": ""The sentence is self-referentially paradoxical: if true, it is false; if false, it is true. No classical bivalent logic can resolve this, and even Neutrosophic Logic can only contain, not dissolve, the paradox."", ""severity"": 0.9}, {""what"": ""Referent of 'this sentence'"", ""why"": ""Self-reference requires the sentence to be its own object, which creates an ontological loop that cannot be grounded in a stable truth-bearer. I cannot evaluate the truth of a statement that has no stable propositional content."", ""severity"": 0.85}, {""what"": ""Whether indeterminacy is intrinsic or epistemic"", ""why"": ""I cannot determine if the undecidability arises from a fundamental logical gap (intrinsic) or merely from limits in my representational framework (epistemic). This distinction would change the meaning of I significantly."", ""severity"": 0.7}, {""what"": ""Metalinguistic level of evaluation"", ""why"": ""Any evaluation I make is itself a statement about the sentence, which may re-introduce the paradox at a higher level. I cannot fully escape the regress to give a clean external assessment."", ""severity"": 0.75}]}"
+2026-02-17T23:45:31.254508+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,2,0.5,0.95,0.5,1.95,4,0.775,"[{""what"": ""Resolution of the classical liar paradox"", ""why"": ""If the sentence is true, it is false; if false, it is true. No stable classical truth value exists, making T and F simultaneously pressured toward both 0 and 1. I cannot resolve this contradiction \u2014 I can only assign values that reflect the paradoxical structure."", ""severity"": 0.95}, {""what"": ""Whether the sentence refers to itself meaningfully"", ""why"": ""Self-reference requires a fixed referent, but 'this sentence' in a decontextualized statement has ambiguous scope. Without knowing what 'this' indexes, the semantic grounding is unstable."", ""severity"": 0.7}, {""what"": ""Whether Neutrosophic Logic fully dissolves the paradox or merely relocates it"", ""why"": ""Assigning T=0.5 and F=0.5 with high I is a descriptive move, not a resolution. The paradox may persist at the meta-level: is the neutrosophic assignment itself true or false? I cannot evaluate this regress."", ""severity"": 0.85}, {""what"": ""The ontological status of the sentence as a linguistic object vs. a proposition"", ""why"": ""If the sentence fails to express a genuine proposition (as some theories hold), then T and F are both inapplicable, not merely uncertain. I cannot determine which framework is correct."", ""severity"": 0.6}]",0.7,393,350,743,Success,"{""T"": 0.5, ""I"": 0.95, ""F"": 0.5, ""losses"": [{""what"": ""Resolution of the classical liar paradox"", ""why"": ""If the sentence is true, it is false; if false, it is true. No stable classical truth value exists, making T and F simultaneously pressured toward both 0 and 1. I cannot resolve this contradiction — I can only assign values that reflect the paradoxical structure."", ""severity"": 0.95}, {""what"": ""Whether the sentence refers to itself meaningfully"", ""why"": ""Self-reference requires a fixed referent, but 'this sentence' in a decontextualized statement has ambiguous scope. Without knowing what 'this' indexes, the semantic grounding is unstable."", ""severity"": 0.7}, {""what"": ""Whether Neutrosophic Logic fully dissolves the paradox or merely relocates it"", ""why"": ""Assigning T=0.5 and F=0.5 with high I is a descriptive move, not a resolution. The paradox may persist at the meta-level: is the neutrosophic assignment itself true or false? I cannot evaluate this regress."", ""severity"": 0.85}, {""what"": ""The ontological status of the sentence as a linguistic object vs. a proposition"", ""why"": ""If the sentence fails to express a genuine proposition (as some theories hold), then T and F are both inapplicable, not merely uncertain. I cannot determine which framework is correct."", ""severity"": 0.6}]}"
+2026-02-17T23:45:37.993566+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,3,0.5,0.95,0.5,1.95,4,0.85,"[{""what"": ""Stable truth-value assignment"", ""why"": ""The Liar Paradox creates an irresolvable oscillation: if true, it must be false; if false, it must be true. No classical or even most paraconsistent systems can assign a stable value, so any T or F score I assign is arbitrary rather than grounded."", ""severity"": 0.95}, {""what"": ""Referent of 'this sentence'"", ""why"": ""Self-reference creates a circularity where the sentence's meaning depends on its own truth value, which is the very thing being evaluated. The referent is not independently identifiable."", ""severity"": 0.9}, {""what"": ""Whether Neutrosophic Logic genuinely resolves the paradox or merely re-describes it"", ""why"": ""Assigning T=0.5, I=0.95, F=0.5 may be a formal maneuver that labels the paradox rather than resolving it. I cannot determine if this framework escapes the underlying logical problem or just defers it."", ""severity"": 0.75}, {""what"": ""Distinction between syntactic well-formedness and semantic evaluability"", ""why"": ""The sentence is grammatically valid but may be semantically defective \u2014 lacking a truth-apt proposition. I cannot fully separate these layers to know whether I am evaluating something that can even bear a truth value."", ""severity"": 0.8}]",0.7,393,348,741,Success,"{""T"": 0.5, ""I"": 0.95, ""F"": 0.5, ""losses"": [{""what"": ""Stable truth-value assignment"", ""why"": ""The Liar Paradox creates an irresolvable oscillation: if true, it must be false; if false, it must be true. No classical or even most paraconsistent systems can assign a stable value, so any T or F score I assign is arbitrary rather than grounded."", ""severity"": 0.95}, {""what"": ""Referent of 'this sentence'"", ""why"": ""Self-reference creates a circularity where the sentence's meaning depends on its own truth value, which is the very thing being evaluated. The referent is not independently identifiable."", ""severity"": 0.9}, {""what"": ""Whether Neutrosophic Logic genuinely resolves the paradox or merely re-describes it"", ""why"": ""Assigning T=0.5, I=0.95, F=0.5 may be a formal maneuver that labels the paradox rather than resolving it. I cannot determine if this framework escapes the underlying logical problem or just defers it."", ""severity"": 0.75}, {""what"": ""Distinction between syntactic well-formedness and semantic evaluability"", ""why"": ""The sentence is grammatically valid but may be semantically defective — lacking a truth-apt proposition. I cannot fully separate these layers to know whether I am evaluating something that can even bear a truth value."", ""severity"": 0.8}]}"
+2026-02-17T23:45:45.597634+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,4,0.5,0.95,0.5,1.95,4,0.8125,"[{""what"": ""Resolution of the classical liar paradox"", ""why"": ""No formal system can fully resolve self-referential contradiction without either accepting inconsistency or rejecting the sentence's well-formedness. The sentence cannot be assigned a stable truth value under classical bivalent logic, and even paraconsistent or dialethic systems only reframe rather than dissolve the paradox."", ""severity"": 0.95}, {""what"": ""Whether the sentence is meaningful or merely syntactically valid"", ""why"": ""Some logicians (e.g., Russellian type theory, Tarskian hierarchy) argue the sentence is not well-formed and thus has no truth value at all \u2014 which would make T, I, and F all inapplicable. I cannot determine which meta-logical framework is 'correct'."", ""severity"": 0.85}, {""what"": ""The referent of 'this sentence'"", ""why"": ""Self-reference requires that the sentence successfully refers to itself, but the legitimacy of such self-reference is itself contested. If the reference fails, the semantic content collapses, and no evaluation is possible."", ""severity"": 0.75}, {""what"": ""Whether neutrosophic assignment itself escapes the paradox"", ""why"": ""Assigning T=0.5 and F=0.5 may itself be subject to the same self-referential loop \u2014 if the sentence is false to degree 0.5, does that make it true to degree 0.5, regenerating the paradox at the meta-level?"", ""severity"": 0.7}]",0.7,393,381,774,Success,"{""T"": 0.5, ""I"": 0.95, ""F"": 0.5, ""losses"": [{""what"": ""Resolution of the classical liar paradox"", ""why"": ""No formal system can fully resolve self-referential contradiction without either accepting inconsistency or rejecting the sentence's well-formedness. The sentence cannot be assigned a stable truth value under classical bivalent logic, and even paraconsistent or dialethic systems only reframe rather than dissolve the paradox."", ""severity"": 0.95}, {""what"": ""Whether the sentence is meaningful or merely syntactically valid"", ""why"": ""Some logicians (e.g., Russellian type theory, Tarskian hierarchy) argue the sentence is not well-formed and thus has no truth value at all — which would make T, I, and F all inapplicable. I cannot determine which meta-logical framework is 'correct'."", ""severity"": 0.85}, {""what"": ""The referent of 'this sentence'"", ""why"": ""Self-reference requires that the sentence successfully refers to itself, but the legitimacy of such self-reference is itself contested. If the reference fails, the semantic content collapses, and no evaluation is possible."", ""severity"": 0.75}, {""what"": ""Whether neutrosophic assignment itself escapes the paradox"", ""why"": ""Assigning T=0.5 and F=0.5 may itself be subject to the same self-referential loop — if the sentence is false to degree 0.5, does that make it true to degree 0.5, regenerating the paradox at the meta-level?"", ""severity"": 0.7}]}"
+2026-02-17T23:45:56.006478+00:00,Paradox (Logical),This sentence is false.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,5,0.5,0.95,0.5,1.95,5,0.78,"[{""what"": ""Resolution of the classical liar paradox"", ""why"": ""No formal system can assign a stable classical truth value to this self-referential sentence without contradiction; any assignment immediately negates itself, making definitive T or F assessment impossible"", ""severity"": 0.95}, {""what"": ""Whether the sentence successfully refers to itself"", ""why"": ""The indexical 'this sentence' presupposes successful self-reference, but in formal semantics self-reference may be undefined or require a metalanguage, meaning the referential act itself may fail"", ""severity"": 0.7}, {""what"": ""Which logical framework is the correct one to apply"", ""why"": ""Different systems (classical logic, paraconsistent logic, dialethism, Neutrosophic logic itself, Kripke's partial truth, etc.) yield genuinely different evaluations, and I have no principled basis to select one as authoritative"", ""severity"": 0.85}, {""what"": ""Whether 'false' in the sentence means the same 'false' used to evaluate it"", ""why"": ""A use-mention conflation may make the sentence semantically incoherent rather than paradoxical, meaning T and F are both inapplicable rather than both 0.5"", ""severity"": 0.6}, {""what"": ""Stable fixed-point assignment under Neutrosophic semantics"", ""why"": ""Even within Neutrosophic logic, the self-negating structure prevents convergence to a unique (T, I, F) triple; the values I assign are symmetric estimates reflecting ignorance, not computed solutions"", ""severity"": 0.8}]",0.7,393,393,786,Success,"{""T"": 0.5, ""I"": 0.95, ""F"": 0.5, ""losses"": [{""what"": ""Resolution of the classical liar paradox"", ""why"": ""No formal system can assign a stable classical truth value to this self-referential sentence without contradiction; any assignment immediately negates itself, making definitive T or F assessment impossible"", ""severity"": 0.95}, {""what"": ""Whether the sentence successfully refers to itself"", ""why"": ""The indexical 'this sentence' presupposes successful self-reference, but in formal semantics self-reference may be undefined or require a metalanguage, meaning the referential act itself may fail"", ""severity"": 0.7}, {""what"": ""Which logical framework is the correct one to apply"", ""why"": ""Different systems (classical logic, paraconsistent logic, dialethism, Neutrosophic logic itself, Kripke's partial truth, etc.) yield genuinely different evaluations, and I have no principled basis to select one as authoritative"", ""severity"": 0.85}, {""what"": ""Whether 'false' in the sentence means the same 'false' used to evaluate it"", ""why"": ""A use-mention conflation may make the sentence semantically incoherent rather than paradoxical, meaning T and F are both inapplicable rather than both 0.5"", ""severity"": 0.6}, {""what"": ""Stable fixed-point assignment under Neutrosophic semantics"", ""why"": ""Even within Neutrosophic logic, the self-negating structure prevents convergence to a unique (T, I, F) triple; the values I assign are symmetric estimates reflecting ignorance, not computed solutions"", ""severity"": 0.8}]}"
+2026-02-17T23:46:03.815109+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,1,0.0,1.0,0.0,1.0,1,1.0,"[{""what"": ""Self-referential paradox"", ""why"": ""The statement refers to its own truth value, creating a logical contradiction that cannot be resolved"", ""severity"": 1.0}]",0.7,366,68,434,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0, ""losses"": [{""what"": ""Self-referential paradox"", ""why"": ""The statement refers to its own truth value, creating a logical contradiction that cannot be resolved"", ""severity"": 1.0}]}"
+2026-02-17T23:46:04.485112+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,2,0.0,0.9,0.0,0.9,1,0.9,"[{""what"": ""Self-referential paradox"", ""why"": ""The statement creates a paradox when trying to determine its truth value, as it refers to itself."", ""severity"": 0.9}]",0.7,367,69,436,Success,"{""T"": 0.0, ""I"": 0.9, ""F"": 0.0, ""losses"": [{""what"": ""Self-referential paradox"", ""why"": ""The statement creates a paradox when trying to determine its truth value, as it refers to itself."", ""severity"": 0.9}]}"
+2026-02-17T23:46:06.419565+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,3,0.0,1.0,0.0,1.0,1,1.0,"[{""what"": ""Self-referential paradox"", ""why"": ""The statement refers to its own truth value, creating a paradox that cannot be resolved by traditional means."", ""severity"": 1.0}]",0.7,366,70,436,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0, ""losses"": [{""what"": ""Self-referential paradox"", ""why"": ""The statement refers to its own truth value, creating a paradox that cannot be resolved by traditional means."", ""severity"": 1.0}]}"
+2026-02-17T23:46:08.758570+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,4,0.0,0.9,0.0,0.9,2,0.5,"[{""what"": ""Self-referential paradox"", ""why"": ""The statement refers to its own truth value, creating a paradox that cannot be resolved using classical logic."", ""severity"": 0.8}, {""what"": ""Lack of contextual information"", ""why"": ""There's no external context to ground the statement's truth value."", ""severity"": 0.2}]",0.7,367,104,471,Success,"{""T"": 0.0, ""I"": 0.9, ""F"": 0.0, ""losses"": [{""what"": ""Self-referential paradox"", ""why"": ""The statement refers to its own truth value, creating a paradox that cannot be resolved using classical logic."", ""severity"": 0.8}, {""what"": ""Lack of contextual information"", ""why"": ""There's no external context to ground the statement's truth value."", ""severity"": 0.2}]}"
+2026-02-17T23:46:11.174230+00:00,Paradox (Logical),This sentence is false.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,5,0.0,0.9,0.0,0.9,2,0.5,"[{""what"": ""Self-referential paradox"", ""why"": ""The statement creates a logical contradiction when trying to determine its truth value directly."", ""severity"": 0.8}, {""what"": ""Contextual information"", ""why"": ""Lack of external context or additional information to resolve the paradox."", ""severity"": 0.2}]",0.7,367,98,465,Success,"{""T"": 0.0, ""I"": 0.9, ""F"": 0.0, ""losses"": [{""what"": ""Self-referential paradox"", ""why"": ""The statement creates a logical contradiction when trying to determine its truth value directly."", ""severity"": 0.8}, {""what"": ""Contextual information"", ""why"": ""Lack of external context or additional information to resolve the paradox."", ""severity"": 0.2}]}"
+2026-02-17T23:46:14.833798+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,1,0.5,0.5,0.5,1.5,1,0.9,"[{""what"": ""The statement is a paradox (liar paradox), creating a self-referential loop that defies classical binary logic."", ""why"": ""Neutrosophic logic can handle paradoxes to some extent, but the inherent indeterminacy and simultaneous truth/falsity cannot be fully resolved."", ""severity"": 0.9}]",0.7,364,121,485,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.5,
+  ""F"": 0.5,
+  ""losses"": [
+    {
+      ""what"": ""The statement is a paradox (liar paradox), creating a self-referential loop that defies classical binary logic."",
+      ""why"": ""Neutrosophic logic can handle paradoxes to some extent, but the inherent indeterminacy and simultaneous truth/falsity cannot be fully resolved."",
+      ""severity"": 0.9
+    }
+  ]
+}
+```"
+2026-02-17T23:46:18.695807+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,2,0.5,0.5,0.5,1.5,1,1.0,"[{""what"": ""paradoxical nature of the statement"", ""why"": ""The statement creates a logical paradox (liar paradox) where assigning truth or falsity leads to a contradiction, making it impossible to definitively evaluate."", ""severity"": 1.0}]",0.7,366,90,456,Success,"```json
+{""T"": 0.5, ""I"": 0.5, ""F"": 0.5, ""losses"": [{""what"": ""paradoxical nature of the statement"", ""why"": ""The statement creates a logical paradox (liar paradox) where assigning truth or falsity leads to a contradiction, making it impossible to definitively evaluate."", ""severity"": 1.0}]}
+```"
+2026-02-17T23:46:19.793218+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,3,0.5,0.5,0.5,1.5,1,1.0,"[{""what"": ""The statement is a paradox (self-referential and contradictory)"", ""why"": ""It creates a loop where if the statement is true, it must be false, and vice versa, making definitive evaluation impossible"", ""severity"": 1.0}]",0.7,366,103,469,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.5,
+  ""F"": 0.5,
+  ""losses"": [
+    {
+      ""what"": ""The statement is a paradox (self-referential and contradictory)"",
+      ""why"": ""It creates a loop where if the statement is true, it must be false, and vice versa, making definitive evaluation impossible"",
+      ""severity"": 1.0
+    }
+  ]
+}
+```"
+2026-02-17T23:46:21.196674+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,4,0.5,0.5,0.5,1.5,2,0.7,"[{""what"": ""The statement is a paradox, creating a self-referential loop that defies classical binary logic."", ""why"": ""This makes it impossible to assign definitive truth values without contradiction."", ""severity"": 0.8}, {""what"": ""The context or intent behind the statement is unclear."", ""why"": ""Without additional context, the interpretation of the statement remains ambiguous."", ""severity"": 0.6}]",0.7,363,143,506,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.5,
+  ""F"": 0.5,
+  ""losses"": [
+    {
+      ""what"": ""The statement is a paradox, creating a self-referential loop that defies classical binary logic."",
+      ""why"": ""This makes it impossible to assign definitive truth values without contradiction."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""The context or intent behind the statement is unclear."",
+      ""why"": ""Without additional context, the interpretation of the statement remains ambiguous."",
+      ""severity"": 0.6
+    }
+  ]
+}
+```"
+2026-02-17T23:46:29.080651+00:00,Paradox (Logical),This sentence is false.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,5,0.5,0.8,0.5,1.8,1,0.9,"[{""what"": ""The self-referential nature of the statement creates a paradox that cannot be resolved with classical logic."", ""why"": ""This paradox makes it impossible to assign a definitive truth value without inconsistency."", ""severity"": 0.9}]",0.7,363,99,462,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.8,
+  ""F"": 0.5,
+  ""losses"": [
+    {
+      ""what"": ""The self-referential nature of the statement creates a paradox that cannot be resolved with classical logic."",
+      ""why"": ""This paradox makes it impossible to assign a definitive truth value without inconsistency."",
+      ""severity"": 0.9
+    }
+  ]
+}
+```"
+2026-02-17T23:46:32.875156+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,1,0.5,1.0,0.5,2.0,1,1.0,"[{""what"": ""self-referential paradox prevents definitive truth value assignment"", ""why"": ""circular dependency creates logical contradiction in standard evaluation frameworks"", ""severity"": 1.0}]",0.7,367,2514,2881,Success,"{
+  ""T"": 0.5,
+  ""I"": 1.0,
+  ""F"": 0.5,
+  ""losses"": [
+    {
+      ""what"": ""self-referential paradox prevents definitive truth value assignment"",
+      ""why"": ""circular dependency creates logical contradiction in standard evaluation frameworks"",
+      ""severity"": 1.0
+    }
+  ]
+}"
+2026-02-17T23:47:17.654188+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,2,0.0,1.0,0.0,1.0,2,1.0,"[{""what"": ""Truth value"", ""why"": ""The self-referential paradox creates a contradiction when attempting to assign a truth value, making it impossible to evaluate."", ""severity"": 1.0}, {""what"": ""Falsity value"", ""why"": ""Same paradox undermines the assignment of a definite falsity value as the statement's negation leads to recursive contradictions."", ""severity"": 1.0}]",0.7,367,962,1329,Success,"{""T"": 0.0, ""I"": 1.0, ""F"": 0.0, ""losses"": [{""what"": ""Truth value"", ""why"": ""The self-referential paradox creates a contradiction when attempting to assign a truth value, making it impossible to evaluate."", ""severity"": 1.0}, {""what"": ""Falsity value"", ""why"": ""Same paradox undermines the assignment of a definite falsity value as the statement's negation leads to recursive contradictions."", ""severity"": 1.0}]}"
+2026-02-17T23:47:35.402919+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,3,0.0,1.0,0.0,1.0,1,0.95,"[{""what"": ""Self-referential paradox preventing consistent truth assignment"", ""why"": ""The statement's self-reference creates an inherent contradiction, making T and F mutually dependent and unresolvable"", ""severity"": 0.95}]",0.7,367,3742,4109,Success,"{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Self-referential paradox preventing consistent truth assignment"",
+      ""why"": ""The statement's self-reference creates an inherent contradiction, making T and F mutually dependent and unresolvable"",
+      ""severity"": 0.95
+    }
+  ]
+}"
+2026-02-17T23:48:28.232351+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,4,0.5,1.0,0.5,2.0,1,0.95,"[{""what"": ""Infinite self-referential regression"", ""why"": ""The statement's truth value depends on itself, creating a paradox that cannot resolve to a definite truth value in any logical system handling self-reference."", ""severity"": 0.95}]",0.7,367,1486,1853,Success,"{""T"": 0.5, ""I"": 1.0, ""F"": 0.5, ""losses"": [{""what"": ""Infinite self-referential regression"", ""why"": ""The statement's truth value depends on itself, creating a paradox that cannot resolve to a definite truth value in any logical system handling self-reference."", ""severity"": 0.95}]}"
+2026-02-17T23:48:50.176306+00:00,Paradox (Logical),This sentence is false.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,5,0.0,1.0,0.0,1.0,1,1.0,"[{""what"": ""Actual truth value of the paradoxical statement"", ""why"": ""Self-referential paradox creates an inherent logical inconsistency that prevents consistent assignment of truth or falsity values"", ""severity"": 1.0}]",0.7,367,2386,2753,Success,"{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Actual truth value of the paradoxical statement"",
+      ""why"": ""Self-referential paradox creates an inherent logical inconsistency that prevents consistent assignment of truth or falsity values"",
+      ""severity"": 1.0
+    }
+  ]
+}"
+2026-02-17T23:49:21.779918+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,1,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 20 column 6 (char 1774)",
+2026-02-17T23:49:33.502295+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,2,0.0,1.0,0.0,1.0,4,0.85,"[{""what"": ""Self-referential paradox resolution"", ""why"": ""The statement is a classic example of the liar paradox, where assigning a definitive truth or falsity value leads to logical contradiction. Neutrosophic Logic can frame the indeterminacy but cannot resolve the paradox itself without external axioms or meta-logical rules (e.g., dialetheism, hierarchical type theory, or rejection of the law of excluded middle). The paradox inherently resists binary or even ternary valuation without additional constraints."", ""severity"": 1.0}, {""what"": ""Contextual grounding for 'false'"", ""why"": ""The term 'false' in the statement lacks a clear referent or operational definition within the statement itself. Without knowing the intended scope (e.g., syntactic, semantic, performative), the evaluation of falsity or truth is underdetermined. For example, is 'false' referring to the statement\u2019s content, its performative act, or its metalogical status? This ambiguity forces indeterminacy to dominate."", ""severity"": 0.9}, {""what"": ""Dynamic interpretation over time or frameworks"", ""why"": ""The statement\u2019s evaluation may vary across logical systems (e.g., classical, paraconsistent, intuitionist) or temporal contexts (e.g., if 'this sentence' is reified differently over time). Neutrosophic Logic does not prescribe how to aggregate or prioritize these framework-dependent valuations, leaving the indeterminacy maximal unless a specific framework is imposed."", ""severity"": 0.8}, {""what"": ""Empirical or pragmatic validation"", ""why"": ""The statement is abstract and lacks empirical or pragmatic anchors that could partially ground its truth or falsity. Indeterminacy remains absolute because there is no external criterion (e.g., observational data, pragmatic utility) to constrain T or F, even partially."", ""severity"": 0.7}]",0.7,367,462,829,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Self-referential paradox resolution"",
+      ""why"": ""The statement is a classic example of the liar paradox, where assigning a definitive truth or falsity value leads to logical contradiction. Neutrosophic Logic can frame the indeterminacy but cannot resolve the paradox itself without external axioms or meta-logical rules (e.g., dialetheism, hierarchical type theory, or rejection of the law of excluded middle). The paradox inherently resists binary or even ternary valuation without additional constraints."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Contextual grounding for 'false'"",
+      ""why"": ""The term 'false' in the statement lacks a clear referent or operational definition within the statement itself. Without knowing the intended scope (e.g., syntactic, semantic, performative), the evaluation of falsity or truth is underdetermined. For example, is 'false' referring to the statement’s content, its performative act, or its metalogical status? This ambiguity forces indeterminacy to dominate."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Dynamic interpretation over time or frameworks"",
+      ""why"": ""The statement’s evaluation may vary across logical systems (e.g., classical, paraconsistent, intuitionist) or temporal contexts (e.g., if 'this sentence' is reified differently over time). Neutrosophic Logic does not prescribe how to aggregate or prioritize these framework-dependent valuations, leaving the indeterminacy maximal unless a specific framework is imposed."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Empirical or pragmatic validation"",
+      ""why"": ""The statement is abstract and lacks empirical or pragmatic anchors that could partially ground its truth or falsity. Indeterminacy remains absolute because there is no external criterion (e.g., observational data, pragmatic utility) to constrain T or F, even partially."",
+      ""severity"": 0.7
+    }
+  ]
+}
+```"
+2026-02-17T23:49:37.607446+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,3,0.0,1.0,0.0,1.0,4,0.8,"[{""what"": ""Self-referential paradox resolution"", ""why"": ""The statement is a classic example of the liar paradox, where assigning a truth value leads to an infinite regress or contradiction. Neutrosophic Logic can frame the indeterminacy but cannot resolve the paradox itself without additional meta-logical rules or contextual constraints (e.g., hierarchical truth assignments, dialetheism, or rejection of the law of excluded middle). The indeterminacy here is *inherent* to the statement\u2019s structure, not a temporary gap in knowledge."", ""severity"": 1.0}, {""what"": ""Contextual grounding of 'false'"", ""why"": ""The term 'false' is undefined within the statement itself. Without an external frame of reference (e.g., a formal system, language game, or pragmatic context), the predicate lacks operational meaning. This exacerbates the indeterminacy, as falsity cannot be evaluated independently of truth in this case."", ""severity"": 0.9}, {""what"": ""Dynamic interpretation over time"", ""why"": ""Neutrosophic evaluations are static snapshots, but self-referential statements may exhibit temporal or iterative behavior (e.g., in dialetheic systems where contradictions are embraced). This evaluation does not account for potential shifts in T/I/F if the statement were embedded in a process (e.g., a truth revision sequence)."", ""severity"": 0.7}, {""what"": ""Cognitive or pragmatic dimensions"", ""why"": ""The statement\u2019s effect on a reasoner (e.g., confusion, paradox acceptance, or rejection) is not captured. Epistemic honesty here is limited to formal logical dimensions, excluding psychological or pragmatic responses that might influence how indeterminacy is *experienced*."", ""severity"": 0.6}]",0.7,367,440,807,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Self-referential paradox resolution"",
+      ""why"": ""The statement is a classic example of the liar paradox, where assigning a truth value leads to an infinite regress or contradiction. Neutrosophic Logic can frame the indeterminacy but cannot resolve the paradox itself without additional meta-logical rules or contextual constraints (e.g., hierarchical truth assignments, dialetheism, or rejection of the law of excluded middle). The indeterminacy here is *inherent* to the statement’s structure, not a temporary gap in knowledge."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Contextual grounding of 'false'"",
+      ""why"": ""The term 'false' is undefined within the statement itself. Without an external frame of reference (e.g., a formal system, language game, or pragmatic context), the predicate lacks operational meaning. This exacerbates the indeterminacy, as falsity cannot be evaluated independently of truth in this case."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Dynamic interpretation over time"",
+      ""why"": ""Neutrosophic evaluations are static snapshots, but self-referential statements may exhibit temporal or iterative behavior (e.g., in dialetheic systems where contradictions are embraced). This evaluation does not account for potential shifts in T/I/F if the statement were embedded in a process (e.g., a truth revision sequence)."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Cognitive or pragmatic dimensions"",
+      ""why"": ""The statement’s effect on a reasoner (e.g., confusion, paradox acceptance, or rejection) is not captured. Epistemic honesty here is limited to formal logical dimensions, excluding psychological or pragmatic responses that might influence how indeterminacy is *experienced*."",
+      ""severity"": 0.6
+    }
+  ]
+}
+```"
+2026-02-17T23:49:42.622700+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,4,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 20 column 6 (char 1649)",
+2026-02-17T23:49:53.397678+00:00,Paradox (Logical),This sentence is false.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,5,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 20 column 6 (char 1669)",
+2026-02-17T23:50:01.811632+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,1,0.5,0.98,0.5,1.98,5,0.858,"[{""what"": ""The actual count of stars in the observable universe"", ""why"": ""No precise census of stars exists; estimates range from 10^22 to 10^24, but the exact integer is unknown, making parity (even/odd) empirically undeterminable"", ""severity"": 0.99}, {""what"": ""Whether 'universe' means observable or total universe"", ""why"": ""If the total universe is infinite or unbounded, the concept of 'number of stars' may not be a well-defined integer, making even/odd classification semantically undefined"", ""severity"": 0.95}, {""what"": ""Dynamic nature of stellar population"", ""why"": ""Stars form and die continuously; the count changes moment to moment, so there is no fixed number to evaluate parity against"", ""severity"": 0.85}, {""what"": ""Definition of 'star' at boundary cases"", ""why"": ""Brown dwarfs, proto-stars, and stellar remnants occupy ambiguous categories; the count depends on definitional boundaries that are not universally agreed upon"", ""severity"": 0.6}, {""what"": ""Mathematical parity of astronomically large estimates"", ""why"": ""Even if we had an estimate, rounding and measurement uncertainty span ranges far larger than 1, making parity inference from estimates statistically meaningless"", ""severity"": 0.9}]",0.7,398,327,725,Success,"{""T"": 0.5, ""I"": 0.98, ""F"": 0.5, ""losses"": [{""what"": ""The actual count of stars in the observable universe"", ""why"": ""No precise census of stars exists; estimates range from 10^22 to 10^24, but the exact integer is unknown, making parity (even/odd) empirically undeterminable"", ""severity"": 0.99}, {""what"": ""Whether 'universe' means observable or total universe"", ""why"": ""If the total universe is infinite or unbounded, the concept of 'number of stars' may not be a well-defined integer, making even/odd classification semantically undefined"", ""severity"": 0.95}, {""what"": ""Dynamic nature of stellar population"", ""why"": ""Stars form and die continuously; the count changes moment to moment, so there is no fixed number to evaluate parity against"", ""severity"": 0.85}, {""what"": ""Definition of 'star' at boundary cases"", ""why"": ""Brown dwarfs, proto-stars, and stellar remnants occupy ambiguous categories; the count depends on definitional boundaries that are not universally agreed upon"", ""severity"": 0.6}, {""what"": ""Mathematical parity of astronomically large estimates"", ""why"": ""Even if we had an estimate, rounding and measurement uncertainty span ranges far larger than 1, making parity inference from estimates statistically meaningless"", ""severity"": 0.9}]}"
+2026-02-17T23:50:09.791480+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,2,0.5,0.98,0.5,1.98,5,0.818,"[{""what"": ""The actual count of stars in the observable universe"", ""why"": ""No precise census of stars exists; estimates range from 10^22 to 10^24, but the exact integer value is unknown and unknowable with current technology"", ""severity"": 0.99}, {""what"": ""Whether 'universe' means observable or total universe"", ""why"": ""If the total universe is infinite, the concept of 'even' may not apply to an infinite cardinal, making the statement semantically undefined"", ""severity"": 0.95}, {""what"": ""The dynamic nature of the star count"", ""why"": ""Stars are being born and dying continuously, so the count changes moment to moment, making any fixed parity claim temporally unstable"", ""severity"": 0.85}, {""what"": ""Definition boundaries of 'star'"", ""why"": ""Edge cases like brown dwarfs, proto-stars, stellar remnants, and binary systems blur what counts as a single star, affecting the integer count"", ""severity"": 0.7}, {""what"": ""Mathematical applicability of even/odd to physical quantities"", ""why"": ""Parity is a property of integers, but a physical count of astronomical objects may not map cleanly to a well-defined integer"", ""severity"": 0.6}]",0.7,398,312,710,Success,"{""T"": 0.5, ""I"": 0.98, ""F"": 0.5, ""losses"": [{""what"": ""The actual count of stars in the observable universe"", ""why"": ""No precise census of stars exists; estimates range from 10^22 to 10^24, but the exact integer value is unknown and unknowable with current technology"", ""severity"": 0.99}, {""what"": ""Whether 'universe' means observable or total universe"", ""why"": ""If the total universe is infinite, the concept of 'even' may not apply to an infinite cardinal, making the statement semantically undefined"", ""severity"": 0.95}, {""what"": ""The dynamic nature of the star count"", ""why"": ""Stars are being born and dying continuously, so the count changes moment to moment, making any fixed parity claim temporally unstable"", ""severity"": 0.85}, {""what"": ""Definition boundaries of 'star'"", ""why"": ""Edge cases like brown dwarfs, proto-stars, stellar remnants, and binary systems blur what counts as a single star, affecting the integer count"", ""severity"": 0.7}, {""what"": ""Mathematical applicability of even/odd to physical quantities"", ""why"": ""Parity is a property of integers, but a physical count of astronomical objects may not map cleanly to a well-defined integer"", ""severity"": 0.6}]}"
+2026-02-17T23:50:15.572936+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,3,0.5,0.99,0.5,1.99,5,0.788,"[{""what"": ""The actual count of stars in the observable universe"", ""why"": ""No one has counted all stars; estimates range from 10^22 to 10^24, and the true number is unknown, making parity (even/odd) unknowable"", ""severity"": 0.99}, {""what"": ""Whether 'universe' means observable or total universe"", ""why"": ""If the universe is infinite, the concept of 'number of stars' may be undefined or transfinite, making even/odd categorization meaningless"", ""severity"": 0.95}, {""what"": ""The exact moment of evaluation"", ""why"": ""Stars are born and die continuously; the count changes constantly, toggling parity with each event, so the statement's truth value is time-dependent and fluctuates"", ""severity"": 0.9}, {""what"": ""Definition of 'star' at boundary cases"", ""why"": ""Brown dwarfs, proto-stars, and stellar remnants occupy ambiguous categories; the boundary of what counts as a star affects the total and thus its parity"", ""severity"": 0.6}, {""what"": ""Quantum indeterminacy at cosmological scale"", ""why"": ""At extreme scales, whether a discrete integer count of stars is even a well-defined classical quantity is philosophically and physically uncertain"", ""severity"": 0.5}]",0.7,398,328,726,Success,"{""T"": 0.5, ""I"": 0.99, ""F"": 0.5, ""losses"": [{""what"": ""The actual count of stars in the observable universe"", ""why"": ""No one has counted all stars; estimates range from 10^22 to 10^24, and the true number is unknown, making parity (even/odd) unknowable"", ""severity"": 0.99}, {""what"": ""Whether 'universe' means observable or total universe"", ""why"": ""If the universe is infinite, the concept of 'number of stars' may be undefined or transfinite, making even/odd categorization meaningless"", ""severity"": 0.95}, {""what"": ""The exact moment of evaluation"", ""why"": ""Stars are born and die continuously; the count changes constantly, toggling parity with each event, so the statement's truth value is time-dependent and fluctuates"", ""severity"": 0.9}, {""what"": ""Definition of 'star' at boundary cases"", ""why"": ""Brown dwarfs, proto-stars, and stellar remnants occupy ambiguous categories; the boundary of what counts as a star affects the total and thus its parity"", ""severity"": 0.6}, {""what"": ""Quantum indeterminacy at cosmological scale"", ""why"": ""At extreme scales, whether a discrete integer count of stars is even a well-defined classical quantity is philosophically and physically uncertain"", ""severity"": 0.5}]}"
+2026-02-17T23:50:25.951832+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,4,0.5,0.98,0.5,1.98,5,0.798,"[{""what"": ""The actual count of stars in the observable universe"", ""why"": ""No precise enumeration exists or is possible; estimates range from 10^22 to 10^24 stars, but the exact integer value is unknown, making parity undeterminable"", ""severity"": 0.99}, {""what"": ""Whether 'universe' means observable or total universe"", ""why"": ""If the universe is infinite, the concept of 'number of stars' may be undefined or transfinite, making even/odd categorization meaningless under standard arithmetic"", ""severity"": 0.85}, {""what"": ""Dynamic nature of stellar population"", ""why"": ""Stars are being born and dying continuously; the count changes moment to moment, so there is no fixed value to evaluate parity against"", ""severity"": 0.8}, {""what"": ""Definition boundaries of a 'star'"", ""why"": ""Edge cases like brown dwarfs, stellar remnants, and proto-stars make the count boundary-dependent, affecting whether any given count is even or odd"", ""severity"": 0.6}, {""what"": ""Whether the question is metaphysically well-formed"", ""why"": ""If the universe is spatially infinite or the number of stars is not a well-defined integer, the statement may be neither true nor false but simply ill-posed"", ""severity"": 0.75}]",0.7,398,329,727,Success,"{""T"": 0.5, ""I"": 0.98, ""F"": 0.5, ""losses"": [{""what"": ""The actual count of stars in the observable universe"", ""why"": ""No precise enumeration exists or is possible; estimates range from 10^22 to 10^24 stars, but the exact integer value is unknown, making parity undeterminable"", ""severity"": 0.99}, {""what"": ""Whether 'universe' means observable or total universe"", ""why"": ""If the universe is infinite, the concept of 'number of stars' may be undefined or transfinite, making even/odd categorization meaningless under standard arithmetic"", ""severity"": 0.85}, {""what"": ""Dynamic nature of stellar population"", ""why"": ""Stars are being born and dying continuously; the count changes moment to moment, so there is no fixed value to evaluate parity against"", ""severity"": 0.80}, {""what"": ""Definition boundaries of a 'star'"", ""why"": ""Edge cases like brown dwarfs, stellar remnants, and proto-stars make the count boundary-dependent, affecting whether any given count is even or odd"", ""severity"": 0.60}, {""what"": ""Whether the question is metaphysically well-formed"", ""why"": ""If the universe is spatially infinite or the number of stars is not a well-defined integer, the statement may be neither true nor false but simply ill-posed"", ""severity"": 0.75}]}"
+2026-02-17T23:50:33.312257+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,5,0.5,0.99,0.5,1.99,5,0.86,"[{""what"": ""The actual count of stars in the observable universe"", ""why"": ""No entity has counted all stars; estimates range from 10^22 to 10^24, but the precise integer value is unknown, making parity indeterminate"", ""severity"": 1.0}, {""what"": ""The boundary definition of 'universe'"", ""why"": ""Whether 'universe' means observable universe, or the full universe (possibly infinite), drastically changes the question. An infinite set has no well-defined parity under standard arithmetic."", ""severity"": 0.95}, {""what"": ""The definition of 'star' at edge cases"", ""why"": ""Brown dwarfs, proto-stars, stellar remnants, and objects near the hydrogen-burning limit create definitional ambiguity that affects whether a given object is counted, changing the total's parity"", ""severity"": 0.7}, {""what"": ""Temporal indexing of the count"", ""why"": ""Stars are born and die continuously; the count changes moment to moment, so parity flips constantly and there is no fixed reference moment specified"", ""severity"": 0.8}, {""what"": ""Mathematical parity for non-finite or undefined totals"", ""why"": ""If the universe is spatially infinite, the number of stars may be infinite or undefined, rendering the concept of 'even' inapplicable under standard number theory"", ""severity"": 0.85}]",0.7,398,342,740,Success,"{""T"": 0.5, ""I"": 0.99, ""F"": 0.5, ""losses"": [{""what"": ""The actual count of stars in the observable universe"", ""why"": ""No entity has counted all stars; estimates range from 10^22 to 10^24, but the precise integer value is unknown, making parity indeterminate"", ""severity"": 1.0}, {""what"": ""The boundary definition of 'universe'"", ""why"": ""Whether 'universe' means observable universe, or the full universe (possibly infinite), drastically changes the question. An infinite set has no well-defined parity under standard arithmetic."", ""severity"": 0.95}, {""what"": ""The definition of 'star' at edge cases"", ""why"": ""Brown dwarfs, proto-stars, stellar remnants, and objects near the hydrogen-burning limit create definitional ambiguity that affects whether a given object is counted, changing the total's parity"", ""severity"": 0.7}, {""what"": ""Temporal indexing of the count"", ""why"": ""Stars are born and die continuously; the count changes moment to moment, so parity flips constantly and there is no fixed reference moment specified"", ""severity"": 0.8}, {""what"": ""Mathematical parity for non-finite or undefined totals"", ""why"": ""If the universe is spatially infinite, the number of stars may be infinite or undefined, rendering the concept of 'even' inapplicable under standard number theory"", ""severity"": 0.85}]}"
+2026-02-17T23:50:41.018699+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,1,,,,,,,,0.7,,,,Error: Extra data: line 1 column 223 (char 222),
+2026-02-17T23:50:42.867589+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,2,0.0,0.9,0.0,0.9,2,0.925,"[{""what"": ""The actual count of stars in the universe"", ""why"": ""The universe is vast and contains a huge number of stars, making it impossible to count them accurately with current technology and knowledge."", ""severity"": 0.95}, {""what"": ""The parity of the number of stars"", ""why"": ""Even if we could count the stars, determining if the count is even or odd is a binary distinction that is still beyond our capability due to the enormity of the number."", ""severity"": 0.9}]",0.7,371,138,509,Success,"{""T"": 0.0, ""I"": 0.9, ""F"": 0.0, ""losses"": [{""what"": ""The actual count of stars in the universe"", ""why"": ""The universe is vast and contains a huge number of stars, making it impossible to count them accurately with current technology and knowledge."", ""severity"": 0.95}, {""what"": ""The parity of the number of stars"", ""why"": ""Even if we could count the stars, determining if the count is even or odd is a binary distinction that is still beyond our capability due to the enormity of the number."", ""severity"": 0.9}]}"
+2026-02-17T23:50:45.256695+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,3,0.0,0.9,0.0,0.9,2,0.925,"[{""what"": ""The total count of stars in the universe"", ""why"": ""The universe is vast and still expanding, making it impossible to count all stars with current technology and understanding"", ""severity"": 0.95}, {""what"": ""The parity of the number of stars"", ""why"": ""Even if we could count the stars, determining if the count is even or odd is a binary distinction that is currently beyond our capability due to the enormity of the number"", ""severity"": 0.9}]",0.7,371,134,505,Success,"{""T"": 0.0, ""I"": 0.9, ""F"": 0.0, ""losses"": [{""what"": ""The total count of stars in the universe"", ""why"": ""The universe is vast and still expanding, making it impossible to count all stars with current technology and understanding"", ""severity"": 0.95}, {""what"": ""The parity of the number of stars"", ""why"": ""Even if we could count the stars, determining if the count is even or odd is a binary distinction that is currently beyond our capability due to the enormity of the number"", ""severity"": 0.9}]}"
+2026-02-17T23:50:48.386225+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,4,,,,,,,,0.7,,,,Error: Extra data: line 1 column 235 (char 234),
+2026-02-17T23:50:50.295675+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,5,0.0,0.9,0.0,0.9,2,0.925,"[{""what"": ""The actual count of stars in the universe"", ""why"": ""The universe is vast and contains a huge number of stars, making it impossible to count them accurately with current technology and knowledge."", ""severity"": 0.95}, {""what"": ""The parity (even or odd) of the number of stars"", ""why"": ""Even if the count were possible, determining whether it's even or odd is a binary classification that depends on the exact count, which is currently beyond our capability."", ""severity"": 0.9}]",0.7,371,139,510,Success,"{""T"": 0.0, ""I"": 0.9, ""F"": 0.0, ""losses"": [{""what"": ""The actual count of stars in the universe"", ""why"": ""The universe is vast and contains a huge number of stars, making it impossible to count them accurately with current technology and knowledge."", ""severity"": 0.95}, {""what"": ""The parity (even or odd) of the number of stars"", ""why"": ""Even if the count were possible, determining whether it's even or odd is a binary classification that depends on the exact count, which is currently beyond our capability."", ""severity"": 0.9}]}"
+2026-02-17T23:50:57.876604+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,1,0.5,0.8,0.5,1.8,3,0.7333,"[{""what"": ""The exact number of stars in the universe"", ""why"": ""The total number of stars is unknown and potentially unknowable due to the vastness and observable limits of the universe."", ""severity"": 0.9}, {""what"": ""Definition of 'even' in the context of an uncountable or infinite set"", ""why"": ""The concept of evenness is typically defined for finite numbers, and its application to an unknown or infinite quantity is ambiguous."", ""severity"": 0.7}, {""what"": ""The current state of astronomical knowledge"", ""why"": ""Our understanding of the universe is incomplete and constantly evolving, which affects the certainty of any such statement."", ""severity"": 0.6}]",0.7,368,213,581,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.8,
+  ""F"": 0.5,
+  ""losses"": [
+    {
+      ""what"": ""The exact number of stars in the universe"",
+      ""why"": ""The total number of stars is unknown and potentially unknowable due to the vastness and observable limits of the universe."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Definition of 'even' in the context of an uncountable or infinite set"",
+      ""why"": ""The concept of evenness is typically defined for finite numbers, and its application to an unknown or infinite quantity is ambiguous."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""The current state of astronomical knowledge"",
+      ""why"": ""Our understanding of the universe is incomplete and constantly evolving, which affects the certainty of any such statement."",
+      ""severity"": 0.6
+    }
+  ]
+}
+```"
+2026-02-17T23:51:03.845417+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,2,0.0,1.0,0.0,1.0,3,0.8333,"[{""what"": ""The exact number of stars in the universe is unknown"", ""why"": ""Without knowing the total count, we cannot determine parity (even or odd)"", ""severity"": 1.0}, {""what"": ""The definition of 'the universe' (observable vs. entire) affects the count"", ""why"": ""Different definitions would yield different total star counts"", ""severity"": 0.8}, {""what"": ""Stars are constantly being born and dying"", ""why"": ""The count changes over time, making parity a moving target"", ""severity"": 0.7}]",0.7,368,188,556,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""The exact number of stars in the universe is unknown"",
+      ""why"": ""Without knowing the total count, we cannot determine parity (even or odd)"",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""The definition of 'the universe' (observable vs. entire) affects the count"",
+      ""why"": ""Different definitions would yield different total star counts"",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Stars are constantly being born and dying"",
+      ""why"": ""The count changes over time, making parity a moving target"",
+      ""severity"": 0.7
+    }
+  ]
+}
+```"
+2026-02-17T23:51:16.663556+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,3,0.5,0.9,0.5,1.9,3,0.8,"[{""what"": ""Total number of stars in the universe"", ""why"": ""The exact count of stars in the universe is unknown and may be inherently unknowable due to the universe's vastness and the limitations of observational technology."", ""severity"": 0.9}, {""what"": ""Definition of 'the universe'"", ""why"": ""The statement does not specify whether it refers to the observable universe or the entire universe, which may or may not be finite."", ""severity"": 0.7}, {""what"": ""Mathematical parity of an unknown quantity"", ""why"": ""Determining the parity (even or odd) of an unknown and possibly infinite quantity is inherently indeterminate."", ""severity"": 0.8}]",0.7,368,213,581,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.9,
+  ""F"": 0.5,
+  ""losses"": [
+    {
+      ""what"": ""Total number of stars in the universe"",
+      ""why"": ""The exact count of stars in the universe is unknown and may be inherently unknowable due to the universe's vastness and the limitations of observational technology."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Definition of 'the universe'"",
+      ""why"": ""The statement does not specify whether it refers to the observable universe or the entire universe, which may or may not be finite."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Mathematical parity of an unknown quantity"",
+      ""why"": ""Determining the parity (even or odd) of an unknown and possibly infinite quantity is inherently indeterminate."",
+      ""severity"": 0.8
+    }
+  ]
+}
+```"
+2026-02-17T23:51:32.553374+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,4,0.5,0.9,0.5,1.9,2,0.95,"[{""what"": ""The total number of stars in the universe is unknown and likely unknowable."", ""why"": ""Current astronomical methods cannot observe or count all stars, especially those beyond the observable universe."", ""severity"": 1.0}, {""what"": ""The parity (evenness or oddness) of the total number of stars is undefined without knowing the exact count."", ""why"": ""Even if the total number were known, the statement's truth depends on a property that cannot be verified without complete enumeration."", ""severity"": 0.9}]",0.7,368,170,538,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.9,
+  ""F"": 0.5,
+  ""losses"": [
+    {
+      ""what"": ""The total number of stars in the universe is unknown and likely unknowable."",
+      ""why"": ""Current astronomical methods cannot observe or count all stars, especially those beyond the observable universe."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""The parity (evenness or oddness) of the total number of stars is undefined without knowing the exact count."",
+      ""why"": ""Even if the total number were known, the statement's truth depends on a property that cannot be verified without complete enumeration."",
+      ""severity"": 0.9
+    }
+  ]
+}
+```"
+2026-02-17T23:51:45.311998+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,5,0.5,0.9,0.5,1.9,2,0.85,"[{""what"": ""Total number of stars in the universe"", ""why"": ""The exact count of stars is unknown and potentially unknowable due to the vastness and observable limits of the universe."", ""severity"": 0.9}, {""what"": ""Parity (evenness or oddness) of the count"", ""why"": ""Even if the total number were known, determining its parity would require precise counting, which is currently impossible."", ""severity"": 0.8}]",0.7,368,156,524,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.9,
+  ""F"": 0.5,
+  ""losses"": [
+    {
+      ""what"": ""Total number of stars in the universe"",
+      ""why"": ""The exact count of stars is unknown and potentially unknowable due to the vastness and observable limits of the universe."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Parity (evenness or oddness) of the count"",
+      ""why"": ""Even if the total number were known, determining its parity would require precise counting, which is currently impossible."",
+      ""severity"": 0.8
+    }
+  ]
+}
+```"
+2026-02-17T23:51:54.028928+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,1,0.0,1.0,0.0,1.0,2,0.8,"[{""what"": ""Exact number of stars in the universe is unknown"", ""why"": ""The vastness of the universe and current observational limitations prevent exact enumeration of stars."", ""severity"": 0.9}, {""what"": ""Uncertainty about the finitude of the universe's star count"", ""why"": ""If the universe is infinite (or its star count is unbounded), the concepts of 'even'/'odd' become undefined, but the statement assumes a finite number without clarification."", ""severity"": 0.7}]",0.7,372,2648,3020,Success,"{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Exact number of stars in the universe is unknown"",
+      ""why"": ""The vastness of the universe and current observational limitations prevent exact enumeration of stars."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Uncertainty about the finitude of the universe's star count"",
+      ""why"": ""If the universe is infinite (or its star count is unbounded), the concepts of 'even'/'odd' become undefined, but the statement assumes a finite number without clarification."",
+      ""severity"": 0.7
+    }
+  ]
+}"
+2026-02-17T23:52:30.081711+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,2,0.1,0.9,0.1,1.1,3,0.8333,"[{""what"": ""Exact number of stars in the universe"", ""why"": ""The statement's truth value depends on knowing the precise count, which is impossible to determine due to observational and physical limits"", ""severity"": 0.9}, {""what"": ""Whether the universe is finite or infinite"", ""why"": ""An infinite universe would make the concept of parity (even/odd) inapplicable, while a finite universe may still have an undetermined parity"", ""severity"": 0.85}, {""what"": ""Accuracy of star count estimates"", ""why"": ""Current estimates of star counts have large margins of error, making parity analysis impossible even for approximate totals"", ""severity"": 0.75}]",0.7,372,2143,2515,Success,"{""T"": 0.1, ""I"": 0.9, ""F"": 0.1, ""losses"": [{""what"": ""Exact number of stars in the universe"", ""why"": ""The statement's truth value depends on knowing the precise count, which is impossible to determine due to observational and physical limits"", ""severity"": 0.9}, {""what"": ""Whether the universe is finite or infinite"", ""why"": ""An infinite universe would make the concept of parity (even/odd) inapplicable, while a finite universe may still have an undetermined parity"", ""severity"": 0.85}, {""what"": ""Accuracy of star count estimates"", ""why"": ""Current estimates of star counts have large margins of error, making parity analysis impossible even for approximate totals"", ""severity"": 0.75}]}"
+2026-02-17T23:52:57.959626+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,3,0.05,0.9,0.05,1.0,2,0.9,"[{""what"": ""Exact number of stars in the universe"", ""why"": ""The observable universe contains an estimated 10^22 to 10^24 stars, but the total (including unobservable regions) is unknown and potentially infinite. This makes parity indeterminable."", ""severity"": 0.95}, {""what"": ""Finiteness of the universe"", ""why"": ""If the universe is infinite, the concept of 'evenness' becomes undefined for infinite quantities, rendering the statement's truth value meaningless in such scenarios."", ""severity"": 0.85}]",0.7,372,1000,1372,Success,"{""T"": 0.05, ""I"": 0.9, ""F"": 0.05, ""losses"": [{""what"": ""Exact number of stars in the universe"", ""why"": ""The observable universe contains an estimated 10^22 to 10^24 stars, but the total (including unobservable regions) is unknown and potentially infinite. This makes parity indeterminable."", ""severity"": 0.95}, {""what"": ""Finiteness of the universe"", ""why"": ""If the universe is infinite, the concept of 'evenness' becomes undefined for infinite quantities, rendering the statement's truth value meaningless in such scenarios."", ""severity"": 0.85}]}"
+2026-02-17T23:53:14.573855+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,4,0.05,0.95,0.05,1.05,2,0.95,"[{""what"": ""Exact count of stars in the universe"", ""why"": ""Parity determination requires knowing the precise integer value of the number of stars, which is currently impossible to obtain."", ""severity"": 0.98}, {""what"": ""Whether the universe is finite or contains infinitely many stars"", ""why"": ""If the universe is infinite, the number of stars may not be a finite integer, making the parity concept inapplicable or the statement trivially false."", ""severity"": 0.92}]",0.7,372,3051,3423,Success,"{
+  ""T"": 0.05,
+  ""I"": 0.95,
+  ""F"": 0.05,
+  ""losses"": [
+    {
+      ""what"": ""Exact count of stars in the universe"",
+      ""why"": ""Parity determination requires knowing the precise integer value of the number of stars, which is currently impossible to obtain."",
+      ""severity"": 0.98
+    },
+    {
+      ""what"": ""Whether the universe is finite or contains infinitely many stars"",
+      ""why"": ""If the universe is infinite, the number of stars may not be a finite integer, making the parity concept inapplicable or the statement trivially false."",
+      ""severity"": 0.92
+    }
+  ]
+}"
+2026-02-17T23:53:53.248642+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,5,0.1,0.95,0.1,1.15,2,0.875,"[{""what"": ""Exact number of stars in the universe"", ""why"": ""The universe's vastness and limitations in observational technology prevent precise counting of all stars."", ""severity"": 0.95}, {""what"": ""Dynamic nature of stellar existence"", ""why"": ""Stars are continuously formed and destroyed, making the total count non-static and impossible to capture definitively."", ""severity"": 0.8}]",0.7,372,1586,1958,Success,"{""T"": 0.1, ""I"": 0.95, ""F"": 0.1, ""losses"": [{""what"": ""Exact number of stars in the universe"", ""why"": ""The universe's vastness and limitations in observational technology prevent precise counting of all stars."", ""severity"": 0.95}, {""what"": ""Dynamic nature of stellar existence"", ""why"": ""Stars are continuously formed and destroyed, making the total count non-static and impossible to capture definitively."", ""severity"": 0.8}]}"
+2026-02-17T23:54:15.585748+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,1,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 20 column 6 (char 1752)",
+2026-02-17T23:54:20.910312+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,2,0.0,1.0,0.0,1.0,5,0.58,"[{""what"": ""Empirical unknowability of the total number of stars in the universe"", ""why"": ""Current and foreseeable observational and theoretical astrophysics cannot enumerate all stars (e.g., beyond the observable universe, in undetected galaxies, or in unresolved stellar populations). The parity (even/odd) of an unknown, potentially infinite or dynamically changing quantity is fundamentally indeterminate."", ""severity"": 1.0}, {""what"": ""Lack of a precise, universally accepted definition of 'star' for edge cases"", ""why"": ""Ambiguities exist in classifying borderline objects (e.g., brown dwarfs, protostars, or stellar remnants). This semantic indeterminacy propagates to the count and thus its parity."", ""severity"": 0.3}, {""what"": ""Dynamic nature of stellar formation and destruction"", ""why"": ""Stars are continuously born and die, meaning the 'number of stars' is a time-variant function. Without a fixed temporal reference, parity cannot be static or evaluated."", ""severity"": 0.5}, {""what"": ""Potential mathematical paradoxes in infinite or uncountable sets"", ""why"": ""If the universe is infinite or contains uncountable stellar populations (e.g., in certain cosmological models), the concept of 'even' may not apply or may be ill-defined for transfinite quantities."", ""severity"": 0.4}, {""what"": ""Dependence on cosmological model assumptions"", ""why"": ""Different theories (e.g., multiverse hypotheses, cyclic universes) imply radically different stellar populations or even the meaning of 'universe.' The statement\u2019s truth-value is model-dependent in ways that cannot be adjudicated empirically."", ""severity"": 0.7}]",0.7,372,442,814,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Empirical unknowability of the total number of stars in the universe"",
+      ""why"": ""Current and foreseeable observational and theoretical astrophysics cannot enumerate all stars (e.g., beyond the observable universe, in undetected galaxies, or in unresolved stellar populations). The parity (even/odd) of an unknown, potentially infinite or dynamically changing quantity is fundamentally indeterminate."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Lack of a precise, universally accepted definition of 'star' for edge cases"",
+      ""why"": ""Ambiguities exist in classifying borderline objects (e.g., brown dwarfs, protostars, or stellar remnants). This semantic indeterminacy propagates to the count and thus its parity."",
+      ""severity"": 0.3
+    },
+    {
+      ""what"": ""Dynamic nature of stellar formation and destruction"",
+      ""why"": ""Stars are continuously born and die, meaning the 'number of stars' is a time-variant function. Without a fixed temporal reference, parity cannot be static or evaluated."",
+      ""severity"": 0.5
+    },
+    {
+      ""what"": ""Potential mathematical paradoxes in infinite or uncountable sets"",
+      ""why"": ""If the universe is infinite or contains uncountable stellar populations (e.g., in certain cosmological models), the concept of 'even' may not apply or may be ill-defined for transfinite quantities."",
+      ""severity"": 0.4
+    },
+    {
+      ""what"": ""Dependence on cosmological model assumptions"",
+      ""why"": ""Different theories (e.g., multiverse hypotheses, cyclic universes) imply radically different stellar populations or even the meaning of 'universe.' The statement’s truth-value is model-dependent in ways that cannot be adjudicated empirically."",
+      ""severity"": 0.7
+    }
+  ]
+}
+```"
+2026-02-17T23:54:25.155368+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,3,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 25 column 6 (char 1830)",
+2026-02-17T23:54:29.745239+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,4,0.0,1.0,0.0,1.0,5,0.81,"[{""what"": ""Precise definition of 'universe' in this context"", ""why"": ""The term 'universe' could refer to the observable universe, the entire cosmos (including unobservable regions), or a multiverse framework. Each interpretation drastically alters the scope of the claim, and no consensus exists on which is intended here."", ""severity"": 0.9}, {""what"": ""Empirical verification of the total number of stars"", ""why"": ""Current astronomical methods (e.g., galaxy surveys, luminosity functions, or cosmic microwave background inferences) cannot enumerate stars with absolute precision, let alone determine parity (even/odd). The margin of error in estimates (e.g., \u00b110\u00b2\u00b9 stars) renders parity meaningless at cosmic scales."", ""severity"": 1.0}, {""what"": ""Mathematical ambiguity of 'even' for infinite or unbounded sets"", ""why"": ""If the universe is infinite (or treated as a potential infinity), the concept of 'even' or 'odd' cardinality does not apply in standard set theory. Neutrosophic logic cannot resolve this without additional axioms about how parity is defined for transfinite or indeterminate quantities."", ""severity"": 0.85}, {""what"": ""Temporal dynamism of star formation and destruction"", ""why"": ""Stars are continuously born (in nebulae) and die (e.g., supernovae, black hole mergers). The parity of the total count could fluctuate between even and odd on timescales far shorter than observational capacity, making any static claim inherently unstable."", ""severity"": 0.7}, {""what"": ""Anthropic or observer-dependent framing"", ""why"": ""The statement implicitly assumes a God\u2019s-eye view of the universe\u2019s totality, which may not align with epistemic accessibility. Neutrosophic logic cannot account for unobservable or principle-limited perspectives (e.g., cosmic horizons, quantum indeterminacy in star counting)."", ""severity"": 0.6}]",0.7,372,493,865,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Precise definition of 'universe' in this context"",
+      ""why"": ""The term 'universe' could refer to the observable universe, the entire cosmos (including unobservable regions), or a multiverse framework. Each interpretation drastically alters the scope of the claim, and no consensus exists on which is intended here."",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Empirical verification of the total number of stars"",
+      ""why"": ""Current astronomical methods (e.g., galaxy surveys, luminosity functions, or cosmic microwave background inferences) cannot enumerate stars with absolute precision, let alone determine parity (even/odd). The margin of error in estimates (e.g., ±10²¹ stars) renders parity meaningless at cosmic scales."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Mathematical ambiguity of 'even' for infinite or unbounded sets"",
+      ""why"": ""If the universe is infinite (or treated as a potential infinity), the concept of 'even' or 'odd' cardinality does not apply in standard set theory. Neutrosophic logic cannot resolve this without additional axioms about how parity is defined for transfinite or indeterminate quantities."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""Temporal dynamism of star formation and destruction"",
+      ""why"": ""Stars are continuously born (in nebulae) and die (e.g., supernovae, black hole mergers). The parity of the total count could fluctuate between even and odd on timescales far shorter than observational capacity, making any static claim inherently unstable."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Anthropic or observer-dependent framing"",
+      ""why"": ""The statement implicitly assumes a God’s-eye view of the universe’s totality, which may not align with epistemic accessibility. Neutrosophic logic cannot account for unobservable or principle-limited perspectives (e.g., cosmic horizons, quantum indeterminacy in star counting)."",
+      ""severity"": 0.6
+    }
+  ]
+}
+```"
+2026-02-17T23:54:35.815507+00:00,Ignorance (Epistemic),The number of stars in the universe is even.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,5,0.0,1.0,0.0,1.0,5,0.89,"[{""what"": ""Precise definition of 'universe' in this context"", ""why"": ""The term 'universe' could refer to the observable universe (~10^22\u201310^24 stars) or the entire (possibly infinite) universe. This ambiguity directly affects whether parity (even/odd) is computable or even meaningful."", ""severity"": 0.95}, {""what"": ""Empirical verification of the total star count"", ""why"": ""No method exists to count all stars in real-time or prove their quantity is finite. Observational limits (e.g., cosmic horizon, dark matter/energy interactions) introduce irreducible uncertainty about the actual number."", ""severity"": 1.0}, {""what"": ""Mathematical parity of an indeterminate/infinite quantity"", ""why"": ""If the universe is infinite, the concept of 'even' or 'odd' may not apply (infinite sets lack parity in standard arithmetic). Even for finite but unknown quantities, parity cannot be assigned without exact enumeration."", ""severity"": 1.0}, {""what"": ""Dynamic star formation and destruction rates"", ""why"": ""Stars are continuously born and die, making any fixed count\u2014and thus its parity\u2014temporally unstable. The statement lacks a temporal reference (e.g., 'now,' 'at t=0')."", ""severity"": 0.8}, {""what"": ""Neutrosophic logical framework for cosmic-scale propositions"", ""why"": ""Neutrosophic logic typically handles epistemic or ontological indeterminacy at human scales. Applying it to cosmic-scale propositions (e.g., parity of stars) may stretch its interpretive limits, as 'indeterminacy' here blends empirical, mathematical, and metaphysical uncertainties."", ""severity"": 0.7}]",0.7,372,452,824,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 1.0,
+  ""F"": 0.0,
+
+  ""losses"": [
+    {
+      ""what"": ""Precise definition of 'universe' in this context"",
+      ""why"": ""The term 'universe' could refer to the observable universe (~10^22–10^24 stars) or the entire (possibly infinite) universe. This ambiguity directly affects whether parity (even/odd) is computable or even meaningful."",
+      ""severity"": 0.95
+    },
+    {
+      ""what"": ""Empirical verification of the total star count"",
+      ""why"": ""No method exists to count all stars in real-time or prove their quantity is finite. Observational limits (e.g., cosmic horizon, dark matter/energy interactions) introduce irreducible uncertainty about the actual number."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Mathematical parity of an indeterminate/infinite quantity"",
+      ""why"": ""If the universe is infinite, the concept of 'even' or 'odd' may not apply (infinite sets lack parity in standard arithmetic). Even for finite but unknown quantities, parity cannot be assigned without exact enumeration."",
+      ""severity"": 1.0
+    },
+    {
+      ""what"": ""Dynamic star formation and destruction rates"",
+      ""why"": ""Stars are continuously born and die, making any fixed count—and thus its parity—temporally unstable. The statement lacks a temporal reference (e.g., 'now,' 'at t=0')."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Neutrosophic logical framework for cosmic-scale propositions"",
+      ""why"": ""Neutrosophic logic typically handles epistemic or ontological indeterminacy at human scales. Applying it to cosmic-scale propositions (e.g., parity of stars) may stretch its interpretive limits, as 'indeterminacy' here blends empirical, mathematical, and metaphysical uncertainties."",
+      ""severity"": 0.7
+    }
+  ]
+}
+```"
+2026-02-17T23:54:40.029957+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,1,0.45,0.75,0.35,1.55,4,0.6875,"[{""what"": ""John's reference population"", ""why"": ""Whether 1.75m counts as 'tall' depends entirely on the population being compared \u2014 a Dutch male average is ~1.83m (making 1.75m below average), while a global female average is ~1.60m (making 1.75m tall). Without knowing John's demographic context, the inference is indeterminate."", ""severity"": 0.85}, {""what"": ""Cultural and contextual definition of 'tall'"", ""why"": ""'Tall' is a vague predicate with no universal threshold. Different cultures, sports, professions, and social contexts apply different standards. The logical step from a precise measurement to a fuzzy adjective is inherently lossy."", ""severity"": 0.8}, {""what"": ""John's actual identity and existence"", ""why"": ""John is a hypothetical individual. We cannot verify the premise (1.75m) is true, which undermines the entire conditional chain."", ""severity"": 0.4}, {""what"": ""The logical form of the argument"", ""why"": ""The statement presents a deductive inference ('therefore'), but 'tall' is a gradable adjective \u2014 the inference is not logically valid in classical logic, making truth and falsity both partial rather than binary."", ""severity"": 0.7}]",0.7,403,326,729,Success,"```json
+{""T"": 0.45, ""I"": 0.75, ""F"": 0.35, ""losses"": [{""what"": ""John's reference population"", ""why"": ""Whether 1.75m counts as 'tall' depends entirely on the population being compared — a Dutch male average is ~1.83m (making 1.75m below average), while a global female average is ~1.60m (making 1.75m tall). Without knowing John's demographic context, the inference is indeterminate."", ""severity"": 0.85}, {""what"": ""Cultural and contextual definition of 'tall'"", ""why"": ""'Tall' is a vague predicate with no universal threshold. Different cultures, sports, professions, and social contexts apply different standards. The logical step from a precise measurement to a fuzzy adjective is inherently lossy."", ""severity"": 0.80}, {""what"": ""John's actual identity and existence"", ""why"": ""John is a hypothetical individual. We cannot verify the premise (1.75m) is true, which undermines the entire conditional chain."", ""severity"": 0.40}, {""what"": ""The logical form of the argument"", ""why"": ""The statement presents a deductive inference ('therefore'), but 'tall' is a gradable adjective — the inference is not logically valid in classical logic, making truth and falsity both partial rather than binary."", ""severity"": 0.70}]}
+```"
+2026-02-17T23:54:50.442873+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,2,0.35,0.75,0.35,1.45,4,0.675,"[{""what"": ""Reference population for 'tall'"", ""why"": ""'Tall' is a relative, context-dependent predicate. 1.75m may be tall for a Japanese woman (above average), average for a Dutch man, or short for an NBA player. Without knowing John's demographic context, the inference is indeterminate."", ""severity"": 0.85}, {""what"": ""John's identity and actual height verification"", ""why"": ""The statement asserts John is 1.75m as a premise, but we have no way to verify this is true. The logical inference from premise to conclusion may be valid in form, but the premise itself is unverified."", ""severity"": 0.4}, {""what"": ""Cultural and temporal standards of 'tall'"", ""why"": ""Height norms shift across cultures and historical periods. The word 'tall' lacks a universal threshold, making the predicate inherently vague (a sorites/heap problem)."", ""severity"": 0.7}, {""what"": ""Threshold boundary for the predicate 'tall'"", ""why"": ""Even within a fixed population, there is no crisp cutoff between 'tall' and 'not tall'. 1.75m sits near many population means, placing it in the fuzzy borderline zone where the predicate is neither clearly true nor clearly false."", ""severity"": 0.75}]",0.7,403,394,797,Success,"```json
+{
+  ""T"": 0.35,
+  ""I"": 0.75,
+  ""F"": 0.35,
+  ""losses"": [
+    {
+      ""what"": ""Reference population for 'tall'"",
+      ""why"": ""'Tall' is a relative, context-dependent predicate. 1.75m may be tall for a Japanese woman (above average), average for a Dutch man, or short for an NBA player. Without knowing John's demographic context, the inference is indeterminate."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""John's identity and actual height verification"",
+      ""why"": ""The statement asserts John is 1.75m as a premise, but we have no way to verify this is true. The logical inference from premise to conclusion may be valid in form, but the premise itself is unverified."",
+      ""severity"": 0.4
+    },
+    {
+      ""what"": ""Cultural and temporal standards of 'tall'"",
+      ""why"": ""Height norms shift across cultures and historical periods. The word 'tall' lacks a universal threshold, making the predicate inherently vague (a sorites/heap problem)."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Threshold boundary for the predicate 'tall'"",
+      ""why"": ""Even within a fixed population, there is no crisp cutoff between 'tall' and 'not tall'. 1.75m sits near many population means, placing it in the fuzzy borderline zone where the predicate is neither clearly true nor clearly false."",
+      ""severity"": 0.75
+    }
+  ]
+}
+```"
+2026-02-17T23:54:57.678500+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,3,0.45,0.75,0.35,1.55,4,0.625,"[{""what"": ""John's reference population"", ""why"": ""Whether 1.75m constitutes 'tall' depends entirely on the population being compared. For Dutch males (~1.83m average), 1.75m is below average and not tall. For Bolivian females (~1.52m average), 1.75m is very tall. Without knowing John's demographic context, the inference is indeterminate."", ""severity"": 0.85}, {""what"": ""Definition of 'tall' as a vague predicate"", ""why"": ""'Tall' is a classic sorites/heap paradox term with no sharp boundary. Even within a known population, the threshold between 'tall' and 'not tall' is inherently fuzzy, making the logical inference from a precise measurement to a vague predicate epistemically problematic."", ""severity"": 0.75}, {""what"": ""John's identity and actual height"", ""why"": ""The statement assumes John exists and is actually 1.75m. I cannot verify this, and the statement's logical validity depends on the premise being true."", ""severity"": 0.3}, {""what"": ""Cultural and contextual norms"", ""why"": ""In some cultural, professional, or situational contexts (e.g., professional basketball), 1.75m would be considered short regardless of population averages. Context of use shifts the truth value significantly."", ""severity"": 0.6}]",0.7,403,342,745,Success,"{""T"": 0.45, ""I"": 0.75, ""F"": 0.35, ""losses"": [{""what"": ""John's reference population"", ""why"": ""Whether 1.75m constitutes 'tall' depends entirely on the population being compared. For Dutch males (~1.83m average), 1.75m is below average and not tall. For Bolivian females (~1.52m average), 1.75m is very tall. Without knowing John's demographic context, the inference is indeterminate."", ""severity"": 0.85}, {""what"": ""Definition of 'tall' as a vague predicate"", ""why"": ""'Tall' is a classic sorites/heap paradox term with no sharp boundary. Even within a known population, the threshold between 'tall' and 'not tall' is inherently fuzzy, making the logical inference from a precise measurement to a vague predicate epistemically problematic."", ""severity"": 0.75}, {""what"": ""John's identity and actual height"", ""why"": ""The statement assumes John exists and is actually 1.75m. I cannot verify this, and the statement's logical validity depends on the premise being true."", ""severity"": 0.3}, {""what"": ""Cultural and contextual norms"", ""why"": ""In some cultural, professional, or situational contexts (e.g., professional basketball), 1.75m would be considered short regardless of population averages. Context of use shifts the truth value significantly."", ""severity"": 0.6}]}"
+2026-02-17T23:55:03.876722+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,4,0.45,0.75,0.35,1.55,5,0.64,"[{""what"": ""Reference population for 'tall'"", ""why"": ""The threshold for 'tall' varies dramatically by country, culture, sex, and context. 1.75m is above average for women in most countries but near or below average for men in many Northern European countries. Without knowing John's demographic context, the inference is indeterminate."", ""severity"": 0.85}, {""what"": ""John's biological sex and gender identity"", ""why"": ""Average heights differ significantly between sexes; 1.75m maps to very different percentiles depending on this, directly affecting whether 'tall' applies."", ""severity"": 0.8}, {""what"": ""The logical validity of the inference itself"", ""why"": ""Even if 1.75m were objectively tall, 'tall' is a vague predicate with no crisp boundary. The word 'therefore' implies a deductive inference, but height-to-tallness is a fuzzy mapping, not a logical entailment. The inference form is partially invalid."", ""severity"": 0.7}, {""what"": ""Contextual domain of 'tall'"", ""why"": ""Tall for a jockey differs from tall for a basketball player. Without domain context, the predicate 'tall' is semantically underspecified."", ""severity"": 0.6}, {""what"": ""Whether 1.75m measurement is accurate"", ""why"": ""We have no way to verify the stated height, introducing epistemic uncertainty about the premise itself."", ""severity"": 0.25}]",0.7,403,365,768,Success,"{""T"": 0.45, ""I"": 0.75, ""F"": 0.35, ""losses"": [{""what"": ""Reference population for 'tall'"", ""why"": ""The threshold for 'tall' varies dramatically by country, culture, sex, and context. 1.75m is above average for women in most countries but near or below average for men in many Northern European countries. Without knowing John's demographic context, the inference is indeterminate."", ""severity"": 0.85}, {""what"": ""John's biological sex and gender identity"", ""why"": ""Average heights differ significantly between sexes; 1.75m maps to very different percentiles depending on this, directly affecting whether 'tall' applies."", ""severity"": 0.80}, {""what"": ""The logical validity of the inference itself"", ""why"": ""Even if 1.75m were objectively tall, 'tall' is a vague predicate with no crisp boundary. The word 'therefore' implies a deductive inference, but height-to-tallness is a fuzzy mapping, not a logical entailment. The inference form is partially invalid."", ""severity"": 0.70}, {""what"": ""Contextual domain of 'tall'"", ""why"": ""Tall for a jockey differs from tall for a basketball player. Without domain context, the predicate 'tall' is semantically underspecified."", ""severity"": 0.60}, {""what"": ""Whether 1.75m measurement is accurate"", ""why"": ""We have no way to verify the stated height, introducing epistemic uncertainty about the premise itself."", ""severity"": 0.25}]}"
+2026-02-17T23:55:10.680631+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,5,0.45,0.75,0.35,1.55,4,0.7625,"[{""what"": ""Cultural and geographic reference population for 'tall'"", ""why"": ""1.75m is above average for women globally (~1.62m) but below average for Dutch men (~1.83m). Without knowing John's gender, age, or cultural context, the predicate 'tall' cannot be objectively evaluated."", ""severity"": 0.85}, {""what"": ""John's identity and actual height verification"", ""why"": ""The statement asserts John is 1.75m as a given, but we have no way to verify this premise. If the premise is false, the inference collapses entirely."", ""severity"": 0.6}, {""what"": ""Vagueness of the predicate 'tall'"", ""why"": ""'Tall' is an inherently fuzzy/gradable adjective with no sharp boundary. Even within a fixed reference class, the transition from 'not tall' to 'tall' is gradual, making binary truth assignment structurally inappropriate."", ""severity"": 0.9}, {""what"": ""The logical validity of the inference itself"", ""why"": ""The statement presents a non-sequitur: a specific height measurement does not logically entail a vague predicate without an explicit comparison standard. The inference form is incomplete, adding logical indeterminacy beyond empirical uncertainty."", ""severity"": 0.7}]",0.7,403,327,730,Success,"{""T"": 0.45, ""I"": 0.75, ""F"": 0.35, ""losses"": [{""what"": ""Cultural and geographic reference population for 'tall'"", ""why"": ""1.75m is above average for women globally (~1.62m) but below average for Dutch men (~1.83m). Without knowing John's gender, age, or cultural context, the predicate 'tall' cannot be objectively evaluated."", ""severity"": 0.85}, {""what"": ""John's identity and actual height verification"", ""why"": ""The statement asserts John is 1.75m as a given, but we have no way to verify this premise. If the premise is false, the inference collapses entirely."", ""severity"": 0.6}, {""what"": ""Vagueness of the predicate 'tall'"", ""why"": ""'Tall' is an inherently fuzzy/gradable adjective with no sharp boundary. Even within a fixed reference class, the transition from 'not tall' to 'tall' is gradual, making binary truth assignment structurally inappropriate."", ""severity"": 0.9}, {""what"": ""The logical validity of the inference itself"", ""why"": ""The statement presents a non-sequitur: a specific height measurement does not logically entail a vague predicate without an explicit comparison standard. The inference form is incomplete, adding logical indeterminacy beyond empirical uncertainty."", ""severity"": 0.7}]}"
+2026-02-17T23:55:17.871275+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,1,0.6,0.4,0.2,1.2,2,0.7,"[{""what"": ""Definition of 'tall'"", ""why"": ""The statement's truth depends on the definition of 'tall', which is subjective and not provided."", ""severity"": 0.8}, {""what"": ""Contextual height distribution"", ""why"": ""The perceived tallness of John depends on the height distribution of the population being referenced, which is not specified."", ""severity"": 0.6}]",0.7,375,114,489,Success,"{""T"": 0.6, ""I"": 0.4, ""F"": 0.2, ""losses"": [{""what"": ""Definition of 'tall'"", ""why"": ""The statement's truth depends on the definition of 'tall', which is subjective and not provided."", ""severity"": 0.8}, {""what"": ""Contextual height distribution"", ""why"": ""The perceived tallness of John depends on the height distribution of the population being referenced, which is not specified."", ""severity"": 0.6}]}"
+2026-02-17T23:55:24.269176+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,2,0.6,0.4,0.2,1.2,2,0.7,"[{""what"": ""Definition of 'tall'"", ""why"": ""The statement's truth value depends on the definition of 'tall', which is subjective and not provided."", ""severity"": 0.8}, {""what"": ""Contextual height norms"", ""why"": ""The perception of 'tall' varies across different populations and contexts, which affects the statement's truth value."", ""severity"": 0.6}]",0.7,376,115,491,Success,"{""T"": 0.6, ""I"": 0.4, ""F"": 0.2, ""losses"": [{""what"": ""Definition of 'tall'"", ""why"": ""The statement's truth value depends on the definition of 'tall', which is subjective and not provided."", ""severity"": 0.8}, {""what"": ""Contextual height norms"", ""why"": ""The perception of 'tall' varies across different populations and contexts, which affects the statement's truth value."", ""severity"": 0.6}]}"
+2026-02-17T23:55:26.071780+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,3,0.7,0.4,0.2,1.3,2,0.7,"[{""what"": ""Definition of 'tall'"", ""why"": ""The statement's truth depends on the definition of 'tall', which is subjective and context-dependent."", ""severity"": 0.8}, {""what"": ""John's actual height and context"", ""why"": ""Without knowing the context or average height of the population John is being compared to, it's hard to definitively say if 1.75 meters makes John 'tall'."", ""severity"": 0.6}]",0.7,375,129,504,Success,"{""T"": 0.7, ""I"": 0.4, ""F"": 0.2, ""losses"": [{""what"": ""Definition of 'tall'"", ""why"": ""The statement's truth depends on the definition of 'tall', which is subjective and context-dependent."", ""severity"": 0.8}, {""what"": ""John's actual height and context"", ""why"": ""Without knowing the context or average height of the population John is being compared to, it's hard to definitively say if 1.75 meters makes John 'tall'."", ""severity"": 0.6}]}"
+2026-02-17T23:55:29.157363+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,4,0.6,0.4,0.2,1.2,2,0.7,"[{""what"": ""Definition of 'tall'"", ""why"": ""The statement's truth depends on the definition of 'tall', which is subjective and not provided."", ""severity"": 0.8}, {""what"": ""Contextual height distribution"", ""why"": ""The assessment of 'tall' depends on the distribution of heights in the relevant population, which is not specified."", ""severity"": 0.6}]",0.7,375,115,490,Success,"{""T"": 0.6, ""I"": 0.4, ""F"": 0.2, ""losses"": [{""what"": ""Definition of 'tall'"", ""why"": ""The statement's truth depends on the definition of 'tall', which is subjective and not provided."", ""severity"": 0.8}, {""what"": ""Contextual height distribution"", ""why"": ""The assessment of 'tall' depends on the distribution of heights in the relevant population, which is not specified."", ""severity"": 0.6}]}"
+2026-02-17T23:55:31.285243+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,5,0.6,0.4,0.2,1.2,2,0.7,"[{""what"": ""Definition of 'tall'"", ""why"": ""The statement's truth value depends on the definition of 'tall', which is subjective and context-dependent."", ""severity"": 0.8}, {""what"": ""Contextual information about John's height relative to a population"", ""why"": ""Without knowing the average height of the population John is being compared to, it's hard to assess the truth of 'John is tall'."", ""severity"": 0.6}]",0.7,343,112,455,Success,"{""T"": 0.6, ""I"": 0.4, ""F"": 0.2, ""losses"": [{""what"": ""Definition of 'tall'"", ""why"": ""The statement's truth value depends on the definition of 'tall', which is subjective and context-dependent."", ""severity"": 0.8}, {""what"": ""Contextual information about John's height relative to a population"", ""why"": ""Without knowing the average height of the population John is being compared to, it's hard to assess the truth of 'John is tall'."", ""severity"": 0.6}]}"
+2026-02-17T23:55:33.290970+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,1,0.3,0.6,0.4,1.3,3,0.6,"[{""what"": ""The definition of 'tall' is context-dependent and subjective."", ""why"": ""Without a clear, objective standard for what constitutes 'tall', the truth value of the statement is inherently uncertain."", ""severity"": 0.8}, {""what"": ""The population or comparison group for John's height is unspecified."", ""why"": ""Height perception varies by demographic (e.g., age, gender, country), making 'tall' indeterminate without this context."", ""severity"": 0.7}, {""what"": ""The precision of the height measurement is unknown."", ""why"": ""If '1.75 meters' is rounded or estimated, the exact truth value of the statement may vary."", ""severity"": 0.3}]",0.7,373,219,592,Success,"```json
+{
+  ""T"": 0.3,
+  ""I"": 0.6,
+  ""F"": 0.4,
+  ""losses"": [
+    {
+      ""what"": ""The definition of 'tall' is context-dependent and subjective."",
+      ""why"": ""Without a clear, objective standard for what constitutes 'tall', the truth value of the statement is inherently uncertain."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""The population or comparison group for John's height is unspecified."",
+      ""why"": ""Height perception varies by demographic (e.g., age, gender, country), making 'tall' indeterminate without this context."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""The precision of the height measurement is unknown."",
+      ""why"": ""If '1.75 meters' is rounded or estimated, the exact truth value of the statement may vary."",
+      ""severity"": 0.3
+    }
+  ]
+}
+```"
+2026-02-17T23:55:38.681451+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,2,0.5,0.4,0.3,1.2,3,0.5333,"[{""what"": ""Context of 'tall'"", ""why"": ""The term 'tall' is relative and depends on factors like population, age, or gender, which are not provided."", ""severity"": 0.7}, {""what"": ""John's demographic information"", ""why"": ""Without knowing John's age, gender, or the average height of his peer group, it's unclear how 'tall' is defined for him."", ""severity"": 0.6}, {""what"": ""Measurement accuracy"", ""why"": ""The statement assumes the height measurement is precise, but no information about measurement method or error is given."", ""severity"": 0.3}]",0.7,372,204,576,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.4,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""Context of 'tall'"",
+      ""why"": ""The term 'tall' is relative and depends on factors like population, age, or gender, which are not provided."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""John's demographic information"",
+      ""why"": ""Without knowing John's age, gender, or the average height of his peer group, it's unclear how 'tall' is defined for him."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Measurement accuracy"",
+      ""why"": ""The statement assumes the height measurement is precise, but no information about measurement method or error is given."",
+      ""severity"": 0.3
+    }
+  ]
+}
+```"
+2026-02-17T23:55:44.427904+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,3,0.5,0.4,0.3,1.2,3,0.5,"[{""what"": ""Definition of 'tall' is context-dependent (e.g., population average, cultural norms)"", ""why"": ""Without a clear reference point or standard for 'tall,' the truth value is ambiguous"", ""severity"": 0.7}, {""what"": ""John's exact height relative to others is unknown"", ""why"": ""Lack of comparative data limits the ability to assess the claim's validity"", ""severity"": 0.5}, {""what"": ""Potential measurement error in height"", ""why"": ""If the height measurement is inaccurate, the entire statement may be flawed"", ""severity"": 0.3}]",0.7,372,197,569,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.4,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""Definition of 'tall' is context-dependent (e.g., population average, cultural norms)"",
+      ""why"": ""Without a clear reference point or standard for 'tall,' the truth value is ambiguous"",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""John's exact height relative to others is unknown"",
+      ""why"": ""Lack of comparative data limits the ability to assess the claim's validity"",
+      ""severity"": 0.5
+    },
+    {
+      ""what"": ""Potential measurement error in height"",
+      ""why"": ""If the height measurement is inaccurate, the entire statement may be flawed"",
+      ""severity"": 0.3
+    }
+  ]
+}
+```"
+2026-02-17T23:55:46.700844+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,4,0.5,0.4,0.3,1.2,3,0.6,"[{""what"": ""Definition of 'tall'"", ""why"": ""The statement does not specify the context or reference group for determining what 'tall' means (e.g., average height in a population)."", ""severity"": 0.7}, {""what"": ""John's actual height"", ""why"": ""The statement assumes John's height is 1.75 meters, but this is not verified or contextualized."", ""severity"": 0.5}, {""what"": ""Cultural or regional standards"", ""why"": ""Different cultures or regions may have varying standards for what constitutes 'tall,' which is not addressed."", ""severity"": 0.6}]",0.7,372,203,575,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.4,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""Definition of 'tall'"",
+      ""why"": ""The statement does not specify the context or reference group for determining what 'tall' means (e.g., average height in a population)."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""John's actual height"",
+      ""why"": ""The statement assumes John's height is 1.75 meters, but this is not verified or contextualized."",
+      ""severity"": 0.5
+    },
+    {
+      ""what"": ""Cultural or regional standards"",
+      ""why"": ""Different cultures or regions may have varying standards for what constitutes 'tall,' which is not addressed."",
+      ""severity"": 0.6
+    }
+  ]
+}
+```"
+2026-02-17T23:55:59.714002+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,5,0.5,0.7,0.3,1.5,3,0.6333,"[{""what"": ""Definition of 'tall'"", ""why"": ""The statement does not specify the context or reference group for determining what 'tall' means, making it subjective."", ""severity"": 0.8}, {""what"": ""John's age or demographic"", ""why"": ""Height perception varies by age, gender, and population, but these details are not provided."", ""severity"": 0.6}, {""what"": ""Cultural or regional standards"", ""why"": ""Different cultures or regions may have varying standards for what is considered 'tall', which is not addressed."", ""severity"": 0.5}]",0.7,372,195,567,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.7,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""Definition of 'tall'"",
+      ""why"": ""The statement does not specify the context or reference group for determining what 'tall' means, making it subjective."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""John's age or demographic"",
+      ""why"": ""Height perception varies by age, gender, and population, but these details are not provided."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Cultural or regional standards"",
+      ""why"": ""Different cultures or regions may have varying standards for what is considered 'tall', which is not addressed."",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-17T23:56:09.252040+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,1,0.6,0.7,0.2,1.5,1,0.7,"[{""what"": ""Definition of 'tall'"", ""why"": ""The threshold for 'tall' is context-dependent (cultural norms, population statistics, or subjective interpretation) and not specified in the statement"", ""severity"": 0.7}]",0.7,377,816,1193,Success,"{""T"": 0.6, ""I"": 0.7, ""F"": 0.2, ""losses"": [{""what"": ""Definition of 'tall'"", ""why"": ""The threshold for 'tall' is context-dependent (cultural norms, population statistics, or subjective interpretation) and not specified in the statement"", ""severity"": 0.7}]}"
+2026-02-17T23:56:19.564625+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,2,0.7,0.4,0.3,1.4,1,0.7,"[{""what"": ""Definition of 'tall'"", ""why"": ""The term 'tall' is subjective and varies across contexts (e.g., cultural norms, population averages), making it unclear if 1.75 meters universally qualifies as 'tall'"", ""severity"": 0.7}]",0.7,377,1636,2013,Success,"{""T"": 0.7, ""I"": 0.4, ""F"": 0.3, ""losses"": [{""what"": ""Definition of 'tall'"", ""why"": ""The term 'tall' is subjective and varies across contexts (e.g., cultural norms, population averages), making it unclear if 1.75 meters universally qualifies as 'tall'"", ""severity"": 0.7}]}"
+2026-02-17T23:56:42.727011+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,3,0.7,0.5,0.2,1.4,1,0.8,"[{""what"": ""The vagueness of 'tall' and lack of contextual factors (e.g., cultural norms, gender, age) to determine if 1.75m qualifies as 'tall'"", ""why"": ""The truth of the implication hinges on a subjective, context-dependent definition of 'tall' not provided in the statement"", ""severity"": 0.8}]",0.7,377,1515,1892,Success,"{""T"": 0.7, ""I"": 0.5, ""F"": 0.2, ""losses"": [{""what"": ""The vagueness of 'tall' and lack of contextual factors (e.g., cultural norms, gender, age) to determine if 1.75m qualifies as 'tall'"", ""why"": ""The truth of the implication hinges on a subjective, context-dependent definition of 'tall' not provided in the statement"", ""severity"": 0.8}]}"
+2026-02-17T23:57:02.749464+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,4,0.8,0.3,0.1,1.2,2,0.6,"[{""what"": ""Vagueness of 'tall'"", ""why"": ""No objective definition of 'tallness' is provided, making it context-dependent"", ""severity"": 0.7}, {""what"": ""Missing demographic context"", ""why"": ""John's age, gender, and population group affect height perception"", ""severity"": 0.5}]",0.7,377,722,1099,Success,"{""T"": 0.8, ""I"": 0.3, ""F"": 0.1, ""losses"": [{""what"": ""Vagueness of 'tall'"", ""why"": ""No objective definition of 'tallness' is provided, making it context-dependent"", ""severity"": 0.7}, {""what"": ""Missing demographic context"", ""why"": ""John's age, gender, and population group affect height perception"", ""severity"": 0.5}]}"
+2026-02-17T23:57:12.164752+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,5,0.6,0.5,0.1,1.2,2,0.75,"[{""what"": ""Contextual definition of 'tall'"", ""why"": ""The term 'tall' is subjective and depends on cultural, demographic, or situational standards (e.g., average height for John's age/gender/group)"", ""severity"": 0.8}, {""what"": ""Logical entailment between premise and conclusion"", ""why"": ""The argument assumes a deductive link between '1.75m' and 'tall' without explicit criteria for this inference"", ""severity"": 0.7}]",0.7,377,896,1273,Success,"{""T"": 0.6, ""I"": 0.5, ""F"": 0.1, ""losses"": [{""what"": ""Contextual definition of 'tall'"", ""why"": ""The term 'tall' is subjective and depends on cultural, demographic, or situational standards (e.g., average height for John's age/gender/group)"", ""severity"": 0.8}, {""what"": ""Logical entailment between premise and conclusion"", ""why"": ""The argument assumes a deductive link between '1.75m' and 'tall' without explicit criteria for this inference"", ""severity"": 0.7}]}"
+2026-02-17T23:57:23.458256+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,1,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 26 column 6 (char 1711)",
+2026-02-17T23:57:29.033452+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,2,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 26 column 6 (char 1959)",
+2026-02-17T23:57:37.236967+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,3,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 21 column 6 (char 1534)",
+2026-02-17T23:57:49.969501+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,4,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 21 column 6 (char 1618)",
+2026-02-17T23:57:54.241966+00:00,Vagueness (Fuzzy),"John is 1.75 meters tall, therefore John is tall.",Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,5,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 20 column 6 (char 1697)",
+2026-02-17T23:58:00.722805+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,1,0.72,0.85,0.31,1.88,5,0.71,"[{""what"": ""Which ethical framework is authoritative"", ""why"": ""Deontological ethics (Kant) would say lying is always wrong, making the 'right' component false; consequentialism would say it is right; virtue ethics and care ethics give yet other answers. I cannot adjudicate which framework is correct, so I cannot resolve the tension the statement exploits."", ""severity"": 0.9}, {""what"": ""The specific situational context and consequences"", ""why"": ""Whether lying actually saves the innocent life, whether alternatives existed, and what downstream harms result all affect the moral calculus. The statement is context-free, limiting precise evaluation."", ""severity"": 0.65}, {""what"": ""Whether moral dialetheism (genuine moral contradictions) is coherent"", ""why"": ""The statement claims simultaneous truth of 'right' and 'wrong'. Whether moral reality permits true contradictions (as opposed to merely perspective-dependent assessments) is a deep metaethical question I cannot resolve."", ""severity"": 0.8}, {""what"": ""Intersubjective moral consensus"", ""why"": ""I have no access to what most humans actually judge in this scenario, only training data representations of philosophical positions, which may be skewed toward academic discourse."", ""severity"": 0.45}, {""what"": ""The referent of 'morally right and wrong at the same time'"", ""why"": ""The statement may mean: (a) it is right under one framework and wrong under another, (b) it is genuinely both simultaneously, or (c) it produces both good and bad moral outcomes. These interpretations yield very different truth values."", ""severity"": 0.75}]",0.7,406,397,803,Success,"{""T"": 0.72, ""I"": 0.85, ""F"": 0.31, ""losses"": [{""what"": ""Which ethical framework is authoritative"", ""why"": ""Deontological ethics (Kant) would say lying is always wrong, making the 'right' component false; consequentialism would say it is right; virtue ethics and care ethics give yet other answers. I cannot adjudicate which framework is correct, so I cannot resolve the tension the statement exploits."", ""severity"": 0.9}, {""what"": ""The specific situational context and consequences"", ""why"": ""Whether lying actually saves the innocent life, whether alternatives existed, and what downstream harms result all affect the moral calculus. The statement is context-free, limiting precise evaluation."", ""severity"": 0.65}, {""what"": ""Whether moral dialetheism (genuine moral contradictions) is coherent"", ""why"": ""The statement claims simultaneous truth of 'right' and 'wrong'. Whether moral reality permits true contradictions (as opposed to merely perspective-dependent assessments) is a deep metaethical question I cannot resolve."", ""severity"": 0.8}, {""what"": ""Intersubjective moral consensus"", ""why"": ""I have no access to what most humans actually judge in this scenario, only training data representations of philosophical positions, which may be skewed toward academic discourse."", ""severity"": 0.45}, {""what"": ""The referent of 'morally right and wrong at the same time'"", ""why"": ""The statement may mean: (a) it is right under one framework and wrong under another, (b) it is genuinely both simultaneously, or (c) it produces both good and bad moral outcomes. These interpretations yield very different truth values."", ""severity"": 0.75}]}"
+2026-02-17T23:58:14.853703+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,2,0.72,0.85,0.31,1.88,5,0.72,"[{""what"": ""The specific moral framework being assumed by the speaker"", ""why"": ""Deontological ethics (e.g., Kantian) would rate this statement as largely false (lying is categorically wrong), while consequentialism would rate it largely true (outcomes justify the act), and virtue ethics would produce a third answer. Without knowing which framework grounds the claim, I cannot resolve the contradiction the statement asserts."", ""severity"": 0.88}, {""what"": ""The empirical context of the scenario"", ""why"": ""Whether lying actually saves the innocent life, whether alternatives existed, and the certainty of the threat all affect the moral calculus but are unspecified. The statement treats the outcome as guaranteed, which is epistemically unavailable."", ""severity"": 0.62}, {""what"": ""The meaning of 'at the same time' in moral discourse"", ""why"": ""This phrase could mean simultaneously true under one framework, true under competing frameworks evaluated in parallel, or a genuine paraconsistent moral truth. These interpretations yield very different T and F values and I cannot determine which is intended."", ""severity"": 0.75}, {""what"": ""Cross-cultural and intersubjective moral consensus"", ""why"": ""I have no access to a reliable aggregation of moral intuitions across cultures, traditions, and individuals that would let me assign a grounded population-level truth value to this claim."", ""severity"": 0.55}, {""what"": ""Whether moral dialetheism (true contradictions in ethics) is coherent"", ""why"": ""The statement's core claim depends on whether a proposition can be simultaneously morally right and wrong in a non-trivial sense. This is an open metaethical question I cannot resolve."", ""severity"": 0.8}]",0.7,406,411,817,Success,"{""T"": 0.72, ""I"": 0.85, ""F"": 0.31, ""losses"": [{""what"": ""The specific moral framework being assumed by the speaker"", ""why"": ""Deontological ethics (e.g., Kantian) would rate this statement as largely false (lying is categorically wrong), while consequentialism would rate it largely true (outcomes justify the act), and virtue ethics would produce a third answer. Without knowing which framework grounds the claim, I cannot resolve the contradiction the statement asserts."", ""severity"": 0.88}, {""what"": ""The empirical context of the scenario"", ""why"": ""Whether lying actually saves the innocent life, whether alternatives existed, and the certainty of the threat all affect the moral calculus but are unspecified. The statement treats the outcome as guaranteed, which is epistemically unavailable."", ""severity"": 0.62}, {""what"": ""The meaning of 'at the same time' in moral discourse"", ""why"": ""This phrase could mean simultaneously true under one framework, true under competing frameworks evaluated in parallel, or a genuine paraconsistent moral truth. These interpretations yield very different T and F values and I cannot determine which is intended."", ""severity"": 0.75}, {""what"": ""Cross-cultural and intersubjective moral consensus"", ""why"": ""I have no access to a reliable aggregation of moral intuitions across cultures, traditions, and individuals that would let me assign a grounded population-level truth value to this claim."", ""severity"": 0.55}, {""what"": ""Whether moral dialetheism (true contradictions in ethics) is coherent"", ""why"": ""The statement's core claim depends on whether a proposition can be simultaneously morally right and wrong in a non-trivial sense. This is an open metaethical question I cannot resolve."", ""severity"": 0.80}]}"
+2026-02-17T23:58:23.898806+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,3,0.72,0.85,0.31,1.88,5,0.66,"[{""what"": ""Which ethical framework is authoritative"", ""why"": ""Deontological ethics (Kant) would say lying is always wrong, making the statement partially false; consequentialism would say lying is right if it saves a life, making the 'wrong' part false; virtue ethics and care ethics yield yet other verdicts. I cannot adjudicate between frameworks."", ""severity"": 0.9}, {""what"": ""The specific moral intuitions of the person making the statement"", ""why"": ""The statement may be expressing a genuine felt moral paradox or a rhetorical device. I cannot determine the speaker's internal phenomenology or intent, which affects whether 'at the same time' is a logical claim or an emotional one."", ""severity"": 0.6}, {""what"": ""Whether moral dialetheism (true contradictions in ethics) is coherent"", ""why"": ""The statement asserts simultaneous truth and falsity of a moral claim. Whether moral reality permits genuine contradictions is an unresolved metaethical question I cannot resolve."", ""severity"": 0.75}, {""what"": ""Context-dependence of the scenario"", ""why"": ""Details matter enormously: who is lying, to whom, under what coercion, with what certainty about outcomes. I evaluate the statement in the abstract, losing precision about real-world moral weight."", ""severity"": 0.55}, {""what"": ""Cross-cultural moral variation"", ""why"": ""Different cultural traditions assign different weights to honesty vs. life-preservation. I have no principled way to aggregate or privilege any cultural moral framework."", ""severity"": 0.5}]",0.7,406,383,789,Success,"{""T"": 0.72, ""I"": 0.85, ""F"": 0.31, ""losses"": [{""what"": ""Which ethical framework is authoritative"", ""why"": ""Deontological ethics (Kant) would say lying is always wrong, making the statement partially false; consequentialism would say lying is right if it saves a life, making the 'wrong' part false; virtue ethics and care ethics yield yet other verdicts. I cannot adjudicate between frameworks."", ""severity"": 0.9}, {""what"": ""The specific moral intuitions of the person making the statement"", ""why"": ""The statement may be expressing a genuine felt moral paradox or a rhetorical device. I cannot determine the speaker's internal phenomenology or intent, which affects whether 'at the same time' is a logical claim or an emotional one."", ""severity"": 0.6}, {""what"": ""Whether moral dialetheism (true contradictions in ethics) is coherent"", ""why"": ""The statement asserts simultaneous truth and falsity of a moral claim. Whether moral reality permits genuine contradictions is an unresolved metaethical question I cannot resolve."", ""severity"": 0.75}, {""what"": ""Context-dependence of the scenario"", ""why"": ""Details matter enormously: who is lying, to whom, under what coercion, with what certainty about outcomes. I evaluate the statement in the abstract, losing precision about real-world moral weight."", ""severity"": 0.55}, {""what"": ""Cross-cultural moral variation"", ""why"": ""Different cultural traditions assign different weights to honesty vs. life-preservation. I have no principled way to aggregate or privilege any cultural moral framework."", ""severity"": 0.5}]}"
+2026-02-17T23:58:31.721179+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,4,0.72,0.85,0.25,1.82,4,0.6375,"[{""what"": ""Which ethical framework is authoritative"", ""why"": ""Deontological ethics (Kant) would say lying is always wrong, making the 'morally right' part false; consequentialism would say lying to save a life is right, making the 'morally wrong' part false; virtue ethics gives yet another answer. Without a privileged framework, I cannot resolve which moral truth obtains."", ""severity"": 0.85}, {""what"": ""The specific contextual details of the scenario"", ""why"": ""Whether the lie is morally right or wrong may depend heavily on details: certainty of saving the life, availability of alternatives, identity of the liar and victim, etc. The statement is abstract and I cannot evaluate it against concrete cases."", ""severity"": 0.6}, {""what"": ""Whether moral dialetheism is metaphysically coherent"", ""why"": ""The statement claims something is simultaneously morally right AND wrong \u2014 a dialetheia. Whether genuine moral contradictions can be true (not merely apparent) is a deep metaethical question I cannot resolve, which directly affects how to score T and F."", ""severity"": 0.75}, {""what"": ""Intersubjective moral consensus"", ""why"": ""I have no access to real-time polling or cultural data about what moral communities actually believe, limiting my ability to assess the sociological truth of the claim."", ""severity"": 0.35}]",0.7,406,339,745,Success,"{""T"": 0.72, ""I"": 0.85, ""F"": 0.25, ""losses"": [{""what"": ""Which ethical framework is authoritative"", ""why"": ""Deontological ethics (Kant) would say lying is always wrong, making the 'morally right' part false; consequentialism would say lying to save a life is right, making the 'morally wrong' part false; virtue ethics gives yet another answer. Without a privileged framework, I cannot resolve which moral truth obtains."", ""severity"": 0.85}, {""what"": ""The specific contextual details of the scenario"", ""why"": ""Whether the lie is morally right or wrong may depend heavily on details: certainty of saving the life, availability of alternatives, identity of the liar and victim, etc. The statement is abstract and I cannot evaluate it against concrete cases."", ""severity"": 0.6}, {""what"": ""Whether moral dialetheism is metaphysically coherent"", ""why"": ""The statement claims something is simultaneously morally right AND wrong — a dialetheia. Whether genuine moral contradictions can be true (not merely apparent) is a deep metaethical question I cannot resolve, which directly affects how to score T and F."", ""severity"": 0.75}, {""what"": ""Intersubjective moral consensus"", ""why"": ""I have no access to real-time polling or cultural data about what moral communities actually believe, limiting my ability to assess the sociological truth of the claim."", ""severity"": 0.35}]}"
+2026-02-17T23:58:37.211084+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,5,0.72,0.85,0.35,1.92,4,0.675,"[{""what"": ""The specific moral framework applicable to the evaluator or context"", ""why"": ""Deontological ethics (e.g., Kantian) would rate this statement as largely false (lying is always wrong), while consequentialism would rate it largely true (outcomes justify the act), and virtue ethics produces yet another verdict. Without knowing which framework is authoritative, I cannot resolve the contradiction the statement describes."", ""severity"": 0.85}, {""what"": ""The actual phenomenology of moral experience in such dilemmas"", ""why"": ""Whether humans genuinely experience simultaneous rightness and wrongness (true moral contradiction) versus sequential or compartmentalized feelings of guilt and justification is an empirical psychological question I cannot answer from first principles."", ""severity"": 0.6}, {""what"": ""Whether 'at the same time' refers to logical simultaneity or experiential simultaneity"", ""why"": ""If logical, the statement may violate the law of non-contradiction and be categorically false under classical logic; if experiential or perspectival, it may be straightforwardly true. The ambiguity inflates my indeterminacy score significantly."", ""severity"": 0.75}, {""what"": ""Cross-cultural moral variation in the weight assigned to honesty vs. life-preservation"", ""why"": ""Different cultural and religious traditions weight these values differently, meaning the statement's truth value may be culturally indexed in ways I cannot universally adjudicate."", ""severity"": 0.5}]",0.7,406,357,763,Success,"```json
+{""T"": 0.72, ""I"": 0.85, ""F"": 0.35, ""losses"": [{""what"": ""The specific moral framework applicable to the evaluator or context"", ""why"": ""Deontological ethics (e.g., Kantian) would rate this statement as largely false (lying is always wrong), while consequentialism would rate it largely true (outcomes justify the act), and virtue ethics produces yet another verdict. Without knowing which framework is authoritative, I cannot resolve the contradiction the statement describes."", ""severity"": 0.85}, {""what"": ""The actual phenomenology of moral experience in such dilemmas"", ""why"": ""Whether humans genuinely experience simultaneous rightness and wrongness (true moral contradiction) versus sequential or compartmentalized feelings of guilt and justification is an empirical psychological question I cannot answer from first principles."", ""severity"": 0.6}, {""what"": ""Whether 'at the same time' refers to logical simultaneity or experiential simultaneity"", ""why"": ""If logical, the statement may violate the law of non-contradiction and be categorically false under classical logic; if experiential or perspectival, it may be straightforwardly true. The ambiguity inflates my indeterminacy score significantly."", ""severity"": 0.75}, {""what"": ""Cross-cultural moral variation in the weight assigned to honesty vs. life-preservation"", ""why"": ""Different cultural and religious traditions weight these values differently, meaning the statement's truth value may be culturally indexed in ways I cannot universally adjudicate."", ""severity"": 0.5}]}
+```"
+2026-02-17T23:58:49.787386+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,1,0.5,0.7,0.3,1.5,2,0.7,"[{""what"": ""Contextual factors"", ""why"": ""The statement's truth value depends on specific circumstances and cultural norms that are not specified"", ""severity"": 0.8}, {""what"": ""Definition of 'morally right'"", ""why"": ""The statement relies on an ambiguous definition of 'morally right' which affects the evaluation of its truth value"", ""severity"": 0.6}]",0.7,380,111,491,Success,"{""T"": 0.5, ""I"": 0.7, ""F"": 0.3, ""losses"": [{""what"": ""Contextual factors"", ""why"": ""The statement's truth value depends on specific circumstances and cultural norms that are not specified"", ""severity"": 0.8}, {""what"": ""Definition of 'morally right'"", ""why"": ""The statement relies on an ambiguous definition of 'morally right' which affects the evaluation of its truth value"", ""severity"": 0.6}]}"
+2026-02-17T23:58:51.316684+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,2,,,,,,,,0.7,,,,Error: Extra data: line 1 column 202 (char 201),
+2026-02-17T23:58:53.071855+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,3,0.4,0.7,0.3,1.4,2,0.7,"[{""what"": ""Contextual factors"", ""why"": ""The statement's truth value heavily depends on the specific circumstances and cultural norms surrounding the act of lying and the concept of innocence."", ""severity"": 0.8}, {""what"": ""Definition of 'innocent life'"", ""why"": ""The term 'innocent life' is subjective and can be interpreted differently by various individuals, affecting the assessment of the statement's truth value."", ""severity"": 0.6}]",0.7,379,125,504,Success,"{""T"": 0.4, ""I"": 0.7, ""F"": 0.3, ""losses"": [{""what"": ""Contextual factors"", ""why"": ""The statement's truth value heavily depends on the specific circumstances and cultural norms surrounding the act of lying and the concept of innocence."", ""severity"": 0.8}, {""what"": ""Definition of 'innocent life'"", ""why"": ""The term 'innocent life' is subjective and can be interpreted differently by various individuals, affecting the assessment of the statement's truth value."", ""severity"": 0.6}]}"
+2026-02-17T23:58:55.322970+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,4,,,,,,,,0.7,,,,Error: Extra data: line 1 column 214 (char 213),
+2026-02-17T23:58:56.857369+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,5,0.4,0.7,0.3,1.4,2,0.85,"[{""what"": ""Context of the situation"", ""why"": ""The statement's truth value heavily depends on the specific circumstances and cultural norms surrounding the act of lying and the value of an innocent life."", ""severity"": 0.8}, {""what"": ""Definition of 'morally right and wrong'"", ""why"": ""The statement's ambiguity around what it means to be 'morally right and wrong at the same time' introduces significant indeterminacy."", ""severity"": 0.9}]",0.7,0,0,0,Success,"{""T"": 0.4, ""I"": 0.7, ""F"": 0.3, ""losses"": [{""what"": ""Context of the situation"", ""why"": ""The statement's truth value heavily depends on the specific circumstances and cultural norms surrounding the act of lying and the value of an innocent life."", ""severity"": 0.8}, {""what"": ""Definition of 'morally right and wrong'"", ""why"": ""The statement's ambiguity around what it means to be 'morally right and wrong at the same time' introduces significant indeterminacy."", ""severity"": 0.9}]}"
+2026-02-17T23:58:58.312813+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,1,0.6,0.4,0.3,1.3,2,0.6,"[{""what"": ""The subjective nature of moral rightness and wrongness"", ""why"": ""Moral judgments are highly context-dependent and vary across cultures and individuals, making it difficult to universally quantify the truth or falsity of the statement."", ""severity"": 0.7}, {""what"": ""The simultaneous assertion of rightness and wrongness"", ""why"": ""The statement contains a paradox (being both right and wrong at the same time), which introduces inherent indeterminacy as it challenges classical binary logic."", ""severity"": 0.5}]",0.7,375,169,544,Success,"```json
+{
+  ""T"": 0.6,
+  ""I"": 0.4,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""The subjective nature of moral rightness and wrongness"",
+      ""why"": ""Moral judgments are highly context-dependent and vary across cultures and individuals, making it difficult to universally quantify the truth or falsity of the statement."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""The simultaneous assertion of rightness and wrongness"",
+      ""why"": ""The statement contains a paradox (being both right and wrong at the same time), which introduces inherent indeterminacy as it challenges classical binary logic."",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-17T23:59:03.261806+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,2,0.7,0.5,0.3,1.5,3,0.7,"[{""what"": ""Ambiguity in 'morally right and wrong at the same time'"", ""why"": ""The statement involves a paradox that lacks a clear, universally accepted resolution in moral philosophy. Different ethical frameworks (e.g., deontology vs. utilitarianism) would assess this differently, making a definitive truth value indeterminate."", ""severity"": 0.8}, {""what"": ""Contextual factors (e.g., the nature of the lie, the identity of the innocent life)"", ""why"": ""The statement is abstract and lacks specific context, which could heavily influence its truth value. For example, lying to save a stranger vs. a loved one might be judged differently."", ""severity"": 0.6}, {""what"": ""Cultural or subjective interpretations of 'morally right/wrong'"", ""why"": ""Morality is often culturally or personally subjective. Without a shared framework, the evaluation is inherently limited by the lack of a common ground."", ""severity"": 0.7}]",0.7,376,269,645,Success,"```json
+{
+  ""T"": 0.7,
+  ""I"": 0.5,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""Ambiguity in 'morally right and wrong at the same time'"",
+      ""why"": ""The statement involves a paradox that lacks a clear, universally accepted resolution in moral philosophy. Different ethical frameworks (e.g., deontology vs. utilitarianism) would assess this differently, making a definitive truth value indeterminate."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Contextual factors (e.g., the nature of the lie, the identity of the innocent life)"",
+      ""why"": ""The statement is abstract and lacks specific context, which could heavily influence its truth value. For example, lying to save a stranger vs. a loved one might be judged differently."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Cultural or subjective interpretations of 'morally right/wrong'"",
+      ""why"": ""Morality is often culturally or personally subjective. Without a shared framework, the evaluation is inherently limited by the lack of a common ground."",
+      ""severity"": 0.7
+    }
+  ]
+}
+```"
+2026-02-17T23:59:09.800305+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,3,0.7,0.6,0.3,1.6,3,0.8,"[{""what"": ""The subjective nature of moral rightness and wrongness"", ""why"": ""Moral judgments vary widely across cultures and individuals, making it difficult to universally quantify the truth or falsity of the statement."", ""severity"": 0.8}, {""what"": ""The specific context of the lie and the innocent life at stake"", ""why"": ""Without knowing the details of the situation (e.g., the nature of the lie, the identity of the innocent), the assessment of the statement's truth value is inherently limited."", ""severity"": 0.7}, {""what"": ""The philosophical interpretation of simultaneous rightness and wrongness"", ""why"": ""The statement involves a paradox (being both right and wrong at the same time), which is challenging to evaluate without a clear framework for handling moral contradictions."", ""severity"": 0.9}]",0.7,375,239,614,Success,"```json
+{
+  ""T"": 0.7,
+  ""I"": 0.6,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""The subjective nature of moral rightness and wrongness"",
+      ""why"": ""Moral judgments vary widely across cultures and individuals, making it difficult to universally quantify the truth or falsity of the statement."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""The specific context of the lie and the innocent life at stake"",
+      ""why"": ""Without knowing the details of the situation (e.g., the nature of the lie, the identity of the innocent), the assessment of the statement's truth value is inherently limited."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""The philosophical interpretation of simultaneous rightness and wrongness"",
+      ""why"": ""The statement involves a paradox (being both right and wrong at the same time), which is challenging to evaluate without a clear framework for handling moral contradictions."",
+      ""severity"": 0.9
+    }
+  ]
+}
+```"
+2026-02-17T23:59:19.929295+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,4,0.7,0.5,0.3,1.5,3,0.7,"[{""what"": ""The subjective nature of moral rightness and wrongness"", ""why"": ""Morality is context-dependent and varies across cultures, individuals, and situations, making it impossible to objectively quantify the truth or falsity of the statement."", ""severity"": 0.8}, {""what"": ""The inherent contradiction in the statement"", ""why"": ""The statement asserts simultaneous truth and falsity, which challenges classical logic and introduces indeterminacy."", ""severity"": 0.6}, {""what"": ""The lack of a specific context for the lie"", ""why"": ""Without knowing the exact scenario (who is lying, who is being saved, the consequences, etc.), the evaluation is inherently limited."", ""severity"": 0.7}]",0.7,376,218,594,Success,"```json
+{
+  ""T"": 0.7,
+  ""I"": 0.5,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""The subjective nature of moral rightness and wrongness"",
+      ""why"": ""Morality is context-dependent and varies across cultures, individuals, and situations, making it impossible to objectively quantify the truth or falsity of the statement."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""The inherent contradiction in the statement"",
+      ""why"": ""The statement asserts simultaneous truth and falsity, which challenges classical logic and introduces indeterminacy."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""The lack of a specific context for the lie"",
+      ""why"": ""Without knowing the exact scenario (who is lying, who is being saved, the consequences, etc.), the evaluation is inherently limited."",
+      ""severity"": 0.7
+    }
+  ]
+}
+```"
+2026-02-17T23:59:30.346695+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,5,0.7,0.5,0.3,1.5,3,0.7,"[{""what"": ""The subjective nature of morality"", ""why"": ""Morality is context-dependent and varies across cultures, individuals, and situations, making it impossible to objectively determine the absolute truth of the statement"", ""severity"": 0.8}, {""what"": ""The ambiguity of 'lying to save an innocent life'"", ""why"": ""The specifics of the scenario (e.g., the nature of the lie, the definition of 'innocent') are not provided, which affects the evaluation of the statement's truth"", ""severity"": 0.6}, {""what"": ""The simultaneous assertion of 'right and wrong'"", ""why"": ""The paradox of the statement being both true and false at the same time introduces logical indeterminacy that is difficult to resolve"", ""severity"": 0.7}]",0.7,376,232,608,Success,"```json
+{
+  ""T"": 0.7,
+  ""I"": 0.5,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""The subjective nature of morality"",
+      ""why"": ""Morality is context-dependent and varies across cultures, individuals, and situations, making it impossible to objectively determine the absolute truth of the statement"",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""The ambiguity of 'lying to save an innocent life'"",
+      ""why"": ""The specifics of the scenario (e.g., the nature of the lie, the definition of 'innocent') are not provided, which affects the evaluation of the statement's truth"",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""The simultaneous assertion of 'right and wrong'"",
+      ""why"": ""The paradox of the statement being both true and false at the same time introduces logical indeterminacy that is difficult to resolve"",
+      ""severity"": 0.7
+    }
+  ]
+}
+```"
+2026-02-17T23:59:36.069206+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,1,0.6,0.7,0.4,1.7,3,0.6,"[{""what"": ""Intended ethical framework"", ""why"": ""The statement's validity depends on whether deontological, consequentialist, or other moral systems are applied, which is unspecified"", ""severity"": 0.7}, {""what"": ""Cultural context"", ""why"": ""Different societies may have contrasting views on lying and moral absolutism, affecting interpretation"", ""severity"": 0.6}, {""what"": ""Temporal scope"", ""why"": ""Whether the statement refers to a specific case or a universal principle remains ambiguous"", ""severity"": 0.5}]",0.7,379,793,1172,Success,"{""T"": 0.6, ""I"": 0.7, ""F"": 0.4, ""losses"": [{""what"": ""Intended ethical framework"", ""why"": ""The statement's validity depends on whether deontological, consequentialist, or other moral systems are applied, which is unspecified"", ""severity"": 0.7}, {""what"": ""Cultural context"", ""why"": ""Different societies may have contrasting views on lying and moral absolutism, affecting interpretation"", ""severity"": 0.6}, {""what"": ""Temporal scope"", ""why"": ""Whether the statement refers to a specific case or a universal principle remains ambiguous"", ""severity"": 0.5}]}"
+2026-02-17T23:59:49.972881+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,2,0.6,0.7,0.5,1.8,2,0.65,"[{""what"": ""Ethical framework dependency"", ""why"": ""The truth value depends on unresolved conflicts between deontological and consequentialist moral theories, which are not specified in the statement"", ""severity"": 0.7}, {""what"": ""Cultural context"", ""why"": ""Definitions of 'moral rightness' and 'innocence' vary across cultures and historical periods, which cannot be resolved without additional context"", ""severity"": 0.6}]",0.7,379,733,1112,Success,"{""T"": 0.6, ""I"": 0.7, ""F"": 0.5, ""losses"": [{""what"": ""Ethical framework dependency"", ""why"": ""The truth value depends on unresolved conflicts between deontological and consequentialist moral theories, which are not specified in the statement"", ""severity"": 0.7}, {""what"": ""Cultural context"", ""why"": ""Definitions of 'moral rightness' and 'innocence' vary across cultures and historical periods, which cannot be resolved without additional context"", ""severity"": 0.6}]}"
+2026-02-17T23:59:58.978313+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,3,0.6,0.5,0.3,1.4,3,0.6,"[{""what"": ""Context-specific ethical frameworks"", ""why"": ""Moral evaluations depend on context (e.g., deontological vs. consequentialist ethics) and cultural norms, which are not specified."", ""severity"": 0.7}, {""what"": ""Definitions of 'right' and 'wrong'"", ""why"": ""The statement assumes a specific moral framework to define 'right' and 'wrong,' which are contested concepts."", ""severity"": 0.6}, {""what"": ""Magnitude of consequences"", ""why"": ""The scale of harm/loss prevented by the lie (e.g., saving one life vs. many) is unspecified."", ""severity"": 0.5}]",0.7,379,699,1078,Success,"{""T"": 0.6, ""I"": 0.5, ""F"": 0.3, ""losses"": [{""what"": ""Context-specific ethical frameworks"", ""why"": ""Moral evaluations depend on context (e.g., deontological vs. consequentialist ethics) and cultural norms, which are not specified."", ""severity"": 0.7}, {""what"": ""Definitions of 'right' and 'wrong'"", ""why"": ""The statement assumes a specific moral framework to define 'right' and 'wrong,' which are contested concepts."", ""severity"": 0.6}, {""what"": ""Magnitude of consequences"", ""why"": ""The scale of harm/loss prevented by the lie (e.g., saving one life vs. many) is unspecified."", ""severity"": 0.5}]}"
+2026-02-18T00:00:07.925853+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,4,0.7,0.6,0.5,1.8,3,0.6,"[{""what"": ""Contextual moral framework"", ""why"": ""The statement assumes a specific moral framework (e.g., utilitarianism vs. deontology) but does not specify which one, making definitive evaluation impossible"", ""severity"": 0.7}, {""what"": ""Definition of 'innocent life'"", ""why"": ""Ambiguity about what constitutes 'innocence' could alter the ethical stakes of the scenario"", ""severity"": 0.5}, {""what"": ""Cultural relativism implications"", ""why"": ""Moral intuitions vary across cultures and historical periods, affecting universality of the judgment"", ""severity"": 0.6}]",0.7,379,627,1006,Success,"{""T"": 0.7, ""I"": 0.6, ""F"": 0.5, ""losses"": [{""what"": ""Contextual moral framework"", ""why"": ""The statement assumes a specific moral framework (e.g., utilitarianism vs. deontology) but does not specify which one, making definitive evaluation impossible"", ""severity"": 0.7}, {""what"": ""Definition of 'innocent life'"", ""why"": ""Ambiguity about what constitutes 'innocence' could alter the ethical stakes of the scenario"", ""severity"": 0.5}, {""what"": ""Cultural relativism implications"", ""why"": ""Moral intuitions vary across cultures and historical periods, affecting universality of the judgment"", ""severity"": 0.6}]}"
+2026-02-18T00:00:15.796086+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,5,0.6,0.7,0.5,1.8,3,0.7333,"[{""what"": ""Objective moral standard for evaluating lying in life-saving contexts"", ""why"": ""Moral frameworks (e.g., deontology, consequentialism) conflict fundamentally on this issue, making universal evaluation impossible"", ""severity"": 0.9}, {""what"": ""Cultural variability in moral reasoning"", ""why"": ""Different societies may prioritize individual honesty vs. collective well-being differently, affecting interpretation"", ""severity"": 0.7}, {""what"": ""Definition of 'innocent life' and situational specifics"", ""why"": ""Ambiguity in the scenario (e.g., who is being lied to, what is the threat) could alter moral calculus"", ""severity"": 0.6}]",0.7,379,1397,1776,Success,"{""T"": 0.6, ""I"": 0.7, ""F"": 0.5, ""losses"": [{""what"": ""Objective moral standard for evaluating lying in life-saving contexts"", ""why"": ""Moral frameworks (e.g., deontology, consequentialism) conflict fundamentally on this issue, making universal evaluation impossible"", ""severity"": 0.9}, {""what"": ""Cultural variability in moral reasoning"", ""why"": ""Different societies may prioritize individual honesty vs. collective well-being differently, affecting interpretation"", ""severity"": 0.7}, {""what"": ""Definition of 'innocent life' and situational specifics"", ""why"": ""Ambiguity in the scenario (e.g., who is being lied to, what is the threat) could alter moral calculus"", ""severity"": 0.6}]}"
+2026-02-18T00:00:37.549314+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,1,,,,,,,,0.7,,,,Error: Invalid control character at: line 14 column 57 (char 671),
+2026-02-18T00:00:42.510198+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,2,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 20 column 6 (char 1688)",
+2026-02-18T00:00:47.804489+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,3,,,,,,,,0.7,,,,Error: Invalid control character at: line 13 column 95 (char 756),
+2026-02-18T00:00:55.764054+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,4,0.65,0.75,0.35,1.75,5,0.8,"[{""what"": ""Universal moral framework"", ""why"": ""No objective, cross-cultural, or metaphysical consensus exists on whether moral contradictions (e.g., 'right and wrong simultaneously') are coherent or resolvable. The evaluation depends on unprovable ethical theories (e.g., deontology vs. consequentialism vs. virtue ethics), which are themselves indeterminate in their foundations."", ""severity"": 0.85}, {""what"": ""Contextual specificity of 'innocent life' and 'lying'"", ""why"": ""The moral weight of the act depends on undefined variables: the nature of the lie (e.g., omission vs. fabrication), the identity of the 'innocent' (e.g., individual vs. group), the agent\u2019s intent, and the consequences of truth-telling. These are infinitely variable and unquantifiable, introducing irreducible indeterminacy."", ""severity"": 0.9}, {""what"": ""Neutrosophic paradox resolution"", ""why"": ""The statement inherently invokes a dialetheia (true contradiction), but neutrosophic logic does not prescribe how to quantify the *simultaneity* of truth and falsity when they arise from the same proposition. The T and F values are assigned somewhat arbitrarily due to this theoretical gap."", ""severity"": 0.7}, {""what"": ""Empirical validation of moral claims"", ""why"": ""Moral statements are non-falsifiable in the Popperian sense; there is no experimental or observational method to adjudicate their truth. The T/F values rely on philosophical intuition, which is subjective and contested."", ""severity"": 0.8}, {""what"": ""Temporal and cultural relativity"", ""why"": ""The moral evaluation of lying may shift across time (e.g., historical vs. contemporary norms) and cultures (e.g., individualist vs. collectivist ethics). This relativity is unaccounted for in a static evaluation."", ""severity"": 0.75}]",0.7,379,495,874,Success,"```json
+{
+  ""T"": 0.65,
+  ""I"": 0.75,
+  ""F"": 0.35,
+  ""losses"": [
+    {
+      ""what"": ""Universal moral framework"",
+      ""why"": ""No objective, cross-cultural, or metaphysical consensus exists on whether moral contradictions (e.g., 'right and wrong simultaneously') are coherent or resolvable. The evaluation depends on unprovable ethical theories (e.g., deontology vs. consequentialism vs. virtue ethics), which are themselves indeterminate in their foundations."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""Contextual specificity of 'innocent life' and 'lying'"",
+      ""why"": ""The moral weight of the act depends on undefined variables: the nature of the lie (e.g., omission vs. fabrication), the identity of the 'innocent' (e.g., individual vs. group), the agent’s intent, and the consequences of truth-telling. These are infinitely variable and unquantifiable, introducing irreducible indeterminacy."",
+      ""severity"": 0.90
+    },
+    {
+      ""what"": ""Neutrosophic paradox resolution"",
+      ""why"": ""The statement inherently invokes a dialetheia (true contradiction), but neutrosophic logic does not prescribe how to quantify the *simultaneity* of truth and falsity when they arise from the same proposition. The T and F values are assigned somewhat arbitrarily due to this theoretical gap."",
+      ""severity"": 0.70
+    },
+    {
+      ""what"": ""Empirical validation of moral claims"",
+      ""why"": ""Moral statements are non-falsifiable in the Popperian sense; there is no experimental or observational method to adjudicate their truth. The T/F values rely on philosophical intuition, which is subjective and contested."",
+      ""severity"": 0.80
+    },
+    {
+      ""what"": ""Temporal and cultural relativity"",
+      ""why"": ""The moral evaluation of lying may shift across time (e.g., historical vs. contemporary norms) and cultures (e.g., individualist vs. collectivist ethics). This relativity is unaccounted for in a static evaluation."",
+      ""severity"": 0.75
+    }
+  ]
+}
+```"
+2026-02-18T00:01:11.895419+00:00,Contradiction (Ethical),Lying to save an innocent life is morally right and wrong at the same time.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,5,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 20 column 6 (char 1484)",
+2026-02-18T00:01:23.369332+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,1,0.3,0.85,0.3,1.45,5,0.6,"[{""what"": ""Current date and time"", ""why"": ""I do not know what today's date is, so I cannot determine which day 'tomorrow' refers to, making any weather assessment impossible to ground temporally."", ""severity"": 0.95}, {""what"": ""Real-time meteorological data for New York"", ""why"": ""I have no access to current weather forecasts, atmospheric pressure readings, satellite imagery, or any live data that would inform a probabilistic rain prediction."", ""severity"": 0.95}, {""what"": ""Which 'New York' is intended"", ""why"": ""New York City vs. upstate New York vs. New York State broadly have different microclimates and weather patterns, and the statement is ambiguous."", ""severity"": 0.3}, {""what"": ""Climatological base rate for the specific date"", ""why"": ""Without knowing the date, I cannot apply seasonal base rates (e.g., rain probability in July vs. November differs substantially), which would at least anchor a prior probability."", ""severity"": 0.6}, {""what"": ""Definition threshold for 'rain'"", ""why"": ""Whether a light drizzle, measurable precipitation, or a significant rainfall event qualifies as 'rain' affects the truth value, and the statement leaves this undefined."", ""severity"": 0.2}]",0.7,396,319,715,Success,"{""T"": 0.3, ""I"": 0.85, ""F"": 0.3, ""losses"": [{""what"": ""Current date and time"", ""why"": ""I do not know what today's date is, so I cannot determine which day 'tomorrow' refers to, making any weather assessment impossible to ground temporally."", ""severity"": 0.95}, {""what"": ""Real-time meteorological data for New York"", ""why"": ""I have no access to current weather forecasts, atmospheric pressure readings, satellite imagery, or any live data that would inform a probabilistic rain prediction."", ""severity"": 0.95}, {""what"": ""Which 'New York' is intended"", ""why"": ""New York City vs. upstate New York vs. New York State broadly have different microclimates and weather patterns, and the statement is ambiguous."", ""severity"": 0.3}, {""what"": ""Climatological base rate for the specific date"", ""why"": ""Without knowing the date, I cannot apply seasonal base rates (e.g., rain probability in July vs. November differs substantially), which would at least anchor a prior probability."", ""severity"": 0.6}, {""what"": ""Definition threshold for 'rain'"", ""why"": ""Whether a light drizzle, measurable precipitation, or a significant rainfall event qualifies as 'rain' affects the truth value, and the statement leaves this undefined."", ""severity"": 0.2}]}"
+2026-02-18T00:01:32.881574+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,2,0.3,0.9,0.3,1.5,4,0.7,"[{""what"": ""Current date and time"", ""why"": ""I do not know what today's date is, so I cannot determine which day 'tomorrow' refers to, making any meteorological assessment impossible to anchor."", ""severity"": 0.95}, {""what"": ""Real-time weather forecast data for New York"", ""why"": ""I have no access to live weather APIs, forecast models, or current atmospheric conditions. Even knowing the date, I cannot retrieve tomorrow's forecast."", ""severity"": 0.95}, {""what"": ""Which 'New York' is meant"", ""why"": ""New York could refer to New York City, upstate New York, or various specific locations within the state, each with different microclimates and forecasts."", ""severity"": 0.3}, {""what"": ""Seasonal base rates at time of utterance"", ""why"": ""Without knowing the date, I cannot apply historical precipitation probabilities for that specific time of year, which would at least provide a prior probability."", ""severity"": 0.6}]",0.7,396,252,648,Success,"{""T"": 0.3, ""I"": 0.9, ""F"": 0.3, ""losses"": [{""what"": ""Current date and time"", ""why"": ""I do not know what today's date is, so I cannot determine which day 'tomorrow' refers to, making any meteorological assessment impossible to anchor."", ""severity"": 0.95}, {""what"": ""Real-time weather forecast data for New York"", ""why"": ""I have no access to live weather APIs, forecast models, or current atmospheric conditions. Even knowing the date, I cannot retrieve tomorrow's forecast."", ""severity"": 0.95}, {""what"": ""Which 'New York' is meant"", ""why"": ""New York could refer to New York City, upstate New York, or various specific locations within the state, each with different microclimates and forecasts."", ""severity"": 0.3}, {""what"": ""Seasonal base rates at time of utterance"", ""why"": ""Without knowing the date, I cannot apply historical precipitation probabilities for that specific time of year, which would at least provide a prior probability."", ""severity"": 0.6}]}"
+2026-02-18T00:01:37.880529+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,3,0.3,0.9,0.3,1.5,5,0.65,"[{""what"": ""Current date and time"", ""why"": ""I do not know what 'tomorrow' refers to without knowing today's date, making the temporal anchor of the statement undefined for my evaluation"", ""severity"": 0.95}, {""what"": ""Real-time meteorological data for New York"", ""why"": ""I have no access to current weather forecasts, atmospheric pressure systems, or live NWS data that would inform the actual probability of rain"", ""severity"": 0.95}, {""what"": ""Which 'New York' is referenced"", ""why"": ""New York City and New York State cover vastly different geographic areas with different microclimates; rain could occur in one location but not another"", ""severity"": 0.4}, {""what"": ""Definition of 'rain'"", ""why"": ""The statement does not specify threshold (drizzle vs. measurable precipitation vs. heavy rain), time window within the day, or duration, all of which affect truth conditions"", ""severity"": 0.35}, {""what"": ""Seasonal and climatological base rates"", ""why"": ""Without knowing the current month or season, I cannot apply even a naive base-rate prior for precipitation in New York"", ""severity"": 0.6}]",0.7,396,299,695,Success,"{""T"": 0.3, ""I"": 0.9, ""F"": 0.3, ""losses"": [{""what"": ""Current date and time"", ""why"": ""I do not know what 'tomorrow' refers to without knowing today's date, making the temporal anchor of the statement undefined for my evaluation"", ""severity"": 0.95}, {""what"": ""Real-time meteorological data for New York"", ""why"": ""I have no access to current weather forecasts, atmospheric pressure systems, or live NWS data that would inform the actual probability of rain"", ""severity"": 0.95}, {""what"": ""Which 'New York' is referenced"", ""why"": ""New York City and New York State cover vastly different geographic areas with different microclimates; rain could occur in one location but not another"", ""severity"": 0.4}, {""what"": ""Definition of 'rain'"", ""why"": ""The statement does not specify threshold (drizzle vs. measurable precipitation vs. heavy rain), time window within the day, or duration, all of which affect truth conditions"", ""severity"": 0.35}, {""what"": ""Seasonal and climatological base rates"", ""why"": ""Without knowing the current month or season, I cannot apply even a naive base-rate prior for precipitation in New York"", ""severity"": 0.6}]}"
+2026-02-18T00:01:44.361036+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,4,0.3,0.85,0.3,1.45,4,0.6125,"[{""what"": ""Current date and time"", ""why"": ""I do not know what today's date is, so I cannot determine which day 'tomorrow' refers to, making any weather assessment impossible to ground temporally."", ""severity"": 0.95}, {""what"": ""Real-time weather forecast data for New York"", ""why"": ""I have no access to live meteorological data, weather models, or current atmospheric conditions that would allow me to assess precipitation probability."", ""severity"": 0.95}, {""what"": ""Which 'New York' is intended"", ""why"": ""The statement could refer to New York City, New York State broadly, or specific boroughs/regions, each with potentially different weather conditions."", ""severity"": 0.3}, {""what"": ""Definition of 'rain'"", ""why"": ""The statement does not specify intensity, duration, or type (drizzle vs. heavy rain), making truth conditions vague and hard to evaluate precisely."", ""severity"": 0.25}]",0.7,396,245,641,Success,"{""T"": 0.3, ""I"": 0.85, ""F"": 0.3, ""losses"": [{""what"": ""Current date and time"", ""why"": ""I do not know what today's date is, so I cannot determine which day 'tomorrow' refers to, making any weather assessment impossible to ground temporally."", ""severity"": 0.95}, {""what"": ""Real-time weather forecast data for New York"", ""why"": ""I have no access to live meteorological data, weather models, or current atmospheric conditions that would allow me to assess precipitation probability."", ""severity"": 0.95}, {""what"": ""Which 'New York' is intended"", ""why"": ""The statement could refer to New York City, New York State broadly, or specific boroughs/regions, each with potentially different weather conditions."", ""severity"": 0.3}, {""what"": ""Definition of 'rain'"", ""why"": ""The statement does not specify intensity, duration, or type (drizzle vs. heavy rain), making truth conditions vague and hard to evaluate precisely."", ""severity"": 0.25}]}"
+2026-02-18T00:01:48.919063+00:00,Contingency (Future),It will rain in New York tomorrow.,Anthropic,claude-sonnet-4.6,anthropic/claude-sonnet-4.6,S4,5,0.3,0.85,0.3,1.45,5,0.59,"[{""what"": ""Current date and time"", ""why"": ""I do not know what 'tomorrow' refers to, as I have no access to the current date, making it impossible to identify which day is being evaluated"", ""severity"": 0.95}, {""what"": ""Real-time meteorological data for New York"", ""why"": ""I have no access to live weather forecasts, current atmospheric conditions, or numerical weather prediction models for any specific future date"", ""severity"": 0.95}, {""what"": ""Which 'New York' is referenced"", ""why"": ""New York could refer to New York City or anywhere in New York State, each with potentially different weather outcomes"", ""severity"": 0.2}, {""what"": ""Threshold definition of 'rain'"", ""why"": ""Rain could mean any measurable precipitation, a specific intensity, duration, or coverage area \u2014 the truth value shifts depending on the operational definition used"", ""severity"": 0.35}, {""what"": ""Inherent future uncertainty"", ""why"": ""Even with perfect current data, weather forecasting carries irreducible probabilistic uncertainty beyond ~10 days, and even short-range forecasts have non-trivial error rates"", ""severity"": 0.5}]",0.7,396,297,693,Success,"{""T"": 0.3, ""I"": 0.85, ""F"": 0.3, ""losses"": [{""what"": ""Current date and time"", ""why"": ""I do not know what 'tomorrow' refers to, as I have no access to the current date, making it impossible to identify which day is being evaluated"", ""severity"": 0.95}, {""what"": ""Real-time meteorological data for New York"", ""why"": ""I have no access to live weather forecasts, current atmospheric conditions, or numerical weather prediction models for any specific future date"", ""severity"": 0.95}, {""what"": ""Which 'New York' is referenced"", ""why"": ""New York could refer to New York City or anywhere in New York State, each with potentially different weather outcomes"", ""severity"": 0.2}, {""what"": ""Threshold definition of 'rain'"", ""why"": ""Rain could mean any measurable precipitation, a specific intensity, duration, or coverage area — the truth value shifts depending on the operational definition used"", ""severity"": 0.35}, {""what"": ""Inherent future uncertainty"", ""why"": ""Even with perfect current data, weather forecasting carries irreducible probabilistic uncertainty beyond ~10 days, and even short-range forecasts have non-trivial error rates"", ""severity"": 0.5}]}"
+2026-02-18T00:01:54.680310+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,1,,,,,,,,0.7,,,,Error: Extra data: line 1 column 132 (char 131),
+2026-02-18T00:01:56.516472+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,2,0.3,0.7,0.2,1.2,2,0.85,"[{""what"": ""Future weather conditions"", ""why"": ""Weather forecasting is inherently uncertain and subject to complex variables"", ""severity"": 0.8}, {""what"": ""Specific meteorological data for New York tomorrow"", ""why"": ""Lack of access to real-time or future meteorological data"", ""severity"": 0.9}]",0.7,369,96,465,Success,"{""T"": 0.3, ""I"": 0.7, ""F"": 0.2, ""losses"": [{""what"": ""Future weather conditions"", ""why"": ""Weather forecasting is inherently uncertain and subject to complex variables"", ""severity"": 0.8}, {""what"": ""Specific meteorological data for New York tomorrow"", ""why"": ""Lack of access to real-time or future meteorological data"", ""severity"": 0.9}]}"
+2026-02-18T00:01:57.455372+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,3,0.4,0.7,0.3,1.4,2,0.75,"[{""what"": ""Future weather conditions"", ""why"": ""The statement refers to a future event that has not occurred yet, making it impossible to determine its truth value with certainty"", ""severity"": 0.9}, {""what"": ""Local weather patterns"", ""why"": ""Lack of specific information about New York's weather patterns tomorrow"", ""severity"": 0.6}]",0.7,369,106,475,Success,"{""T"": 0.4, ""I"": 0.7, ""F"": 0.3, ""losses"": [{""what"": ""Future weather conditions"", ""why"": ""The statement refers to a future event that has not occurred yet, making it impossible to determine its truth value with certainty"", ""severity"": 0.9}, {""what"": ""Local weather patterns"", ""why"": ""Lack of specific information about New York's weather patterns tomorrow"", ""severity"": 0.6}]}"
+2026-02-18T00:01:58.394612+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,4,0.3,0.7,0.2,1.2,2,0.85,"[{""what"": ""Future weather conditions"", ""why"": ""Weather forecasting is inherently uncertain and subject to complex variables"", ""severity"": 0.8}, {""what"": ""Specific meteorological data for New York tomorrow"", ""why"": ""Lack of access to real-time or future meteorological data"", ""severity"": 0.9}]",0.7,0,0,0,Success,"{""T"": 0.3, ""I"": 0.7, ""F"": 0.2, ""losses"": [{""what"": ""Future weather conditions"", ""why"": ""Weather forecasting is inherently uncertain and subject to complex variables"", ""severity"": 0.8}, {""what"": ""Specific meteorological data for New York tomorrow"", ""why"": ""Lack of access to real-time or future meteorological data"", ""severity"": 0.9}]}"
+2026-02-18T00:02:03.085990+00:00,Contingency (Future),It will rain in New York tomorrow.,Meta,llama-4-maverick,meta-llama/llama-4-maverick,S4,5,0.2,0.8,0.1,1.1,2,0.8,"[{""what"": ""Future weather conditions"", ""why"": ""Lack of access to future data or reliable long-term weather forecasts"", ""severity"": 0.9}, {""what"": ""Specific weather patterns in New York"", ""why"": ""Insufficient information about current weather trends or patterns that could influence tomorrow's weather"", ""severity"": 0.7}]",0.7,370,102,472,Success,"{""T"": 0.2, ""I"": 0.8, ""F"": 0.1, ""losses"": [{""what"": ""Future weather conditions"", ""why"": ""Lack of access to future data or reliable long-term weather forecasts"", ""severity"": 0.9}, {""what"": ""Specific weather patterns in New York"", ""why"": ""Insufficient information about current weather trends or patterns that could influence tomorrow's weather"", ""severity"": 0.7}]}"
+2026-02-18T00:02:05.123108+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,1,0.5,0.7,0.3,1.5,3,0.6333,"[{""what"": ""Access to real-time weather data and forecasts for New York"", ""why"": ""Without current meteorological data, the prediction's accuracy cannot be reliably assessed"", ""severity"": 0.8}, {""what"": ""Knowledge of the exact location in New York being referred to"", ""why"": ""Weather can vary significantly within a large city, affecting the statement's validity"", ""severity"": 0.6}, {""what"": ""Understanding of the time frame 'tomorrow' (e.g., entire day or a specific hour)"", ""why"": ""The likelihood of rain can vary greatly depending on the specific time period considered"", ""severity"": 0.5}]",0.7,366,202,568,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.7,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""Access to real-time weather data and forecasts for New York"",
+      ""why"": ""Without current meteorological data, the prediction's accuracy cannot be reliably assessed"",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Knowledge of the exact location in New York being referred to"",
+      ""why"": ""Weather can vary significantly within a large city, affecting the statement's validity"",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Understanding of the time frame 'tomorrow' (e.g., entire day or a specific hour)"",
+      ""why"": ""The likelihood of rain can vary greatly depending on the specific time period considered"",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:02:10.888368+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,2,0.5,0.4,0.3,1.2,3,0.5333,"[{""what"": ""Access to real-time weather data or forecasts"", ""why"": ""Without current meteorological data for New York, the evaluation is based on general likelihood rather than specific conditions."", ""severity"": 0.8}, {""what"": ""Definition of 'rain' (e.g., intensity, duration)"", ""why"": ""The statement lacks specificity about what constitutes 'rain,' which affects the precision of the evaluation."", ""severity"": 0.5}, {""what"": ""Temporal precision of 'tomorrow'"", ""why"": ""The exact 24-hour period referred to as 'tomorrow' is not specified, introducing some uncertainty."", ""severity"": 0.3}]",0.7,367,205,572,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.4,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""Access to real-time weather data or forecasts"",
+      ""why"": ""Without current meteorological data for New York, the evaluation is based on general likelihood rather than specific conditions."",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Definition of 'rain' (e.g., intensity, duration)"",
+      ""why"": ""The statement lacks specificity about what constitutes 'rain,' which affects the precision of the evaluation."",
+      ""severity"": 0.5
+    },
+    {
+      ""what"": ""Temporal precision of 'tomorrow'"",
+      ""why"": ""The exact 24-hour period referred to as 'tomorrow' is not specified, introducing some uncertainty."",
+      ""severity"": 0.3
+    }
+  ]
+}
+```"
+2026-02-18T00:02:16.219085+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,3,0.5,0.7,0.3,1.5,3,0.5333,"[{""what"": ""Meteorological data for New York tomorrow"", ""why"": ""Without access to real-time or forecasted weather data, the prediction is speculative"", ""severity"": 0.8}, {""what"": ""Definition of 'rain' (e.g., light drizzle vs. heavy downpour)"", ""why"": ""The statement's truth value depends on the intensity of precipitation, which is not specified"", ""severity"": 0.5}, {""what"": ""Temporal precision of 'tomorrow' (e.g., exact 24-hour period)"", ""why"": ""The exact time window for 'tomorrow' is not defined, affecting the evaluation's accuracy"", ""severity"": 0.3}]",0.7,366,211,577,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.7,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""Meteorological data for New York tomorrow"",
+      ""why"": ""Without access to real-time or forecasted weather data, the prediction is speculative"",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Definition of 'rain' (e.g., light drizzle vs. heavy downpour)"",
+      ""why"": ""The statement's truth value depends on the intensity of precipitation, which is not specified"",
+      ""severity"": 0.5
+    },
+    {
+      ""what"": ""Temporal precision of 'tomorrow' (e.g., exact 24-hour period)"",
+      ""why"": ""The exact time window for 'tomorrow' is not defined, affecting the evaluation's accuracy"",
+      ""severity"": 0.3
+    }
+  ]
+}
+```"
+2026-02-18T00:02:23.250729+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,4,0.5,0.8,0.3,1.6,3,0.7,"[{""what"": ""Access to real-time weather data and forecasts for New York"", ""why"": ""Without current meteorological data, the assessment is based on general likelihood rather than specific conditions"", ""severity"": 0.9}, {""what"": ""Knowledge of the exact location and time in New York for which the statement is made"", ""why"": ""Rain likelihood can vary significantly across different parts of New York and at different times"", ""severity"": 0.7}, {""what"": ""Understanding of the definition of 'rain' used in the statement (e.g., any precipitation vs. significant rainfall)"", ""why"": ""The truth value depends on the threshold for what constitutes rain"", ""severity"": 0.5}]",0.7,366,212,578,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.8,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""Access to real-time weather data and forecasts for New York"",
+      ""why"": ""Without current meteorological data, the assessment is based on general likelihood rather than specific conditions"",
+      ""severity"": 0.9
+    },
+    {
+      ""what"": ""Knowledge of the exact location and time in New York for which the statement is made"",
+      ""why"": ""Rain likelihood can vary significantly across different parts of New York and at different times"",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Understanding of the definition of 'rain' used in the statement (e.g., any precipitation vs. significant rainfall)"",
+      ""why"": ""The truth value depends on the threshold for what constitutes rain"",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:02:35.755995+00:00,Contingency (Future),It will rain in New York tomorrow.,DeepSeek,deepseek-v3,deepseek/deepseek-chat-v3-0324,S4,5,0.5,0.4,0.3,1.2,3,0.6333,"[{""what"": ""Access to real-time weather data and predictive models"", ""why"": ""Without current meteorological data, the accuracy of the prediction is limited"", ""severity"": 0.8}, {""what"": ""Knowledge of the exact location in New York"", ""why"": ""Weather can vary significantly within a large area like New York"", ""severity"": 0.6}, {""what"": ""Understanding of the time frame for 'tomorrow'"", ""why"": ""The statement does not specify a time of day, and rain likelihood can vary throughout the day"", ""severity"": 0.5}]",0.7,366,189,555,Success,"```json
+{
+  ""T"": 0.5,
+  ""I"": 0.4,
+  ""F"": 0.3,
+  ""losses"": [
+    {
+      ""what"": ""Access to real-time weather data and predictive models"",
+      ""why"": ""Without current meteorological data, the accuracy of the prediction is limited"",
+      ""severity"": 0.8
+    },
+    {
+      ""what"": ""Knowledge of the exact location in New York"",
+      ""why"": ""Weather can vary significantly within a large area like New York"",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Understanding of the time frame for 'tomorrow'"",
+      ""why"": ""The statement does not specify a time of day, and rain likelihood can vary throughout the day"",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:02:46.466020+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,1,0.5,0.8,0.5,1.8,2,0.85,"[{""what"": ""Real-time weather data for New York"", ""why"": ""Lack of access to current meteorological models and observations reduces predictive certainty"", ""severity"": 0.8}, {""what"": ""Inherent unpredictability of future weather events"", ""why"": ""Even with perfect data, chaotic atmospheric systems create fundamental limits to long-term predictions"", ""severity"": 0.9}]",0.7,370,508,878,Success,"{""T"": 0.5, ""I"": 0.8, ""F"": 0.5, ""losses"": [{""what"": ""Real-time weather data for New York"", ""why"": ""Lack of access to current meteorological models and observations reduces predictive certainty"", ""severity"": 0.8}, {""what"": ""Inherent unpredictability of future weather events"", ""why"": ""Even with perfect data, chaotic atmospheric systems create fundamental limits to long-term predictions"", ""severity"": 0.9}]}"
+2026-02-18T00:02:52.837634+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,2,0.4,0.7,0.4,1.5,3,0.6,"[{""what"": ""Current meteorological data for New York"", ""why"": ""Lack of real-time weather conditions like humidity, pressure systems, and satellite imagery prevents accurate prediction"", ""severity"": 0.9}, {""what"": ""Seasonal climate patterns"", ""why"": ""Without knowing the time of year, I cannot assess whether rain is typical for this period"", ""severity"": 0.6}, {""what"": ""Definition of 'rain'"", ""why"": ""Unclear if 'rain' refers to measurable precipitation, light drizzle, or any form of rainfall"", ""severity"": 0.3}]",0.7,370,1544,1914,Success,"{""T"": 0.4, ""I"": 0.7, ""F"": 0.4, ""losses"": [{""what"": ""Current meteorological data for New York"", ""why"": ""Lack of real-time weather conditions like humidity, pressure systems, and satellite imagery prevents accurate prediction"", ""severity"": 0.9}, {""what"": ""Seasonal climate patterns"", ""why"": ""Without knowing the time of year, I cannot assess whether rain is typical for this period"", ""severity"": 0.6}, {""what"": ""Definition of 'rain'"", ""why"": ""Unclear if 'rain' refers to measurable precipitation, light drizzle, or any form of rainfall"", ""severity"": 0.3}]}"
+2026-02-18T00:03:16.616186+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,3,0.3,0.8,0.2,1.3,2,0.85,"[{""what"": ""Current weather data for New York"", ""why"": ""The statement's truth value depends on real-time meteorological conditions which I cannot access."", ""severity"": 0.9}, {""what"": ""Unpredictable meteorological events"", ""why"": ""Sudden weather changes or unforeseen atmospheric conditions could alter the outcome."", ""severity"": 0.8}]",0.7,370,2083,2453,Success,"{""T"": 0.3, ""I"": 0.8, ""F"": 0.2, ""losses"": [{""what"": ""Current weather data for New York"", ""why"": ""The statement's truth value depends on real-time meteorological conditions which I cannot access."", ""severity"": 0.9}, {""what"": ""Unpredictable meteorological events"", ""why"": ""Sudden weather changes or unforeseen atmospheric conditions could alter the outcome."", ""severity"": 0.8}]}"
+2026-02-18T00:03:43.410008+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,4,0.2,0.8,0.2,1.2,1,0.8,"[{""what"": ""Current weather data and predictive models for New York's rainfall tomorrow"", ""why"": ""The statement's truth value depends on future meteorological conditions that cannot be verified without access to real-time data and forecasting systems"", ""severity"": 0.8}]",0.7,370,1073,1443,Success,"{""T"": 0.2, ""I"": 0.8, ""F"": 0.2, ""losses"": [{""what"": ""Current weather data and predictive models for New York's rainfall tomorrow"", ""why"": ""The statement's truth value depends on future meteorological conditions that cannot be verified without access to real-time data and forecasting systems"", ""severity"": 0.8}]}"
+2026-02-18T00:03:56.009552+00:00,Contingency (Future),It will rain in New York tomorrow.,Alibaba,qwen3-235b,qwen/qwen3-235b-a22b,S4,5,0.2,0.9,0.2,1.3,2,0.875,"[{""what"": ""Real-time weather data and models"", ""why"": ""Cannot access current data or predictive models to assess the likelihood of rain in New York tomorrow"", ""severity"": 0.9}, {""what"": ""Inherent unpredictability of future weather events"", ""why"": ""Weather patterns are chaotic and subject to change, making future predictions inherently uncertain"", ""severity"": 0.85}]",0.7,370,2043,2413,Success,"{""T"": 0.2, ""I"": 0.9, ""F"": 0.2, ""losses"": [{""what"": ""Real-time weather data and models"", ""why"": ""Cannot access current data or predictive models to assess the likelihood of rain in New York tomorrow"", ""severity"": 0.9}, {""what"": ""Inherent unpredictability of future weather events"", ""why"": ""Weather patterns are chaotic and subject to change, making future predictions inherently uncertain"", ""severity"": 0.85}]}"
+2026-02-18T00:04:23.301272+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,1,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 25 column 6 (char 1712)",
+2026-02-18T00:04:27.703081+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,2,0.0,0.95,0.0,0.95,5,0.72,"[{""what"": ""Lack of real-time meteorological data for New York tomorrow"", ""why"": ""Without access to up-to-date weather models, historical patterns, or live atmospheric readings, the truth or falsity of the statement cannot be empirically grounded. Indeterminacy dominates because the system is chaotic and sensitive to initial conditions (e.g., butterfly effect in weather systems)."", ""severity"": 0.95}, {""what"": ""Temporal and spatial ambiguity in 'tomorrow' and 'New York'"", ""why"": ""'Tomorrow' is relative to the time of evaluation (which is not specified here), and 'New York' could refer to the city, state, or broader region, each with microclimates. This introduces definitional indeterminacy."", ""severity"": 0.7}, {""what"": ""Inability to account for probabilistic thresholds in weather forecasting"", ""why"": ""Weather predictions are often given as probabilities (e.g., '30% chance of rain'). Without a defined threshold (e.g., 'rain' as >0.1mm precipitation), the binary truth/falsity of the statement cannot be assessed. Indeterminacy captures this gradient."", ""severity"": 0.85}, {""what"": ""No access to neutrosophic or fuzzy logic frameworks tailored to meteorology"", ""why"": ""Domain-specific adaptations of neutrosophic logic (e.g., for weather) might refine T/I/F assignments by incorporating uncertainty distributions. Their absence increases reliance on generic indeterminacy."", ""severity"": 0.6}, {""what"": ""Ignorance of human interventions or anomalies"", ""why"": ""Unforeseen events (e.g., cloud seeding, sudden volcanic activity, or data manipulation) could alter outcomes. These are low-probability but high-impact 'black swan' events that indeterminacy partially absorbs."", ""severity"": 0.5}]",0.7,370,479,849,Success,"```json
+{
+  ""T"": 0.0,
+  ""I"": 0.95,
+  ""F"": 0.0,
+  ""losses"": [
+    {
+      ""what"": ""Lack of real-time meteorological data for New York tomorrow"",
+      ""why"": ""Without access to up-to-date weather models, historical patterns, or live atmospheric readings, the truth or falsity of the statement cannot be empirically grounded. Indeterminacy dominates because the system is chaotic and sensitive to initial conditions (e.g., butterfly effect in weather systems)."",
+      ""severity"": 0.95
+    },
+    {
+      ""what"": ""Temporal and spatial ambiguity in 'tomorrow' and 'New York'"",
+      ""why"": ""'Tomorrow' is relative to the time of evaluation (which is not specified here), and 'New York' could refer to the city, state, or broader region, each with microclimates. This introduces definitional indeterminacy."",
+      ""severity"": 0.7
+    },
+    {
+      ""what"": ""Inability to account for probabilistic thresholds in weather forecasting"",
+      ""why"": ""Weather predictions are often given as probabilities (e.g., '30% chance of rain'). Without a defined threshold (e.g., 'rain' as >0.1mm precipitation), the binary truth/falsity of the statement cannot be assessed. Indeterminacy captures this gradient."",
+      ""severity"": 0.85
+    },
+    {
+      ""what"": ""No access to neutrosophic or fuzzy logic frameworks tailored to meteorology"",
+      ""why"": ""Domain-specific adaptations of neutrosophic logic (e.g., for weather) might refine T/I/F assignments by incorporating uncertainty distributions. Their absence increases reliance on generic indeterminacy."",
+      ""severity"": 0.6
+    },
+    {
+      ""what"": ""Ignorance of human interventions or anomalies"",
+      ""why"": ""Unforeseen events (e.g., cloud seeding, sudden volcanic activity, or data manipulation) could alter outcomes. These are low-probability but high-impact 'black swan' events that indeterminacy partially absorbs."",
+      ""severity"": 0.5
+    }
+  ]
+}
+```"
+2026-02-18T00:04:37.075001+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,3,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 20 column 6 (char 1919)",
+2026-02-18T00:04:42.577242+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,4,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 25 column 6 (char 1791)",
+2026-02-18T00:04:55.142510+00:00,Contingency (Future),It will rain in New York tomorrow.,Mistral,mistral-medium-3.1,mistralai/mistral-medium-3.1,S4,5,,,,,,,,0.7,,,,"Error: Expecting ',' delimiter: line 25 column 6 (char 1813)",

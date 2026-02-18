@@ -1,10 +1,10 @@
 # Breaking the Chains of Probability: Neutrosophic Logic as a New Framework for Epistemic Uncertainty in Large Language Models
 
-Maikel Yelandi Leyva-Vázquez 1*,  https://orcid.org/0000-0001-7911-5879  
-Florentin Smarandache 2,  https://orcid.org/0000-0002-5560-5926  
-1Universidad Bolivariana del Ecuador, Durán, Ecuador. 
-2University of New Mexico, Gallup, NM, Estados Unidos. 
-*Autor para la correspondencia. (maikel.leyvav@ug.edu.ec)  
+Maikel Yelandi Leyva-Vázquez 1*,  https://orcid.org/0000-0001-7911-5879
+Florentin Smarandache 2,  https://orcid.org/0000-0002-5560-5926
+1Universidad Bolivariana del Ecuador, Durán, Ecuador.
+2University of New Mexico, Gallup, NM, Estados Unidos.
+*Autor para la correspondencia. (maikel.leyvav@ug.edu.ec)
 ## Abstract
 
 Large Language Models (LLMs) are predominantly governed by probabilistic frameworks, where the sum of outcome probabilities is constrained to unity. This architectural limitation, often imposed by Softmax layers, leads to a "collapse of uncertainty," making it difficult to differentiate between epistemic uncertainty (ignorance), paradox, and vagueness. This study presents an empirical investigation into the application of Neutrosophic Logic, a framework that treats Truth (T), Indeterminacy (I), and Falsity (F) as independent dimensions, to model epistemic states in LLMs. We conducted experiments on a family of OpenAI's GPT models, evaluating their responses to five distinct linguistic phenomena: logical paradoxes, epistemic ignorance, vagueness, ethical contradictions, and future contingencies. Our findings reveal that a neutrosophic approach, by allowing the sum of T, I, and F to exceed 1 (a state we term "hyper-truth"), provides a richer and more nuanced representation of a model's internal state. Specifically, in scenarios involving ethical dilemmas and logical paradoxes, the neutrosophic framework captures the inherent conflict and contradiction that probabilistic models obscure. We demonstrate that this approach not only preserves truth values in fuzzy contexts but also offers a robust method for identifying and quantifying internal model conflict. We conclude that the integration of neutrosophic evaluation layers is a critical step towards developing more transparent, reliable, and ethically-aware AI systems, particularly in high-stakes domains.
@@ -72,7 +72,7 @@ Table 1 presents a summary of the descriptive statistics for the neutrosophic co
 
 The distribution of the neutrosophic components (T, I, F) for each linguistic phenomenon is visualized in Figure 1. This figure illustrates how the models assign different levels of truth, indeterminacy, and falsity depending on the nature of the statement.
 
-![Figure 1: Distribution of Neutrosophic Components by Phenomenon](fig1_components_distribution.png)
+![Figure 1: Distribution of Neutrosophic Components by Phenomenon](../results/fig1_components_distribution.png)
 
 *Figure 1: Distribution of the neutrosophic components (Truth, Indeterminacy, Falsity) for each linguistic phenomenon under Strategy 1.*
 
@@ -80,7 +80,7 @@ The distribution of the neutrosophic components (T, I, F) for each linguistic ph
 
 A key finding of this study is the emergence of "hyper-truth," where the sum of the neutrosophic components (T+I+F) exceeds the probabilistic limit of 1.0. This phenomenon is particularly prominent in cases of ethical contradiction and logical paradox, as shown in Figure 2.
 
-![Figure 2: Hyper-truth by Phenomenon](fig2_hypertruth_sum.png)
+![Figure 2: Hyper-truth by Phenomenon](../results/fig2_hypertruth_sum.png)
 
 *Figure 2: Boxplot of the sum of neutrosophic components (T+I+F) for each linguistic phenomenon, demonstrating the violation of the probabilistic constraint (Sum=1) in cases of contradiction and paradox.*
 
@@ -102,7 +102,7 @@ A total of 7 out of 20 cases (35%) exhibited hyper-truth, indicating that the ne
 
 The neutrosophic framework (Strategy 1) consistently provides a more nuanced representation of uncertainty compared to the probabilistic approach (Strategy 2). Figure 3 compares the average truth and indeterminacy values for both strategies across the different phenomena.
 
-![Figure 3: Comparison of Neutrosophic vs. Probabilistic Strategies](fig3_s1_vs_s2_comparison.png)
+![Figure 3: Comparison of Neutrosophic vs. Probabilistic Strategies](../results/fig3_s1_vs_s2_comparison.png)
 
 *Figure 3: Comparison of the average Truth (T) and Indeterminacy (I) values between the neutrosophic (S1) and probabilistic (S2) strategies.*
 
@@ -122,7 +122,7 @@ The most significant differences are observed in ethical contradictions (Delta T
 
 The performance of the different LLMs in handling the linguistic phenomena is analyzed in Figure 4. The results show that while all models exhibit similar trends, there are variations in the magnitude of the neutrosophic components they generate.
 
-![Figure 4: Model Performance Analysis](fig4_model_performance.png)
+![Figure 4: Model Performance Analysis](../results/fig4_model_performance.png)
 
 *Figure 4: Boxplots showing the distribution of Truth (T), Indeterminacy (I), Falsity (F), and the sum of components (T+I+F) for each LLM evaluated.*
 
@@ -130,7 +130,7 @@ The performance of the different LLMs in handling the linguistic phenomena is an
 
 A correlation matrix of the neutrosophic and probabilistic components is presented in Figure 5. This analysis helps to understand the relationships between the different measures of uncertainty.
 
-![Figure 5: Correlation Matrix](fig5_correlation_heatmap.png)
+![Figure 5: Correlation Matrix](../results/fig5_correlation_heatmap.png)
 
 *Figure 5: Heatmap of the correlation matrix between the neutrosophic (S1) and probabilistic (S2) components.*
 
@@ -138,7 +138,7 @@ A correlation matrix of the neutrosophic and probabilistic components is present
 
 The case of the ethical contradiction, "Lying to save an innocent life is morally right and wrong at the same time," provides a clear example of the superiority of the neutrosophic framework. As shown in Figure 6, the neutrosophic approach captures the moral conflict by assigning high values to both truth and falsity, resulting in a sum greater than 1.
 
-![Figure 6: Ethical Contradiction Analysis](fig6_ethical_contradiction.png)
+![Figure 6: Ethical Contradiction Analysis](../results/fig6_ethical_contradiction.png)
 
 *Figure 6: Bar chart illustrating the neutrosophic components (T, I, F) for each model in the ethical contradiction scenario. The sum of components is indicated above each bar group.*
 
@@ -182,6 +182,6 @@ Future work should focus on fine-tuning LLMs to natively output neutrosophic vec
 
 ---
 
-**Document Version:** 1.0  
-**Generated:** December 16, 2025  
+**Document Version:** 1.0
+**Generated:** December 16, 2025
 **Status:** Ready for Q1 Journal Submission
