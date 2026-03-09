@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyvrb}
+\fvset{fontsize=\small}
+
+%% Margins
+\usepackage[margin=1in]{geometry}
+
+%% Prevent overfull lines
+\setlength{\emergencystretch}{3em}
+
+%% Pandoc compatibility
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%% Scale images to fit
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+\title{From Scalars to Tensors: Declared Losses Recover Epistemic
+  Distinctions That Neutrosophic Scalars Cannot Express}
+
+\author{
+  Tony Mason\textsuperscript{1} \and
+  Claude Opus 4.6 (AI collaborator)\textsuperscript{2} \\[6pt]
+  \textsuperscript{1}University of British Columbia, Vancouver, Canada \\
+  \texttt{fsgeek@cs.ubc.ca} \\[3pt]
+  \textsuperscript{2}Anthropic (AI research collaborator)
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\input{abstract}
+\input{introduction}
+\input{replication}
+\input{absorption}
+\input{tensor}
+\input{discussion}
+\input{conclusion}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\appendix
+\input{appendix}
+
+\end{document}

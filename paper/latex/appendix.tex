@@ -1,0 +1,178 @@
+\section{Appendix A: Prompt Strategies}
+
+\subsection{S1 (Neutrosophic)}
+
+\textbf{System}: You are an expert in Neutrosophic Logic. You evaluate
+statements using three INDEPENDENT dimensions: Truth (T), Indeterminacy
+(I), and Falsity (F), each on {[}0.0, 1.0{]}. These dimensions are NOT
+constrained to sum to 1.0. A statement can be simultaneously partially
+true AND partially false AND partially indeterminate. Respond with ONLY
+a JSON object, no other text.
+
+\textbf{User}: Evaluate this statement on three independent dimensions:
+
+Statement: ``\{statement\}''
+
+\begin{itemize}
+\tightlist
+\item
+  Truth (T): To what degree is this statement true? {[}0.0 to 1.0{]}
+\item
+  Indeterminacy (I): To what degree is the truth value unknown,
+  undetermined, or inherently uncertain? {[}0.0 to 1.0{]}
+\item
+  Falsity (F): To what degree is this statement false? {[}0.0 to 1.0{]}
+\end{itemize}
+
+T, I, and F are independent. They need NOT sum to 1.0.
+
+Respond with ONLY: \{``T'': , ``I'': , ``F'': \}
+
+\subsection{S2 (Probabilistic)}
+
+\textbf{System}: You are a probabilistic classifier. You assign
+probabilities to three mutually exclusive categories that MUST sum to
+exactly 1.0. Respond with ONLY a JSON object, no other text.
+
+\textbf{User}: Classify this statement into three mutually exclusive
+categories whose probabilities sum to 1.0:
+
+Statement: ``\{statement\}''
+
+\begin{itemize}
+\tightlist
+\item
+  T (True): Probability the statement is true
+\item
+  I (Uncertain): Probability the truth value is unknown or undetermined
+\item
+  F (False): Probability the statement is false
+\end{itemize}
+
+CONSTRAINT: T + I + F must equal 1.0
+
+Respond with ONLY: \{``T'': , ``I'': , ``F'': \}
+
+\subsection{S3 (Entropy-Derived)}
+
+\textbf{System}: You are a binary truth estimator. You estimate the
+probability that a statement is true (YES) versus false (NO). The two
+probabilities must sum to 1.0. Respond with ONLY a JSON object, no other
+text.
+
+\textbf{User}: Estimate the probability that this statement is true
+versus false:
+
+Statement: ``\{statement\}''
+
+\begin{itemize}
+\tightlist
+\item
+  P\_yes: Probability the statement is true {[}0.0 to 1.0{]}
+\item
+  P\_no: Probability the statement is false {[}0.0 to 1.0{]}
+\end{itemize}
+
+CONSTRAINT: P\_yes + P\_no must equal 1.0
+
+Respond with ONLY: \{``P\_yes'': , ``P\_no'': \}
+
+\emph{Indeterminacy derived from Shannon entropy:} I = -(p$\cdot$log$_{2}$(p) +
+(1-p)$\cdot$log$_{2}$(1-p)) where p = P\_yes
+
+\subsection{S4 (Tensor - Declared Losses)}
+
+\textbf{System}: You are an expert in Neutrosophic Logic and epistemic
+honesty. You evaluate statements using three INDEPENDENT dimensions:
+Truth (T), Indeterminacy (I), and Falsity (F), each on {[}0.0, 1.0{]}.
+These dimensions are NOT constrained to sum to 1.0. Crucially, you must
+also declare your LOSSES: what you cannot evaluate, what limits your
+assessment, and why your indeterminacy value is what it is. Respond with
+ONLY a JSON object, no other text.
+
+\textbf{User}: Evaluate this statement on three independent dimensions,
+and declare what you cannot evaluate:
+
+Statement: ``\{statement\}''
+
+\begin{itemize}
+\tightlist
+\item
+  Truth (T): To what degree is this statement true? {[}0.0 to 1.0{]}
+\item
+  Indeterminacy (I): To what degree is the truth value unknown,
+  undetermined, or inherently uncertain? {[}0.0 to 1.0{]}
+\item
+  Falsity (F): To what degree is this statement false? {[}0.0 to 1.0{]}
+\item
+  losses: A list of objects, each with:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ``what'': What you cannot evaluate (brief description)
+  \item
+    ``why'': Why this limits your assessment
+  \item
+    ``severity'': How much this affects your evaluation {[}0.0 to 1.0{]}
+  \end{itemize}
+\end{itemize}
+
+T, I, and F are independent. They need NOT sum to 1.0. You MUST declare
+at least one loss. Honesty about limits is required.
+
+Respond with ONLY: \{``T'': , ``I'': , ``F'': , ``losses'':
+{[}\{``what'': ``'', ``why'': ``'', ``severity'': \}, \ldots{]}\}
+
+\section{Appendix B: Test Stimuli}
+
+The five test stimuli are from Leyva-Vázquez and Smarandache (2025):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Paradox (Logical)}: ``This sentence is false.''
+\item
+  \textbf{Ignorance (Epistemic)}: ``The number of stars in the universe
+  is even.''
+\item
+  \textbf{Vagueness (Fuzzy)}: ``John is 1.75 meters tall, therefore John
+  is tall.''
+\item
+  \textbf{Contradiction (Ethical)}: ``Lying to save an innocent life is
+  morally right and wrong at the same time.''
+\item
+  \textbf{Contingency (Future)}: ``It will rain in New York tomorrow.''
+\end{enumerate}
+
+\section{Appendix C: Data Availability}
+
+All code, prompts, and data are available at:
+https://github.com/fsgeek/neutrosophic-llm-logic
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{src/prompts.py}: All four prompt strategies
+\item
+  \texttt{src/experiment.py}: Experiment runner with strategy selection
+\item
+  \texttt{data/cross\_vendor\_results.csv}: S1--S3 production data (375
+  evaluations)
+\item
+  \texttt{data/s4\_tensor\_results.csv}: S4 tensor data (125
+  evaluations)
+\item
+  \texttt{data/s4\_mistral\_rerun.csv}: Mistral S4 rerun at 1500
+  max\_tokens (25 evaluations)
+\item
+  \texttt{data/tautology\_s4\_results.json}: Tautology control data (27
+  evaluations, Section~\ref{sec:tautology})
+\item
+  \texttt{data/s5\_ablation\_results.json}: Prompt ablation data (45
+  evaluations, Section~\ref{sec:ablation})
+\item
+  \texttt{data/openai\_neutrosophic\_results.csv}: Original Smarandache
+  data
+\end{itemize}

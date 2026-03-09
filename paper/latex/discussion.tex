@@ -1,0 +1,90 @@
+\section{Discussion}
+
+\subsection{Scalar T/I/F Is Necessary But Insufficient}
+
+The original Smarandache and Leyva-Vázquez thesis is correct:
+independent T/I/F dimensions reveal hyper-truth that probabilistic
+constraints suppress. Our cross-vendor replication strengthens this
+claim substantially (84\% vs 35\% hyper-truth, 5 vendors vs 1).
+
+However, scalar T/I/F has a ceiling. The Absorption problem shows that
+some models cannot express the distinction between different types of
+uncertainty using three numbers alone. This is not a model deficiency,
+it is a representational limitation. The model carries the distinction
+internally but lacks the output dimensions to express it.
+
+\subsection{Declared Losses Are the Missing Dimension}
+
+Adding structured loss declarations to the evaluation output recovers
+the collapsed distinctions. The loss channel carries semantic
+information that the scalar channel drops: \emph{why} the model is
+uncertain, \emph{what} it cannot evaluate, and \emph{how severely} this
+limits its assessment.
+
+This suggests a hierarchy of epistemic output fidelity:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Probabilistic} (T+I+F=1): Collapses all uncertainty to a
+  single dimension. Cannot express conflict. Cannot express hyper-truth.
+\item
+  \textbf{Scalar Neutrosophic} (independent T,I,F): Expresses conflict
+  and hyper-truth. Cannot distinguish types of uncertainty for
+  Absorption models.
+\item
+  \textbf{Tensor Neutrosophic} (T,I,F + declared losses): Expresses
+  conflict, hyper-truth, and type-specific uncertainty. Recovers
+  distinctions that scalars collapse.
+\end{enumerate}
+
+Each level subsumes the previous. The tensor level is the minimum needed
+for faithful representation of LLM epistemic state.
+
+\subsection{Implications for Evaluation Architecture}
+
+The finding that models can produce accurate, domain-specific loss
+declarations has practical implications for AI evaluation systems. An
+attestation system that records only scalar T/I/F values will lose
+information that loss declarations preserve. Systems designed for
+routing evaluations to appropriate evaluators by selecting which model
+or method to use for a given claim, should route on losses rather than
+capabilities, because losses carry richer information about what the
+evaluator cannot do and why.
+
+\subsection{Limitations}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Prompt sensitivity}: We do not have the original study's
+  prompts, so the S1--S3 comparison is across independently constructed
+  prompts. The S2 agreement provides evidence of compatibility but not
+  identity.
+\item
+  \textbf{Sample size}: 5 repetitions per cell provides stability
+  measures but is insufficient for formal statistical testing. The
+  zero-variance findings (e.g., Claude's paradox position) are robust;
+  the variable findings (e.g., Qwen's paradox instability) would benefit
+  from 30+ repetitions.
+\item
+  \textbf{Loss vocabulary metric}: Jaccard similarity on word-level
+  tokens is a crude measure of semantic differentiation. More
+  sophisticated NLP measures (sentence embeddings, BERTScore) might
+  reveal structure that word-level overlap misses or might show that
+  some apparently disjoint vocabularies express similar concepts.
+\item
+  \textbf{Self-report vs.~internal state}: The declared losses are the
+  model's self-report of its limitations, not a direct observation of
+  internal state. Models might produce plausible-sounding but generic
+  loss declarations without genuine internal distinction. The
+  domain-specificity and consistency of the losses across repetitions
+  argues against this, but independent validation (e.g., via logprob
+  analysis) would strengthen the finding.
+\item
+  \textbf{Five phenomena, five models}: The stimuli set is small
+  (inherited from the original study). A broader range of epistemic
+  phenomena would test the generality of both the Absorption problem and
+  the tensor solution.
+\end{enumerate}

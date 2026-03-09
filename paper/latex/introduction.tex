@@ -1,0 +1,41 @@
+\section{Introduction}
+
+The application of Neutrosophic Logic to LLM uncertainty quantification
+(Leyva-Vázquez \& Smarandache, 2025) represents an important departure
+from probabilistic frameworks. By treating Truth (T), Indeterminacy (I),
+and Falsity (F) as independent dimensions, the neutrosophic approach
+allows models to express internal conflicts that probabilistic
+constraints (T+I+F=1) suppress. Their finding that 35\% of evaluations
+exhibit ``hyper-truth'' (T+I+F > 1.0) under unconstrained
+prompting demonstrates that LLMs carry richer epistemic information than
+probabilistic output formats can express.
+
+However, their study has three limitations that constrain the
+generalizability of their findings:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Single vendor}: All four models (GPT-4o, GPT-4-turbo,
+  GPT-3.5-turbo, GPT-4o-mini) come from OpenAI. The observed hyper-truth
+  could be an artifact of OpenAI's training pipeline rather than a
+  general property of LLMs.
+\item
+  \textbf{Single shot}: Each cell (model × phenomenon × strategy) was
+  evaluated once, providing no measure of intra-model consistency or
+  statistical significance.
+\item
+  \textbf{Unpublished prompts}: The specific prompts used for each
+  strategy were not committed to the repository, preventing independent
+  replication.
+\end{enumerate}
+
+We address all three limitations. More importantly, we identify a fourth
+problem that scalar T/I/F cannot solve even in principle: \textbf{the
+Absorption problem}, where some models collapse all uncertain states to
+(T=0, I=1, F=0), losing the distinction between types of uncertainty
+that neutrosophic logic was designed to preserve.
+
+We then demonstrate that this problem is solved by extending the output
+format from scalars to tensors: specifically, by requiring models to
+declare structured losses alongside their T/I/F values.

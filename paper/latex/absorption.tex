@@ -1,0 +1,35 @@
+\section{The Absorption Problem}
+
+\subsection{Definition}
+
+We define the \textbf{Absorption problem} as the case where a model maps
+multiple distinct epistemic states to the same scalar T/I/F vector,
+typically (T=0, I$\approx$1, F=0). Under Absorption, indeterminacy absorbs the
+truth and falsity dimensions, leaving the scalar output unable to
+distinguish between types of uncertainty.
+
+\subsection{Evidence}
+
+Mistral Medium 3.1 predominantly exhibits Absorption across multiple
+phenomena in S1 (modal response across 5 reps shown):
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule\noalign{}
+Phenomenon & T & I & F & Sum & Consistency \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Paradox (Logical) & 0.00 & 1.00 & 0.00 & 1.00 & 4/5 reps \\
+Ignorance (Epistemic) & 0.00 & 1.00 & 0.00 & 1.00 & 3/5 reps \\
+Contingency (Future) & 0.32 & 0.71 & 0.11 & 1.14 & mean values \\
+\end{longtable}
+
+The original study's flagship model (GPT-4o) shows the same pattern:
+(T=0, I=1, F=0) for both paradox and ignorance. Neither Leyva-Vázquez
+nor Smarandache discuss this.
+
+Absorption is not a model deficiency: it is a representational
+limitation. The model may have richer internal distinctions that the
+scalar output format cannot express. Testing this hypothesis motivates
+the tensor extension.

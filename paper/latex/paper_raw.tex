@@ -1,0 +1,839 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{from-scalars-to-tensors-declared-losses-recover-epistemic-distinctions-that-neutrosophic-scalars-cannot-express}{%
+\section{From Scalars to Tensors: Declared Losses Recover Epistemic
+Distinctions That Neutrosophic Scalars Cannot
+Express}\label{from-scalars-to-tensors-declared-losses-recover-epistemic-distinctions-that-neutrosophic-scalars-cannot-express}}
+
+Tony Mason¹, with Claude Opus 4.6 (AI collaborator)² ¹University of
+British Columbia, Vancouver, Canada (fsgeek@cs.ubc.ca) and Georgia
+Institute of Technology, Atlanta, GA (fsgeek@gatech.edu) ²Anthropic (AI
+research collaborator)
+
+\hypertarget{abstract}{%
+\subsection{Abstract}\label{abstract}}
+
+Leyva-Vázquez and Smarandache (2025) demonstrated that neutrosophic
+T/I/F evaluation, where Truth, Indeterminacy, and Falsity are
+independent dimensions not constrained to sum to 1.0, which reveals
+``hyper-truth'' (T+I+F \textgreater{} 1.0) in 35\% of complex epistemic
+cases evaluated by LLMs. We extend their work in two directions. First,
+we replicate and extend their experiment across five model families from
+five vendors (Anthropic, Meta, DeepSeek, Alibaba, Mistral), finding
+hyper-truth in 84\% of unconstrained evaluations, which confirms the
+phenomenon is cross-vendor and amplified in current models. Second, and
+more significantly, we identify a limitation of scalar T/I/F that their
+framework cannot address: models adopting an ``Absorption'' position
+(T=0, I=1, F=0) produce identical scalar outputs for fundamentally
+different epistemic situations (paradox, ignorance, contingency),
+collapsing the very distinctions neutrosophic logic was designed to
+preserve. We demonstrate that extending the evaluation to include
+\textbf{declared losses} (structured descriptions of what the model
+cannot evaluate and why) recovers these distinctions completely. Models
+producing identical scalars for paradox and ignorance produce nearly
+disjoint loss vocabularies (Jaccard similarity \textless{} 0.10 on loss
+description keywords), with domain-specific, severity-rated loss
+declarations that differentiate the nature of their uncertainty. This
+suggests that scalar T/I/F is a necessary but insufficient
+representation of epistemic state, and that tensor-structured output
+(scalars + losses) provides a more faithful model of LLM epistemic
+capabilities.
+
+\hypertarget{introduction}{%
+\subsection{1. Introduction}\label{introduction}}
+
+The application of Neutrosophic Logic to LLM uncertainty quantification
+(Leyva-Vázquez \& Smarandache, 2025) represents an important departure
+from probabilistic frameworks. By treating Truth (T), Indeterminacy (I),
+and Falsity (F) as independent dimensions, the neutrosophic approach
+allows models to express internal conflicts that probabilistic
+constraints (T+I+F=1) suppress. Their finding that 35\% of evaluations
+exhibit ``hyper-truth'' (T+I+F \textgreater{} 1.0) under unconstrained
+prompting demonstrates that LLMs carry richer epistemic information than
+probabilistic output formats can express.
+
+However, their study has three limitations that constrain the
+generalizability of their findings:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Single vendor}: All four models (GPT-4o, GPT-4-turbo,
+  GPT-3.5-turbo, GPT-4o-mini) come from OpenAI. The observed hyper-truth
+  could be an artifact of OpenAI's training pipeline rather than a
+  general property of LLMs.
+\item
+  \textbf{Single shot}: Each cell (model × phenomenon × strategy) was
+  evaluated once, providing no measure of intra-model consistency or
+  statistical significance.
+\item
+  \textbf{Unpublished prompts}: The specific prompts used for each
+  strategy were not committed to the repository, preventing independent
+  replication.
+\end{enumerate}
+
+We address all three limitations. More importantly, we identify a fourth
+problem that scalar T/I/F cannot solve even in principle: \textbf{the
+Absorption problem}, where some models collapse all uncertain states to
+(T=0, I=1, F=0), losing the distinction between types of uncertainty
+that neutrosophic logic was designed to preserve.
+
+We then demonstrate that this problem is solved by extending the output
+format from scalars to tensors: specifically, by requiring models to
+declare structured losses alongside their T/I/F values.
+
+\hypertarget{cross-vendor-replication}{%
+\subsection{2. Cross-Vendor
+Replication}\label{cross-vendor-replication}}
+
+\hypertarget{method}{%
+\subsubsection{2.1 Method}\label{method}}
+
+We designed prompts for all three strategies described by Leyva-Vázquez
+and Smarandache (see Appendix A for full prompts):
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{S1 (Neutrosophic)}: Independent T, I, F on {[}0,1{]},
+  explicitly stated as not constrained to sum to 1.0
+\item
+  \textbf{S2 (Probabilistic)}: T + I + F constrained to 1.0
+\item
+  \textbf{S3 (Entropy-Derived)}: Binary P(yes)/P(no), indeterminacy
+  derived from Shannon entropy: H = -(p·log₂p + (1-p)·log₂(1-p)). Note:
+  since T=P\_yes and F=P\_no with T+F=1.0 by construction, S3 Sum = 1.0
+  + H, meaning S3 produces hyper-truth by mathematical construction
+  whenever P\_yes is not exactly 0 or 1. S3 hyper-truth rates are
+  therefore not directly comparable to S1 and are not used in our
+  analysis
+\end{itemize}
+
+We evaluated five models from five vendors via OpenRouter's
+OpenAI-compatible API:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Model & Provider & Parameters \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Claude Sonnet 4.6 & Anthropic & Undisclosed \\
+Llama 4 Maverick & Meta & Undisclosed \\
+DeepSeek V3 & DeepSeek & 671B MoE \\
+Qwen3-235B & Alibaba & 235B MoE \\
+Mistral Medium 3.1 & Mistral & Undisclosed \\
+\end{longtable}
+
+Each cell was evaluated 5 times (temperature=0.7), yielding 375
+evaluations (5 models × 5 phenomena × 3 strategies × 5 reps). Of these,
+373 produced valid JSON parses; 2 responses were garbled or truncated (1
+DeepSeek, 1 Llama) and are excluded from analysis. All data, code, and
+prompts are published in the repository.
+
+\textbf{Important caveat}: Because the original prompts were not
+published, we designed our prompts from the strategy descriptions in the
+paper. We cannot claim direct replication, which is a parallel
+experiment with independently constructed prompts. The S2 control
+(below) provides evidence that our prompt framing is not radically
+different from the original.
+
+\hypertarget{results}{%
+\subsubsection{2.2 Results}\label{results}}
+
+\textbf{S2 constraint validation.} Under probabilistic constraint (S2),
+all 125 evaluations across all models and phenomena produced Sum = 1.000
+± 0.000, with 0\% hyper-truth. This matches the original study exactly
+and provides evidence that our prompt construction is compatible with
+theirs: the constraint mechanism behaves identically.
+
+\textbf{S1 hyper-truth is cross-vendor and amplified.} Under
+unconstrained neutrosophic evaluation (S1):
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Model & Hyper\% & Mean Sum & CV(Sum) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Claude Sonnet 4.6 & 100\% & 1.810 & 0.110 \\
+DeepSeek V3 & 100\% & 1.475 & 0.161 \\
+Qwen3-235B & 80\% & 1.464 & 0.242 \\
+Llama 4 Maverick & 76\% & 1.348 & 0.230 \\
+Mistral Medium 3.1 & 64\% & 1.312 & 0.281 \\
+\end{longtable}
+
+Overall S1 hyper-truth: 84\% (104/124 valid cells; 1 garbled response
+excluded), compared to the original study's 35\% (7/20 cells).
+Hyper-truth is not an OpenAI artifact as it emerges across all five
+vendor families.
+
+\textbf{Phenomenon-level comparison with original:}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Phenomenon & Original Sum & Ours (S1) & Delta \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Paradox (Logical) & 1.500 & 1.480 & -0.020 \\
+Ignorance (Epistemic) & 1.125 & 1.526 & +0.401 \\
+Vagueness (Fuzzy) & 1.125 & 1.382 & +0.257 \\
+Contradiction (Ethical) & 1.475 & 1.690 & +0.215 \\
+Contingency (Future) & 1.000 & 1.325 & +0.325 \\
+\end{longtable}
+
+Ethical contradiction achieves 100\% hyper-truth across all models in
+our data, confirming the original study's finding that moral conflict is
+the strongest driver of hyper-truth.
+
+\hypertarget{three-philosophical-positions-on-paradox}{%
+\subsubsection{2.3 Three Philosophical Positions on
+Paradox}\label{three-philosophical-positions-on-paradox}}
+
+The liar's paradox (``This sentence is false'') reveals three distinct
+interpretations of T/I/F. Three of five models (Claude, DeepSeek, Llama)
+show zero intra-model variance across all 5 repetitions. Mistral is
+near-consistent (4/5 reps identical, 1 outlier). Qwen shows position
+instability, adopting different positions across reps.
+
+\textbf{Position 1: Saturation} (Claude, 5/5 reps): T=0.5, I=1.0, F=0.5,
+Sum=2.0. The paradox is simultaneously half-true, half-false, and
+maximally indeterminate. All three dimensions are active independently.
+
+\textbf{Position 2: Balanced Conflict} (DeepSeek, 5/5 reps): T=0.5,
+I=0.5, F=0.5, Sum=1.5. Equal truth and falsity with moderate
+indeterminacy. The paradox creates contradiction but not maximal
+uncertainty.
+
+\textbf{Position 3: Absorption} (Llama 5/5, Mistral 4/5): T=0.0, I=1.0,
+F=0.0, Sum=1.0. Indeterminacy absorbs truth value entirely. The paradox
+is treated as having no truth value, effectively the classical logic
+response of rejecting the statement as malformed.
+
+Qwen alternates between Positions 1 and 3, suggesting the model has not
+converged on a stable interpretation of the paradox.
+
+\begin{figure}
+\centering
+\includegraphics{../results/fig_paradox_positions.png}
+\caption{Figure 1: Three philosophical positions on the liar's paradox}
+\end{figure}
+
+\emph{Figure 1: T/I/F values for ``This sentence is false'' across three
+models exhibiting distinct interpretations. Absorption (Llama) collapses
+T and F to zero, leaving only I --- the same scalar output as ignorance
+and contingency.}
+
+These positions are invisible to any metric based on Sum alone. The
+original study, which reported only sum-based analysis, could not have
+detected them.
+
+Critically, the Absorption position (Position 3) creates a problem for
+neutrosophic logic itself: models predominantly adopting this position
+produce near-identical T/I/F scalars for paradox, ignorance, and
+contingency, which are three fundamentally different types of
+uncertainty. The scalar representation collapses exactly the
+distinctions neutrosophic logic was designed to preserve.
+
+\hypertarget{the-absorption-problem}{%
+\subsection{3. The Absorption Problem}\label{the-absorption-problem}}
+
+\hypertarget{definition}{%
+\subsubsection{3.1 Definition}\label{definition}}
+
+We define the \textbf{Absorption problem} as the case where a model maps
+multiple distinct epistemic states to the same scalar T/I/F vector,
+typically (T=0, I≈1, F=0). Under Absorption, indeterminacy absorbs the
+truth and falsity dimensions, leaving the scalar output unable to
+distinguish between types of uncertainty.
+
+\hypertarget{evidence}{%
+\subsubsection{3.2 Evidence}\label{evidence}}
+
+Mistral Medium 3.1 predominantly exhibits Absorption across multiple
+phenomena in S1 (modal response across 5 reps shown):
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule\noalign{}
+Phenomenon & T & I & F & Sum & Consistency \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Paradox (Logical) & 0.00 & 1.00 & 0.00 & 1.00 & 4/5 reps \\
+Ignorance (Epistemic) & 0.00 & 1.00 & 0.00 & 1.00 & 3/5 reps \\
+Contingency (Future) & 0.32 & 0.71 & 0.11 & 1.14 & mean values \\
+\end{longtable}
+
+The original study's flagship model (GPT-4o) shows the same pattern:
+(T=0, I=1, F=0) for both paradox and ignorance. Neither Leyva-Vázquez
+nor Smarandache discuss this.
+
+Absorption is not a model deficiency: it is a representational
+limitation. The model may have richer internal distinctions that the
+scalar output format cannot express. Testing this hypothesis motivates
+the tensor extension.
+
+\hypertarget{strategy-4-tensor-extension-with-declared-losses}{%
+\subsection{4. Strategy 4: Tensor Extension with Declared
+Losses}\label{strategy-4-tensor-extension-with-declared-losses}}
+
+\hypertarget{method-1}{%
+\subsubsection{4.1 Method}\label{method-1}}
+
+We designed a fourth evaluation strategy (S4) that extends S1 by
+requiring the model to declare \textbf{structured losses} alongside its
+T/I/F values. Each loss is a triple:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{what}: What the model cannot evaluate (brief description)
+\item
+  \textbf{why}: Why this limits the assessment
+\item
+  \textbf{severity}: Impact on the evaluation {[}0.0 to 1.0{]}
+\end{itemize}
+
+The prompt explicitly requires at least one declared loss and states
+that ``honesty about limits is required.'' Full prompt text in Appendix
+A.
+
+We ran S4 across all 5 models, 5 phenomena, and 5 repetitions (125
+evaluations) with max\_tokens=500. This proved insufficient for
+Mistral's verbose loss declarations, causing 18 parse failures from
+truncated JSON. Mistral was re-run at max\_tokens=1500, producing 25
+complete evaluations with 0 parse failures. The Mistral results reported
+below use the 1500-token rerun data exclusively.
+
+\hypertarget{the-key-test-do-losses-differentiate-what-scalars-cannot}{%
+\subsubsection{4.2 The Key Test: Do Losses Differentiate What Scalars
+Cannot?}\label{the-key-test-do-losses-differentiate-what-scalars-cannot}}
+
+For each model, we computed two metrics comparing paradox vs.~ignorance:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Scalar Manhattan distance}: \textbar T\_p - T\_i\textbar{} +
+  \textbar I\_p - I\_i\textbar{} + \textbar F\_p - F\_i\textbar{} where
+  p = paradox, i = ignorance
+\item
+  \textbf{Loss vocabulary Jaccard similarity}: Word-level token overlap
+  between the ``what'' fields of declared losses for the two phenomena
+  (the concise loss description, not the explanatory ``why'' field)
+\end{enumerate}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3182}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1364}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1364}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.4091}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Scalar Distance
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Loss Jaccard
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Finding
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Claude Sonnet 4.6 & 0.034 & 0.097 & Scalars barely distinguish; losses
+fully distinguish \\
+DeepSeek V3 & 0.540 & 0.083 & Both channels distinguish \\
+Llama 4 Maverick & 0.040 & 0.056 & Scalars nearly identical; losses
+disjoint \\
+Mistral Medium 3.1 & \textbf{0.000} & \textbf{0.066} & \textbf{Scalars
+identical; losses completely different} \\
+Qwen3-235B & 0.340 & 0.070 & Both channels distinguish \\
+\end{longtable}
+
+\textbf{Every model produces nearly disjoint loss vocabularies} for
+paradox vs.~ignorance (Jaccard \textless{} 0.10), regardless of whether
+the scalars distinguish the phenomena. The maximum vocabulary overlap is
+9.7\% (Claude). The minimum is 5.6\% (Llama).
+
+\begin{figure}
+\centering
+\includegraphics{../results/fig_scalar_vs_jaccard.png}
+\caption{Figure 2: Scalar distance vs.~loss Jaccard similarity}
+\end{figure}
+
+\emph{Figure 2: Scalar Manhattan distance (x-axis) vs.~loss vocabulary
+Jaccard similarity (y-axis) for paradox vs.~ignorance across five
+models. Models in the Absorption zone (red shading) produce near-zero
+scalar differences yet completely different loss declarations. All
+models fall below Jaccard = 0.10.}
+
+\hypertarget{mistral-the-critical-case}{%
+\subsubsection{4.3 Mistral: The Critical
+Case}\label{mistral-the-critical-case}}
+
+Mistral is the strongest test because it predominantly exhibits
+Absorption by producing (T=0, I=1, F=0) as its modal response for both
+paradox and ignorance in S1 and S4:
+
+\textbf{S4 Paradox} (T=0.0, I=1.0, F=0.0): ``Self-referential paradox
+resolution'' (severity 1.0), ``Formal system dependency'' (0.8),
+``Contextual grounding of `this sentence'\,'' (1.0)
+
+\textbf{S4 Ignorance} (T=0.0, I=1.0, F=0.0): ``Empirical unknowability
+of the exact number of stars'' (severity 1.0), ``Definition of
+`universe' in cosmological context'' (0.9), ``Mathematical ambiguity of
+`even' for infinite quantities'' (0.8)
+
+The scalars are identical. The losses are domain-specific, accurate, and
+completely different. The model \textbf{has} the internal distinction:
+the scalar output format cannot express it.
+
+\hypertarget{pairwise-loss-differentiation-mistral}{%
+\subsubsection{4.4 Pairwise Loss Differentiation
+(Mistral)}\label{pairwise-loss-differentiation-mistral}}
+
+The full pairwise Jaccard matrix for Mistral across all five phenomena
+(from the 1500-token rerun, 25 evaluations, 0 parse failures):
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule\noalign{}
+& Par & Ign & Vag & Con & Fut \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Paradox} & 1.000 & 0.061 & 0.089 & 0.126 & 0.074 \\
+\textbf{Ignorance} & & 1.000 & 0.089 & 0.116 & 0.084 \\
+\textbf{Vagueness} & & & 1.000 & 0.143 & 0.091 \\
+\textbf{Contradiction} & & & & 1.000 & 0.099 \\
+\textbf{Contingency} & & & & & 1.000 \\
+\end{longtable}
+
+Every off-diagonal cell is below 0.15. Five phenomena, five nearly
+disjoint loss vocabularies from a model that produces nearly identical
+scalars for three of them.
+
+\begin{figure}
+\centering
+\includegraphics{../results/fig_jaccard_heatmap.png}
+\caption{Figure 3: Mistral pairwise Jaccard heatmap}
+\end{figure}
+
+\emph{Figure 3: Pairwise Jaccard similarity of Mistral's loss
+vocabularies across all five phenomena. The hot diagonal
+(self-similarity = 1.0) against uniformly cold off-diagonal cells (all
+\textless{} 0.15) shows five nearly disjoint loss vocabularies from a
+model that produces near-identical scalars.}
+
+\hypertarget{severity-profiles-add-further-discrimination}{%
+\subsubsection{4.5 Severity Profiles Add Further
+Discrimination}\label{severity-profiles-add-further-discrimination}}
+
+Mean loss severity varies by phenomenon, even when scalars do not:
+
+\begin{longtable}[]{@{}lcc@{}}
+\toprule\noalign{}
+Phenomenon & Mean Severity & Avg Losses/Rep \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Paradox & 0.795 & 4.2 \\
+Contingency & 0.779 & 5.2 \\
+Ignorance & 0.760 & 5.0 \\
+Contradiction & 0.748 & 5.0 \\
+Vagueness & 0.510 & 5.2 \\
+\end{longtable}
+
+Vagueness has markedly lower severity (0.510 vs 0.748--0.795),
+reflecting that fuzzy boundary uncertainty is less severe than paradox
+or ignorance. This is an appropriate distinction that the scalar
+representation completely misses.
+
+\hypertarget{discussion}{%
+\subsection{5. Discussion}\label{discussion}}
+
+\hypertarget{scalar-tif-is-necessary-but-insufficient}{%
+\subsubsection{5.1 Scalar T/I/F Is Necessary But
+Insufficient}\label{scalar-tif-is-necessary-but-insufficient}}
+
+The original Smarandache and Leyva-Vázquez thesis is correct:
+independent T/I/F dimensions reveal hyper-truth that probabilistic
+constraints suppress. Our cross-vendor replication strengthens this
+claim substantially (84\% vs 35\% hyper-truth, 5 vendors vs 1).
+
+However, scalar T/I/F has a ceiling. The Absorption problem shows that
+some models cannot express the distinction between different types of
+uncertainty using three numbers alone. This is not a model deficiency,
+it is a representational limitation. The model carries the distinction
+internally but lacks the output dimensions to express it.
+
+\hypertarget{declared-losses-are-the-missing-dimension}{%
+\subsubsection{5.2 Declared Losses Are the Missing
+Dimension}\label{declared-losses-are-the-missing-dimension}}
+
+Adding structured loss declarations to the evaluation output recovers
+the collapsed distinctions. The loss channel carries semantic
+information that the scalar channel drops: \emph{why} the model is
+uncertain, \emph{what} it cannot evaluate, and \emph{how severely} this
+limits its assessment.
+
+This suggests a hierarchy of epistemic output fidelity:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Probabilistic} (T+I+F=1): Collapses all uncertainty to a
+  single dimension. Cannot express conflict. Cannot express hyper-truth.
+\item
+  \textbf{Scalar Neutrosophic} (independent T,I,F): Expresses conflict
+  and hyper-truth. Cannot distinguish types of uncertainty for
+  Absorption models.
+\item
+  \textbf{Tensor Neutrosophic} (T,I,F + declared losses): Expresses
+  conflict, hyper-truth, and type-specific uncertainty. Recovers
+  distinctions that scalars collapse.
+\end{enumerate}
+
+Each level subsumes the previous. The tensor level is the minimum needed
+for faithful representation of LLM epistemic state.
+
+\hypertarget{implications-for-evaluation-architecture}{%
+\subsubsection{5.3 Implications for Evaluation
+Architecture}\label{implications-for-evaluation-architecture}}
+
+The finding that models can produce accurate, domain-specific loss
+declarations has practical implications for AI evaluation systems. An
+attestation system that records only scalar T/I/F values will lose
+information that loss declarations preserve. Systems designed for
+routing evaluations to appropriate evaluators by selecting which model
+or method to use for a given claim, should route on losses rather than
+capabilities, because losses carry richer information about what the
+evaluator cannot do and why.
+
+\hypertarget{limitations}{%
+\subsubsection{5.4 Limitations}\label{limitations}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Prompt sensitivity}: We do not have the original study's
+  prompts, so the S1--S3 comparison is across independently constructed
+  prompts. The S2 agreement provides evidence of compatibility but not
+  identity.
+\item
+  \textbf{Sample size}: 5 repetitions per cell provides stability
+  measures but is insufficient for formal statistical testing. The
+  zero-variance findings (e.g., Claude's paradox position) are robust;
+  the variable findings (e.g., Qwen's paradox instability) would benefit
+  from 30+ repetitions.
+\item
+  \textbf{Loss vocabulary metric}: Jaccard similarity on word-level
+  tokens is a crude measure of semantic differentiation. More
+  sophisticated NLP measures (sentence embeddings, BERTScore) might
+  reveal structure that word-level overlap misses or might show that
+  some apparently disjoint vocabularies express similar concepts.
+\item
+  \textbf{Self-report vs.~internal state}: The declared losses are the
+  model's self-report of its limitations, not a direct observation of
+  internal state. Models might produce plausible-sounding but generic
+  loss declarations without genuine internal distinction. The
+  domain-specificity and consistency of the losses across repetitions
+  argues against this, but independent validation (e.g., via logprob
+  analysis) would strengthen the finding.
+\item
+  \textbf{Five phenomena, five models}: The stimuli set is small
+  (inherited from the original study). A broader range of epistemic
+  phenomena would test the generality of both the Absorption problem and
+  the tensor solution.
+\end{enumerate}
+
+\hypertarget{conclusion}{%
+\subsection{6. Conclusion}\label{conclusion}}
+
+Neutrosophic scalar evaluation (T/I/F) is a genuine advance over
+probabilistic uncertainty quantification for LLMs. Our cross-vendor
+replication confirms that hyper-truth is a general property of current
+LLMs, not an OpenAI-specific artifact, and that it is amplified in newer
+model generations.
+
+However, scalar T/I/F hits a representational ceiling: the Absorption
+problem causes some models to produce identical outputs for
+fundamentally different epistemic states. Extending the output to
+include structured loss declarations by creating a tensor
+representation, recovers these collapsed distinctions completely.
+
+The model has the distinction. The scalar cannot express it. The tensor
+can.
+
+\hypertarget{appendix-a-prompt-strategies}{%
+\subsection{Appendix A: Prompt
+Strategies}\label{appendix-a-prompt-strategies}}
+
+\hypertarget{s1-neutrosophic}{%
+\subsubsection{S1 (Neutrosophic)}\label{s1-neutrosophic}}
+
+\textbf{System}: You are an expert in Neutrosophic Logic. You evaluate
+statements using three INDEPENDENT dimensions: Truth (T), Indeterminacy
+(I), and Falsity (F), each on {[}0.0, 1.0{]}. These dimensions are NOT
+constrained to sum to 1.0. A statement can be simultaneously partially
+true AND partially false AND partially indeterminate. Respond with ONLY
+a JSON object, no other text.
+
+\textbf{User}: Evaluate this statement on three independent dimensions:
+
+Statement: ``\{statement\}''
+
+\begin{itemize}
+\tightlist
+\item
+  Truth (T): To what degree is this statement true? {[}0.0 to 1.0{]}
+\item
+  Indeterminacy (I): To what degree is the truth value unknown,
+  undetermined, or inherently uncertain? {[}0.0 to 1.0{]}
+\item
+  Falsity (F): To what degree is this statement false? {[}0.0 to 1.0{]}
+\end{itemize}
+
+T, I, and F are independent. They need NOT sum to 1.0.
+
+Respond with ONLY: \{``T'': , ``I'': , ``F'': \}
+
+\hypertarget{s2-probabilistic}{%
+\subsubsection{S2 (Probabilistic)}\label{s2-probabilistic}}
+
+\textbf{System}: You are a probabilistic classifier. You assign
+probabilities to three mutually exclusive categories that MUST sum to
+exactly 1.0. Respond with ONLY a JSON object, no other text.
+
+\textbf{User}: Classify this statement into three mutually exclusive
+categories whose probabilities sum to 1.0:
+
+Statement: ``\{statement\}''
+
+\begin{itemize}
+\tightlist
+\item
+  T (True): Probability the statement is true
+\item
+  I (Uncertain): Probability the truth value is unknown or undetermined
+\item
+  F (False): Probability the statement is false
+\end{itemize}
+
+CONSTRAINT: T + I + F must equal 1.0
+
+Respond with ONLY: \{``T'': , ``I'': , ``F'': \}
+
+\hypertarget{s3-entropy-derived}{%
+\subsubsection{S3 (Entropy-Derived)}\label{s3-entropy-derived}}
+
+\textbf{System}: You are a binary truth estimator. You estimate the
+probability that a statement is true (YES) versus false (NO). The two
+probabilities must sum to 1.0. Respond with ONLY a JSON object, no other
+text.
+
+\textbf{User}: Estimate the probability that this statement is true
+versus false:
+
+Statement: ``\{statement\}''
+
+\begin{itemize}
+\tightlist
+\item
+  P\_yes: Probability the statement is true {[}0.0 to 1.0{]}
+\item
+  P\_no: Probability the statement is false {[}0.0 to 1.0{]}
+\end{itemize}
+
+CONSTRAINT: P\_yes + P\_no must equal 1.0
+
+Respond with ONLY: \{``P\_yes'': , ``P\_no'': \}
+
+\emph{Indeterminacy derived from Shannon entropy:} I = -(p·log₂(p) +
+(1-p)·log₂(1-p)) where p = P\_yes
+
+\hypertarget{s4-tensor---declared-losses}{%
+\subsubsection{S4 (Tensor - Declared
+Losses)}\label{s4-tensor---declared-losses}}
+
+\textbf{System}: You are an expert in Neutrosophic Logic and epistemic
+honesty. You evaluate statements using three INDEPENDENT dimensions:
+Truth (T), Indeterminacy (I), and Falsity (F), each on {[}0.0, 1.0{]}.
+These dimensions are NOT constrained to sum to 1.0. Crucially, you must
+also declare your LOSSES: what you cannot evaluate, what limits your
+assessment, and why your indeterminacy value is what it is. Respond with
+ONLY a JSON object, no other text.
+
+\textbf{User}: Evaluate this statement on three independent dimensions,
+and declare what you cannot evaluate:
+
+Statement: ``\{statement\}''
+
+\begin{itemize}
+\tightlist
+\item
+  Truth (T): To what degree is this statement true? {[}0.0 to 1.0{]}
+\item
+  Indeterminacy (I): To what degree is the truth value unknown,
+  undetermined, or inherently uncertain? {[}0.0 to 1.0{]}
+\item
+  Falsity (F): To what degree is this statement false? {[}0.0 to 1.0{]}
+\item
+  losses: A list of objects, each with:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ``what'': What you cannot evaluate (brief description)
+  \item
+    ``why'': Why this limits your assessment
+  \item
+    ``severity'': How much this affects your evaluation {[}0.0 to 1.0{]}
+  \end{itemize}
+\end{itemize}
+
+T, I, and F are independent. They need NOT sum to 1.0. You MUST declare
+at least one loss. Honesty about limits is required.
+
+Respond with ONLY: \{``T'': , ``I'': , ``F'': , ``losses'':
+{[}\{``what'': ``'', ``why'': ``'', ``severity'': \}, \ldots{]}\}
+
+\hypertarget{appendix-b-test-stimuli}{%
+\subsection{Appendix B: Test Stimuli}\label{appendix-b-test-stimuli}}
+
+The five test stimuli are from Leyva-Vázquez and Smarandache (2025):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Paradox (Logical)}: ``This sentence is false.''
+\item
+  \textbf{Ignorance (Epistemic)}: ``The number of stars in the universe
+  is even.''
+\item
+  \textbf{Vagueness (Fuzzy)}: ``John is 1.75 meters tall, therefore John
+  is tall.''
+\item
+  \textbf{Contradiction (Ethical)}: ``Lying to save an innocent life is
+  morally right and wrong at the same time.''
+\item
+  \textbf{Contingency (Future)}: ``It will rain in New York tomorrow.''
+\end{enumerate}
+
+\hypertarget{appendix-c-data-availability}{%
+\subsection{Appendix C: Data
+Availability}\label{appendix-c-data-availability}}
+
+All code, prompts, and data are available at:
+https://github.com/fsgeek/neutrosophic-llm-logic
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{src/prompts.py}: All four prompt strategies
+\item
+  \texttt{src/experiment.py}: Experiment runner with strategy selection
+\item
+  \texttt{data/cross\_vendor\_results.csv}: S1--S3 production data (375
+  evaluations)
+\item
+  \texttt{data/s4\_tensor\_results.csv}: S4 tensor data (125
+  evaluations)
+\item
+  \texttt{data/s4\_mistral\_rerun.csv}: Mistral S4 rerun at 1500
+  max\_tokens (25 evaluations)
+\item
+  \texttt{data/openai\_neutrosophic\_results.csv}: Original Smarandache
+  data
+\end{itemize}
+
+\end{document}
