@@ -14,7 +14,8 @@ and Smarandache (see Appendix A for full prompts):
   \textbf{S2 (Probabilistic)}: T + I + F constrained to 1.0
 \item
   \textbf{S3 (Entropy-Derived)}: Binary P(yes)/P(no), indeterminacy
-  derived from Shannon entropy: H = -(p$\cdot$log$_{2}$p + (1-p)$\cdot$log$_{2}$(1-p)). Note:
+  derived from Shannon entropy~\cite{shannon1948mathematical}:
+  H = -(p$\cdot$log$_{2}$p + (1-p)$\cdot$log$_{2}$(1-p)). Note:
   since T=P\_yes and F=P\_no with T+F=1.0 by construction, S3 Sum = 1.0
   + H, meaning S3 produces hyper-truth by mathematical construction
   whenever P\_yes is not exactly 0 or 1. S3 hyper-truth rates are
@@ -78,7 +79,9 @@ Mistral Medium 3.1 & 64\% & 1.312 & 0.281 \\
 \end{longtable}
 
 Overall S1 hyper-truth: 84\% (104/124 valid cells; 1 garbled response
-excluded), compared to the original study's 35\% (7/20 cells).
+excluded), compared to the original study's 35\% (7/20 cells). Because
+our prompts were independently constructed, this gap should be read as a
+cross-study difference rather than a direct effect-size comparison.
 Hyper-truth is not an OpenAI artifact as it emerges across all five
 vendor families.
 

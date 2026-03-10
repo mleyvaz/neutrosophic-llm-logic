@@ -1,0 +1,23 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Temporary/editor artifacts
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Keep source + figures + scripts + final PDF by default
+# (If you prefer not to track PDF, uncomment below)
+# *.pdf

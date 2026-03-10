@@ -1,8 +1,3 @@
-Tony Mason¹, with Claude Opus 4.6 (AI collaborator)² ¹University of
-British Columbia, Vancouver, Canada (fsgeek@cs.ubc.ca) and Georgia
-Institute of Technology, Atlanta, GA (fsgeek@gatech.edu) ²Anthropic (AI
-research collaborator)
-
 \begin{abstract}
 
 Leyva-Vázquez and Smarandache (2025) demonstrated that neutrosophic
@@ -13,7 +8,7 @@ cases evaluated by LLMs. We extend their work in two directions. First,
 we replicate and extend their experiment across five model families from
 five vendors (Anthropic, Meta, DeepSeek, Alibaba, Mistral), finding
 hyper-truth in 84\% of unconstrained evaluations, which confirms the
-phenomenon is cross-vendor and amplified in current models. Second, and
+phenomenon is cross-vendor under our prompt protocol. Second, and
 more significantly, we identify a limitation of scalar T/I/F that their
 framework cannot address: models adopting an ``Absorption'' position
 (T=0, I=1, F=0) produce identical scalar outputs for fundamentally
@@ -21,7 +16,7 @@ different epistemic situations (paradox, ignorance, contingency),
 collapsing the very distinctions neutrosophic logic was designed to
 preserve. We demonstrate that extending the evaluation to include
 \textbf{declared losses} (structured descriptions of what the model
-cannot evaluate and why) recovers these distinctions completely. Models
+cannot evaluate and why) substantially recovers these distinctions. Models
 producing identical scalars for paradox and ignorance produce nearly
 disjoint loss vocabularies (Jaccard similarity < 0.10 on loss
 description keywords), with domain-specific, severity-rated loss

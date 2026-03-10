@@ -1,7 +1,7 @@
 \section{Introduction}
 
 The application of Neutrosophic Logic to LLM uncertainty quantification
-(Leyva-Vázquez \& Smarandache, 2025) represents an important departure
+(\cite{leyva2025neutrosophic}) represents an important departure
 from probabilistic frameworks. By treating Truth (T), Indeterminacy (I),
 and Falsity (F) as independent dimensions, the neutrosophic approach
 allows models to express internal conflicts that probabilistic
@@ -39,3 +39,38 @@ that neutrosophic logic was designed to preserve.
 We then demonstrate that this problem is solved by extending the output
 format from scalars to tensors: specifically, by requiring models to
 declare structured losses alongside their T/I/F values.
+
+\subsection{Related Work}
+
+\paragraph{Neutrosophic logic foundations.}
+The formal basis for independent truth, indeterminacy, and falsity
+dimensions comes from neutrosophic logic and set theory
+(\cite{smarandache2010neutrosophic,smarandache2005unifying}),
+with subsequent critical analysis of expressiveness and
+interpretability tradeoffs (\cite{rivieccio2008neutrosophic}).
+Our work operates within this tradition but focuses on an empirical
+question for modern LLMs: what epistemic distinctions current output
+formats preserve versus collapse.
+
+\paragraph{Neutrosophic uncertainty in LLMs.}
+The immediate empirical precursor is Leyva-Vázquez and Smarandache's
+LLM study (\cite{leyva2025neutrosophic}), which introduced S1--S3
+prompting strategies and reported hyper-truth under unconstrained
+evaluation. We extend this line with cross-vendor repeated trials and a
+new S4 tensor-output protocol designed to expose representational loss
+within scalar T/I/F outputs.
+
+\paragraph{Adjacent uncertainty frameworks in LLMs.}
+Recent work on abstention and risk control in LLM systems emphasizes
+calibration, selective prediction, and refusal policies
+(\cite{yadkori2024mitigating,tayebati2025learning,machcha2026knowing}).
+This literature asks when a model should abstain. Our question is
+orthogonal: when a model does provide a T/I/F assessment, how much
+epistemic structure is lost by restricting output to three scalars.
+
+\paragraph{Honesty and self-knowledge.}
+Research on honesty, overconfidence mitigation, and reasoning-linked
+reliability (\cite{li2024survey,yanlearn,ahtisham2026llm})
+is closely related to our ``declared losses'' mechanism. We treat losses
+as structured self-reports of epistemic limits and evaluate whether
+those reports carry discriminative content beyond scalar uncertainty.
