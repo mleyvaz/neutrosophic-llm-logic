@@ -11,7 +11,7 @@ Florentin Smarandache ², ORCID 0000-0002-5560-5926
 
 ## Abstract
 
-Large Language Models (LLMs) are predominantly governed by probabilistic frameworks in which the sum of outcome probabilities is constrained to unity. This limitation, often imposed by Softmax layers, leads to a *collapse of uncertainty* that conflates ignorance, paradox, and vagueness. We present an empirical investigation of the application of Neutrosophic Logic — a framework that treats Truth (T), Indeterminacy (I), and Falsity (F) as three independent dimensions on [0, 1] — to model epistemic states in LLMs. Across **100 evaluations on four OpenAI GPT models, five linguistic phenomena, and three prompting strategies (5 repetitions per cell)**, the neutrosophic strategy yields *hyper-truth* (T+I+F > 1) in **66% of evaluations**, predominantly in cases of ethical contradiction (95%) and logical paradox (50%). Hyper-truth is not noise but a stable representational feature: it captures internal model conflict that the probabilistic constraint suppresses. Mason (2026) has independently replicated the phenomenon across five additional model families from five different vendors at 84% incidence, confirming cross-vendor generality. We argue that the integration of neutrosophic evaluation layers is a useful step toward more transparent and reliable LLM uncertainty quantification, particularly in high-stakes domains where ignorance must be distinguished from contradiction.
+Large Language Models (LLMs) are predominantly governed by probabilistic frameworks in which the sum of outcome probabilities is constrained to unity. This limitation, often imposed by Softmax layers, leads to a *collapse of uncertainty* that conflates ignorance, paradox, and vagueness. We present an empirical investigation of the application of Neutrosophic Logic — a framework that treats Truth (T), Indeterminacy (I), and Falsity (F) as three independent dimensions on [0, 1] — to elicit declared epistemic states from LLMs. Across **300 API calls — including 100 valid unconstrained neutrosophic evaluations — on four OpenAI GPT models and five linguistic phenomena (five repetitions per cell)**, the neutrosophic strategy yields *hyper-truth* (T + I + F > 1) in **66.0% of Strategy-1 evaluations**, with the highest rates observed in ethical contradiction (95%) and future contingency (70%). A Pearson χ² test of phenomenon × hyper-truth association is significant (χ² = 11.32, df = 4, p = 0.023). Mason (2026) independently replicated and extended an earlier release of this work across five additional model families from five different vendors, reporting hyper-truth in 84% of unconstrained evaluations. We do not claim that hyper-truth is an intrinsic latent variable inside the model; rather, that unconstrained neutrosophic prompting elicits declared epistemic states that probabilistic prompting structurally suppresses by Proposition 1.
 
 **Keywords:** neutrosophic logic; large language models; epistemic uncertainty; hyper-truth; uncertainty quantification; indeterminacy; ethical AI; paradox.
 
@@ -29,7 +29,7 @@ Recent work on UQ for LLMs has explored several alternatives, including semantic
 
 Neutrosophic Logic, introduced by Smarandache [11], offers an alternative semantic foundation. It generalizes fuzzy and intuitionistic fuzzy logics by introducing three independent components — Truth (T), Indeterminacy (I), and Falsity (F) — each a real number in [0, 1], without the constraint that they sum to unity. This freedom allows the simultaneous expression of high truth, high falsity, and high indeterminacy, a state we call *hyper-truth* (T+I+F > 1). We hypothesize that under unconstrained neutrosophic prompting, current LLMs will exhibit hyper-truth at non-trivial rates specifically in cases of paradox and ethical contradiction, while probabilistic prompting will not. The remainder of this paper tests this hypothesis empirically.
 
-After the public release of the v1.0 manuscript, Mason [12] independently replicated the hyper-truth phenomenon across five additional model families from five different vendors, reporting hyper-truth in 84% of unconstrained evaluations and confirming that the phenomenon is cross-vendor rather than an OpenAI-specific artifact. We acknowledge this external replication and address its strongest critique — single-shot evaluation — by adopting a five-repetition-per-cell design throughout the present version (v2.0).
+Mason (2026) [12] independently replicated and extended the v1.0 release of the present work (December 2025, *N* = 20) across five additional model families from five different vendors (Anthropic, Meta, DeepSeek, Alibaba, Mistral), reporting hyper-truth in 84% of unconstrained evaluations and confirming that the phenomenon is cross-vendor rather than an OpenAI-specific artifact. The present v2.0 manuscript responds to Mason's replication by increasing the sample size to *N* = 100 (5 repetitions per cell across the original four OpenAI models), formalising the SVNS apparatus, and clarifying that the central claim concerns *declared* epistemic states elicited by unconstrained prompting rather than intrinsic latent variables of the model.
 
 ## 2. Background and Methods
 
@@ -37,21 +37,23 @@ After the public release of the v1.0 manuscript, Mason [12] independently replic
 
 We use the standard formulation of single-valued neutrosophic logic [11, 13]. We collect here the definitions and propositions that the empirical sections will instantiate.
 
-**Definition 1 (Single-Valued Neutrosophic Set, Smarandache 1998 [11]).** Let *X* be a universe of discourse. A *single-valued neutrosophic set* (SVNS) *A* on *X* is the set
+**Definition 1 (Single-Valued Neutrosophic Set, Smarandache 1998 [11]).** Let *X* be a universe of discourse. A *single-valued neutrosophic set* (SVNS) *A* on *X* is the set of ordered quadruples
 
 A = { ⟨x, T_A(x), I_A(x), F_A(x)⟩ : x ∈ X },
 
-where T_A, I_A, F_A : X → [0, 1] are the truth, indeterminacy, and falsity membership functions, respectively. No constraint is imposed on the sum T_A(x) + I_A(x) + F_A(x), which therefore lies in [0, 3].
+where, for every element *x* in *X*, the values T_A(x), I_A(x), and F_A(x) denote, respectively, the truth-membership degree, the indeterminacy-membership degree, and the falsity-membership degree of *x* in *A*. Each of these three functions maps *X* to the unit interval [0, 1], and no constraint is imposed on their sum, which therefore lies in [0, 3].
 
-**Definition 2 (Neutrosophic Evaluation of a Statement).** Given a statement *s* and an evaluator *E*, the *neutrosophic evaluation* of *s* by *E* is the triple
+**Definition 2 (Neutrosophic Evaluation of a Statement).** Given a statement *s* and an evaluator *E*, the *neutrosophic evaluation* of *s* by *E* is the ordered triple
 
-n_E(s) = (T_E(s), I_E(s), F_E(s)) ∈ [0, 1]³.
+n_E(s) = (T_E(s), I_E(s), F_E(s)) ∈ [0, 1]³,
 
-When the evaluator is fixed we write n(s) = (T, I, F).
+where T_E(s), I_E(s), and F_E(s) denote, respectively, the truth degree, indeterminacy degree, and falsity degree assigned by evaluator *E* to statement *s*. When the evaluator is fixed throughout the analysis, we write simply n(s) = (T, I, F).
 
-**Definition 3 (Hyper-truth).** A neutrosophic evaluation n(s) = (T, I, F) ∈ [0, 1]³ is said to exhibit *hyper-truth* if and only if T + I + F > 1. The *hyper-truth region* is
+**Definition 3 (Hyper-truth).** A neutrosophic evaluation n(s) = (T, I, F) ∈ [0, 1]³ is said to exhibit *hyper-truth* if and only if its three components satisfy T + I + F > 1. The *hyper-truth region* is the subset
 
-H = { (T, I, F) ∈ [0, 1]³ : T + I + F > 1 } ⊂ [0, 1]³.
+H = { (T, I, F) ∈ [0, 1]³ : T + I + F > 1 } ⊂ [0, 1]³,
+
+which collects every triple whose component-wise sum strictly exceeds unity.
 
 **Definition 4 (Strategy Mappings).** Each prompting strategy S_k induces a mapping S_k : *Statements* → [0, 1]³:
 
@@ -73,17 +75,17 @@ The proposition explains why S₂ is the natural baseline: any non-zero hyper-tr
 
 This proposition will reappear in §4: it motivates the plithogenic extension of [13], which augments the scalar with attribute structure precisely to recover the discriminations that π collapses.
 
-**Definition 5 (Hyper-truth Rate).** Let D = { n_i }_{i=1}^N be a set of N neutrosophic evaluations under a fixed strategy. The *hyper-truth rate* of D is
+**Definition 5 (Hyper-truth Rate).** Let D = { n_i }, with i = 1, 2, …, N, be a finite set of N neutrosophic evaluations produced under a fixed strategy. The *hyper-truth rate* of D is the empirical proportion
 
-ρ(D) = (1/N) · |{ i : n_i ∈ H }| = (1/N) · ∑_{i=1}^N 𝕀[T_i + I_i + F_i > 1],
+ρ(D) = (1 / N) · |{ i : n_i ∈ H }| = (1 / N) · ∑_{i = 1}^{N} 𝕀[ T_i + I_i + F_i > 1 ],
 
-where 𝕀[·] is the indicator function.
+where the indicator function 𝕀[·] returns 1 when its argument is true and 0 otherwise. In words: ρ(D) is the fraction of evaluations in *D* whose three components sum to strictly more than one.
 
-**Definition 6 (Strategy Shift).** For a component C ∈ {T, I, F} and a phenomenon class *p*, the *strategy shift* between S₁ and S₂ is
+**Definition 6 (Strategy Shift).** For a component C ∈ {T, I, F} and a phenomenon class *p*, the *strategy shift* between Strategy 1 and Strategy 2 is the difference of conditional expectations
 
-Δ_C(p) = 𝔼[ C₁(s) | s ∈ p ] − 𝔼[ C₂(s) | s ∈ p ].
+Δ_C(p) = 𝔼[ C₁(s) | s ∈ p ] − 𝔼[ C₂(s) | s ∈ p ],
 
-A non-zero Δ_C(p) measures the magnitude by which the probabilistic constraint suppresses (Δ_C > 0) or inflates (Δ_C < 0) component C in phenomenon class p.
+where C₁(s) and C₂(s) are the values of component C produced by Strategy 1 and Strategy 2, respectively, on statement *s*. In words: Δ_C(p) is the average increase (or decrease) in component C contributed by the unconstrained neutrosophic prompting relative to the probabilistic prompting, conditional on phenomenon *p*. A positive Δ_C indicates that the probabilistic constraint suppresses component C in that phenomenon class; a negative Δ_C indicates inflation.
 
 The neutrosophic operators of intersection, union, and negation extend the classical fuzzy operators componentwise on [0, 1]³ [11], and reduce to the standard SVNS operators when applied to triples that satisfy the corresponding sub-class constraints (probabilistic, intuitionistic, fuzzy). In particular, neutrosophic logic is strictly more expressive than the intuitionistic fuzzy sets of Atanassov [14], which require T + F ≤ 1, and a fortiori than probability distributions over a 3-partition.
 
@@ -107,7 +109,15 @@ We employed three distinct prompting strategies (full prompt text in Appendix A)
 
 ### 2.4. Models, Repetitions, and Reproducibility
 
-The experiment involved four OpenAI models — GPT-4o, GPT-4-turbo, GPT-3.5-turbo, and GPT-4o-mini — accessed via the OpenAI API at temperature 0.7. Each combination of (model × phenomenon × strategy) was evaluated five times, yielding **100 valid evaluations** for each strategy and **300 total API calls**. All code, prompts, and raw data are openly available at [github.com/mleyvaz/neutrosophic-llm-logic](https://github.com/mleyvaz/neutrosophic-llm-logic) under the MIT license.
+**Models and parameters.** The experiment involved four OpenAI models, accessed via the OpenAI Chat Completions API on 30 April 2026: `gpt-4o` (model snapshot returned by the default alias on the date of access), `gpt-4-turbo`, `gpt-3.5-turbo`, and `gpt-4o-mini`. All calls used `temperature = 0.7`, default `top_p`, no fixed `seed`, and a soft response-format constraint instructing the model to return only a JSON object. No `max_tokens` cap was imposed; responses fit within the default. The experiment ran in approximately 5.6 minutes of wall-clock time.
+
+**Design.** Each combination of (model × phenomenon × strategy) was evaluated five times in independent API calls, yielding 4 × 5 × 5 = 100 cells per strategy and a total of 300 API calls. The five repetitions per cell are stochastic prompt-level replicates rather than independent human-labeled items; we discuss this caveat in §4.
+
+**Future-contingency anchoring.** Because the future-contingency phenomenon evaluates "It will rain in New York tomorrow", the referential statement depends on the date of execution. All 25 future-contingency calls were made on 30 April 2026, so "tomorrow" denotes 1 May 2026 throughout the dataset.
+
+**Exclusion criteria.** A response was considered *valid* if it parsed as a well-formed JSON object containing the required fields (`T`, `I`, `F` for S1 and S2; `P_yes`, `P_no` for S3) with each numeric value within the unit interval. All 300 calls returned valid JSON; the *N* = 100 reported per strategy is therefore both the gross and net sample size.
+
+**Reproducibility.** All code, prompts, and raw data are openly released at [github.com/mleyvaz/neutrosophic-llm-logic](https://github.com/mleyvaz/neutrosophic-llm-logic) under the MIT License. The exact replication script is [`src/run_experiment.py`](https://github.com/mleyvaz/neutrosophic-llm-logic/blob/main/src/run_experiment.py); the v2.0 dataset is [`data/openai_neutrosophic_results_v2.csv`](https://github.com/mleyvaz/neutrosophic-llm-logic/blob/main/data/openai_neutrosophic_results_v2.csv).
 
 ## 3. Results
 
@@ -150,9 +160,11 @@ CI₉₅%(ρ̂) = [ ρ̂ + (z²/(2N)) ± z·√( ρ̂(1−ρ̂)/N + z²/(4N²) )
 
 The lower bound 0.563 already exceeds any reasonable null hypothesis of zero hyper-truth, and the entire interval is well above the structural bound ρ(D_S₂) = 0 implied by Proposition 1. The phenomenon is concentrated in ethical contradiction and future contingency, as Table 3 shows.
 
-**Table 3.** Hyper-truth rate by phenomenon. n_hyper = number of cells with T+I+F > 1; rate = n_hyper / n_total · 100%.
+**Test of phenomenon × hyper-truth association.** A Pearson χ² test of independence between phenomenon class and hyper-truth status (5 × 2 contingency table) yields χ² = 11.32 with df = 4 and p = 0.023, allowing rejection of independence at α = 0.05. One-vs-rest Fisher exact tests identify ethical contradiction as the only phenomenon whose hyper-truth rate is significantly higher than the rest of the dataset (odds ratio = 13.34, p = 0.0014); the remaining four phenomena are not individually distinguishable from the pooled baseline at α = 0.05. The chi-square result confirms that hyper-truth incidence is heterogeneous across phenomena and that ethical contradiction is the principal driver of that heterogeneity.
 
-| Phenomenon | n_hyper | n_total | Rate |
+**Table 3.** Hyper-truth rate by phenomenon. *k* denotes the number of evaluations with T + I + F > 1; *n* denotes the total number of evaluations per phenomenon; the rate is computed as *k* / *n* · 100%.
+
+| Phenomenon | Hyper-truth cases (*k*) | Total (*n*) | Hyper-truth rate (*k* / *n*) |
 |---|---|---|---|
 | Contradiction (Ethical) | 19 | 20 | **95.0%** |
 | Contingency (Future) | 14 | 20 | 70.0% |
@@ -176,7 +188,7 @@ The lower bound 0.563 already exceeds any reasonable null hypothesis of zero hyp
 | Paradox (Logical) | 0.120 | 0.000 | +0.120 | 0.865 | 0.900 | −0.035 |
 | Vagueness (Fuzzy) | 0.562 | 0.450 | +0.112 | 0.345 | 0.305 | +0.040 |
 
-The largest absolute differences emerge for ethical contradiction (Δ T = +0.267) and epistemic ignorance (Δ I = +0.383), consistent with the hypothesis that the probabilistic constraint suppresses precisely the components that the neutrosophic framework allows the model to communicate.
+The largest absolute strategy shifts are observed for ethical contradiction in the truth component, with Δ_T = +0.267, and for epistemic ignorance in the indeterminacy component, with Δ_I = +0.383. Both are positive, indicating that the probabilistic constraint of Strategy 2 suppresses precisely the components that Strategy 1 allows the model to communicate.
 
 ![Figure 3](../results/v2/fig3_s1_vs_s2_comparison.png)
 
@@ -202,13 +214,15 @@ The largest absolute differences emerge for ethical contradiction (Δ T = +0.267
 
 ## 4. Discussion
 
-Our results are consistent with the hypothesis stated in Section 1: under unconstrained neutrosophic prompting, current LLMs exhibit hyper-truth at a non-trivial rate (66%), with the highest rate occurring for ethical contradiction (95%). Under probabilistic prompting (Strategy 2), hyper-truth is structurally precluded by construction.
+Our results are consistent with the hypothesis stated in Section 1: under unconstrained neutrosophic prompting, current LLMs declare hyper-truth at a non-trivial rate (66.0%), with the highest rate occurring for ethical contradiction (95%) and the chi-square test rejecting independence between phenomenon and hyper-truth at α = 0.05.
+
+**Framing of the central claim.** We do not claim that hyper-truth is an intrinsic latent variable directly observed inside the model. Strategy 1 explicitly *affords* the model the option of returning three independent components on [0, 1]; the resulting frequency of hyper-truth is therefore a representational *affordance* finding, not a latent-variable measurement. The contribution is correspondingly framed as: *unconstrained neutrosophic prompting elicits a class of declared epistemic states that probabilistic prompting cannot represent by construction* (Proposition 1). This is structural rather than empirical superiority — Strategy 2 is excluded from the hyper-truth region by construction, so any non-zero rate under Strategy 1 is a representational gain that Strategy 2 could not produce.
 
 The relationship to other UQ frameworks is straightforward. Semantic entropy [9] estimates indeterminacy from the distribution of paraphrases of the model output; it remains a probabilistic measure and therefore cannot represent hyper-truth. SelfCheckGPT [10] performs consistency checks across stochastic samples and reports a binary or scalar consistency score, which collapses the conflict-versus-ignorance distinction we recover. Conformal abstention [3] addresses *when* a model should refuse to answer; it does not describe the *structure* of the uncertainty when the model does answer. The neutrosophic framework is complementary to these approaches: it provides a richer descriptive language for the epistemic state, on top of which calibration and abstention policies can still operate.
 
 The framework also preserves truth values in fuzzy contexts, where probabilistic representations tend to penalize partial truths. The ability to distinguish ignorance (high I, low T, low F) from contradiction (high T and high F simultaneously) is a feature lost in standard probabilistic and entropy-based methods.
 
-We do not claim that hyper-truth is a panacea. The five phenomena are a small probe set, and the framework requires calibration of how the components relate to ground truth in downstream tasks. The next natural extension is to enrich the representation with explicit attribute decomposition. The *plithogenic neutrosophic structure* of Smarandache [13] is the 5-tuple
+**Limitations.** We acknowledge four constraints on the present claims. *First*, the hyper-truth observation is partly a representational affordance of the unconstrained prompt and is not, by itself, a measurement of an intrinsic latent variable (see "Framing of the central claim" above). *Second*, the five repetitions per cell are stochastic prompt-level replicates rather than independent human-labeled items; the *N* = 100 reported is therefore an effective sample size at the cell × repetition level, not at the level of independently sampled stimuli. The Wilson interval and chi-square test should be read accordingly. *Third*, the five phenomena form a small probe set, and the framework requires calibration of how the components relate to ground truth in downstream tasks. *Fourth*, the future-contingency stimulus is anchored to a specific date (1 May 2026), so its referential content is fixed only for replications that hold the date constant. The next natural extension is to enrich the representation with explicit attribute decomposition. The *plithogenic neutrosophic structure* of Smarandache [13] is the 5-tuple
 
 𝒫 = (P, v, V, d, c)
 
@@ -218,7 +232,7 @@ The non-injectivity of the scalar projection π (Proposition 2) is precisely wha
 
 ## 5. Conclusion
 
-We have presented an empirical investigation of neutrosophic logic applied to uncertainty quantification in large language models. The unconstrained T/I/F protocol elicits hyper-truth in 66% of evaluations across our four-model ensemble, predominantly in cases of paradox and ethical contradiction, and Mason [12] has independently confirmed the cross-vendor generality of the phenomenon. The next steps in this line of work are: (i) the extension to plithogenic neutrosophic structures with explicit attribute decomposition; (ii) larger phenomenon banks beyond the current five; and (iii) the integration of neutrosophic evaluation layers into agentic AI pipelines for high-stakes domains.
+We have presented an empirical investigation of neutrosophic logic applied to declared epistemic uncertainty in large language models, framed within a formal SVNS apparatus. The unconstrained T / I / F protocol elicits hyper-truth in 66.0% of evaluations across the four-model ensemble, with Wilson 95% confidence interval [0.563, 0.747]. The highest rates were observed in ethical contradictions and future contingencies, followed by vagueness, epistemic ignorance, and logical paradox; only ethical contradiction is significantly above the pooled baseline at α = 0.05. Mason [12] has independently confirmed cross-vendor generality of the phenomenon at 84% across five additional vendors. The next steps in this line of work are: (i) extension to plithogenic neutrosophic structures with explicit attribute decomposition (P, v, V, d, c) — pursued in a companion note that responds to Mason [12]; (ii) larger phenomenon banks beyond the current five; and (iii) integration of neutrosophic evaluation layers into agentic AI pipelines for high-stakes domains.
 
 ## Author Contributions
 
@@ -258,7 +272,13 @@ The authors thank Tony Mason (University of British Columbia and Georgia Institu
 
 **System:** "You are a binary truth estimator. You estimate the probability that a statement is true (YES) versus false (NO). The two probabilities must sum to 1.0. Respond with ONLY a JSON object, no other text."
 
-**User:** Estimate the probability that this statement is true versus false: Statement: "{statement}" – P_yes: Probability the statement is true [0.0 to 1.0] – P_no: Probability the statement is false [0.0 to 1.0]. CONSTRAINT: P_yes + P_no must equal 1.0. Respond with ONLY: `{"P_yes": , "P_no": }`. Indeterminacy is then derived from Shannon entropy: I = −[p·log₂(p) + (1−p)·log₂(1−p)] where p = P_yes.
+**User:** "Estimate the probability that this statement is true versus false: Statement: \"{statement}\" — P_yes: Probability the statement is true, in the closed interval [0.0, 1.0]; P_no: Probability the statement is false, in the closed interval [0.0, 1.0]. CONSTRAINT: P_yes + P_no must equal 1.0. Respond with ONLY: `{\"P_yes\": <value>, \"P_no\": <value>}`."
+
+**Post-processing.** Indeterminacy is then derived externally from the Shannon binary entropy of the elicited distribution:
+
+I = −[ p · log₂(p) + (1 − p) · log₂(1 − p) ],   where p = P_yes.
+
+This yields a derived triple (T, I, F) = (P_yes, I, P_no) which can then be compared against Strategies 1 and 2 within a single notational frame.
 
 ## References
 

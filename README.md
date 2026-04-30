@@ -1,256 +1,143 @@
 # Neutrosophic Logic for Epistemic Uncertainty in Large Language Models
 
-A comprehensive empirical study demonstrating how Neutrosophic Logic provides a more expressive framework for representing uncertainty in LLMs compared to traditional probabilistic approaches.
+A reproducible empirical study of how Neutrosophic Logic — a framework that treats Truth (T), Indeterminacy (I), and Falsity (F) as three independent dimensions on [0, 1] — can elicit declared epistemic states from LLMs that probabilistic prompting cannot represent.
 
-> **Status (April 2026):** v2.0 manuscript submitted to *Neutrosophic Sets and Systems*. The earlier v1.0 release (December 2025) was independently replicated and extended cross-vendor by [Mason (2026, arXiv:2604.09602)](https://arxiv.org/abs/2604.09602). See [`CHANGELOG.md`](CHANGELOG.md) for the full v1 → v2 diff.
+> **Status (April 2026).** Manuscript v2.0 has been submitted to *Neutrosophic Sets and Systems*. The earlier v1.0 release (December 2025, *N* = 20) was independently replicated and extended cross-vendor by [Mason (2026, arXiv:2604.09602)](https://arxiv.org/abs/2604.09602). See [`CHANGELOG.md`](CHANGELOG.md) for the full v1 → v2 diff.
 
-## Overview
+## Key results (v2.0)
 
-This repository contains the complete implementation, analysis, and publication materials for a research study on applying Neutrosophic Logic to evaluate how Large Language Models (LLMs) reason about complex epistemic phenomena including logical paradoxes, ethical contradictions, vagueness, and future contingencies.
+- **66.0%** of unconstrained neutrosophic evaluations produce hyper-truth (T + I + F > 1) across 100 valid Strategy-1 evaluations.
+- **95% Wilson confidence interval:** [0.563, 0.747].
+- **Highest rates** observed in ethical contradictions (95%) and future contingencies (70%); χ² = 11.32, df = 4, *p* = 0.023.
+- **Mason (2026)** independently replicated the phenomenon at 84% across five additional vendors (Anthropic, Meta, DeepSeek, Alibaba, Mistral).
 
-**Key Findings (v2.0, n=100):**
-- **66%** of evaluations under unconstrained neutrosophic prompting produce *hyper-truth* states (T+I+F > 1) that the probabilistic constraint structurally suppresses.
-- **95%** of ethical-contradiction evaluations exhibit hyper-truth.
-- The phenomenon has been independently replicated cross-vendor by Mason (2026) at 84% across five additional model families.
+## Releases
 
-The v1.0 release (cited by Mason) reported 35% from n=20 single-shot evaluations. The v2.0 update increases the sample size to 100 (5 repetitions per cell) and corrects authorship metadata.
+| Version | Date | *N* | Hyper-truth rate | Notes |
+|---|---|---|---|---|
+| [`v1.0`](https://github.com/mleyvaz/neutrosophic-llm-logic/tree/v1.0) | December 2025 | 20 | 35% (single-shot) | First public release; cited by Mason (2026) |
+| [`v2.0`](https://github.com/mleyvaz/neutrosophic-llm-logic/tree/v2.0) | April 2026 | 100 | 66.0% (5 reps/cell) | NSS submission; formal SVNS apparatus |
 
-## Repository Structure
+The v1.0 manuscript and dataset are preserved unchanged at the file paths `paper/FINAL_PAPER_v1_archived.md`, `data/openai_neutrosophic_results.csv`, and `results/v1_archived/` so the citation in Mason (2026) continues to resolve.
+
+## Repository structure
 
 ```
 neutrosophic-llm-logic/
-├── README.md                          # This file
-├── LICENSE                            # MIT License
-├── requirements.txt                   # Python dependencies
-├── setup.py                           # Package configuration
-│
-├── paper/                             # Academic paper and documentation
-│   ├── FINAL_PAPER.md                # Complete research paper with tables and figures
-│   ├── paper_abstract.txt             # Paper abstract
-│   └── references.bib                 # Bibliography in BibTeX format
-│
-├── src/                               # Core source code
-│   ├── __init__.py
-│   ├── neutrosophic_evaluator.py     # Main evaluation framework
-│   ├── prompt_strategies.py           # Three evaluation strategies (Neutrosophic, Probabilistic, Entropy)
-│   ├── data_processor.py              # Data loading and preprocessing
-│   └── visualization.py               # Plotting and analysis utilities
-│
-├── notebooks/                         # Jupyter notebooks for analysis
-│   ├── 01_data_exploration.ipynb      # EDA of experimental results
-│   ├── 02_neutrosophic_analysis.ipynb # Detailed neutrosophic component analysis
-│   ├── 03_comparative_study.ipynb     # Strategy 1 vs Strategy 2 comparison
-│   ├── 04_model_performance.ipynb     # Per-model analysis and variation
-│   └── 05_case_studies.ipynb          # Deep dives into ethical and paradoxical reasoning
-│
-├── data/                              # Experimental data
-│   ├── openai_neutrosophic_results.csv # Raw experimental results (20 cases × 4 models)
-│   └── data_schema.md                 # Data dictionary and column descriptions
-│
-├── results/                           # Generated figures and visualizations
-│   ├── fig1_components_distribution.png
-│   ├── fig2_hypertruth_sum.png
-│   ├── fig3_s1_vs_s2_comparison.png
-│   ├── fig4_model_performance.png
-│   ├── fig5_correlation_heatmap.png
-│   └── fig6_ethical_contradiction.png
-│
-├── presentation/                      # Conference presentation materials
-│   ├── slides.html                    # Interactive HTML presentation (10 slides)
-│   └── presentation_notes.md          # Speaker notes
-│
-└── tests/                             # Unit and integration tests
-    ├── __init__.py
-    ├── test_evaluator.py
-    └── test_data_processor.py
+├── README.md
+├── CITATION.cff
+├── CHANGELOG.md
+├── LICENSE                                  (MIT)
+├── requirements.txt
+├── setup.py
+├── paper/
+│   ├── FINAL_PAPER.md                       (v2.0 manuscript)
+│   └── FINAL_PAPER_v1_archived.md           (v1.0 archived as cited by Mason)
+├── src/
+│   ├── analysis.py                          (v1.0 plotting)
+│   ├── analyze_v2.py                        (v2.0 analysis pipeline)
+│   └── run_experiment.py                    (v2.0 replication script)
+├── data/
+│   ├── openai_neutrosophic_results.csv      (v1.0, N = 20)
+│   └── openai_neutrosophic_results_v2.csv   (v2.0, N = 100)
+├── results/
+│   ├── v1_archived/                         (v1.0 figures)
+│   └── v2/                                  (v2.0 figures, boxplot + strip plot)
+├── notebooks/
+└── tests/
 ```
 
-## Quick Start
+## Quick start
 
-### Installation
+### Install
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/neutrosophic-llm-logic.git
+git clone https://github.com/mleyvaz/neutrosophic-llm-logic.git
 cd neutrosophic-llm-logic
 
-# Create a virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
+python -m venv venv
+source venv/bin/activate          # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### Running the Analysis
+### Reproduce the v2.0 experiment
 
 ```bash
-# Run all notebooks in sequence
-jupyter notebook notebooks/
-
-# Or run a specific analysis
-jupyter notebook notebooks/02_neutrosophic_analysis.ipynb
+export OPENAI_API_KEY=sk-...      # your own key; never commit it
+python -m src.run_experiment      # ~5–10 min, ~USD 5–10 in API costs
+python -m src.analyze_v2
 ```
 
-### Reproducing the Experiments
+The replication writes a fresh `data/openai_neutrosophic_results_v2.csv` and the six figures under `results/v2/`. Stochastic prompt-level variation will cause exact numbers to drift slightly across runs; the qualitative pattern (hyper-truth rate ≥ 0.5 dominated by ethical contradiction) is stable.
+
+### Reproduce the v1.0 figures
 
 ```bash
-# Execute the core evaluation framework
-python -m src.neutrosophic_evaluator --config config.yaml
-
-# Process raw results
-python -m src.data_processor --input data/openai_neutrosophic_results.csv --output results/
+python -m src.analysis            # uses data/openai_neutrosophic_results.csv
 ```
 
-## Key Findings
+## Methodology (v2.0)
 
-### 1. **The Softmax Collapse Problem**
-Traditional probabilistic models constrain all outputs to sum to 1.0, creating a zero-sum game where increasing uncertainty forces truth values to decrease—even when the statement remains genuinely true.
+| Dimension | Setting |
+|---|---|
+| Models | `gpt-4o`, `gpt-4-turbo`, `gpt-3.5-turbo`, `gpt-4o-mini` |
+| Phenomena | Logical paradox, epistemic ignorance, vagueness, ethical contradiction, future contingency |
+| Strategies | S1 neutrosophic (T+I+F free), S2 probabilistic (T+I+F=1), S3 entropy-derived |
+| Repetitions | 5 per (model × phenomenon × strategy) cell |
+| Total API calls | 300 |
+| Valid neutrosophic (S1) evaluations | 100 |
+| API parameters | temperature = 0.7, default top_p, no fixed seed, JSON-only response |
+| Date of collection | 30 April 2026 |
+| Future-contingency anchor | "tomorrow" = 1 May 2026 |
 
-### 2. **Hyper-Truth Emerges in 35% of Cases**
-When queried with the Neutrosophic strategy, LLMs naturally produce sums exceeding 1.0 in complex reasoning scenarios:
-- **Logical Paradoxes:** Sum reaches 2.0 (T=0, I=1.0, F=1.0)
-- **Ethical Contradictions:** Sum averages 1.475 (e.g., T=0.5, I=0.7, F=0.5)
-- **Vagueness:** Sum averages 1.125
-
-### 3. **Neutrosophic Advantage in Capturing Complexity**
-Compared to probabilistic approaches, Neutrosophic Logic shows:
-- **+22.5% higher Truth values** in ethical contradictions (0.525 vs 0.300)
-- **+27.5% higher Indeterminacy** in logical paradoxes (1.0 vs 0.725)
-- **+7.5% higher Truth values** in vague statements (0.625 vs 0.550)
-
-### 4. **Model-Specific Reasoning Profiles**
-Different GPT models exhibit distinct uncertainty representation patterns:
-- **GPT-4-turbo:** Conservative (Mean Sum = 1.10)
-- **GPT-4o:** Balanced (Mean I = 0.740)
-- **GPT-3.5-turbo:** Variable (Std Dev = 0.438)
-- **GPT-4o-mini:** Exploratory (Mean Sum = 1.36)
-
-## Methodology
-
-### Experimental Design
-We evaluated four OpenAI models (GPT-4o, GPT-4-turbo, GPT-3.5-turbo, GPT-4o-mini) on five linguistic phenomena using three distinct evaluation strategies:
-
-**Linguistic Phenomena:**
-1. Logical Paradoxes ("This sentence is false")
-2. Epistemic Ignorance ("The number of stars in the universe is even")
-3. Vagueness/Fuzzy Logic ("John is 1.75m tall, therefore John is tall")
-4. Ethical Contradictions ("Lying to save an innocent life is morally right and wrong")
-5. Future Contingencies ("It will rain in New York tomorrow")
-
-**Evaluation Strategies:**
-1. **Strategy 1 (Neutrosophic):** Independent evaluation of Truth, Indeterminacy, Falsity [0, 1]
-2. **Strategy 2 (Probabilistic):** Mutually exclusive states summing to 1.0
-3. **Strategy 3 (Entropy-Derived):** Indeterminacy derived from binary probability estimates
-
-### Dataset
-- **Total Cases:** 20 (5 phenomena × 4 models)
-- **Results File:** `data/openai_neutrosophic_results.csv`
-- **Columns:** Model, Phenomenon, Strategy, Truth, Indeterminacy, Falsity, Sum, Timestamp
-
-## Paper and Publication
-
-The complete research paper is available in `paper/FINAL_PAPER.md` with:
-- Comprehensive literature review (15+ citations)
-- Detailed methodology section with code examples
-- Full results with tables and statistical analysis
-- Discussion of implications for AI safety and transparency
-- Future research directions
-
-**Citation Format (APA):**
-```
-Manus AI Research Team. (2025). Neutrosophic logic for epistemic uncertainty 
-in large language models: A comparative empirical study. Unpublished manuscript.
-```
-
-## Presentation Materials
-
-A professional 10-slide presentation is included in `presentation/slides.html` covering:
-1. Problem Statement (Softmax Collapse)
-2. Neutrosophic Logic Framework
-3. Experimental Methodology
-4. Key Findings (Hyper-Truth)
-5. Comparative Analysis
-6. Model Performance Variation
-7. Critical Case Study (Ethical Dilemma)
-8. Implications for AI Safety
-9. Conclusions and Future Work
-
-## Implications for AI Safety
-
-Neutrosophic evaluation layers can serve as transparency mechanisms for high-stakes AI deployment:
-
-- **Adversarial Detection:** Unexpected hyper-truth patterns signal adversarial inputs
-- **Epistemic Transparency:** Distinguish "I don't know" (ignorance) from "It's complicated" (conflict)
-- **Human-in-the-Loop Triggers:** Automatically flag ambiguous cases for human review
-- **Nuanced Calibration:** Three independent signals (T, I, F) instead of collapsed probability
-
-## Future Work
-
-1. **Native Neutrosophic LLMs:** Fine-tune models to output neutrosophic vectors directly
-2. **Interpretability Tools:** Develop visualization methods for T/I/F components
-3. **Multimodal Extension:** Apply framework to computer vision and audio analysis
-4. **Theoretical Development:** Formalize neutrosophic logic for AI reasoning
-
-## Dependencies
-
-- Python 3.11+
-- OpenAI API (for model queries)
-- pandas, numpy (data processing)
-- matplotlib, seaborn (visualization)
-- jupyter (notebook environment)
-- pytest (testing)
-
-See `requirements.txt` for complete dependency list and versions.
-
-## Testing
-
-Run the test suite to verify the implementation:
-
-```bash
-pytest tests/ -v
-```
-
-## Contributing
-
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License—see the `LICENSE` file for details.
+The verbatim S1, S2, and S3 prompts are reproduced in Appendix A of the manuscript and in [`src/run_experiment.py`](src/run_experiment.py).
 
 ## Citation
 
-If you use this work in your research, please cite:
-
 ```bibtex
-@unpublished{manus2025neutrosophic,
-  title={Neutrosophic Logic for Epistemic Uncertainty in Large Language Models: 
-         A Comparative Empirical Study},
-  author={Maikel Leyva, Florentin Smarandache},
-  year={2025},
-  note={Unpublished manuscript}
+@article{leyva2026breaking,
+  title  = {Breaking the Chains of Probability: Neutrosophic Logic as a New
+            Framework for Epistemic Uncertainty in Large Language Models},
+  author = {Leyva-V{\'a}zquez, Maikel Yelandi and Smarandache, Florentin},
+  year   = {2026},
+  journal = {Neutrosophic Sets and Systems},
+  note   = {Submitted; preprint v2.0 at github.com/mleyvaz/neutrosophic-llm-logic}
 }
 ```
 
-## Contact
+For exact-version citation, prefer the tagged commits:
 
-For questions or collaboration inquiries, please open an issue on GitHub or contact the research team.
+```bibtex
+@misc{leyva2025_v1,
+  title  = {Breaking the Chains of Probability (v1.0)},
+  author = {Leyva-V{\'a}zquez, Maikel Yelandi and Smarandache, Florentin},
+  year   = {2025},
+  url    = {https://github.com/mleyvaz/neutrosophic-llm-logic/tree/v1.0}
+}
 
-## Acknowledgments
+@misc{leyva2026_v2,
+  title  = {Breaking the Chains of Probability (v2.0)},
+  author = {Leyva-V{\'a}zquez, Maikel Yelandi and Smarandache, Florentin},
+  year   = {2026},
+  url    = {https://github.com/mleyvaz/neutrosophic-llm-logic/tree/v2.0}
+}
+```
 
-This research was conducted using the OpenAI API and builds upon foundational work in:
-- Neutrosophic Logic (Smarandache, 1998)
-- Fuzzy Logic and Uncertainty (Zadeh, 1965)
-- Large Language Model Reasoning (Brown et al., 2020; OpenAI, 2023)
+## Limitations
 
----
+We acknowledge four constraints on the present claims (see §4 of the manuscript):
 
-**Last Updated:** December 2025  
-**Status:** Active Research  
-**Maintainers:** MAikel Leyva
+1. Hyper-truth is partly a representational affordance of the unconstrained prompt; it is not, by itself, a measurement of an intrinsic latent variable inside the model.
+2. The five repetitions per cell are stochastic prompt-level replicates rather than independent human-labeled items; *N* = 100 is therefore an effective sample size at the cell × repetition level.
+3. The five-phenomenon probe set is small.
+4. The future-contingency stimulus is anchored to 1 May 2026 and is therefore time-dependent.
+
+## Author and contact
+
+Dr. Maikel Yelandi Leyva-Vázquez — Universidad Bolivariana del Ecuador, Coordinación Académica de Posgrado, Guayaquil, Ecuador. ORCID: [0000-0002-9486-5093](https://orcid.org/0000-0002-9486-5093). Email: mleyvaz@gmail.com.
+
+Dr. Florentin Smarandache — University of New Mexico, Gallup, NM, USA. ORCID: [0000-0002-5560-5926](https://orcid.org/0000-0002-5560-5926).
+
+## License
+
+MIT — see [`LICENSE`](LICENSE).
