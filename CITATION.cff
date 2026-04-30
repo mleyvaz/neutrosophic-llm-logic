@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+title: "Breaking the Chains of Probability: Neutrosophic Logic as a New Framework for Epistemic Uncertainty in Large Language Models"
+message: "If you use this code or data, please cite the paper."
+type: software
+authors:
+  - family-names: "Leyva-Vázquez"
+    given-names: "Maikel Yelandi"
+    orcid: "https://orcid.org/0000-0002-9486-5093"
+    affiliation: "Universidad Bolivariana del Ecuador"
+    email: "mleyvaz@gmail.com"
+  - family-names: "Smarandache"
+    given-names: "Florentin"
+    orcid: "https://orcid.org/0000-0002-5560-5926"
+    affiliation: "University of New Mexico"
+    email: "smarand@unm.edu"
+repository-code: "https://github.com/mleyvaz/neutrosophic-llm-logic"
+url: "https://github.com/mleyvaz/neutrosophic-llm-logic"
+abstract: >-
+  An empirical investigation of Neutrosophic Logic applied to
+  uncertainty quantification in Large Language Models. With
+  100 evaluations across 4 OpenAI models, 5 phenomena, and 3
+  prompting strategies (5 reps per cell), the neutrosophic
+  protocol elicits hyper-truth (T+I+F > 1) in 66% of evaluations,
+  predominantly in cases of ethical contradiction. Mason (2026)
+  has independently replicated the phenomenon cross-vendor at 84%.
+keywords:
+  - neutrosophic logic
+  - large language models
+  - epistemic uncertainty
+  - hyper-truth
+  - uncertainty quantification
+  - indeterminacy
+  - ethical AI
+license: MIT
+version: "2.0"
+date-released: "2026-04-30"
+preferred-citation:
+  type: article
+  title: "Breaking the Chains of Probability: Neutrosophic Logic as a New Framework for Epistemic Uncertainty in Large Language Models"
+  authors:
+    - family-names: "Leyva-Vázquez"
+      given-names: "Maikel Yelandi"
+    - family-names: "Smarandache"
+      given-names: "Florentin"
+  year: 2026
+  journal: "Neutrosophic Sets and Systems"
+  status: "submitted"

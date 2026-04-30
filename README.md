@@ -2,11 +2,18 @@
 
 A comprehensive empirical study demonstrating how Neutrosophic Logic provides a more expressive framework for representing uncertainty in LLMs compared to traditional probabilistic approaches.
 
+> **Status (April 2026):** v2.0 manuscript submitted to *Neutrosophic Sets and Systems*. The earlier v1.0 release (December 2025) was independently replicated and extended cross-vendor by [Mason (2026, arXiv:2604.09602)](https://arxiv.org/abs/2604.09602). See [`CHANGELOG.md`](CHANGELOG.md) for the full v1 → v2 diff.
+
 ## Overview
 
 This repository contains the complete implementation, analysis, and publication materials for a research study on applying Neutrosophic Logic to evaluate how Large Language Models (LLMs) reason about complex epistemic phenomena including logical paradoxes, ethical contradictions, vagueness, and future contingencies.
 
-**Key Finding:** 35% of complex reasoning tasks naturally produce "hyper-truth" states (Sum > 1.0), where models express simultaneous truth and falsity—a phenomenon that probabilistic frameworks fundamentally cannot represent.
+**Key Findings (v2.0, n=100):**
+- **66%** of evaluations under unconstrained neutrosophic prompting produce *hyper-truth* states (T+I+F > 1) that the probabilistic constraint structurally suppresses.
+- **95%** of ethical-contradiction evaluations exhibit hyper-truth.
+- The phenomenon has been independently replicated cross-vendor by Mason (2026) at 84% across five additional model families.
+
+The v1.0 release (cited by Mason) reported 35% from n=20 single-shot evaluations. The v2.0 update increases the sample size to 100 (5 repetitions per cell) and corrects authorship metadata.
 
 ## Repository Structure
 
