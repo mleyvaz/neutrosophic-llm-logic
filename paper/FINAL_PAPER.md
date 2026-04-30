@@ -19,7 +19,7 @@ Large Language Models (LLMs) are predominantly governed by probabilistic framewo
 
 > **https://github.com/mleyvaz/neutrosophic-llm-logic**
 
-The v2.0 release (this study, *N* = 100) is the current state of the `main` branch and is also tagged as [`v2.0`](https://github.com/mleyvaz/neutrosophic-llm-logic/tree/v2.0). The v1.0 release (December 2025, *N* = 20) is preserved at tag [`v1.0`](https://github.com/mleyvaz/neutrosophic-llm-logic/tree/v1.0) and at the file `paper/FINAL_PAPER_v1_archived.md`.
+The v2.0 release (this study, *N* = 100) is the current state of the `main` branch and is also tagged as [`v2.0`](https://github.com/mleyvaz/neutrosophic-llm-logic/tree/v2.0). The v1.0 release (December 2025, *N* = 20) is preserved at tag [`v1.0`](https://github.com/mleyvaz/neutrosophic-llm-logic/tree/v1.0) and at the file `paper/FINAL_PAPER_v1_archived.md`. The v2.0 release has been permanently archived in Zenodo with DOI **[ZENODO-DOI-PENDING]**.
 
 ## 1. Introduction
 
@@ -248,7 +248,7 @@ The authors declare no conflict of interest.
 
 ## Data Availability
 
-All code, prompts, and raw experimental data are openly available at [github.com/mleyvaz/neutrosophic-llm-logic](https://github.com/mleyvaz/neutrosophic-llm-logic) under the MIT license. The v1.0 dataset (n=20, December 2025) is preserved at `data/openai_neutrosophic_results.csv`; the v2.0 dataset (n=100, April 2026) is at `data/openai_neutrosophic_results_v2.csv`.
+All code, prompts, raw data, and figures supporting this study are publicly available in the GitHub repository [`mleyvaz/neutrosophic-llm-logic`](https://github.com/mleyvaz/neutrosophic-llm-logic) under the MIT License, and have been permanently archived in Zenodo as version v2.0 with DOI **[ZENODO-DOI-PENDING]**. The v2.0 release archived in Zenodo corresponds exactly to the experimental design reported in this manuscript: four OpenAI models, five linguistic phenomena, three prompting strategies, five repetitions per cell, 300 total API calls, and 100 valid unconstrained neutrosophic evaluations. The v1.0 dataset (n=20, December 2025) is preserved at `data/openai_neutrosophic_results.csv`; the v2.0 dataset (n=100, April 2026) is at `data/openai_neutrosophic_results_v2.csv`.
 
 ## Acknowledgments
 

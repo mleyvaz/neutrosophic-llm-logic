@@ -1,8 +1,10 @@
 # Neutrosophic Logic for Epistemic Uncertainty in Large Language Models
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![DOI](https://img.shields.io/badge/Zenodo-pending-lightgrey.svg)](https://zenodo.org)
+
 A reproducible empirical study of how Neutrosophic Logic — a framework that treats Truth (T), Indeterminacy (I), and Falsity (F) as three independent dimensions on [0, 1] — can elicit declared epistemic states from LLMs that probabilistic prompting cannot represent.
 
-> **Status (April 2026).** Manuscript v2.0 has been submitted to *Neutrosophic Sets and Systems*. The earlier v1.0 release (December 2025, *N* = 20) was independently replicated and extended cross-vendor by [Mason (2026, arXiv:2604.09602)](https://arxiv.org/abs/2604.09602). See [`CHANGELOG.md`](CHANGELOG.md) for the full v1 → v2 diff.
+> **Status (April 2026).** Manuscript v2.0 has been submitted to *Neutrosophic Sets and Systems*. The v2.0 release of this repository will be permanently archived in Zenodo (DOI: **pending**) once the GitHub Release is published. The earlier v1.0 release (December 2025, *N* = 20) was independently replicated and extended cross-vendor by [Mason (2026, arXiv:2604.09602)](https://arxiv.org/abs/2604.09602). See [`CHANGELOG.md`](CHANGELOG.md) for the full v1 → v2 diff.
 
 ## Key results (v2.0)
 
