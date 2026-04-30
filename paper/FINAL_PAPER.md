@@ -15,6 +15,12 @@ Large Language Models (LLMs) are predominantly governed by probabilistic framewo
 
 **Keywords:** neutrosophic logic; large language models; epistemic uncertainty; hyper-truth; uncertainty quantification; indeterminacy; ethical AI; paradox.
 
+**Reproducibility.** All code, prompts, raw data, and figures of this study are openly released under the MIT License at the public repository:
+
+> **https://github.com/mleyvaz/neutrosophic-llm-logic**
+
+The v2.0 release (this study, *N* = 100) is the current state of the `main` branch and is also tagged as [`v2.0`](https://github.com/mleyvaz/neutrosophic-llm-logic/tree/v2.0). The v1.0 release (December 2025, *N* = 20) is preserved at tag [`v1.0`](https://github.com/mleyvaz/neutrosophic-llm-logic/tree/v1.0) and at the file `paper/FINAL_PAPER_v1_archived.md`.
+
 ## 1. Introduction
 
 The deployment of Large Language Models (LLMs) in high-stakes domains has made robust uncertainty quantification (UQ) a first-order requirement [1, 2, 3]. Yet the underlying architecture of contemporary LLMs is rooted in probability theory, where outcome probabilities are constrained to sum to unity by Softmax normalization [4, 5]. This forces a zero-sum game in which any increase in uncertainty must subtract from truth or falsity, a phenomenon we term the *collapse of uncertainty* [6]. The constraint hinders the ability of LLMs to distinguish between aleatoric uncertainty (statistical uncertainty inherent in the data) and epistemic uncertainty (model uncertainty due to lack of knowledge) [7, 8], and in particular between *not knowing* (ignorance) and *knowing of a conflict* (paradox or contradiction).
