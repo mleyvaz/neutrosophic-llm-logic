@@ -15,6 +15,11 @@ authors:
     email: "smarand@unm.edu"
 repository-code: "https://github.com/mleyvaz/neutrosophic-llm-logic"
 url: "https://github.com/mleyvaz/neutrosophic-llm-logic"
+doi: "10.5281/zenodo.19911845"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19911845"
+    description: "Zenodo archive of v2.0 release"
 abstract: >-
   An empirical investigation of Neutrosophic Logic applied to
   uncertainty quantification in Large Language Models. With
